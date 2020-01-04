@@ -1,0 +1,516 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>&lt;h2 class="title"&gt;О предприятии&lt;/h2&gt;
+            &lt;p&gt;
+              &lt;b&gt;Коммунальное унитарное предприятие «Минское городское агентство обслуживания населения»&lt;/b&gt;&lt;br/&gt;
+создано 01.07.2013 г. в результате реорганизации путем выделения из состава коммунального унитарного предприятия «Центр информационных технологий Мингорисполкома» и зарегистрировано решением Мингорисполкома от 23.05.2013 г. № 1344. Форма собственности - государственная (коммунальная).
+            &lt;/p&gt;
+            &lt;p&gt;&lt;b&gt;Цели деятельности Предприятия:&lt;/b&gt;&lt;/p&gt;
+ &lt;div class="icon-box"&gt;
+              &lt;div class="icon"&gt;&lt;i class="fa fa-question"&gt;&lt;/i&gt;&lt;/div&gt;
+              &lt;h4 class="title"&gt;&lt;a href=""&gt;Оказание Услуг&lt;/a&gt;&lt;/h4&gt;
+              &lt;p class="description"&gt;оказание услуг по обеспечению деятельности организаций по принципу «одно окно» по административным процедурам, ведению электронных баз данных организаций и иных сопутствующих услуг&lt;/p&gt;
+            &lt;/div&gt;
+
+            &lt;div class="icon-box"&gt;
+              &lt;div class="icon"&gt;&lt;i class="fa fa-users"&gt;&lt;/i&gt;&lt;/div&gt;
+              &lt;h4 class="title"&gt;&lt;a href=""&gt;Консультирование Граждан&lt;/a&gt;&lt;/h4&gt;
+              &lt;p class="description"&gt;консультирование граждан или юридических лиц по перечням документов, представляемых для осуществления административных процедур&lt;/p&gt;
+            &lt;/div&gt;
+
+            &lt;div class="icon-box"&gt;
+              &lt;div class="icon"&gt;&lt;i class="fa fa-file-text"&gt;&lt;/i&gt;&lt;/div&gt;
+              &lt;h4 class="title"&gt;&lt;a href=""&gt;Сбор Документов&lt;/a&gt;&lt;/h4&gt;
+              &lt;p class="description"&gt;обеспечение сбора документов и (или) сведений, необходимых для осуществления административных процедур, не включенных в перечни документов и (или) сведений, представляемых заинтересованными лицами, посредством направления запросов удаленного доступа к государственным регистрам, реестрам, кадастрам, спискам, каталогам, базам и банкам данных и другими способами&lt;/p&gt;
+            &lt;/div&gt;
+
+ &lt;div class="icon-box"&gt;
+              &lt;div class="icon"&gt;&lt;i class="fa fa-bullhorn"&gt;&lt;/i&gt;&lt;/div&gt;
+              &lt;h4 class="title"&gt;&lt;a href=""&gt;Информирование Граждан&lt;/a&gt;&lt;/h4&gt;
+              &lt;p class="description"&gt;информирование граждан и (или) юридических лиц: о режиме работы организаций, времени приема граждан и порядке записи на прием к должностным лицам организаций; об административных процедурах, осуществляемых организациями, рассмотрении обращений граждан и юридических лиц; по иным вопросам&lt;/p&gt;
+            &lt;/div&gt;
+
+            &lt;div class="icon-box"&gt;
+              &lt;div class="icon"&gt;&lt;i class="fa fa-usd"&gt;&lt;/i&gt;&lt;/div&gt;
+              &lt;h4 class="title"&gt;&lt;a href=""&gt;Прибыль&lt;/a&gt;&lt;/h4&gt;
+              &lt;p class="description"&gt;извлечение прибыли в процессе хозяйственной деятельности&lt;/p&gt;
+            &lt;/div&gt;
+
+            &lt;div class="icon-box"&gt;
+              &lt;div class="icon"&gt;&lt;i class="fa fa-bar-chart"&gt;&lt;/i&gt;&lt;/div&gt;
+              &lt;h4 class="title"&gt;&lt;a href=""&gt;Другие услуги&lt;/a&gt;&lt;/h4&gt;
+              &lt;p class="description"&gt;оказание других услуг, направленных на повышение эффективности работы в сфере оказания услуг населению в соответствии с законодательством&lt;/p&gt;
+            &lt;/div&gt;</value>
+    <comment>Название СЕКЦИИ "О ПРЕДПРИЯТИИ" и ЦЕЛИ ДЕЯТЕЛЬНОСТИ ПРЕДПРИЯТИЯ</comment>
+  </data>
+  <data name="AboutAddition" xml:space="preserve">
+    <value>&lt;div class="row"&gt;
+                    &lt;div class="col-lg-3 col-md-6"&gt;
+                        &lt;div class="box"&gt;
+                            &lt;div class="icon"&gt;&lt;span onclick="openEnterpriseStructure()"&gt;&lt;i class="fa fa-desktop"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;
+                            &lt;h4 class="title"&gt;&lt;span onclick="openEnterpriseStructure()"&gt;Структура предприятия&lt;/span&gt;&lt;/h4&gt;
+                            &lt;p class="description"&gt;Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col-lg-3 col-md-6"&gt;
+                        &lt;div class="box"&gt;
+                            &lt;div class="icon"&gt;&lt;span onclick="openPhoneStructure()"&gt;&lt;i class="fa fa-bar-chart"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;
+                            &lt;h4 class="title"&gt;&lt;span&gt;Тел. справочник&lt;/span&gt;&lt;/h4&gt;
+                            &lt;p class="description"&gt;Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col-lg-3 col-md-6"&gt;
+                        &lt;div class="box"&gt;
+                            &lt;div class="icon"&gt;&lt;span onclick="openAdmProcess()"&gt;&lt;i class="fa fa-paper-plane"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;
+                            &lt;h4 class="title"&gt;&lt;span&gt;Адм. процедуры&lt;/span&gt;&lt;/h4&gt;
+                            &lt;p class="description"&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col-lg-3 col-md-6"&gt;
+                        &lt;div class="box"&gt;
+                            &lt;div class="icon"&gt;&lt;span onclick="openPersonalReception()"&gt;&lt;i class="fa  fa-users"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;
+                            &lt;h4 class="title"&gt;&lt;span&gt;График работ&lt;/span&gt;&lt;/h4&gt;
+                            &lt;p class="description"&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div id="myEnterpriseStructure" class="fullScreen"&gt;
+                    &lt;a href="javascript:void(0)" class="closebtn" onclick="closeEnterpriseStructure()"&gt;&lt;span class="fa fa-close" style="color:rgb(52, 59, 64);"&gt;&lt;/span&gt;&lt;/a&gt;
+                    &lt;div class="fullScreen-content"&gt;
+                        &lt;div class="container"&gt;
+                            &lt;h2 class="title"&gt;Структура предприятия&lt;/h2&gt;
+                            &lt;img src="/img/СтруктураРус.jpg" /&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div id="myPhoneStructure" class="fullScreen"&gt;
+                    &lt;a href="javascript:void(0)" class="closebtn" onclick="closePhoneStructure()"&gt;&lt;span class="fa fa-close" style="color:rgb(52, 59, 64);"&gt;&lt;/span&gt;&lt;/a&gt;
+                    &lt;div class="fullScreen-content"&gt;
+                        &lt;div class="container"&gt;
+                            &lt;h2 class="title"&gt;Телефонный справочник&lt;/h2&gt;
+                            &lt;table class="table table-hover" style="text-align:left"&gt;
+                                &lt;tbody&gt;
+                                    &lt;tr&gt;
+                                        &lt;td&gt;
+                                            &lt;b&gt;Директор&lt;/b&gt; &lt;br /&gt;
+                                            Ефимов Александр Станиславович &lt;br /&gt;
+                                            &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 394 49 24 &lt;br /&gt;
+                                            &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул.М.Танка, д.36, корп.1, каб.3
+                                        &lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr&gt;
+                                        &lt;td&gt;
+                                            &lt;b&gt;Заместитель директора&lt;/b&gt; &lt;br /&gt;
+                                            Трушкевич Павел Анатольевич &lt;br /&gt;
+                                            &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 364 19 13 &lt;br /&gt;
+                                            &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул.М.Танка, д.36, корп.1, каб.1
+                                        &lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr&gt;
+                                        &lt;td&gt;
+                                            &lt;b&gt;Заместитель директор – начальник общего отдела&lt;/b&gt; &lt;br /&gt;
+                                            Данько Елена Георгиевна &lt;br /&gt;
+                                            &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 364 26 12 &lt;br /&gt;
+                                            &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул.М.Танка, д.36, корп.1, каб.1
+                                        &lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr&gt;
+                                        &lt;td&gt;
+                                            &lt;b&gt;Сектор бухгалтерского учета и отчетности&lt;/b&gt; &lt;br /&gt;
+                                            главный бухгалтер Шипова Людмила Викторовна &lt;br /&gt;
+                                            &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел 364 25 78 &lt;br /&gt;
+                                            &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул.М.Танка, д.36, корп.1, каб.6
+                                        &lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr&gt;
+                                        &lt;td&gt;
+                                            &lt;b&gt;Планово-экономический сектор&lt;/b&gt; &lt;br /&gt;
+                                            начальник сектора Ступчик Оксана Васильевна &lt;br /&gt;
+                                            &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 393 16 47 &lt;br /&gt;
+                                            &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул.М.Танка, д.36, корп.1, каб.4
+                                        &lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr&gt;
+                                        &lt;td&gt;
+                                            &lt;b&gt;Общий отдел&lt;/b&gt;  &lt;br /&gt;
+                                            заведующий хозяйством Пантелеенко Леонид Алексеевич &lt;br /&gt;
+                                            &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 347 16 27 &lt;br /&gt;
+                                            &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул.М.Танка, д.36, корп.1, каб.7 &lt;br /&gt;
+                                            &lt;br /&gt;
+                                            ведущий юрисконсульт Трацевский Александр Викторович &lt;br /&gt;
+                                            &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 364 26 02 &lt;br /&gt;
+                                            &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул.М.Танка, д.36, корп.1, каб.1 &lt;br /&gt;
+                                            &lt;br /&gt;
+                                            ведущий специалист по кадрам Лебедева Ирина Владимировна &lt;br /&gt;
+                                            &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 364 65 92 &lt;br /&gt;
+                                            &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул.М.Танка, д.36, корп.1, каб.1 &lt;br /&gt;
+                                        &lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr&gt;
+                                        &lt;td&gt;
+                                            &lt;b&gt;Управление сопровождения электронных баз данных «Одно окно»&lt;/b&gt;  &lt;br /&gt;
+                                            начальник управления Пожиток Нелли Константиновна  &lt;br /&gt;
+                                            &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 316 26 03  &lt;br /&gt;
+                                            &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул.М.Танка, д.36, корп.1, каб.5  &lt;br /&gt;
+                                            &lt;br /&gt;
+                                            заместитель начальника управления Нечаева Ольга Владимировна  &lt;br /&gt;
+                                            &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел.243 08 59  &lt;br /&gt;
+                                            &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул.М.Танка, д.36, корп.1, каб.5  &lt;br /&gt;
+                                            &lt;br /&gt;
+                                            &lt;div style="padding-left:40px"&gt;
+                                                &lt;b&gt;Отдел № 1 Заводского района&lt;/b&gt; &lt;br /&gt;
+                                                начальник отдела Бойправ Наталья Александровна &lt;br /&gt;
+                                                &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 389 26 82 &lt;br /&gt;
+                                                &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул. Жилуновича, д.17 – служба «одно окно» &lt;br /&gt;
+                                                &lt;br /&gt;
+                                                &lt;b&gt;Отдел № 2 Ленинского района&lt;/b&gt; &lt;br /&gt;
+                                                начальник отдела Губоревич Анна Владимировна &lt;br /&gt;
+                                                &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 223 00 27 &lt;br /&gt;
+                                                &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул.Маяковского, д.83 – служба «одно окно» &lt;br /&gt;
+                                                &lt;br /&gt;
+                                                &lt;b&gt;Отдел № 3 Московского района&lt;/b&gt; &lt;br /&gt;
+                                                начальник отдела Ившина Марина Валерьевна &lt;br /&gt;
+                                                &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 200 62 45 &lt;br /&gt;
+                                                &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: просп. Дзержинского, д.10, каб.439 – служба «одно окно» &lt;br /&gt;
+                                                &lt;br /&gt;
+                                                &lt;div style="padding-left:40px"&gt;
+                                                    &lt;b&gt;Сектор № 1&lt;/b&gt; &lt;br /&gt;
+                                                    начальник сектора Саливончик Алла Михайловна  &lt;br /&gt;
+                                                    &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 200 66 26  &lt;br /&gt;
+                                                    &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: просп. Дзержинского, д.10, каб.103  &lt;br /&gt;
+                                                    &lt;br /&gt;
+                                                    &lt;b&gt;Сектор № 2&lt;/b&gt; &lt;br /&gt;
+                                                    начальник сектора Ширяева Татьяна Алексеевна  &lt;br /&gt;
+                                                    &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 376 84 70 &lt;br /&gt;
+                                                    &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: просп. газеты Правда, д.29, каб.4  &lt;br /&gt;
+                                                    &lt;br /&gt;
+                                                &lt;/div&gt;
+                                                &lt;b&gt;Отдел № 4 Октябрьского района&lt;/b&gt; &lt;br /&gt;
+                                                начальник отдела Бычковская Светлана Викторовна &lt;br /&gt;
+                                                &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 222 13 95 &lt;br /&gt;
+                                                &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул. Чкалова, д.6, каб.108 – служба «одно окно» &lt;br /&gt;
+                                                &lt;br /&gt;
+                                                &lt;b&gt;Отдел № 5 Партизанского района&lt;/b&gt; &lt;br /&gt;
+                                                начальник отдела Бакумова Марина Антоновна &lt;br /&gt;
+                                                &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 294 18 52 &lt;br /&gt;
+                                                &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул.Захарова, д.53 – служба «одно окно» &lt;br /&gt;
+                                                &lt;br /&gt;
+                                                &lt;div style="padding-left:40px"&gt;
+                                                    &lt;b&gt;Сектор № 1&lt;/b&gt; &lt;br /&gt;
+                                                    начальник сектора Прудцева Светлана Ивановна  &lt;br /&gt;
+                                                    &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 369 25 65  &lt;br /&gt;
+                                                    &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул.О.Кошевого, д.27а – отдел ЗАГС  &lt;br /&gt;
+                                                    &lt;br /&gt;
+                                                &lt;/div&gt;
+                                                &lt;b&gt;Отдел № 6 Первомайского района&lt;/b&gt; &lt;br /&gt;
+                                                начальник отдела Черник Ирина Жоржевна &lt;br /&gt;
+                                                &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 280 75 89 &lt;br /&gt;
+                                                &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: пер. К.Чорного, д.5 – служба «одно окно» &lt;br /&gt;
+                                                &lt;br /&gt;
+                                                &lt;div style="padding-left:40px"&gt;
+                                                    &lt;b&gt;Сектор № 1&lt;/b&gt; &lt;br /&gt;
+                                                    начальник сектора Биченкова Наталья Александровна &lt;br /&gt;
+                                                    &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 215 27 20 &lt;br /&gt;
+                                                    &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: пер. К.Чорного, д.5, каб. 220 &lt;br /&gt;
+                                                    &lt;br /&gt;
+                                                &lt;/div&gt;
+                                                &lt;b&gt;Отдел № 7 Советского района&lt;/b&gt; &lt;br /&gt;
+                                                начальник отдела Белаш Алла Викторовна &lt;br /&gt;
+                                                &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 292 24 22 &lt;br /&gt;
+                                                &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул.Дорошевича, д.8 – служба «одно окно» &lt;br /&gt;
+                                                &lt;br /&gt;
+                                                &lt;div style="padding-left:40px"&gt;
+                                                    &lt;b&gt;Сектор № 1&lt;/b&gt; &lt;br /&gt;
+                                                    начальник сектора Гришина Светлана Владимировна &lt;br /&gt;
+                                                    &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 354 05 94 &lt;br /&gt;
+                                                    &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул. Веры Хоружей. д.24, корп. 1, каб. 10 &lt;br /&gt;
+                                                    &lt;br /&gt;
+                                                &lt;/div&gt;
+                                                &lt;b&gt;Отдел № 8 Фрунзенского района&lt;/b&gt; &lt;br /&gt;
+                                                начальник отдела Антонова Ольга Анатольевна &lt;br /&gt;
+                                                &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 204 01 61 &lt;br /&gt;
+                                                &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул. Кальварийская, д.39 – служба «одно окно» &lt;br /&gt;
+                                                &lt;br /&gt;
+                                                &lt;div style="padding-left:40px"&gt;
+                                                    &lt;b&gt;Сектор № 1&lt;/b&gt; &lt;br /&gt;
+                                                    начальник сектора Воронцова Люция Михайловна &lt;br /&gt;
+                                                    &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 254 92 63 &lt;br /&gt;
+                                                    &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул. Нёманская, д.22 – служба «одно окно» &lt;br /&gt;
+                                                    &lt;br /&gt;
+                                                    &lt;b&gt;Сектор № 2&lt;/b&gt; &lt;br /&gt;
+                                                    начальник сектора Волчок Мария Александровна &lt;br /&gt;
+                                                    &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 204 78 06 &lt;br /&gt;
+                                                    &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул. Кальварийская, д.39 – служба «одно окно» &lt;br /&gt;
+                                                    &lt;br /&gt;
+                                                    &lt;b&gt;Сектор № 3&lt;/b&gt; &lt;br /&gt;
+                                                    начальник сектора Новак Инга Валерьевна &lt;br /&gt;
+                                                    &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 358 09 40 &lt;br /&gt;
+                                                    &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: просп. Пушкина, д.55 – служба «одно окно» &lt;br /&gt;
+                                                    &lt;br /&gt;
+                                                &lt;/div&gt;
+                                                &lt;b&gt;Отдел № 9 Центрального района&lt;/b&gt; &lt;br /&gt;
+                                                начальник отдела Рогачева Татьяна Николаевна &lt;br /&gt;
+                                                &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 306 40 03 &lt;br /&gt;
+                                                &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул.Мельникайте, д.6 – служба «одно окно» &lt;br /&gt;
+                                                &lt;br /&gt;
+                                                &lt;b&gt;Отдел информационного обслуживания службы «Одно окно» Мингорисполкома&lt;/b&gt; &lt;br /&gt;
+                                                начальник отдела Матеша Ирина Николаевна &lt;br /&gt;
+                                                &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 218 00 74 &lt;br /&gt;
+                                                &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: просп. Независимости, д.8 – служба «одно окно» &lt;br /&gt;
+                                                &lt;br /&gt;
+                                                &lt;b&gt;Отдел ведения баз данных в Главном управлении юстиции Мингорисполкома&lt;/b&gt; &lt;br /&gt;
+                                                начальник отдела Миронюк Татьяна Викторовна &lt;br /&gt;
+                                                &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 308 23 83 &lt;br /&gt;
+                                                &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: просп.Пушкина, д.42, каб. 104 &lt;br /&gt;
+                                                &lt;br /&gt;
+                                                &lt;b&gt;Сектор приема заявлений в отделе ЗАГС главного управления юстиции Мингорисполкома&lt;/b&gt; &lt;br /&gt;
+                                                начальник сектора Матиевская Анна Ивановна &lt;br /&gt;
+                                                &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 204 11 15 &lt;br /&gt;
+                                                &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул.Ольшевского, д.12 – отдел ЗАГС &lt;br /&gt;
+                                                &lt;br /&gt;
+                                            &lt;/div&gt;
+                                        &lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr&gt;
+                                        &lt;td&gt;
+                                            &lt;b&gt;Отдел «Контакт-центр»&lt;/b&gt;
+                                            начальник отдела Черник Марина Александровна &lt;br /&gt;
+                                            &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 364 25 83 &lt;br /&gt;
+                                            &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул.М.Танка, д.36, корп.1, каб.7 &lt;br /&gt;
+                                            &lt;br /&gt;
+                                            заместитель начальника отдела Ганбарова Татьяна Григорьевна &lt;br /&gt;
+                                            &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел.366 12 57 &lt;br /&gt;
+                                            &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул.М.Танка, д.36, корп.1, каб.8
+                                        &lt;/td&gt;
+                                    &lt;/tr&gt;
+                                &lt;/tbody&gt;
+                            &lt;/table&gt;
+
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div id="myAdmProcess" class="fullScreen"&gt;
+                    &lt;a href="javascript:void(0)" class="closebtn" onclick="closeAdmProcess()"&gt;&lt;span class="fa fa-close" style="color:rgb(52, 59, 64);"&gt;&lt;/span&gt;&lt;/a&gt;
+                    &lt;div class="fullScreen-content"&gt;
+                        &lt;div class="container"&gt;
+                            &lt;h2 class="title"&gt;Администаративные процедуры&lt;/h2&gt;
+
+                            &lt;div id="carouselExampleControls" class="carousel slide" data-ride="carousel"&gt;
+                                &lt;div class="carousel-inner"&gt;
+                                    &lt;div class="carousel-item active"&gt;
+                                        &lt;img class="d-block w-100" src="~/img/AdmProc/page-1.jpg" alt="First slide"&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="carousel-item"&gt;
+                                        &lt;img class="d-block w-100" src="~/img/AdmProc/page-2.jpg" alt="Second slide"&gt;
+                                    &lt;/div&gt;
+
+                                &lt;/div&gt;
+                                &lt;a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev"&gt;
+                                    &lt;span class="carousel-control-prev-icon" aria-hidden="true"&gt;&lt;/span&gt;
+                                    &lt;span class="sr-only"&gt;Previous&lt;/span&gt;
+                                &lt;/a&gt;
+                                &lt;a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next"&gt;
+                                    &lt;span class="carousel-control-next-icon" aria-hidden="true"&gt;&lt;/span&gt;
+                                    &lt;span class="sr-only"&gt;Next&lt;/span&gt;
+                                &lt;/a&gt;
+                            &lt;/div&gt;
+
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div id="myPersonalReception" class="fullScreen"&gt;
+                    &lt;a href="javascript:void(0)" class="closebtn" onclick="closePersonalReception()"&gt;&lt;span class="fa fa-close" style="color:rgb(52, 59, 64);"&gt;&lt;/span&gt;&lt;/a&gt;
+                    &lt;div class="fullScreen-content"&gt;
+                        &lt;div class="container"&gt;
+                            &lt;h2 class="title"&gt;График работы&lt;/h2&gt;
+                            &lt;p style="text-align:center"&gt;личного приема граждан, юридических лиц, индивидуальных предпринимателей в коммунальном унитарном предприятии «Минское городское агентство обслуживания населения»&lt;/p&gt;
+                            &lt;table class="table"&gt;
+                                &lt;tbody&gt;
+                                    &lt;tr&gt;
+                                        &lt;td&gt;Директор&lt;/td&gt;
+                                        &lt;td&gt;Ефимов Александр Станиславович&lt;/td&gt;
+                                        &lt;td&gt;
+                                            Вторая среда месяца с 08.00 до 13.00 &lt;/br&gt;
+                                            Кабинет № 3
+                                        &lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr&gt;
+                                        &lt;td&gt;Заместитель директора&lt;/td&gt;
+                                        &lt;td&gt;Трушкевич Павел Анатольевич&lt;/td&gt;
+                                        &lt;td&gt;
+                                            Четвертая среда месяца с 08.00 до 13.00 &lt;br /&gt;
+                                            Кабинет № 1
+                                        &lt;/td&gt;
+                                    &lt;/tr&gt;
+                                &lt;/tbody&gt;
+                            &lt;/table&gt;
+                            &lt;p&gt;
+                                &lt;b&gt;Обращаем Ваше внимание&lt;/b&gt;, что &lt;b&gt;предварительная запись на личный прием&lt;/b&gt; осуществляется по телефону
+                                364-66-34 либо в кабинете № 4 ведущим специалистом по делопроизводству при непосредственном обращении гражданина или представителя юридического лица &lt;em&gt;с предъявлением документа, удостоверяющего личность, и документа, подтверждающего служебные полномочия.&lt;/em&gt;
+                            &lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;</value>
+    <comment>Структура, Справочник,Процедуры СЕКЦИЯ  "О ПРЕДПРИЯТИИ"</comment>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Контакты</value>
+    <comment>Название СЕКЦИИ</comment>
+  </data>
+  <data name="Contacts" xml:space="preserve">
+    <value>&lt;div&gt;           
+       &lt;i class="fa fa-map-marker"&gt;&lt;/i&gt;
+       &lt;p&gt; Республика Беларусь,&lt;br&gt;220004, г. Минск,&lt;br/&gt;
+                ул. М.Танка, 36, корп.1, пом. 1Н,
+                 (часть первого этажа) проезд до ст. метро Молодежная&lt;/p&gt;
+&lt;/div&gt;
+ &lt;div&gt;
+         &lt;i class="fa fa-envelope"&gt;&lt;/i&gt;
+         &lt;p&gt; info@mgaon.by &lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+             &lt;i class="fa fa-phone"&gt;&lt;/i&gt;
+              &lt;p&gt;+375 (17) 364 66 34&lt;/p&gt;
+&lt;/div&gt;
+</value>
+    <comment>Контакты СЕКЦИЯ "КОНТАКТЫ"</comment>
+  </data>
+  <data name="OperatingMode" xml:space="preserve">
+    <value>&lt;div&gt;
+             &lt;i class="fa fa-calendar"&gt;&lt;/i&gt;
+              &lt;p&gt;понедельник-четверг: с 8.45 до 18.00 &lt;br/&gt;
+                      пятница: с 8.45 до 16.45 &lt;br/&gt;
+                      обед: с 13.00 до 14.00 &lt;br/&gt;
+                      суббота, воскресенье: выходные
+                &lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+             &lt;i class="fa  fa-university"&gt;&lt;/i&gt;
+             &lt;p&gt;Вышестоящая организация &lt;br \&gt;
+             &lt;a href="https://minsk.gov.by/ru/"&gt;Минский городской исполнительный комитет&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;</value>
+    <comment>Режим работы СЕКЦИЯ "КОНТАКТЫ"</comment>
+  </data>
+</root>

@@ -1,0 +1,172 @@
+﻿ @using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebSite</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="~/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/SectionViewsHome.css" />
+</head>
+<body>
+    <!--Header Section-->
+    <header id="header" class="header-fixed">
+        <div class="container">
+
+            <!--Button Visually Impaired-->
+            <button id="specialButton" class="navbar-eye" href="#">
+                <span class="fa fa-low-vision"></span>
+            </button>
+
+            <div class="row">
+                <div id="logo">
+                    <h1>
+                        <a href="#hero">МГАОН</a>
+                    </h1>
+                </div>
+
+                <!--Button Menu-->
+                <button class="navbar-togglers" onclick="openNav()"> <span class="fa fa-bars"></span> </button>
+
+                <div class="SelectLanguage"> <span> @await Html.PartialAsync("_SelectLanguagePartial")</span> </div>
+
+                <!--Search Section-->
+                <div class="navbar-search" data-bem="{&quot;action&quot;:&quot;https://yandex.ru/search/site/&quot;,&quot;arrow&quot;:true,&quot;bg&quot;:&quot;#ffffff&quot;,&quot;fontsize&quot;:16,&quot;fg&quot;:&quot;#000000&quot;,&quot;language&quot;:&quot;ru&quot;,&quot;logo&quot;:&quot;rb&quot;,&quot;publicname&quot;:&quot;Mgaon.by&quot;,&quot;suggest&quot;:true,&quot;target&quot;:&quot;_self&quot;,&quot;tld&quot;:&quot;ru&quot;,&quot;usebigdictionary&quot;:true,&quot;searchid&quot;:2373846,&quot;input_fg&quot;:&quot;#000000&quot;,&quot;input_bg&quot;:&quot;#ffffff&quot;,&quot;input_fontStyle&quot;:&quot;normal&quot;,&quot;input_fontWeight&quot;:&quot;normal&quot;,&quot;input_placeholder&quot;:&quot;&quot;,&quot;input_placeholderColor&quot;:&quot;#000000&quot;,&quot;input_borderColor&quot;:&quot;#ffffff&quot;}">
+                    <form action="https://yandex.ru/search/site/" method="get" target="_self" accept-charset="utf-8">
+                        <input type="hidden" name="searchid" value="2373846" />
+                        <input type="hidden" name="l10n" value="ru" />
+                        <input type="hidden" name="reqenc" value="" />
+                        <input type="search" name="text" value="" style="border-radius: 10px; border:0" />
+                        <button type="submit" style="color: #fff; font-size: 20px; cursor: pointer; border:0; background-color: rgba(52, 59, 64, 0.0); transition: background 0.5s; border-radius: 10px;">
+                            <span class="fa fa-search"></span>
+                        </button>
+                    </form>
+                </div>
+
+                <style type="text/css">
+                    .ya-page_js_yes .ya-site-form_inited_no {
+                        display: none;
+                    }
+                </style>
+            </div>
+
+            <!--navbar-->
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span class="fa  fa-times"></span></a>
+
+                <div class="overlay-content row">
+                    <div class="col-sm-4">
+                        <br>
+                        <h4>Предприятие</h4>
+                        <a href="#hero" onclick="closeNav()">@Localizer["About"]</a> <br />
+                        <a href="#about" onclick="closeNav()">About Us</a>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <br>
+                        <h4>Услуга</h4>
+                        <a href="#services" onclick="closeNav()">Services</a><br />
+                    </div>
+
+                    <div class="col-sm-4">
+                        <br>
+                        <h4>Справочная иформация</h4>
+                        <a href="#team">Team</a><br />
+                        <a href="#contact">Contact Us</a>
+                        <br>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!--End Header Section-->
+    <!--Hero Section-->
+    <section id="hero">
+        <div class="hero_video-box">
+            <video class="hero_video" autoplay="" muted="" loop="">
+                <source src="../Minsk.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="hero_video_before">
+            <div class="hero-container">
+                <h1>Welcome to Regna</h1>
+                <h2>We are team of talanted designers making websites with Bootstrap</h2>
+
+                <a href="#about" class="btn-get-started">Get Started</a>
+                <a href="#about" class="btn-get-started">Get Started</a>
+            </div>
+        </div>
+    </section>
+    <!--End Hero Section-->
+    <!--Main Section-->
+    <div>
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+    <!-- End Main Section-->
+    <!--Button "BACK_TO_TOP"-->
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!--Footer Section-->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong>Mgaon.by</strong>
+            </div>
+        </div>
+    </footer>
+    <!--End Footer Section-->
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+
+    <!--Для слобовидящих-->
+    <script src="https://lidrekon.ru/slep/js/jquery.js"></script>
+    <script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
+
+    <!--Для яндекс поиск-->
+    <script type="text/javascript">
+        (function (w, d, c) {
+            var s = d.createElement('script'), h = d.getElementsByTagName('script')[0], e = d.documentElement;
+            if ((' ' + e.className + ' ').indexOf(' ya-page_js_yes ') === -1) {
+                e.className += ' ya-page_js_yes';
+            }
+            s.type = 'text/javascript'; s.async = true; s.charset = 'utf-8';
+            s.src = (d.location.protocol === 'https:' ? 'https:' : 'http:') + '//site.yandex.net/v2.0/js/all.js';
+            h.parentNode.insertBefore(s, h); (w[c] || (w[c] = [])).push(function () { Ya.Site.Form.init() })
+        }
+        )
+            (window, document, 'yandex_site_callbacks');
+    </script>
+
+    <environment exclude="Staging,Production">
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/main.js"></script>
+    </environment>
+
+
+
+</body>
+</html>
