@@ -184,8 +184,7 @@
         font-size: 14px;
     }
 
-/* Area Section
---------------------------------*/
+/* -------- Area Section ---------*/
 #area {
     background: #fff;
     background-size: cover;
@@ -305,152 +304,190 @@
 /*---------- News Section ----------*/
 #news {
     background: #fff;
-    padding: 80px 0;
+    padding: 80px 15px 0px 15px;
 }
 
-    #news #news-wrapper {
-        padding-right: 15px;
-    }
-
-    #news .post-wrap {
-        max-width: 1120px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    #news .post-item {
+    #news .post-date {
         padding: 15px;
+        background: rgba(52, 59, 64, 0.9);
         cursor: pointer;
     }
 
-        #news .post-item * {
-            transition: .3s linear;
-        }
-
-    #news .item-content {
-        background: #f7f7f7;
-        padding: 40px;
+    #news .box {
+        padding: 30px 20px 10px 20px;
+        margin-bottom: 50px;
+        border: 1px solid #e6e6e6;
+        position: relative;
+        background: #fafafa;
     }
 
-    #news .item-icon {
-        margin-bottom: 20px;
+    #news .icon {
+        position: absolute;
+        top: -36px;
+        left: calc(50% - 36px);
+        transition: 0.2s;
+        border-radius: 50%;
+        border: 6px solid #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        width: 72px;
+        height: 72px;
+        background: #2dc997;
     }
 
-        #news .item-icon:before {
-            content: "";
-            font-family: FontAwesome;
-            color: #2dca98;
-            font-size: 50px;
-            line-height: 1;
+        #news .icon a {
+            display: inline-block;
         }
 
-        #news .item-icon.photo:before {
-            content: "\f030";
+        #news .icon i {
+            color: #fff;
+            font-size: 24px;
         }
 
-        #news .item-icon.video:before {
-            content: "\f03d";
-        }
-
-        #news .item-icon.gift:before {
-            content: "\f06b";
-        }
-
-        #news .item-icon.group:before {
-            content: "\f0c0";
-        }
-
-        #news .item-icon.tree:before {
-            content: "\f1bb";
-        }
-
-        #news .item-icon.anchor:before {
-            content: "\f13d";
-        }
-
-    #news .post-item:hover .item-icon,
-    .post-item:hover .item-body h3,
-    .post-item:hover .item-body p {
-        transform: translateY(-8px);
+    #news .box:hover .icon {
+        background: #fff;
+        border: 2px solid #2dc997;
     }
 
-    #news .item-body {
-        color: #111;
+        #news .box:hover .icon i {
+            color: #2dc997;
+        }
+
+#news .box:hover .icon a {
+    color: #2dc997;
+}
+
+    #news .title {
+        font-weight: 700;
+        font-size: 18px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+    }
+
+        #news .title a {
+            color: #111;
+        }
+
+    #news .description {
         font-size: 14px;
     }
 
-        #news .item-body h3 {
-            font-weight: 500;
-            margin-bottom: 15px;
-            transition-delay: .05s;
+    #news button[type="button"] {
+        background: #2dc997;
+        border: 0;
+        padding: 10px 24px;
+        color: #fff;
+        transition: 0.4s;
+    }
+
+        #news  button[type="button"]:hover {
+            background: #51d8ad;
         }
 
-        #news.item-body p {
-            transition-delay: .1s;
-        }
-
-    #news .item-footer {
-        padding-top: 15px;
-    }
-
-    #news .link {
-        text-decoration: none;
-        display: inline-block;
-        overflow: hidden;
-        position: relative;
-        padding-right: 30px;
-        font-size: 12px;
-        text-transform: uppercase;
-        font-weight: 600;
-        color: #111;
-    }
-
-        #news .link:before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            bottom: 0;
-            height: .125rem;
-            margin: auto;
-            background: #2dca98;
-            transform: scaleX(.2);
-            transform-origin: left center;
-            z-index: 0;
-            transition: .6s cubic-bezier(.6, .01, 0, 1);
-        }
-
-        #news .link span {
-            display: inline-block;
-            position: relative;
-            transform: translateX(-200%);
-            transition: .6s cubic-bezier(.6, .01, 0, 1);
-        }
-
-    #news .post-item:hover .link span {
-        transform: translateX(0%);
-    }
-
-    #news .post-item:hover .link:before {
-        transform-origin: right center;
-    }
-
-@media (min-width: 768px) {
-    #news .post-item {
-        flex-basis: 50%;
-        flex-shrink: 0;
-    }
+/*------ Trade union organization Section --------*/
+#trade-union-organization {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://yandex.by/images/_crpd/jfKB64l26/66d0e6qhfl3c/j59C2O_Rir2dqH3-4RFed_bfo2mgvD2QzaCSTc8A_KYf10_6D5F_-rGL-7kudf74QRkingoEbQpOZ4a-8BoZ6I7u47iu1K6d2bkcTmFEm6Nz6kYg) fixed center center;
+    background-size: cover;
+    padding: 80px 0;
 }
 
-@media (min-width: 960px) {
-    #news .post-item {
-        flex-basis: 33.333333333%;
+    #trade-union-organization .cta-title {
+        color: #fff;
+        font-size: 28px;
+        font-weight: 700;
     }
-}
+
+    #trade-union-organization .cta-text {
+        color: #fff;
+    }
+
+    #trade-union-organization .table {
    
+        margin-bottom: 1rem;
+        color: #fff;
+    }
+
+        #trade-union-organization .table th,
+        .table td {
+            padding: 0.75rem;
+            vertical-align: top;
+            border-top: 1px solid #dee2e6;
+        }
+
+        #trade-union-organization .table thead th {
+            vertical-align: bottom;
+            border-bottom: 2px solid #dee2e6;
+        }
+
+        #trade-union-organization .table tbody + tbody {
+            border-top: 2px solid #dee2e6;
+        }
+
+    #trade-union-organization .table-sm th,
+    .table-sm td {
+        padding: 0.3rem;
+    }
+
+    #trade-union-organization .table-bordered {
+        border: 1px solid #dee2e6;
+    }
+
+        #trade-union-organization  .table-bordered th,
+        .table-bordered td {
+            border: 1px solid #dee2e6;
+        }
+
+        #trade-union-organization .table-bordered thead th,
+        .table-bordered thead td {
+            border-bottom-width: 2px;
+        }
+
+    #trade-union-organization .table-borderless th,
+    .table-borderless td,
+    .table-borderless thead th,
+    .table-borderless tbody + tbody {
+        border: 0;
+    }
+
+    #trade-union-organization .table-striped tbody tr:nth-of-type(odd) {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    #trade-union-organization .table-hover tbody tr:hover {
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+@media (min-width: 769px) {
+    #trade-union-organization .cta-btn-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+
+#trade-union-organization .cta-btn {
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+    #trade-union-organization .cta-btn:hover {
+        background: #2dc997;
+        border: 2px solid #2dc997;
+    }
 
 /*------ Contact Section --------*/
 #contact {

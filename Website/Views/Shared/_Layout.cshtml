@@ -8,8 +8,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - WebSite</title>
+    <link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.css"  />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link href="~/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/css/site.css" />
     <link rel="stylesheet" href="~/css/SectionViewsHome.css" />
 </head>
@@ -105,6 +105,19 @@
         </div>
     </section>
     <!--End Hero Section-->
+
+
+    <marquee behavior="alternate" scrollamount="5" style="background-color:#f7f7f7">
+        <div class="row">
+            <div class="circle">
+                <a href=""><img src="~/img/Реклама/Безымянный.png" /></a>
+            </div>
+            <div class="circle">
+                <a href=""><img src="~/img/Реклама/Безымянный1.png" /> </a>
+            </div>
+        </div>
+    </marquee>
+
     <!--Main Section-->
     <div>
         <main role="main">
@@ -160,13 +173,9 @@
             (window, document, 'yandex_site_callbacks');
     </script>
 
-    <environment exclude="Staging,Production">
-        <script src="~/lib/jquery/dist/jquery.min.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="~/js/main.js"></script>
-    </environment>
-
-
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/main.js"></script>
 
 </body>
 </html>
