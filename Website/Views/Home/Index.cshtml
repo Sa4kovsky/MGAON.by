@@ -1,338 +1,743 @@
 ﻿@using Microsoft.AspNetCore.Mvc.Localization
 @inject IViewLocalizer Localizer
+@model IEnumerable<Website.Models.ModelsView.IndexView>
 
-    <main id="main">
-        <!--============
+<main id="main">
+    <!--============
        Advertising
     ==================-->
-        <!--#advertising-->
-        <!--==========================
+    <!--#advertising-->
+    <!--==========================
       About Us Section
     ============================-->
-        <section id="about" style="padding:80px 0 20px 0">
-            <div class="container">
-                <div class="row about-container">
-                    <div class="content order-lg-1 order-2">
-                        @Localizer["About"]
-                    </div>
+    <section id="about" style="padding:80px 0 20px 0">
+        <div class="container">
+            <div class="row about-container">
+                <div class="content order-lg-1 order-2">
+                    @Localizer["About"]
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="services" style="padding: 20px 0 80px 0">
-            <div class="container">
-                @Localizer["AboutAddition"]
-            </div>
-        </section><!-- #services -->
-        <!-- #about -->
-        <!--==========================
-      Facts Section
-    ============================-->
-        <section id="facts">
-            <div class="container">
-                <div class="section-header">
-                    <h3 class="section-title">Факты</h3>
-                    <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-                </div>
-                <div class="row counters">
-
-                    <div class="col-lg-2 col-6 text-center">
-                        <span>232</span>
-                        <p>Клиенты</p>
-                    </div>
-
-                    <div class="col-lg-2 col-6 text-center">
-                        <span>521</span>
-                        <p>Юр.лица</p>
-                    </div>
-
-                    <div class="col-lg-2 col-6 text-center">
-                        <span>1,463</span>
-                        <p>Физики</p>
-                    </div>
-
-                    <div class="col-lg-2 col-6 text-center">
-                        <span>15</span>
-                        <p>Адм. юр</p>
-                    </div>
-
-                    <div class="col-lg-2 col-6 text-center">
-                        <span>12</span>
-                        <p>Адм. физики</p>
-                    </div>
-
-                    <div class="col-lg-2 col-6 text-center">
-                        <span>107</span>
-                        <p>Персонал</p>
-                    </div>
-                </div>
-            </div>
-        </section><!-- #facts -->
-        <!--==========================
-      Area Section
-    ============================-->
-        <section id="area">
-            <div class="container">
-                <div class="section-header">
-                    <h3 class="section-title">Окна</h3>
-                    <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="box">
-                            <div class="icon"><a href="https://minsk.gov.by/ru/org/5171/"><i>1</i></a></div>
-                            <h4 class="title"><a href="https://minsk.gov.by/ru/org/5171/">Заводского</a></h4>
-                            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="box">
-                            <div class="icon"><a href="https://minsk.gov.by/ru/org/5184/"><i>2</i></a></div>
-                            <h4 class="title"><a href="https://minsk.gov.by/ru/org/5184/">Ленинскго</a></h4>
-                            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="box">
-                            <div class="icon"><a href="https://minsk.gov.by/ru/org/5170/"><i>3</i></a></div>
-                            <h4 class="title"><a href="https://minsk.gov.by/ru/org/5170/">Московского</a></h4>
-                            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="box">
-                            <div class="icon"><a href="https://minsk.gov.by/ru/org/5189/"><i>4</i></a></div>
-                            <h4 class="title"><a href="https://minsk.gov.by/ru/org/5189/">Октябрьского</a></h4>
-                            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="box">
-                            <div class="icon"><a href="https://minsk.gov.by/ru/org/5161/"><i>5</i></a></div>
-                            <h4 class="title"><a href="https://minsk.gov.by/ru/org/5161/">Партизанского</a></h4>
-                            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="box">
-                            <div class="icon"><a href="https://minsk.gov.by/ru/org/5141/"><i>6</i></a></div>
-                            <h4 class="title"><a href="https://minsk.gov.by/ru/org/5141/">Первомайского</a></h4>
-                            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="box">
-                            <div class="icon"><a href="https://minsk.gov.by/ru/org/5109/"><i>7</i></a></div>
-                            <h4 class="title"><a href="https://minsk.gov.by/ru/org/5109/">Советского</a></h4>
-                            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="box">
-                            <div class="icon"><a href="https://minsk.gov.by/ru/org/5088/"><i>8</i></a></div>
-                            <h4 class="title"><a href="https://minsk.gov.by/ru/org/5088/">Фрунзенского</a></h4>
-                            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="box">
-                            <div class="icon"><a href="https://minsk.gov.by/ru/org/5147/"><i>9</i></a></div>
-                            <h4 class="title"><a href="https://minsk.gov.by/ru/org/5147/">Центрального</a></h4>
-                            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 offset-lg-6 offset-md-4 col-sm-6">
-                        <div class="box">
-                            <div class="icon"><a href="https://minsk.gov.by/ru/org/5194/"><i>10</i></a></div>
-                            <h4 class="title"><a href="https://minsk.gov.by/ru/org/5194/">МГИК</a></h4>
-                            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section><!-- #team -->
-        <!--==========================
-    Call-Center Section
-    ============================-->
-        <section id="call-to-action">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-9 text-center text-lg-left">
-                        <h3 class="cta-title">«Контакт-центр»</h3>
-                        <p class="cta-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                    <div class="col-lg-3 cta-btn-container text-center">
-                        <a class="cta-btn align-middle" href="#">Call To Action</a>
-                    </div>
-                </div>
-            </div>
-        </section><!-- #call-to-action -->
-        <!--==========================
-      News Section
-    ============================-->
-        <section id="news">
-            <div class="container">
-                <div class="section-header">
-                    <h3 class="section-title">Новости</h3>
-                    <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-                </div>
-            </div>
-
+    <section id="services" style="padding: 20px 0 80px 0">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-1"></div>
-                <div class="col-lg-2 col-md-4 col-sm-6">
-                    <div class="post-date"> <h4 style="color:white; margin: 0px">Пн.</h4>  <h6 style="text-align:right; color:white; margin: 0px">01/02/2019</h6></div>
-                    <br />
+                <div class="col-lg-3 col-md-6">
                     <div class="box">
-                        <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
-                        <h6 style="text-align:right; margin: 0px">09:00 - 13:00</h6>
-                        <h4 class="title" style="margin:0px">Тема:</h4> О газификации жилого фонда поселков и деревень в рамках Указов Президента РБ № 72 и № 368
+                        <div class="icon"><span onclick="openEnterpriseStructure()"><i class="fa fa-desktop"></i></span></div>
+                        <h4 class="title"><span onclick="openEnterpriseStructure()">Структура предприятия</span></h4>
+                        <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="box">
+                        <div class="icon"><span onclick="openPhoneStructure()"><i class="fa fa-bar-chart"></i></span></div>
+                        <h4 class="title"><span>Тел. справочник</span></h4>
+                        <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="box">
+                        <div class="icon"><span onclick="openAdmProcess()"><i class="fa fa-paper-plane"></i></span></div>
+                        <h4 class="title"><span>Адм. процедуры</span></h4>
+                        <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="box">
+                        <div class="icon"><span onclick="openPersonalReception()"><i class="fa  fa-users"></i></span></div>
+                        <h4 class="title"><span>График работ</span></h4>
+                        <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                    </div>
+                </div>
+            </div>
 
-                        <p class="description" style="margin: 20px 0px 0px 0px">
-                            <b>Исполнитель:</b> УП «Мингаз»
-                            <br /> <br />
-                            <b>Представитель исполнителя - Самусенко Артур Владимирович</b>
-                            <br />
-                            Начальник управления капитального строительства УП «Мингаз»
+            <div id="myEnterpriseStructure" class="fullScreen">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeEnterpriseStructure()"><span class="fa fa-close" style="color:rgb(52, 59, 64);"></span></a>
+                <div class="fullScreen-content">
+                    <div class="container">
+                        <h2 class="title">Структура предприятия</h2>
+                        <img src="/img/СтруктураРус.jpg" />
+                    </div>
+                </div>
+            </div>
+
+            <div id="myPhoneStructure" class="fullScreen">
+                <a href="javascript:void(0)" class="closebtn" onclick="closePhoneStructure()"><span class="fa fa-close" style="color:rgb(52, 59, 64);"></span></a>
+                <div class="fullScreen-content">
+                    <div class="container">
+                        <h2 class="title">Телефонный справочник</h2>
+                        <table class="table table-hover" style="text-align:left">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <b>Директор</b> <br />
+                                        Ефимов Александр Станиславович <br />
+                                        <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 394 49 24 <br />
+                                        <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул.М.Танка, д.36, корп.1, каб.3
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Заместитель директора</b> <br />
+                                        Трушкевич Павел Анатольевич <br />
+                                        <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 364 19 13 <br />
+                                        <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул.М.Танка, д.36, корп.1, каб.1
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Заместитель директор – начальник общего отдела</b> <br />
+                                        Данько Елена Георгиевна <br />
+                                        <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 364 26 12 <br />
+                                        <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул.М.Танка, д.36, корп.1, каб.1
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Сектор бухгалтерского учета и отчетности</b> <br />
+                                        главный бухгалтер Шипова Людмила Викторовна <br />
+                                        <i class="fa fa-phone" style="color: #2dc997;"></i> тел 364 25 78 <br />
+                                        <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул.М.Танка, д.36, корп.1, каб.6
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Планово-экономический сектор</b> <br />
+                                        начальник сектора Ступчик Оксана Васильевна <br />
+                                        <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 393 16 47 <br />
+                                        <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул.М.Танка, д.36, корп.1, каб.4
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Общий отдел</b>  <br />
+                                        заведующий хозяйством Пантелеенко Леонид Алексеевич <br />
+                                        <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 347 16 27 <br />
+                                        <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул.М.Танка, д.36, корп.1, каб.7 <br />
+                                        <br />
+                                        ведущий юрисконсульт Трацевский Александр Викторович <br />
+                                        <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 364 26 02 <br />
+                                        <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул.М.Танка, д.36, корп.1, каб.1 <br />
+                                        <br />
+                                        ведущий специалист по кадрам Лебедева Ирина Владимировна <br />
+                                        <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 364 65 92 <br />
+                                        <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул.М.Танка, д.36, корп.1, каб.1 <br />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Управление сопровождения электронных баз данных «Одно окно»</b>  <br />
+                                        начальник управления Пожиток Нелли Константиновна  <br />
+                                        <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 316 26 03  <br />
+                                        <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул.М.Танка, д.36, корп.1, каб.5  <br />
+                                        <br />
+                                        заместитель начальника управления Нечаева Ольга Владимировна  <br />
+                                        <i class="fa fa-phone" style="color: #2dc997;"></i> тел.243 08 59  <br />
+                                        <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул.М.Танка, д.36, корп.1, каб.5  <br />
+                                        <br />
+                                        <div style="padding-left:40px">
+                                            <b>Отдел № 1 Заводского района</b> <br />
+                                            начальник отдела Бойправ Наталья Александровна <br />
+                                            <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 389 26 82 <br />
+                                            <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул. Жилуновича, д.17 – служба «одно окно» <br />
+                                            <br />
+                                            <b>Отдел № 2 Ленинского района</b> <br />
+                                            начальник отдела Губоревич Анна Владимировна <br />
+                                            <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 223 00 27 <br />
+                                            <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул.Маяковского, д.83 – служба «одно окно» <br />
+                                            <br />
+                                            <b>Отдел № 3 Московского района</b> <br />
+                                            начальник отдела Ившина Марина Валерьевна <br />
+                                            <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 200 62 45 <br />
+                                            <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: просп. Дзержинского, д.10, каб.439 – служба «одно окно» <br />
+                                            <br />
+                                            <div style="padding-left:40px">
+                                                <b>Сектор № 1</b> <br />
+                                                начальник сектора Саливончик Алла Михайловна  <br />
+                                                <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 200 66 26  <br />
+                                                <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: просп. Дзержинского, д.10, каб.103  <br />
+                                                <br />
+                                                <b>Сектор № 2</b> <br />
+                                                начальник сектора Ширяева Татьяна Алексеевна  <br />
+                                                <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 376 84 70 <br />
+                                                <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: просп. газеты Правда, д.29, каб.4  <br />
+                                                <br />
+                                            </div>
+                                            <b>Отдел № 4 Октябрьского района</b> <br />
+                                            начальник отдела Бычковская Светлана Викторовна <br />
+                                            <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 222 13 95 <br />
+                                            <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул. Чкалова, д.6, каб.108 – служба «одно окно» <br />
+                                            <br />
+                                            <b>Отдел № 5 Партизанского района</b> <br />
+                                            начальник отдела Бакумова Марина Антоновна <br />
+                                            <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 294 18 52 <br />
+                                            <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул.Захарова, д.53 – служба «одно окно» <br />
+                                            <br />
+                                            <div style="padding-left:40px">
+                                                <b>Сектор № 1</b> <br />
+                                                начальник сектора Прудцева Светлана Ивановна  <br />
+                                                <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 369 25 65  <br />
+                                                <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул.О.Кошевого, д.27а – отдел ЗАГС  <br />
+                                                <br />
+                                            </div>
+                                            <b>Отдел № 6 Первомайского района</b> <br />
+                                            начальник отдела Черник Ирина Жоржевна <br />
+                                            <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 280 75 89 <br />
+                                            <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: пер. К.Чорного, д.5 – служба «одно окно» <br />
+                                            <br />
+                                            <div style="padding-left:40px">
+                                                <b>Сектор № 1</b> <br />
+                                                начальник сектора Биченкова Наталья Александровна <br />
+                                                <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 215 27 20 <br />
+                                                <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: пер. К.Чорного, д.5, каб. 220 <br />
+                                                <br />
+                                            </div>
+                                            <b>Отдел № 7 Советского района</b> <br />
+                                            начальник отдела Белаш Алла Викторовна <br />
+                                            <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 292 24 22 <br />
+                                            <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул.Дорошевича, д.8 – служба «одно окно» <br />
+                                            <br />
+                                            <div style="padding-left:40px">
+                                                <b>Сектор № 1</b> <br />
+                                                начальник сектора Гришина Светлана Владимировна <br />
+                                                <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 354 05 94 <br />
+                                                <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул. Веры Хоружей. д.24, корп. 1, каб. 10 <br />
+                                                <br />
+                                            </div>
+                                            <b>Отдел № 8 Фрунзенского района</b> <br />
+                                            начальник отдела Антонова Ольга Анатольевна <br />
+                                            <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 204 01 61 <br />
+                                            <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул. Кальварийская, д.39 – служба «одно окно» <br />
+                                            <br />
+                                            <div style="padding-left:40px">
+                                                <b>Сектор № 1</b> <br />
+                                                начальник сектора Воронцова Люция Михайловна <br />
+                                                <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 254 92 63 <br />
+                                                <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул. Нёманская, д.22 – служба «одно окно» <br />
+                                                <br />
+                                                <b>Сектор № 2</b> <br />
+                                                начальник сектора Волчок Мария Александровна <br />
+                                                <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 204 78 06 <br />
+                                                <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул. Кальварийская, д.39 – служба «одно окно» <br />
+                                                <br />
+                                                <b>Сектор № 3</b> <br />
+                                                начальник сектора Новак Инга Валерьевна <br />
+                                                <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 358 09 40 <br />
+                                                <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: просп. Пушкина, д.55 – служба «одно окно» <br />
+                                                <br />
+                                            </div>
+                                            <b>Отдел № 9 Центрального района</b> <br />
+                                            начальник отдела Рогачева Татьяна Николаевна <br />
+                                            <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 306 40 03 <br />
+                                            <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул.Мельникайте, д.6 – служба «одно окно» <br />
+                                            <br />
+                                            <b>Отдел информационного обслуживания службы «Одно окно» Мингорисполкома</b> <br />
+                                            начальник отдела Матеша Ирина Николаевна <br />
+                                            <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 218 00 74 <br />
+                                            <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: просп. Независимости, д.8 – служба «одно окно» <br />
+                                            <br />
+                                            <b>Отдел ведения баз данных в Главном управлении юстиции Мингорисполкома</b> <br />
+                                            начальник отдела Миронюк Татьяна Викторовна <br />
+                                            <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 308 23 83 <br />
+                                            <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: просп.Пушкина, д.42, каб. 104 <br />
+                                            <br />
+                                            <b>Сектор приема заявлений в отделе ЗАГС главного управления юстиции Мингорисполкома</b> <br />
+                                            начальник сектора Матиевская Анна Ивановна <br />
+                                            <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 204 11 15 <br />
+                                            <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул.Ольшевского, д.12 – отдел ЗАГС <br />
+                                            <br />
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Отдел «Контакт-центр»</b>
+                                        начальник отдела Черник Марина Александровна <br />
+                                        <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 364 25 83 <br />
+                                        <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул.М.Танка, д.36, корп.1, каб.7 <br />
+                                        <br />
+                                        заместитель начальника отдела Ганбарова Татьяна Григорьевна <br />
+                                        <i class="fa fa-phone" style="color: #2dc997;"></i> тел.366 12 57 <br />
+                                        <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул.М.Танка, д.36, корп.1, каб.8
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="myAdmProcess" class="fullScreen">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeAdmProcess()"><span class="fa fa-close" style="color:rgb(52, 59, 64);"></span></a>
+                <div class="fullScreen-content">
+                    <div class="container">
+                        <h2 class="title">Администаративные процедуры</h2>
+
+                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="~/img/AdmProc/page-1.jpg" alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="~/img/AdmProc/page-2.jpg" alt="Second slide">
+                                </div>
+
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="myPersonalReception" class="fullScreen">
+                <a href="javascript:void(0)" class="closebtn" onclick="closePersonalReception()"><span class="fa fa-close" style="color:rgb(52, 59, 64);"></span></a>
+                <div class="fullScreen-content">
+                    <div class="container">
+                        <h2 class="title">График работы</h2>
+                        <p style="text-align:center">личного приема граждан, юридических лиц, индивидуальных предпринимателей в коммунальном унитарном предприятии «Минское городское агентство обслуживания населения»</p>
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>Директор</td>
+                                    <td>Ефимов Александр Станиславович</td>
+                                    <td>
+                                        Вторая среда месяца с 08.00 до 13.00 </br>
+                                        Кабинет № 3
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Заместитель директора</td>
+                                    <td>Трушкевич Павел Анатольевич</td>
+                                    <td>
+                                        Четвертая среда месяца с 08.00 до 13.00 <br />
+                                        Кабинет № 1
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>
+                            <b>Обращаем Ваше внимание</b>, что <b>предварительная запись на личный прием</b> осуществляется по телефону
+                            364-66-34 либо в кабинете № 4 ведущим специалистом по делопроизводству при непосредственном обращении гражданина или представителя юридического лица <em>с предъявлением документа, удостоверяющего личность, и документа, подтверждающего служебные полномочия.</em>
                         </p>
                     </div>
                 </div>
             </div>
-            <!-- Кнопка архива-->
-            <div class="text-center" style="padding:20px">
-                <button type="button" data-toggle="collapse" data-target="#multiCollapseExample1" aria-expanded="false">Архив</button>
+            <!-- @Localizer["AboutAddition"]  -->
+        </div>
+    </section><!-- #services -->
+    <!-- #about -->
+    <!--==========================
+      Facts Section
+    ============================-->
+    <section id="facts">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="section-title">Факты</h3>
+                <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
             </div>
-            <!-- Архива-->
-            <div class="collapse" id="multiCollapseExample1" style="padding:0">
-                <div class="card card-body" style="border:0; padding:0;">
-                    <!-- По дням недели -->
+            <div class="row counters">
 
+                <div class="col-lg-2 col-6 text-center">
+                    <span>232</span>
+                    <p>Клиенты</p>
+                </div>
 
+                <div class="col-lg-2 col-6 text-center">
+                    <span>521</span>
+                    <p>Юр.лица</p>
+                </div>
+
+                <div class="col-lg-2 col-6 text-center">
+                    <span>1,463</span>
+                    <p>Физики</p>
+                </div>
+
+                <div class="col-lg-2 col-6 text-center">
+                    <span>15</span>
+                    <p>Адм. юр</p>
+                </div>
+
+                <div class="col-lg-2 col-6 text-center">
+                    <span>12</span>
+                    <p>Адм. физики</p>
+                </div>
+
+                <div class="col-lg-2 col-6 text-center">
+                    <span>107</span>
+                    <p>Персонал</p>
                 </div>
             </div>
-        </section><!-- #news -->
-        <!--==========================
+        </div>
+    </section><!-- #facts -->
+    <!--==========================
+      Area Section
+    ============================-->
+    <section id="area" name="area">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="section-title">Окна</h3>
+                <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="box">
+                        <div class="icon"><a href="https://minsk.gov.by/ru/org/5171/"><i>1</i></a></div>
+                        <h4 class="title"><a href="https://minsk.gov.by/ru/org/5171/">Заводского</a></h4>
+                        <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="box">
+                        <div class="icon"><a href="https://minsk.gov.by/ru/org/5184/"><i>2</i></a></div>
+                        <h4 class="title"><a href="https://minsk.gov.by/ru/org/5184/">Ленинскго</a></h4>
+                        <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="box">
+                        <div class="icon"><a href="https://minsk.gov.by/ru/org/5170/"><i>3</i></a></div>
+                        <h4 class="title"><a href="https://minsk.gov.by/ru/org/5170/">Московского</a></h4>
+                        <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="box">
+                        <div class="icon"><a href="https://minsk.gov.by/ru/org/5189/"><i>4</i></a></div>
+                        <h4 class="title"><a href="https://minsk.gov.by/ru/org/5189/">Октябрьского</a></h4>
+                        <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="box">
+                        <div class="icon"><a href="https://minsk.gov.by/ru/org/5161/"><i>5</i></a></div>
+                        <h4 class="title"><a href="https://minsk.gov.by/ru/org/5161/">Партизанского</a></h4>
+                        <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="box">
+                        <div class="icon"><a href="https://minsk.gov.by/ru/org/5141/"><i>6</i></a></div>
+                        <h4 class="title"><a href="https://minsk.gov.by/ru/org/5141/">Первомайского</a></h4>
+                        <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="box">
+                        <div class="icon"><a href="https://minsk.gov.by/ru/org/5109/"><i>7</i></a></div>
+                        <h4 class="title"><a href="https://minsk.gov.by/ru/org/5109/">Советского</a></h4>
+                        <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="box">
+                        <div class="icon"><a href="https://minsk.gov.by/ru/org/5088/"><i>8</i></a></div>
+                        <h4 class="title"><a href="https://minsk.gov.by/ru/org/5088/">Фрунзенского</a></h4>
+                        <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="box">
+                        <div class="icon"><a href="https://minsk.gov.by/ru/org/5147/"><i>9</i></a></div>
+                        <h4 class="title"><a href="https://minsk.gov.by/ru/org/5147/">Центрального</a></h4>
+                        <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 offset-lg-6 offset-md-4 col-sm-6">
+                    <div class="box">
+                        <div class="icon"><a href="https://minsk.gov.by/ru/org/5194/"><i>10</i></a></div>
+                        <h4 class="title"><a href="https://minsk.gov.by/ru/org/5194/">МГИК</a></h4>
+                        <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- #team -->
+    <!--==========================
+    Call-Center Section
+    ============================-->
+    <section id="call-to-action">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 text-center text-lg-left">
+                    <h3 class="cta-title">«Контакт-центр»</h3>
+                    <p class="cta-text"> Отдел «Контакт-центр» является структурным подразделением КУП «Минское городское агентство обслуживания населения», обеспечивающим предоставление услуг справочно-информационного характера на безвозмездной основе по телефонному номеру 142 и работу «горячей линии» председателя Мингорисполкома. </p>
+                </div>
+                <div class="col-lg-3 cta-btn-container text-center">
+                    <a class="cta-btn align-middle" href="#call-to-action" onclick="openCollCenter()">Подробнее</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="myCollCenter" class="fullScreen">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeCollCenter()"><span class="fa fa-close" style="color:rgb(52, 59, 64);"></span></a>
+            <div class="fullScreen-content">
+                <div class="container" style="text-align:left">
+                    <h2 class="title" style="text-align:center">Об отделе «Контакт-центр»</h2>
+                    <p>
+                        Отдел «Контакт-центр» является структурным подразделением КУП «Минское городское агентство обслуживания населения», обеспечивающим предоставление услуг справочно-информационного характера на безвозмездной основе по телефонному номеру 142 и работу «горячей линии» председателя Мингорисполкома.
+                        <br />
+                        <b>Отдел выполняет также иные задачи:</b>
+                    </p>
+                    <div class="icon-box">
+                        <div class="icon"><i class="fa  fa-bullhorn"></i></div>
+                        <p class="description">организация и проведение тематических дней информирования населения по различным актуальным вопросам, входящим в компетенцию Мингорисполкома, его структурных подразделений, администраций районов, организаций коммунальной собственности г.Минска, с участием городских и республиканских СМИ;</p>
+                    </div>
+
+                    <div class="icon-box">
+                        <div class="icon"><i class="fa fa-line-chart"></i></div>
+                        <p class="description">количественный и тематический анализ звонков и других запросов, поступивших в справочно-информационную службу «Контакт-центр» и на «горячую линию» председателя Мингорисполкома;</p>
+                    </div>
+
+                    <div class="icon-box">
+                        <div class="icon"><i class="fa Example of exclamation-triangle fa-exclamation-triangle"></i></div>
+                        <p class="description">информирование Мингорисполкома об обнаруженных при оказании услуг ошибках и неточностях в контактной информации, размещаемой на Интернет-страницах и сайтах структурных подразделений Мингорисполкома, администраций районов, организаций коммунальной собственности г.Минска;</p>
+                    </div>
+
+                    <div class="icon-box">
+                        <div class="icon"><i class="fa fa-handshake-o"></i></div>
+                        <p class="description">организация в средствах массовой информации тематических рубрик, сюжетов, публикаций, размещения на официальном Интернет-портале Мингорисполкома информации о работе с населением справочно-информационной службы «Контакт-центр» и «горячей линии» председателя Мингорисполкома.</p>
+                    </div>
+                    <p>
+                        <b>Справочно-информационная служба «Контакт-центр» Мингорисполкома</b>
+                        <br />
+                        По короткому телефонному номеру 142 предоставляется населению справочная информация:
+                        <ul>
+                            <li>об административных процедурах, прием и выдача документов по которым осуществляется через службу «одно окно» Мингорисполкома и администраций районов г. Минска;</li>
+                            <li>поиск и выдача оперативной информации по документам, направленным в Минский горисполком гражданами и юридическими лицами, органами государственного управления, посредством автоматизированной системы управления документооборотом Мингорисполкома;</li>
+                            <li>о письменных и электронных обращениях граждан и юридических лиц, поступивших в Мингорисполком;</li>
+                            <li>о графике приема и порядке записи на личный прием к руководству Мингорисполкома и его структурных подразделений;</li>
+                            <li>информирование о порядке решения проблем граждан по вопросам, входящим в компетенцию Мингорисполкома, его структурных подразделений, администраций районов, организаций коммунальной собственности г.Минска;</li>
+                            <li>об адресах, номерах телефонов, режиме работы Мингорисполкома, его структурных подразделений, городских служб, администраций районов г.Минска;</li>
+                            <li>информирование по прочим вопросам в соответствии с договорными обязательствами Предприятия.</li>
+                        </ul>
+                    </p>
+                    <p>Справочная информация по телефону 142 предоставляется бесплатно.</p>
+                    <p>Звонок со стационарного телефона – по тарифам РУП «Белтелеком»,с мобильного телефона (<em>life</em>, <em>velcom/А1</em>, MTC) – по тарифам операторов связи.</p>
+                    <p>
+                        <b>«Горячая линия» председателя Мингорисполкома</b>
+                    </p>
+                    <p>
+                        Работа «горячей линии» председателя Мингорисполкома осуществляется в соответствия с постановлением Совета Министров Республики Беларусь от 23 июля 2012 г. № 667 «О некоторых вопросах работы с обращениями граждан и юридических лиц». (оставляем гиперссылку на нпа)
+                    </p>
+                    <p>
+                        Граждане и юридические лица обращаются по телефону на «горячую линию» председателя Мингорисполкома по вопросам справочно-консультационного характера, связанным с деятельностью Мингорисполкома и его структурных подразделений. <br>
+                        <b>Обращения, которые поступили на «горячую линию» председателя Мингорисполкома, не подлежат регистрации.</b><br>
+                        «Горячая линия» председателя Мингорисполкома отвечает на звонки в будние дни <b>с 9.00 до 13.00</b> по телефону <b>328-55-66</b>.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section><!-- #call-to-action -->
+    <!--==========================
+      News Section
+    ============================-->
+    <section id="news">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="section-title">Новости</h3>
+                <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="post-date"> <h4 style="color:white; margin: 0px">Пн.</h4>  <h6 style="text-align:right; color:white; margin: 0px">01/02/2019</h6></div>
+                <br />
+
+                <div class="box">
+                    <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
+                    <h6 style="text-align:right; margin: 0px">     <!--DateStart.ToShortTimeString() - DateFinish.ToShortTimeString() --></h6>
+                    <h4 class="title" style="margin:0px">Тема:</h4>     <!-- .Title -->
+                    <p class="description" style="margin: 20px 0px 0px 0px">
+                        <b>Исполнитель:</b>     <!--Name -->
+                        <br /> <br />
+                        <b>Представитель исполнителя -     <!-- Organization --></b>
+                        <br />
+                        <!--Position -->
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <!-- Кнопка архива и график-->
+        <div class="text-center" style="padding:20px">
+            <button type="button" data-toggle="collapse" data-target="#multiCollapseExample1" aria-expanded="false">Архив</button>
+            <button type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false">График проведения тематических дней информирования</button>
+        </div>
+        <!-- Архива-->
+        <div class="collapse" id="multiCollapseExample1" style="padding:0">
+            <div class="card card-body" style="border:0; padding:0;">
+                <!-- По дням недели -->
+
+
+            </div>
+        </div>
+        <!-- График информирования-->
+        <div class="collapse container" id="multiCollapseExample2" style="padding:0">
+            <div class="card card-body" style="border:0; padding:0;">
+                <div class="text-center">
+                    <b>
+                        График проведения тематических дней информирования населения <br />
+                        в cправочно-информационной службе «Контакт-центр» Мингорисполкома (тел. 142)
+                    </b>
+                </div>
+                <table class="table table-hover home-content table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Дата, время проведения</th>
+                            <th class="text-center">Тема дня информирования</th>
+                            <th class="text-center">Ответственный исполнитель</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.NewsTable.DateTime
+                                <td>@item.NewsTable.Name
+                                <td>@item.NewsTable.Executor
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section><!-- #news -->
+    <!--==========================
      Trade union organization Section
     ============================-->
-        <section id="trade-union-organization">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-9 text-center text-lg-left">
-                        <h3 class="cta-title">«Профсоюз работников местной промышленностии коммунально-бытовых предприятий»</h3>
-                        <p class="cta-text">
-                            Первичная профсоюзная организация коммунального унитарного предприятия «Минское городское агентство обслуживания населения» образована в июле 2016 г.
-                            <table class="table table-hover">
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            Председатель профкома
-                                        </td>
-                                        <td>
-                                            Черник Марина Александровна <br />
-                                            тел. 364 25 83
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Заместитель председателя
-                                        </td>
-                                        <td>
-                                            Ившина Марина Валерьевна
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Казначей
-                                        </td>
-                                        <td>
-                                            Коземирова Марина Ивановна
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Члены профкома
-                                        </td>
-                                        <td>
-                                            Нечаева Ольга Владимировна, <br />
-                                            Пантелеенко Леонид Алексеевич
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </p>                      
-                                         
-                    </div>
-                    <div class="col-lg-3 cta-btn-container text-center">
-                        <a class="cta-btn align-middle" href="#">Call To Action</a>
-                    </div>
+    <section id="trade-union-organization">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 text-center text-lg-left">
+                    <h3 class="cta-title">«Профсоюз работников местной промышленностии коммунально-бытовых предприятий»</h3>
+                    <p class="cta-text">
+                        Первичная профсоюзная организация коммунального унитарного предприятия «Минское городское агентство обслуживания населения» образована в июле 2016 г.
+                        <table class="table table-hover">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Председатель профкома
+                                    </td>
+                                    <td>
+                                        Черник Марина Александровна <br />
+                                        тел. 364 25 83
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Заместитель председателя
+                                    </td>
+                                    <td>
+                                        Ившина Марина Валерьевна
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Казначей
+                                    </td>
+                                    <td>
+                                        Коземирова Марина Ивановна
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Члены профкома
+                                    </td>
+                                    <td>
+                                        Нечаева Ольга Владимировна, <br />
+                                        Пантелеенко Леонид Алексеевич
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </p>
+
+                </div>
+                <div class="col-lg-3 cta-btn-container text-center">
+                    <a class="cta-btn align-middle" href="#">Call To Action</a>
                 </div>
             </div>
-        </section><!-- #call-to-action -->
-        <!--==========================
+        </div>
+    </section><!-- #call-to-action -->
+    <!--==========================
       Contact Section
     ============================-->
-        <section id="contact" style="padding: 80px 0 20px 0">
-            <div class="container">
-                <div class="section-header" style="padding: 0 0 20px 0">
-                    <h3 class="section-title">@Localizer["Contact"]</h3>
-                    <!--<p class="section-description"></p>-->
-                </div>
+    <section id="contact" style="padding: 80px 0 20px 0">
+        <div class="container">
+            <div class="section-header" style="padding: 0 0 20px 0">
+                <h3 class="section-title">@Localizer["Contact"]</h3>
+                <!--<p class="section-description"></p>-->
             </div>
+        </div>
 
-            <!-- Яндекс карта -->
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adf019a8b5489213833c8fd43d62922df57bf4d02380de8844d902a0699febcc3&amp;width=100%25&amp;height=546&amp;lang=ru_RU&amp;scroll=true"></script>
+        <!-- Яндекс карта -->
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adf019a8b5489213833c8fd43d62922df57bf4d02380de8844d902a0699febcc3&amp;width=100%25&amp;height=546&amp;lang=ru_RU&amp;scroll=true"></script>
 
-            <div class="container" style="padding: 40px;">
-                <div class="row">
-                    <div class="col-lg-3 col-md-4">
-                        <!--Контакты-->
-                        <div class="info">
-                            @Localizer["Contacts"]
-                        </div>
-                    </div>
-
-                    <!--Обратная связь-->
-                    <div class="col-lg-6 col-md-8">
-                        <div class="form">
-                            <div id="sendmessage">Your message has been sent. Thank you!</div>
-                            <div id="errormessage"></div>
-                            <form action="" method="post" role="form" class="contactForm">
-                                <div class="form-group">
-                                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                                    <div class="validation"></div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                                    <div class="validation"></div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                                    <div class="validation"></div>
-                                </div>
-                                <div class="form-group">
-                                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                                    <div class="validation"></div>
-                                </div>
-                                <div class="text-center" style="padding:20px"><button type="submit">Send Message</button></div>
-                            </form>
-                        </div>
-                    </div>
-
-                    <!--Режим работы-->
-                    <div class="col-lg-3 col-md-4">
-                        <div class="info">
-                            @Localizer["OperatingMode"]
-                        </div>
+        <div class="container" style="padding: 40px;">
+            <div class="row">
+                <div class="col-lg-3 col-md-4">
+                    <!--Контакты-->
+                    <div class="info">
+                        @Localizer["Contacts"]
                     </div>
                 </div>
 
-            </div>
-        </section><!-- #contact -->
+                <!--Обратная связь-->
+                <div class="col-lg-6 col-md-8">
+                    <div class="form">
+                        <div id="sendmessage">Your message has been sent. Thank you!</div>
+                        <div id="errormessage"></div>
+                        <form action="" method="post" role="form" class="contactForm">
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                                <div class="validation"></div>
+                            </div>
+                            <div class="text-center" style="padding:20px"><button type="submit">Send Message</button></div>
+                        </form>
+                    </div>
+                </div>
 
-    </main>
+                <!--Режим работы-->
+                <div class="col-lg-3 col-md-4">
+                    <div class="info">
+                        @Localizer["OperatingMode"]
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- #contact -->
+
+</main>
 
 <script>
 
@@ -366,6 +771,14 @@
 
     function closePersonalReception() {
         document.getElementById("myPersonalReception").style.width = "0%";
+    }
+
+    function openCollCenter() {
+        document.getElementById("myCollCenter").style.width = "100%";
+    }
+
+    function closeCollCenter() {
+        document.getElementById("myCollCenter").style.width = "0%";
     }
 
 </script>

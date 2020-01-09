@@ -11,7 +11,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.97);
     overflow-x: hidden;
     transition: 0.5s;
 }
@@ -299,6 +299,41 @@
     #call-to-action .cta-btn:hover {
         background: #2dc997;
         border: 2px solid #2dc997;
+    }
+
+
+#myCollCenter  .icon-box {
+    background-size: cover;
+    padding: 0 0 30px 0;
+}
+
+    #myCollCenter  .icon-box .icon {
+        float: left;
+        width: 64px;
+        height: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: left;
+        border-radius: 50%;
+        border: 2px solid #2dc997;
+    }
+
+        #myCollCenter  .icon-box .icon i {
+            color: #2dc997;
+            font-size: 24px;
+        }
+
+        #myCollCenter  .icon-box a {
+            color: #111;
+        }
+
+    #myCollCenter  .icon-box .description {
+        margin-left: 80px;
+        line-height: 24px;
+        font-size: 14px;
+        text-align:left;
     }
 
 /*---------- News Section ----------*/

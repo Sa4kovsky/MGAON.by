@@ -117,8 +117,38 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="About" xml:space="preserve">
+    <value>О Предприятии</value>
+  </data>
+  <data name="CallCenter" xml:space="preserve">
+    <value>Контакт-центр 142</value>
+  </data>
   <data name="Contact" xml:space="preserve">
     <value>Контакты</value>
     <comment>Название СЕКЦИИ</comment>
+  </data>
+  <data name="Department" xml:space="preserve">
+    <value>Службы «одно окно»</value>
+  </data>
+  <data name="Enterprise" xml:space="preserve">
+    <value>Предприятие</value>
+  </data>
+  <data name="Facts" xml:space="preserve">
+    <value>Факты</value>
+  </data>
+  <data name="News" xml:space="preserve">
+    <value>Новости</value>
+  </data>
+  <data name="ReferenceInformation" xml:space="preserve">
+    <value>Справочная информация</value>
+  </data>
+  <data name="Service" xml:space="preserve">
+    <value>Услуга</value>
+  </data>
+  <data name="Union" xml:space="preserve">
+    <value>Профсоюз</value>
+  </data>
+  <data name="Сontact" xml:space="preserve">
+    <value>Контакты</value>
   </data>
 </root>

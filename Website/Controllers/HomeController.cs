@@ -13,17 +13,21 @@ using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Localization;
-
+using Website.Models;
+using Website.Models.Context;
+using Website.Models.ModelsView;
 
 namespace Website.Controllers
 {
     public class HomeController : Controller
     {
         IHostingEnvironment _appEnvironment;
+        private ContextNews _dbNews;
 
-        public HomeController(IHostingEnvironment appEnvironment)
+        public HomeController(ContextNews context, IHostingEnvironment appEnvironment)
         {
             _appEnvironment = appEnvironment;
+            _dbNews = context;
         }
 
         /*Используем куки для установки культуры.
@@ -40,9 +44,16 @@ namespace Website.Controllers
 
         }
 
-        public IActionResult Index()
+        private readonly IStringLocalizer<HomeController> _localizer; //для новостей на разных языках
+        public IndexView _indexViews;
+
+
+        public async Task<IActionResult> Index()
         {
-           return View();
+            var newsTable = _dbNews.NewsTable.Where(p => p.DateTime != null).Where(p => p.DateTime != "");
+            var news = _dbNews.NewsTable.Where(p => p.DateTime != null).Where(p => p.DateTime != "");
+           // _indexViews = new IndexView(news, newsTable);
+            return View();
         }
 
     
