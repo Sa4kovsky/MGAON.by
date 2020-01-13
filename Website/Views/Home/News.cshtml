@@ -1,0 +1,344 @@
+﻿@model Website.Models.ModelsView.IndexViewModels
+
+<section id="news">
+    <div class="container">
+        <div class="section-header">
+            <h3 class="section-title">Новости</h3>
+            <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="post-date"> <h4 style="color:white; margin: 0px">Пн.</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="monday"></h6></div>
+            <br />
+
+            @foreach (var item in Model.News)
+            {
+                @if (item.DateStart.ToShortDateString() == (DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Monday)).ToShortDateString())
+                {
+                    <div class="box">
+                        <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
+                        <h6 style="text-align:right; margin: 0px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
+                        <h4 class="title" style="margin:0px">Тема:  @item.Title</h4>
+                        <p class="description" style="margin: 20px 0px 0px 0px">
+                            <b>Исполнитель: @item.Name</b>
+                            <br /> <br />
+                            <b>Представитель исполнителя - @item.Organization</b>
+                            <br />
+                            @item.Position
+                        </p>
+                    </div>
+                }
+            }
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="post-date"> <h4 style="color:white; margin: 0px">Вт.</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="tuesday"></h6></div>
+            <br />
+            @foreach (var item in Model.News)
+            {
+                @if (item.DateStart.ToShortDateString() == (DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Tuesday)).ToShortDateString())
+                {
+                    <div class="box">
+                        <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
+                        <h6 style="text-align:right; margin: 0px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
+                        <h4 class="title" style="margin:0px">Тема:  @item.Title</h4>
+                        <p class="description" style="margin: 20px 0px 0px 0px">
+                            <b>Исполнитель: @item.Name</b>
+                            <br /> <br />
+                            <b>Представитель исполнителя - @item.Organization</b>
+                            <br />
+                            @item.Position
+                        </p>
+                    </div>
+                }
+            }
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="post-date"> <h4 style="color:white; margin: 0px">Ср.</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="wednesday"></h6></div>
+            <br />
+            @foreach (var item in Model.News)
+            {
+                @if (item.DateStart.ToShortDateString() == (DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Wednesday)).ToShortDateString())
+                {
+                    <div class="box">
+                        <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
+                        <h6 style="text-align:right; margin: 0px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
+                        <h4 class="title" style="margin:0px">Тема:  @item.Title</h4>
+                        <p class="description" style="margin: 20px 0px 0px 0px">
+                            <b>Исполнитель: @item.Name</b>
+                            <br /> <br />
+                            <b>Представитель исполнителя - @item.Organization</b>
+                            <br />
+                            @item.Position
+                        </p>
+                    </div>
+                }
+            }
+        </div>
+
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="post-date"> <h4 style="color:white; margin: 0px">Чт.</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="thursday"></h6></div>
+            <br />
+            @foreach (var item in Model.News)
+            {
+                @if (item.DateStart.ToShortDateString() == (DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Thursday)).ToShortDateString() )
+                {
+                    <div class="box">
+                        <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
+                        <h6 style="text-align:right; margin: 0px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
+                        <h4 class="title" style="margin:0px">Тема:  @item.Title</h4>
+                        <p class="description" style="margin: 20px 0px 0px 0px">
+                            <b>Исполнитель: @item.Name</b>
+                            <br /> <br />
+                            <b>Представитель исполнителя - @item.Organization</b>
+                            <br />
+                            @item.Position
+                        </p>
+                    </div>
+                }
+            }
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="post-date"> <h4 style="color:white; margin: 0px">Пт.</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="friday"></h6></div>
+            <br />
+            @foreach (var item in Model.News)
+            {
+                @if (item.DateStart.ToShortDateString() == (DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Friday)).ToShortDateString())
+                {
+                    <div class="box">
+                        <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
+                        <h6 style="text-align:right; margin: 0px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
+                        <h4 class="title" style="margin:0px">Тема:  @item.Title</h4>
+                        <p class="description" style="margin: 20px 0px 0px 0px">
+                            <b>Исполнитель: @item.Name</b>
+                            <br /> <br />
+                            <b>Представитель исполнителя - @item.Organization</b>
+                            <br />
+                            @item.Position
+                        </p>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+
+    <!-- Кнопка архива и график-->
+    <div class="text-center" style="padding:20px">
+        <button type="button" data-toggle="collapse" data-target="#multiCollapseExample1" aria-expanded="false">Архив</button>
+        <button type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false">График проведения тематических дней информирования</button>
+    </div>
+    <!-- Архива-->
+    <div class="collapse" id="multiCollapseExample1" style="padding:0">
+        <div class="card card-body" style="border:0; padding:0;">
+            <!-- По дням недели -->
+            <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="post-date"> <h4 style="color:white; margin: 0px">Пн.</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="monday"></h6></div>
+                    <br />
+
+                    @foreach (var item in Model.News)
+                    {
+                        @if (item.DateStart.ToShortDateString() == (DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Monday)).AddDays(-7).ToShortDateString())
+                        {
+                            <div class="box">
+                                <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
+                                <h6 style="text-align:right; margin: 0px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
+                                <h4 class="title" style="margin:0px">Тема:  @item.Title</h4>
+                                <p class="description" style="margin: 20px 0px 0px 0px">
+                                    <b>Исполнитель: @item.Name</b>
+                                    <br /> <br />
+                                    <b>Представитель исполнителя - @item.Organization</b>
+                                    <br />
+                                    @item.Position
+                                </p>
+                            </div>
+                        }
+                    }
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="post-date"> <h4 style="color:white; margin: 0px">Вт.</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="tuesday"></h6></div>
+                    <br />
+                    @foreach (var item in Model.News)
+                    {
+                        @if (item.DateStart.ToShortDateString() == (DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Tuesday)).AddDays(-6).ToShortDateString())
+                        {
+                            <div class="box">
+                                <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
+                                <h6 style="text-align:right; margin: 0px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
+                                <h4 class="title" style="margin:0px">Тема:  @item.Title</h4>
+                                <p class="description" style="margin: 20px 0px 0px 0px">
+                                    <b>Исполнитель: @item.Name</b>
+                                    <br /> <br />
+                                    <b>Представитель исполнителя - @item.Organization</b>
+                                    <br />
+                                    @item.Position
+                                </p>
+                            </div>
+                        }
+                    }
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="post-date"> <h4 style="color:white; margin: 0px">Ср.</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="wednesday"></h6></div>
+                    <br />
+                    @foreach (var item in Model.News)
+                    {
+                        @if (item.DateStart.ToShortDateString() == (DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Wednesday)).AddDays(-5).ToShortDateString())
+                        {
+                            <div class="box">
+                                <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
+                                <h6 style="text-align:right; margin: 0px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
+                                <h4 class="title" style="margin:0px">Тема:  @item.Title</h4>
+                                <p class="description" style="margin: 20px 0px 0px 0px">
+                                    <b>Исполнитель: @item.Name</b>
+                                    <br /> <br />
+                                    <b>Представитель исполнителя - @item.Organization</b>
+                                    <br />
+                                    @item.Position
+                                </p>
+                            </div>
+                        }
+                    }
+                </div>
+
+
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="post-date"> <h4 style="color:white; margin: 0px">Чт.</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="thursday"></h6></div>
+                    <br />
+                    @foreach (var item in Model.News)
+                    {
+                        @if (item.DateStart.ToShortDateString() == (DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Thursday)).AddDays(-4).ToShortDateString())
+                        {
+                            <div class="box">
+                                <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
+                                <h6 style="text-align:right; margin: 0px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
+                                <h4 class="title" style="margin:0px">Тема:  @item.Title</h4>
+                                <p class="description" style="margin: 20px 0px 0px 0px">
+                                    <b>Исполнитель: @item.Name</b>
+                                    <br /> <br />
+                                    <b>Представитель исполнителя - @item.Organization</b>
+                                    <br />
+                                    @item.Position
+                                </p>
+                            </div>
+                        }
+                    }
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="post-date"> <h4 style="color:white; margin: 0px">Пт.</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="friday"></h6></div>
+                    <br />
+                    @foreach (var item in Model.News)
+                    {
+                        @if (item.DateStart.ToShortDateString() == (DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Friday)).AddDays(-3).ToShortDateString())
+                        {
+                            <div class="box">
+                                <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
+                                <h6 style="text-align:right; margin: 0px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
+                                <h4 class="title" style="margin:0px">Тема:  @item.Title</h4>
+                                <p class="description" style="margin: 20px 0px 0px 0px">
+                                    <b>Исполнитель: @item.Name</b>
+                                    <br /> <br />
+                                    <b>Представитель исполнителя - @item.Organization</b>
+                                    <br />
+                                    @item.Position
+                                </p>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- График информирования (Разворачиваемый collapse по нажатию на кнопку "График проведения тематических....")-->
+    @{Html.RenderPartial("NewsTable", Model.NewsTable);}
+
+</section><!-- #news -->
+
+<script>
+function startAndEndOfWeek(date) {
+    var now = date? new Date(date) : new Date();
+    now.setHours(0, 0, 0, 0);
+    //Понедельник
+    var monday = new Date(now);
+    var dd = (monday.getDate() - monday.getDay() + 1);
+    var mm = monday.getMonth() + 1;
+    if (dd < 10)
+    {
+        dd = '0' + dd
+    };
+    if (mm < 10)
+    {
+        mm = '0' + mm
+    };
+    monday = dd + "-" + mm + "-" + monday.getFullYear();
+    //Вторник
+    var tuesday = new Date(now);
+    var dd = (tuesday.getDate() - tuesday.getDay() + 2);
+    var mm = tuesday.getMonth() + 1;
+    if (dd < 10)
+    {
+        dd = '0' + dd
+    };
+    if (mm < 10)
+    {
+        mm = '0' + mm
+    };
+    tuesday = dd + "-" + mm + "-" + tuesday.getFullYear();
+    //Среда
+    var wednesday = new Date(now);
+    var dd = (wednesday.getDate() - wednesday.getDay() + 3);
+    var mm = wednesday.getMonth() + 1;
+    if (dd < 10)
+    {
+        dd = '0' + dd
+    };
+    if (mm < 10)
+    {
+        mm = '0' + mm
+    };
+    wednesday = dd + "-" + mm + "-" + wednesday.getFullYear();
+    //Четверг
+    var thursday = new Date(now);
+    var dd = (thursday.getDate() - thursday.getDay() + 4);
+    var mm = thursday.getMonth() + 1;
+    if (dd < 10)
+    {
+        dd = '0' + dd
+    };
+    if (mm < 10)
+    {
+        mm = '0' + mm
+    };
+    thursday = dd + "-" + mm + "-" + thursday.getFullYear();
+    //Пятница
+    var friday = new Date(now);
+    var dd = (friday.getDate() - friday.getDay() + 5);
+    var mm = friday.getMonth() + 1;
+    if (dd < 10) {
+        dd = '0' + dd
+    };
+    if (mm < 10) {
+        mm = '0' + mm
+    };
+    friday = dd + "-" + mm + "-" + friday.getFullYear();
+
+    return [monday, tuesday, wednesday, thursday, friday];
+}
+
+    document.getElementById("monday").innerHTML = startAndEndOfWeek()[0];
+    document.getElementById("tuesday").innerHTML = startAndEndOfWeek()[1];
+    document.getElementById("wednesday").innerHTML = startAndEndOfWeek()[2];
+    document.getElementById("thursday").innerHTML = startAndEndOfWeek()[3];
+    document.getElementById("friday").innerHTML = startAndEndOfWeek()[4];
+</script>

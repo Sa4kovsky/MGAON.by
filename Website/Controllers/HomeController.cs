@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -23,11 +24,13 @@ namespace Website.Controllers
     {
         IHostingEnvironment _appEnvironment;
         private ContextNews _dbNews;
+        private readonly IStringLocalizer<HomeController> _localizer; //для новостей на разных языках
 
-        public HomeController(ContextNews context, IHostingEnvironment appEnvironment)
+        public HomeController(ContextNews context, IHostingEnvironment appEnvironment, IStringLocalizer<HomeController> localizer)
         {
             _appEnvironment = appEnvironment;
             _dbNews = context;
+            _localizer = localizer;
         }
 
         /*Используем куки для установки культуры.
@@ -44,18 +47,21 @@ namespace Website.Controllers
 
         }
 
-        private readonly IStringLocalizer<HomeController> _localizer; //для новостей на разных языках
-        public IndexView _indexViews;
 
 
-        public async Task<IActionResult> Index()
+        public ActionResult Index()
         {
-            var newsTable = _dbNews.NewsTable.Where(p => p.DateTime != null).Where(p => p.DateTime != "");
-            var news = _dbNews.NewsTable.Where(p => p.DateTime != null).Where(p => p.DateTime != "");
-           // _indexViews = new IndexView(news, newsTable);
-            return View();
-        }
+            DateTime _monday = DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Monday).AddDays(-7);
+            DateTime _friday = DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Saturday);
+            var aws = (DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Thursday)).AddDays(-6).ToShortDateString();
+            IndexViewModels _indexViewsModels = new IndexViewModels();
+            _indexViewsModels.News = _dbNews.News.Where(p => p.Language == _localizer["Language"].Value.ToString())
+                               .Where(p => p.DateStart >= _monday && p.DateFinish <= _friday)
+                               .OrderBy(p => p.DateStart).ToList();
+            _indexViewsModels.NewsTable = _dbNews.NewsTable.Where(p => p.DateTime != null).Where(p => p.DateTime != "").ToList();
 
-    
+
+            return View(_indexViewsModels);
+        }
     }
 }

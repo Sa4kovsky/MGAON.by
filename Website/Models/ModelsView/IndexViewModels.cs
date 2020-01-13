@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace Website.Models.ModelsView
 {
-    public class IndexView
+    public class IndexViewModels
     {
-        public News News { get; set; }
-        public NewsTable NewsTable { get; set; }
+        public List<News> News { get; set; }
+        public List<NewsTable> NewsTable { get; set; }
     }
 }

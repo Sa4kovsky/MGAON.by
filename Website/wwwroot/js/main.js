@@ -11,3 +11,6 @@ $('.anchor').on('click', function (e) {
     }, 1200);
 
 });
+
+
+

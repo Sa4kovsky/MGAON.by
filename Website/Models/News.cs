@@ -16,5 +16,6 @@ namespace Website.Models
         public DateTime DateStart { get; set; } // Дата начало проведения
         public DateTime DateFinish { get; set; } // Дата конца проведения
         public string Language { get; set; }
+        public string DayWeek { get; set; } // для красивого вывода по дням. Надо переделать!!!! 
     }
 }
