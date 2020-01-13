@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Website.Models
+﻿namespace Website.Models.WebSiteBD
 {
+    /*Модель предназначена для вывода новостей за месяц из базы WebSiteBD*/
     public class NewsTable
     {
         public int Id { get; set; }

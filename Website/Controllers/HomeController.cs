@@ -47,21 +47,28 @@ namespace Website.Controllers
 
         }
 
-
-
+        /// <summary>
+        /// monday - переменная определяет понедельник прошлой недели
+        /// friday - переменная определяет в=текущее воскресенье
+        /// indexViewsModels - модель в которую записываются данные трех других моделей (
+        ///     News - новости, 
+        ///     NewsTable - таблица новостей на месяц, 
+        ///     SummaryOneWin - хранимая процедура для сектора Факты)
+        /// </summary>
+        /// <returns>Терех моделей в одной</returns>
         public ActionResult Index()
         {
-            DateTime _monday = DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Monday).AddDays(-7);
-            DateTime _friday = DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Saturday);
-            var aws = (DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Thursday)).AddDays(-6).ToShortDateString();
-            IndexViewModels _indexViewsModels = new IndexViewModels();
-            _indexViewsModels.News = _dbNews.News.Where(p => p.Language == _localizer["Language"].Value.ToString())
-                               .Where(p => p.DateStart >= _monday && p.DateFinish <= _friday)
+            DateTime monday = DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Monday).AddDays(-7);
+            DateTime friday = DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Saturday);
+
+            IndexViewModels indexViewsModels = new IndexViewModels();
+            indexViewsModels.News = _dbNews.News.Where(p => p.Language == _localizer["Language"].Value.ToString())
+                               .Where(p => p.DateStart >= monday && p.DateFinish <= friday)
                                .OrderBy(p => p.DateStart).ToList();
-            _indexViewsModels.NewsTable = _dbNews.NewsTable.Where(p => p.DateTime != null).Where(p => p.DateTime != "").ToList();
+            indexViewsModels.NewsTable = _dbNews.NewsTable.Where(p => p.DateTime != null).Where(p => p.DateTime != "").ToList();
 
-
-            return View(_indexViewsModels);
+            indexViewsModels.SummaryOneWin = _dbNews.ViewSummaryOneWin.ToList();
+            return View(indexViewsModels);
         }
     }
 }

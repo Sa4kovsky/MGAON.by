@@ -1,40 +1,46 @@
-﻿<section id="facts">
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@model Website.Models.ModelsView.IndexViewModels
+
+<section id="facts">
     <div class="container">
         <div class="section-header">
             <h3 class="section-title">Факты</h3>
             <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
         </div>
         <div class="row counters">
+            @foreach (var item in Model.SummaryOneWin)
+            {
+                <div class="col-lg-2 col-6 text-center">
+                    <span>@item.SummClients</span>
+                    <p>Клиенты</p>
+                </div>
 
-            <div class="col-lg-2 col-6 text-center">
-                <span>232</span>
-                <p>Клиенты</p>
-            </div>
+                <div class="col-lg-2 col-6 text-center">
+                    <span>@item.SummLegalPerson</span>
+                    <p>Юр.лица</p>
+                </div>
 
-            <div class="col-lg-2 col-6 text-center">
-                <span>521</span>
-                <p>Юр.лица</p>
-            </div>
+                <div class="col-lg-2 col-6 text-center">
+                    <span>@item.SummPhysicalPerson</span>
+                    <p>Физики</p>
+                </div>
 
-            <div class="col-lg-2 col-6 text-center">
-                <span>1,463</span>
-                <p>Физики</p>
-            </div>
+                <div class="col-lg-2 col-6 text-center">
+                    <span>@item.SummAdmProcLegalPerson</span>
+                    <p>Адм. юр</p>
+                </div>
 
-            <div class="col-lg-2 col-6 text-center">
-                <span>15</span>
-                <p>Адм. юр</p>
-            </div>
+                <div class="col-lg-2 col-6 text-center">
+                    <span>@item.SummAdmProcPhysicalPerson</span>
+                    <p>Адм. физики</p>
+                </div>
 
-            <div class="col-lg-2 col-6 text-center">
-                <span>12</span>
-                <p>Адм. физики</p>
-            </div>
-
-            <div class="col-lg-2 col-6 text-center">
-                <span>107</span>
-                <p>Персонал</p>
-            </div>
+                <div class="col-lg-2 col-6 text-center">
+                    <span>107</span>
+                    <p>Персонал</p>
+                </div>
+            }
         </div>
     </div>
 </section><!-- #facts -->

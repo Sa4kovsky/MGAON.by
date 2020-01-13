@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Website.Models
+namespace Website.Models.WebSiteBD
 {
+    /*Модель предназначена для вывода текущих новостей из базы WebSiteBD*/
     public class News
     {
         public int Id { get; set; }

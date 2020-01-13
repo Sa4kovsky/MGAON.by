@@ -21,7 +21,7 @@
                     <div class="box">
                         <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
                         <h6 style="text-align:right; margin: 0px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
-                        <h4 class="title" style="margin:0px">Тема:  @item.Title</h4>
+                        <h4 class="title" style="margin:0px">Тема: @item.Title</h4>
                         <p class="description" style="margin: 20px 0px 0px 0px">
                             <b>Исполнитель: @item.Name</b>
                             <br /> <br />
@@ -140,7 +140,7 @@
             <div class="row">
                 <div class="col-lg-1"></div>
                 <div class="col-lg-2 col-md-4 col-sm-6">
-                    <div class="post-date"> <h4 style="color:white; margin: 0px">Пн.</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="monday"></h6></div>
+                    <div class="post-date"> <h4 style="color:white; margin: 0px">Пн.</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="oldMonday"></h6></div>
                     <br />
 
                     @foreach (var item in Model.News)
@@ -164,11 +164,11 @@
                 </div>
 
                 <div class="col-lg-2 col-md-4 col-sm-6">
-                    <div class="post-date"> <h4 style="color:white; margin: 0px">Вт.</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="tuesday"></h6></div>
+                    <div class="post-date"> <h4 style="color:white; margin: 0px">Вт.</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="oldTuesday"></h6></div>
                     <br />
                     @foreach (var item in Model.News)
                     {
-                        @if (item.DateStart.ToShortDateString() == (DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Tuesday)).AddDays(-6).ToShortDateString())
+                        @if (item.DateStart.ToShortDateString() == (DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Monday)).AddDays(-6).ToShortDateString())
                         {
                             <div class="box">
                                 <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
@@ -187,11 +187,11 @@
                 </div>
 
                 <div class="col-lg-2 col-md-4 col-sm-6">
-                    <div class="post-date"> <h4 style="color:white; margin: 0px">Ср.</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="wednesday"></h6></div>
+                    <div class="post-date"> <h4 style="color:white; margin: 0px">Ср.</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="oldWednesday"></h6></div>
                     <br />
                     @foreach (var item in Model.News)
                     {
-                        @if (item.DateStart.ToShortDateString() == (DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Wednesday)).AddDays(-5).ToShortDateString())
+                        @if (item.DateStart.ToShortDateString() == (DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Monday)).AddDays(-5).ToShortDateString())
                         {
                             <div class="box">
                                 <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
@@ -211,11 +211,11 @@
 
 
                 <div class="col-lg-2 col-md-4 col-sm-6">
-                    <div class="post-date"> <h4 style="color:white; margin: 0px">Чт.</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="thursday"></h6></div>
+                    <div class="post-date"> <h4 style="color:white; margin: 0px">Чт.</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="oldThursday"></h6></div>
                     <br />
                     @foreach (var item in Model.News)
                     {
-                        @if (item.DateStart.ToShortDateString() == (DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Thursday)).AddDays(-4).ToShortDateString())
+                        @if (item.DateStart.ToShortDateString() == (DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Monday)).AddDays(-4).ToShortDateString())
                         {
                             <div class="box">
                                 <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
@@ -234,11 +234,11 @@
                 </div>
 
                 <div class="col-lg-2 col-md-4 col-sm-6">
-                    <div class="post-date"> <h4 style="color:white; margin: 0px">Пт.</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="friday"></h6></div>
+                    <div class="post-date"> <h4 style="color:white; margin: 0px">Пт.</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="oldFriday"></h6></div>
                     <br />
                     @foreach (var item in Model.News)
                     {
-                        @if (item.DateStart.ToShortDateString() == (DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Friday)).AddDays(-3).ToShortDateString())
+                        @if (item.DateStart.ToShortDateString() == (DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Monday)).AddDays(-3).ToShortDateString())
                         {
                             <div class="box">
                                 <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
@@ -333,7 +333,66 @@ function startAndEndOfWeek(date) {
     };
     friday = dd + "-" + mm + "-" + friday.getFullYear();
 
-    return [monday, tuesday, wednesday, thursday, friday];
+    //Прошлая неделя
+
+    //Понедельник
+    var oldMonday = new Date(now);
+    var dd = (oldMonday.getDate() - oldMonday.getDay() - 6);
+    var mm = oldMonday.getMonth() + 1;
+    if (dd < 10) {
+        dd = '0' + dd
+    };
+    if (mm < 10) {
+        mm = '0' + mm
+    };
+    oldMonday = dd + "-" + mm + "-" + oldMonday.getFullYear();
+
+    //Вторник
+    var oldTuesday = new Date(now);
+    var dd = (oldTuesday.getDate() - oldTuesday.getDay() - 5);
+    var mm = oldTuesday.getMonth() + 1;
+    if (dd < 10) {
+        dd = '0' + dd
+    };
+    if (mm < 10) {
+        mm = '0' + mm
+    };
+    oldTuesday = dd + "-" + mm + "-" + oldTuesday.getFullYear();
+    //Среда
+    var oldWednesday = new Date(now);
+    var dd = (oldWednesday.getDate() - oldWednesday.getDay() - 4);
+    var mm = oldWednesday.getMonth() + 1;
+    if (dd < 10) {
+        dd = '0' + dd
+    };
+    if (mm < 10) {
+        mm = '0' + mm
+    };
+    oldWednesday = dd + "-" + mm + "-" + oldWednesday.getFullYear();
+    //Четверг
+    var oldThursday = new Date(now);
+    var dd = (oldThursday.getDate() - oldThursday.getDay() - 3);
+    var mm = oldThursday.getMonth() + 1;
+    if (dd < 10) {
+        dd = '0' + dd
+    };
+    if (mm < 10) {
+        mm = '0' + mm
+    };
+    oldThursday = dd + "-" + mm + "-" + oldThursday.getFullYear();
+    //Пятница
+    var oldFriday = new Date(now);
+    var dd = (oldFriday.getDate() - oldFriday.getDay() - 2);
+    var mm = oldFriday.getMonth() + 1;
+    if (dd < 10) {
+        dd = '0' + dd
+    };
+    if (mm < 10) {
+        mm = '0' + mm
+    };
+    oldFriday = dd + "-" + mm + "-" + oldFriday.getFullYear();
+
+    return [monday, tuesday, wednesday, thursday, friday, oldMonday, oldTuesday, oldWednesday, oldThursday, oldFriday,];
 }
 
     document.getElementById("monday").innerHTML = startAndEndOfWeek()[0];
@@ -341,4 +400,9 @@ function startAndEndOfWeek(date) {
     document.getElementById("wednesday").innerHTML = startAndEndOfWeek()[2];
     document.getElementById("thursday").innerHTML = startAndEndOfWeek()[3];
     document.getElementById("friday").innerHTML = startAndEndOfWeek()[4];
+    document.getElementById("oldMonday").innerHTML = startAndEndOfWeek()[5];
+    document.getElementById("oldTuesday").innerHTML = startAndEndOfWeek()[6];
+    document.getElementById("oldWednesday").innerHTML = startAndEndOfWeek()[7];
+    document.getElementById("oldThursday").innerHTML = startAndEndOfWeek()[8];
+    document.getElementById("oldFriday").innerHTML = startAndEndOfWeek()[9];
 </script>

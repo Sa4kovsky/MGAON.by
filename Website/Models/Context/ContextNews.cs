@@ -10,6 +10,7 @@ namespace Website.Models.Context
     {
         public DbSet<News> News { get; set; }
         public DbSet<NewsTable> NewsTable { get; set; }
+        public DbSet<SummaryOneWin> ViewSummaryOneWin { get; set; }
 
         public ContextNews(DbContextOptions<ContextNews> options)
             : base(options)
