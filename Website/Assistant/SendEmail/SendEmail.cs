@@ -1,6 +1,6 @@
 ﻿using System.Net;
 using System.Net.Mail;
-using Website.Assistant.SendEmail.UsersSendEmail;
+using Website.Models.UsersSendEmail;
 
 namespace Website.Assistant.SendEmail
 {
@@ -9,14 +9,14 @@ namespace Website.Assistant.SendEmail
         /// <summary>
         /// Метод предназначен для отправки сообщения на почту info@mgaon.by
         /// 1.Определяем отправителя
-        /// 2.Определяему кому будем отрпавлять
+        /// 2.Определяем кому будем отрпавлять
         /// 3.Создаем объект сообщения
         /// 4.Если есть прикрепленные файлы, то их тоже добавляем к письму
         /// 5.Определяем порт и сервер с которого будем отправлять, заходим в акаунт почты и отправляем письмо
         /// </summary>
-        /// <param name="person"></param>
-        /// <param name=""></param>
-        public async void SendEmailAsync(LegalPerson person,  string messaga)
+        /// <param name="person">Объект LegalPerson</param>
+        /// <param name="messaga">Тема письма</param>
+        public async void SendEmailAsync(Person person,  string messaga)
         { 
             // отправитель
             MailAddress _from = new MailAddress("info@mgaon.by", person.Name);

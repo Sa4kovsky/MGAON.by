@@ -1,29 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Globalization;
-using System.IO;
 using System.Linq;
-using System.Net;
-using System.Net.Mail;
-using System.Security.Policy;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Localization;
-using Website.Models;
+using Website.Models.UsersSendEmail;
 using Website.Models.Context;
 using Website.Models.ModelsView;
+using Website.Assistant.SendEmail;
+using System.Collections.Generic;
 
 namespace Website.Controllers
 {
+    [Route("home")]
     public class HomeController : Controller
     {
-        IHostingEnvironment _appEnvironment;
-        private ContextNews _dbNews;
+        private readonly IHostingEnvironment _appEnvironment;
+        private readonly ContextNews _dbNews;
         private readonly IStringLocalizer<HomeController> _localizer; //для новостей на разных языках
 
         public HomeController(ContextNews context, IHostingEnvironment appEnvironment, IStringLocalizer<HomeController> localizer)
@@ -44,31 +38,47 @@ namespace Website.Controllers
                 new CookieOptions { Expires = DateTimeOffset.UtcNow.AddYears(1) }
             );
             return LocalRedirect(returnUrl);
-
         }
 
         /// <summary>
         /// monday - переменная определяет понедельник прошлой недели
-        /// friday - переменная определяет в=текущее воскресенье
-        /// indexViewsModels - модель в которую записываются данные трех других моделей (
+        /// friday - переменная определяет текущее воскресенье
+        /// indexViewsModels - модель в которую записываются данные трех других моделей 
+        ///     (
         ///     News - новости, 
         ///     NewsTable - таблица новостей на месяц, 
-        ///     SummaryOneWin - хранимая процедура для сектора Факты)
+        ///     SummaryOneWin - хранимая процедура для сектора Факты
+        ///     )
         /// </summary>
         /// <returns>Терех моделей в одной</returns>
-        public ActionResult Index()
+        [Route("index")]
+        [Route("")]
+        [Route("~/")]
+        public IActionResult Index()
         {
             DateTime monday = DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Monday).AddDays(-7);
             DateTime friday = DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Saturday);
 
             IndexViewModels indexViewsModels = new IndexViewModels();
+            //запись данных News которые соответсвуют текущему языку на сайте в промежуток времени от monday до friday
             indexViewsModels.News = _dbNews.News.Where(p => p.Language == _localizer["Language"].Value.ToString())
                                .Where(p => p.DateStart >= monday && p.DateFinish <= friday)
                                .OrderBy(p => p.DateStart).ToList();
             indexViewsModels.NewsTable = _dbNews.NewsTable.Where(p => p.DateTime != null).Where(p => p.DateTime != "").ToList();
-
             indexViewsModels.SummaryOneWin = _dbNews.ViewSummaryOneWin.ToList();
+            indexViewsModels.People = new Person();
             return View(indexViewsModels);
         }
+
+
+        SendEmail _sendEmail = new SendEmail();
+
+        [Route("sendEmail")]
+        public JsonResult Contacts(Person person)
+        {
+         //   _sendEmail.SendEmailAsync(person, "Обратная связь");
+            return new JsonResult("Ваше сообщение было отправлено. Спасибо!");
+        }
+
     }
 }

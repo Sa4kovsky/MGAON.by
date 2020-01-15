@@ -1,4 +1,6 @@
-﻿<section id="contact" style="padding: 80px 0 20px 0">
+﻿@model Website.Models.UsersSendEmail.Person
+
+<section id="contact" style="padding: 80px 0 20px 0">
     <div class="container">
         <div class="section-header" style="padding: 0 0 20px 0">
             <h3 class="section-title">Контакты</h3>
@@ -28,7 +30,7 @@
                     </div>
                     <div>
                         <i class="fa fa-phone"></i>
-                        <p>+375 (17) 364 66 34</p>
+                        <p>+375(17)364-66-34</p>
                     </div>
 
                 </div>
@@ -37,26 +39,26 @@
             <!--Обратная связь-->
             <div class="col-lg-6 col-md-8">
                 <div class="form">
-                    <div id="sendmessage">Your message has been sent. Thank you!</div>
-                    <div id="errormessage"></div>
                     <form action="" method="post" role="form" class="contactForm">
                         <div class="form-group">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                            <input type="text" class="form-control" name="fullName" id="fullName" placeholder="ФИО" required />
                             <div class="validation"></div>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Электронная почта" />
                             <div class="validation"></div>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                            <input type="text" class="form-control" name="tel" id="tel" placeholder="Контактный телефон" />
                             <div class="validation"></div>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                            <textarea class="form-control" name="message" id="message" placeholder="Сообщение" maxlength="1000"></textarea>
                             <div class="validation"></div>
                         </div>
-                        <div class="text-center" style="padding:20px"><button type="submit">Send Message</button></div>
+                        <div class="text-center" style="padding:20px">
+                            <button type="button" formnovalidate value="SendEmail" id="buttonSendEmail" data-toggle="modal" data-target="#exampleModalCenter">Отправить сообщение</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -83,6 +85,50 @@
                 </div>
             </div>
         </div>
-
     </div>
 </section><!-- #contact -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="resultSendEmail"></h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+    //ajax сробатывает при отправе сообщения, чтобы частично обновлять представление
+    $(document).ready(function () {
+        $('#buttonSendEmail').click(function () {
+                $.ajax({
+                    contentType: 'application/json; charset=utf-8',
+                    dataType: 'json',
+                    type: 'GET',
+                    url: '/home/sendEmail',
+                    traditional: true,
+                    data: { Name: $('#fullName').val(), Email: $('#email').val(), Phone: $('#phone').val(), Message: $('#message').val() },
+                    success: function (result) 
+                    {
+                        $('#resultSendEmail').html(result);
+                    }
+                });
+        });
+    });
+
+    function ValidPhone() {
+        var re = /^\d[\d\(\)\ -]{4,14}\d$/;
+        var myPhone = document.getElementById('tel').value;
+        var valid = re.test(myPhone);
+        if (valid) output = 'Номер телефона введен правильно!';
+        else output = 'Номер телефона введен неправильно!';
+        document.getElementById('resultSendEmail').innerHTML = document.getElementById('resultSendEmail').innerHTML + output;
+        return valid;
+    }  
+
+
+
+</script>

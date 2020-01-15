@@ -546,9 +546,7 @@
         }
 
         #contact .info p {
-            padding: 0 0 10px 50px;
-            margin-bottom: 20px;
-            line-height: 22px;
+            padding: 0 0 0 50px;
             font-size: 14px;
         }
 
@@ -579,14 +577,9 @@
                 color: #fff;
             }
 
-    #contact .form #sendmessage {
+    #contact .form #resultSendEmail {
         color: #2dc997;
-        border: 1px solid #2dc997;
-        display: none;
         text-align: center;
-        padding: 15px;
-        font-weight: 600;
-        margin-bottom: 15px;
     }
 
     #contact .form #errormessage {
@@ -599,7 +592,7 @@
         margin-bottom: 15px;
     }
 
-        #contact .form #sendmessage.show, #contact .form #errormessage.show, #contact .form .show {
+        #contact .form #contact .form #errormessage.show, #contact .form .show {
             display: block;
         }
 
@@ -617,7 +610,7 @@
         font-size: 14px;
     }
 
-    #contact .form button[type="submit"] {
+    #contact .form button[type="button"] {
         background: #2dc997;
         border: 0;
         padding: 10px 24px;
@@ -625,7 +618,7 @@
         transition: 0.4s;
     }
 
-        #contact .form button[type="submit"]:hover {
+        #contact .form button[type="button"]:hover {
             background: #51d8ad;
         }
 

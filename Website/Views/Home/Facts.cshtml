@@ -1,6 +1,6 @@
 ﻿@using Microsoft.AspNetCore.Mvc.Localization
 @inject IViewLocalizer Localizer
-@model Website.Models.ModelsView.IndexViewModels
+@model IEnumerable<Website.Models.WebSiteBD.SummaryOneWin>
 
 <section id="facts">
     <div class="container">
@@ -9,7 +9,7 @@
             <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
         </div>
         <div class="row counters">
-            @foreach (var item in Model.SummaryOneWin)
+            @foreach (var item in Model)
             {
                 <div class="col-lg-2 col-6 text-center">
                     <span>@item.SummClients</span>
