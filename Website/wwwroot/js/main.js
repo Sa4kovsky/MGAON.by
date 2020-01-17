@@ -2,7 +2,7 @@ $('.anchor').on('click', function (e) {
 
     e.preventDefault();
 
-    var target = $(this).attr('href'),
+    var target = $(this).attr('name'),
         offset = $(target).offset().top;
 
    /// $(document).scrollTop(offset);
@@ -11,6 +11,4 @@ $('.anchor').on('click', function (e) {
     }, 1200);
 
 });
-
-
 

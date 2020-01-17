@@ -3,25 +3,59 @@
 @model Website.Models.ModelsView.IndexViewModels
 
 <main id="main">
-    <!--      About Us Section-->
+
+    <!--Hero Section-->
+    <section id="hero">
+        <div class="hero_video-box">
+            <video class="hero_video" autoplay="" muted="" loop="">
+                <source src="../Minsk.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="hero_video_before">
+            <div class="hero-container">
+                <h2>Коммунальное унитарное предприятие</h2>
+                <h1>«Минское городское агенство обслуживания населения»</h1>
+
+                <a href="http://prereg.mgaon.by" class="btn-get-started">Записаться на прием в службу «одно окно»</a>
+                <a href="" class="btn-get-started">Написать обращение директору</a>
+            </div>
+        </div>
+    </section>
+    <!--End Hero Section-->
+
+    <!--Marketing Section-->
+    <marquee behavior="alternate" scrollamount="5" style="background-color:#f7f7f7">
+        <div class="row">
+            <div class="circle">
+                <a href=""><img src="~/img/Реклама/Безымянный.png" /></a>
+            </div>
+            <div class="circle">
+                <a href=""><img src="~/img/Реклама/Безымянный1.png" /> </a>
+            </div>
+        </div>
+    </marquee>
+    <!--End Marketing Section-->
+
+    <!--About Us Section-->
     @{Html.RenderPartial("About");}
 
-    <!--      Facts Section-->
+    <!--Facts Section-->
     @{Html.RenderPartial("Facts", Model.SummaryOneWin);}
 
-    <!--      Area Section-->
+    <!--Area Section-->
     @{Html.RenderPartial("Area");}
 
-    <!--    Call-Center Section-->
+    <!--Call-Center Section-->
     @{Html.RenderPartial("CallCenter");}
 
-    <!--      News Section-->
+    <!--News Section-->
     @{Html.RenderPartial("News", Model);}
 
-    <!--     Trade union organization Section-->
+    <!--Trade union organization Section-->
     @{Html.RenderPartial("TradeUnionOrganization");}
 
-    <!--      Contact Section-->
+    <!--Contact Section-->
     @{Html.RenderPartial("Contacts", Model.People);}
 </main>
 

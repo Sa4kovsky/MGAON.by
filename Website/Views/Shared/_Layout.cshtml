@@ -27,7 +27,7 @@
             <div class="row">
                 <div id="logo">
                     <h1>
-                        <a class="anchor" href="#hero">МГАОН</a>
+                        <a asp-controller="Home" asp-action="Index">МГАОН</a>
                     </h1>
                 </div>
 
@@ -58,35 +58,35 @@
 
             <!--navbar-->
             <div id="myNav" class="overlay">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span class="fa  fa-times"></span></a>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span class="fa fa-bars"></span></a>
 
                 <div class="overlay-content row">
                     <div class="col-sm-4">
                         <br>
                         <h4 style="color: #f7f7f7;">@Localizer["Enterprise"]</h4>
-                        <a class="anchor" href="#about" onclick="closeNav()">@Localizer["About"]</a> <br />
-                        <a class="anchor" href="#facts" onclick="closeNav()">@Localizer["Facts"]</a> <br />
-                        <a class="anchor" href="#area" onclick="closeNav()">@Localizer["Department"]</a> <br />
-                        <a class="anchor" href="#call-to-action" onclick="closeNav()">@Localizer["CallCenter"]</a> <br />
-                        <a class="anchor" href="#news" onclick="closeNav()">@Localizer["News"]</a> <br />
-                        <a class="anchor" href="#trade-union-organization" onclick="closeNav()">@Localizer["Union"]</a> <br />
-                        <a class="anchor" href="#contact" onclick="closeNav()">@Localizer["Сontact"]</a>
+                        <a asp-controller="Home" asp-action="Index" asp-fragment="about" onclick="closeNav()">@Localizer["About"]</a> <br />
+                        <a asp-controller="Home" asp-action="Index" asp-fragment="facts" onclick="closeNav()">@Localizer["Facts"]</a> <br />
+                        <a asp-controller="Home" asp-action="Index" asp-fragment="area" onclick="closeNav()">@Localizer["Department"]</a> <br />
+                        <a asp-controller="Home" asp-action="Index" asp-fragment="call-to-action" onclick="closeNav()">@Localizer["CallCenter"]</a> <br />
+                        <a asp-controller="Home" asp-action="Index" asp-fragment="news" onclick="closeNav()">@Localizer["News"]</a> <br />
+                        <a asp-controller="Home" asp-action="Index" asp-fragment="trade-union-organization" onclick="closeNav()">@Localizer["Union"]</a> <br />
+                        <a asp-controller="Home" asp-action="Index" asp-fragment="contact" onclick="closeNav()">@Localizer["Сontact"]</a>
                     </div>
 
                     <div class="col-sm-4">
                         <br>
                         <h4 style="color: #f7f7f7;">@Localizer["Service"]</h4>
-                        <a class="anchor" href="#services" onclick="closeNav()">Обращения</a><br />
-                        <a class="anchor" href="https://docs.google.com/forms/d/e/1FAIpQLSfx5Ny-YbLxyEZvU3E4_dmmpFLWesSv_7_WORTUwGdtHd7uRA/viewform?c=0&w=1" onclick="closeNav()">Анкета оценки работы cлужбы</a><br />
-                        <a class="anchor" href="http://prereg.mgaon.by" onclick="closeNav()">Предварительная запись в службу</a><br />
-                        <a class="anchor" href="#services" onclick="closeNav()">Сведения о прохождении документов через службу</a>
+                        <a asp-controller="Service" asp-action="Index" onclick="closeNav()">Обращения</a><br />
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfx5Ny-YbLxyEZvU3E4_dmmpFLWesSv_7_WORTUwGdtHd7uRA/viewform?c=0&w=1" onclick="closeNav()">Анкета оценки работы cлужбы</a><br />
+                        <a href="http://prereg.mgaon.by" onclick="closeNav()">Предварительная запись в службу</a><br />
+                        <a asp-controller="Service" asp-action="Information" onclick="closeNav()">Сведения о прохождении документов через службу</a>
                     </div>
 
                     <div class="col-sm-4">
                         <br>
                         <h4 style="color: #f7f7f7;">@Localizer["ReferenceInformation"]</h4>
-                        <a class="anchor" href="#team">Справочно-информационная система</a><br />
-                        <a class="anchor" href="#contact">Уникальный идентификатор / Электронная цифровая подпись</a>
+                        <a asp-controller="HelpInformation" asp-action="Index" >Справочно-информационная система</a><br />
+                        <a asp-controller="HelpInformation" asp-action="UniqueId" >Уникальный идентификатор / Электронная цифровая подпись</a>
                         <br>
                     </div>
                 </div>
@@ -95,37 +95,7 @@
         </div>
     </header>
     <!--End Header Section-->
-    <!--Hero Section-->
-    <section id="hero">
-        <div class="hero_video-box">
-            <video class="hero_video" autoplay="" muted="" loop="">
-                <source src="../Minsk.mp4" type="video/mp4">
-            </video>
-        </div>
-
-        <div class="hero_video_before">
-            <div class="hero-container">
-                <h2>Коммунальное унитарное предприятие</h2>
-                <h1>«Минское городское агенство обслуживания населения»</h1>
-
-                <a href="http://prereg.mgaon.by" class="btn-get-started">Записаться на прием в службу «одно окно»</a>
-                <a href="" class="btn-get-started">Написать обращение директору</a>
-            </div>
-        </div>
-    </section>
-    <!--End Hero Section-->
-
-
-    <marquee behavior="alternate" scrollamount="5" style="background-color:#f7f7f7">
-        <div class="row">
-            <div class="circle">
-                <a href=""><img src="~/img/Реклама/Безымянный.png" /></a>
-            </div>
-            <div class="circle">
-                <a href=""><img src="~/img/Реклама/Безымянный1.png" /> </a>
-            </div>
-        </div>
-    </marquee>
+   
 
     <!--Main Section-->
     <div>
@@ -188,7 +158,7 @@
     </script>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
-
+    <script src="~/lib/jquery-masked/jquery.maskedinput.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/main.js"></script>
 

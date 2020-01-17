@@ -50,7 +50,7 @@ namespace Website.Controllers
         ///     SummaryOneWin - хранимая процедура для сектора Факты
         ///     )
         /// </summary>
-        /// <returns>Терех моделей в одной</returns>
+        /// <returns>Трех моделей в одной</returns>
         [Route("index")]
         [Route("")]
         [Route("~/")]

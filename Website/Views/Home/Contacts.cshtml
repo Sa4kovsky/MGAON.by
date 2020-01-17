@@ -14,6 +14,7 @@
     <div class="container" style="padding: 40px;">
         <div class="row">
             <div class="col-lg-3 col-md-4">
+
                 <!--Контакты-->
                 <div class="info">
                     <div>
@@ -41,8 +42,7 @@
                 <div class="form">
                     <form action="" method="post" role="form" class="contactForm">
                         <div class="form-group">
-                            <input type="text" class="form-control" name="fullName" id="fullName" placeholder="ФИО" required />
-                            <div class="validation"></div>
+                            <input type="text" class="form-control" name="fullName" id="fullName" placeholder="ФИО*" required />
                         </div>
                         <div class="form-group">
                             <input type="email" class="form-control" name="email" id="email" placeholder="Электронная почта" />
@@ -53,12 +53,13 @@
                             <div class="validation"></div>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" name="message" id="message" placeholder="Сообщение" maxlength="1000"></textarea>
+                            <textarea class="form-control" name="message" id="message" placeholder="Сообщение*" maxlength="1000"></textarea>
                             <div class="validation"></div>
                         </div>
                         <div class="text-center" style="padding:20px">
-                            <button type="button" formnovalidate value="SendEmail" id="buttonSendEmail" data-toggle="modal" data-target="#exampleModalCenter">Отправить сообщение</button>
+                            <button type="button" formnovalidate value="SendEmail" id="buttonSendEmail" >Отправить сообщение</button>
                         </div>
+                        <div id="resultFullName"></div>
                     </form>
                 </div>
             </div>
@@ -91,8 +92,14 @@
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-body">
                 <h5 class="modal-title" id="resultSendEmail"></h5>
+                <div>
+                    <p id="resultName" />
+                </div>
+                <div>
+                    <p id="resultMessage" />
+                </div>
             </div>
         </div>
     </div>
@@ -101,9 +108,59 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <script type="text/javascript">
+    // Создание масок.
+    $(function () {
+        $("#tel").mask("8(099) 99-99-999");
+    });
+
+
+    //Проверки на валидность
+    var _validName, _validMessage;
+    function ValidName() {
+        var re = /^([А-яёіў ][а-яёіў ]+[\-\'\s]?){3,}?$/;
+        var fullName = document.getElementById('fullName').value;
+        _validName = re.test(fullName);
+        if (_validName)
+        {
+            document.getElementById('fullName').style.borderColor = '#ced4da';
+            document.getElementById('resultName').innerHTML = '';
+            document.getElementById('resultSendEmail').innerHTML = '';
+        }
+        else
+        {
+            output = 'Укажите полное имя (кириллицей)';
+            document.getElementById('fullName').style.borderColor = '#dc3545';
+            document.getElementById('resultName').innerHTML = output;
+            $('#exampleModalCenter').modal('show')
+        }
+        return _validName;
+    } 
+
+    function ValidMessage() {
+        var re = /^[А-яёіў][А-яёіў0-9,. -!?""'']*$/;
+        var message = document.getElementById('message').value;
+        _validMessage = re.test(message);
+        if (_validMessage) {
+            document.getElementById('message').style.borderColor = '#ced4da';
+            document.getElementById('resultMessage').innerHTML = '';
+            document.getElementById('resultSendEmail').innerHTML = '';
+        }
+        else {
+            output = 'Сообщение (кириллицей)';
+            document.getElementById('message').style.borderColor = '#dc3545';
+            document.getElementById('resultMessage').innerHTML = output;
+            $('#exampleModalCenter').modal('show')
+        }
+
+        return _validMessage;
+    } 
+
     //ajax сробатывает при отправе сообщения, чтобы частично обновлять представление
     $(document).ready(function () {
         $('#buttonSendEmail').click(function () {
+            ValidName();
+            ValidMessage();
+            if (_validName == true && _validMessage == true) {
                 $.ajax({
                     contentType: 'application/json; charset=utf-8',
                     dataType: 'json',
@@ -111,24 +168,13 @@
                     url: '/home/sendEmail',
                     traditional: true,
                     data: { Name: $('#fullName').val(), Email: $('#email').val(), Phone: $('#phone').val(), Message: $('#message').val() },
-                    success: function (result) 
-                    {
-                        $('#resultSendEmail').html(result);
+                    success: function (result) {
+                    $('#resultSendEmail').html(result);
                     }
                 });
+                $('#exampleModalCenter').modal('show')
+            }
         });
     });
-
-    function ValidPhone() {
-        var re = /^\d[\d\(\)\ -]{4,14}\d$/;
-        var myPhone = document.getElementById('tel').value;
-        var valid = re.test(myPhone);
-        if (valid) output = 'Номер телефона введен правильно!';
-        else output = 'Номер телефона введен неправильно!';
-        document.getElementById('resultSendEmail').innerHTML = document.getElementById('resultSendEmail').innerHTML + output;
-        return valid;
-    }  
-
-
 
 </script>

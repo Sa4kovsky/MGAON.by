@@ -165,6 +165,19 @@
         font-size: 14px;
     }
 
+#about button[type="button"] {
+    background: #2dc997;
+    width:100%;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+}
+
+    #about button[type="button"]:hover {
+        background: #51d8ad;
+    }
+
 /*------  Facts Section ------*/
 #facts {
     background: #f7f7f7;
@@ -610,7 +623,7 @@
         font-size: 14px;
     }
 
-    #contact .form button[type="button"] {
+    #contact  button[type="button"] {
         background: #2dc997;
         border: 0;
         padding: 10px 24px;
@@ -618,7 +631,7 @@
         transition: 0.4s;
     }
 
-        #contact .form button[type="button"]:hover {
+        #contact  button[type="button"]:hover {
             background: #51d8ad;
         }
 

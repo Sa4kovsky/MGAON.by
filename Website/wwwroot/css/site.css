@@ -376,22 +376,29 @@ h1, h2, h3, h4, h5, h6 {
     }
 
 .overlay .closebtn {
+    color: #fff;
+    background: none;
+    color: #fff;
+    border: 0;
+    padding: 1px 7px 1px 7px;
+    font-size: 35px;
     position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 25px;
+    top: 8px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: color 0.7s;
 }
+
+    .overlay .closebtn :hover {
+        color: #2dc997;
+        outline: none;
+    }
 
 @media screen and (max-height: 450px) {
     .overlay a {
         font-size: 20px
     }
 
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
 }
 /*--------------------------------------------------------------
 # End Navbar
