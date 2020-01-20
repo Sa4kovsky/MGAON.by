@@ -5,13 +5,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Mgaon.by</title>
     <link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.css" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     <link rel="stylesheet" href="~/css/SectionViewsHome.css" />
+    <!--Ajax-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -85,8 +87,8 @@
                     <div class="col-sm-4">
                         <br>
                         <h4 style="color: #f7f7f7;">@Localizer["ReferenceInformation"]</h4>
-                        <a asp-controller="HelpInformation" asp-action="Index" >Справочно-информационная система</a><br />
-                        <a asp-controller="HelpInformation" asp-action="UniqueId" >Уникальный идентификатор / Электронная цифровая подпись</a>
+                        <a asp-controller="HelpInformation" asp-action="Index">Справочно-информационная система</a><br />
+                        <a asp-controller="HelpInformation" asp-action="UniqueId">Уникальный идентификатор / Электронная цифровая подпись</a>
                         <br>
                     </div>
                 </div>
@@ -95,8 +97,6 @@
         </div>
     </header>
     <!--End Header Section-->
-   
-
     <!--Main Section-->
     <div>
         <main role="main">
@@ -104,9 +104,6 @@
         </main>
     </div>
     <!-- End Main Section-->
-    <!--Button "BACK_TO_TOP"-->
-    <a href="#hero" class="anchor back-to-top"><i class="fa fa-chevron-up"></i></a>
-
     <!--Footer Section-->
     <footer id="footer">
         <div class="footer-top">
@@ -152,17 +149,10 @@
             (window, document, 'yandex_site_callbacks');
     </script>
 
-    <!--Плавный якорь-->
-    <script type="text/javascript">
-        document.querySelector("#id").scrollIntoView(true);
-    </script>
-
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/jquery-masked/jquery.maskedinput.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/main.js"></script>
-
-
+    <script type="text/javascript" charset="windows-1251" src="~/js/main.js"></script>
 </body>
 
 </html>
