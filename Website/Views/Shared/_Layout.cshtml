@@ -130,10 +130,6 @@
         }
     </script>
 
-    <!--Для слобовидящих-->
-    <script src="https://lidrekon.ru/slep/js/jquery.js"></script>
-    <script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
-
     <!--Для яндекс поиск-->
     <script type="text/javascript">
         (function (w, d, c) {
@@ -149,10 +145,16 @@
             (window, document, 'yandex_site_callbacks');
     </script>
 
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/jquery-masked/jquery.maskedinput.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" charset="windows-1251" src="~/js/main.js"></script>
+    <environment include="Staging,Production">
+        <!--Для слобовидящих-->
+        <script src="https://lidrekon.ru/slep/js/jquery.js"></script>
+        <script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
+
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/jquery-masked/jquery.maskedinput.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" charset="windows-1251" src="~/js/main.js"></script>
+    </environment>
 </body>
 
 </html>

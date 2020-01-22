@@ -1,4 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Http;
 
 
 namespace Website.Models.UsersSendEmail
@@ -7,8 +7,6 @@ namespace Website.Models.UsersSendEmail
     {
         public string Designation { get; set; }
 
-       // [Required(ErrorMessage = "Укажите полностью ФИО")]
-        //[RegularExpression(@"^([А-яёіў ][а-яёіў ]+[\-\'\s]?){3,}?$", ErrorMessage = "Укажите полностью ФИО (кириллица).")]
         public string Name { get; set; }
 
         public string NameLegal { get; set; }
@@ -20,5 +18,8 @@ namespace Website.Models.UsersSendEmail
         public string Email { get; set; }
 
         public string Phone { get; set; }
+
+        public IFormFile File { get; set; }
+
     }
 }

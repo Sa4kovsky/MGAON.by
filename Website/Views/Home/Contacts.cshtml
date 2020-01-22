@@ -114,53 +114,19 @@
                     type: 'GET',
                     url: '/home/sendEmail',
                     traditional: true,
-                    data: { Name: $('#fullName').val(), Email: $('#email').val(), Phone: $('#phone').val(), Message: $('#message').val() },
+                    data: { Name: $('#fullName').val(), Email: $('#email').val(), Phone: $('#tel').val(), Message: $('#message').val() },
                     success: function (result) {
                     $('#resultSendEmail').html(result);
                     }
                 });
+               
                 $('#exampleModalCenter').modal('show')
             }
         });
     });
 
-    //Проверки на валидность
-    var _validName, _validMessage;
-    function ValidName() {
-        var re = /^([А-яёіў ][а-яёіў ]+[\-\'\s]?){3,}?$/;
-        var fullName = document.getElementById('fullName').value;
-        _validName = re.test(fullName);
-        if (_validName) {
-            document.getElementById('fullName').style.borderColor = '#ced4da';
-            document.getElementById('resultName').innerHTML = '';
-            document.getElementById('resultSendEmail').innerHTML = '';
-        }
-        else {
-            output = 'Укажите полное имя (кириллицей)';
-            document.getElementById('fullName').style.borderColor = '#dc3545';
-            document.getElementById('resultName').innerHTML = output;
-            $('#exampleModalCenter').modal('show')
-        }
-        return _validName;
-    }
-
-    function ValidMessage() {
-        var re = /^[А-яёіў][А-яёіў0-9,. -!?""'']*$/;
-        var message = document.getElementById('message').value;
-        _validMessage = re.test(message);
-        if (_validMessage) {
-            document.getElementById('message').style.borderColor = '#ced4da';
-            document.getElementById('resultMessage').innerHTML = '';
-            document.getElementById('resultSendEmail').innerHTML = '';
-        }
-        else {
-            output = 'Сообщение (кириллицей)';
-            document.getElementById('message').style.borderColor = '#dc3545';
-            document.getElementById('resultMessage').innerHTML = output;
-            $('#exampleModalCenter').modal('show')
-        }
-
-        return _validMessage;
-    } 
-
+    // Создание масок.
+    $(function () {
+        $("#tel").mask("8(099) 99-99-999");
+    });
 </script>

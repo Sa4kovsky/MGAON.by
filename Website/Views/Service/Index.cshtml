@@ -38,7 +38,7 @@
                     <!--Для того чтобы переключаться между юр.лицами и физ сделан js script который создает и удаляет лишний input-->
                     <div class="form" id="profile">
                         <div class="custom-control custom-radio">
-                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked="checked" onclick="addInputNaturalPerson()">
+                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" onclick="addInputNaturalPerson()">
                             <label class="custom-control-label" for="customRadio1">Обращения граждан</label>
                         </div>
                         <div class="custom-control custom-radio">
@@ -46,28 +46,9 @@
                             <label class="custom-control-label" for="customRadio2" onclick="addInputLegalPerson()">Обращения юридических лиц</label>
                         </div>
                         <form action="" method="post" role="form" class="contactForm" id="input0">
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="designation" id="designation" placeholder="Наименование и (или) адрес организации либо должность лица*" required />
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="fullName" id="fullName" placeholder="ФИО*" required />
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="address" id="address" placeholder="Адрес места жительства (места пребывания)*" required />
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Электронная почта*" required />
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="tel" id="tel" placeholder="Контактный телефон" />
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control" name="message" id="message" placeholder="Обращение*" maxlength="2000"></textarea>
-                            </div>
-                            <div class="text-center" style="padding:20px">
-                                <button type="button" formnovalidate value="SendEmail" id="buttonSendEmail">Отправить сообщение</button>
-                            </div>
                         </form>
+
+
                     </div>
                 </div>
             </div>
@@ -79,17 +60,17 @@
 
             <p>
                 <b>Оставляются без рассмотрения по существу электронные обращения, которые (по которым):</b><br>
-                1.изложены не на белорусском или русском языке;<br>
-                2.не содержат фамилии, собственного имени, отчества , адреса места жительства (места пребывания) гражданина;<br>
-                3.не содержат полного названия юридического лица и адреса его места пребывания, фамилии, собственного имени, отчества руководителя или лица, уполномоченного в установленном порядке подписывать обращения (для юридических лиц), адреса электронной почты заявителя;<br>
-                4.содержат текст, который невозможно прочитать;<br>
-                5.содержат нецензурные или оскорбительные слова или выражения;<br>
-                6.подаются представителями заявителей, и к ним не прилагаются электронные копии документов, которые подтверждают их полномочия;<br>
-                7.подлежат рассмотрению в соответствии с законодательством о конституционном судопроизводстве, гражданским, гражданским процессуальным, хозяйственным процессуальным, уголовно-процессуальным законодательством, законодательством, которое определяет порядок административного процесса, законодательством об административных процедурах или в соответствии с законодательными актами установленный другой порядок подачи и рассмотрения таких обращений;<br>
-                8.содержат вопросы, которые не относятся к компетенции Предприятия;<br>
-                9.пропущен без уважительной причины срок подачи обращения;<br>
-                10.направлено повторное обращение, если оно уже было рассмотрено и не содержит новых обстоятельств, которые имеют значение для рассмотрения обращения по существу;<br>
-                11.с заявителем прекращена переписка.
+                1. изложены не на белорусском или русском языке;<br>
+                2. не содержат фамилии, собственного имени, отчества , адреса места жительства (места пребывания) гражданина;<br>
+                3. не содержат полного названия юридического лица и адреса его места пребывания, фамилии, собственного имени, отчества руководителя или лица, уполномоченного в установленном порядке подписывать обращения (для юридических лиц), адреса электронной почты заявителя;<br>
+                4. содержат текст, который невозможно прочитать;<br>
+                5. содержат нецензурные или оскорбительные слова или выражения;<br>
+                6. подаются представителями заявителей, и к ним не прилагаются электронные копии документов, которые подтверждают их полномочия;<br>
+                7. подлежат рассмотрению в соответствии с законодательством о конституционном судопроизводстве, гражданским, гражданским процессуальным, хозяйственным процессуальным, уголовно-процессуальным законодательством, законодательством, которое определяет порядок административного процесса, законодательством об административных процедурах или в соответствии с законодательными актами установленный другой порядок подачи и рассмотрения таких обращений;<br>
+                8. содержат вопросы, которые не относятся к компетенции Предприятия;<br>
+                9. пропущен без уважительной причины срок подачи обращения;<br>
+                10. направлено повторное обращение, если оно уже было рассмотрено и не содержит новых обстоятельств, которые имеют значение для рассмотрения обращения по существу;<br>
+                11. с заявителем прекращена переписка.
             </p>
 
             <p>
@@ -120,7 +101,19 @@
             <div class="modal-body">
                 <h5 class="modal-title" id="resultSendEmail"></h5>
                 <div>
+                    <p id="resultDesignation" />
+                </div>
+                <div>
+                    <p id="resultNameLegal" />
+                </div>
+                <div>
                     <p id="resultName" />
+                </div>
+                <div>
+                    <p id="resultAddress" />
+                </div>
+                <div>
+                    <p id="resultEmail" />
                 </div>
                 <div>
                     <p id="resultMessage" />
@@ -131,3 +124,20 @@
 </div>
 
 
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#buttonSendEmailas').click(function () {
+            var formData = new FormData();
+            formData.append('File', $('#uploadFile')[0].files[0]); // myFile is the input type="file" control
+            formData.append('Designation', $('#designation').val());
+            $.ajax({
+                url: '/service/uploadFile',
+                type: 'POST',
+                data: formData,
+                processData: false,
+                contentType: false
+            });
+        });
+    });
+</script>

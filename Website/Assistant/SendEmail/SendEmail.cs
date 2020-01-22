@@ -1,4 +1,5 @@
-﻿using System.Net;
+﻿using Microsoft.AspNetCore.Http;
+using System.Net;
 using System.Net.Mail;
 using Website.Models.UsersSendEmail;
 
@@ -16,7 +17,7 @@ namespace Website.Assistant.SendEmail
         /// </summary>
         /// <param name="person">Объект LegalPerson</param>
         /// <param name="messaga">Тема письма</param>
-        public async void SendEmailAsync(Person person,  string messaga)
+        public async void SendEmailAsync(Person person,  string messaga, IFormFile file)
         { 
             // отправитель
             MailAddress _from = new MailAddress("info@mgaon.by", person.Name);
@@ -38,11 +39,13 @@ namespace Website.Assistant.SendEmail
                           <br>Сообщение - " + person.Message + @" </body></html>";
             // письмо представляет код html
             _message.IsBodyHtml = true;
-           /* if (file != null)
+           if (file != null)
             {
-                _m.Attachments.Add(new Attachment("/app/wwwroot/share-pictures/" + file.Path));
+                var strFileName = System.IO.Path.GetFileName(file.FileName);
+                //  FileUpLoad1.PostedFile.SaveAs(Server.MapPath(strFileName));
+                Attachment attach = new Attachment(file, MediaTypeNames.Application.Octet);
+                _message.Attachments.Add(attach);
             }
-            */
             // адрес smtp-сервера и порт, с которого будем отправлять письмо
             SmtpClient _smtp = new SmtpClient("smtp.yandex.ru", 587);
             // логин и пароль
