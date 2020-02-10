@@ -4,14 +4,14 @@
     <div class="container">
         <div class="section-header">
             <h3 class="section-title">Новости</h3>
-            <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+            <p class="section-description">Расписание проведения тематических дней информирования населения по актуальным вопросам жизнедеятельности населения г. Минска на текущую неделю</p>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-lg-1"></div>
-        <div class="col-lg-2 col-md-4 col-sm-6">
-            <div class="post-date"> <h4 style="color:white; margin: 0px">Пн.</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="monday"></h6></div>
+        <div class="col-xl-1"></div>
+        <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6">
+            <div class="post-date"> <h4 style="color:white; margin: 0px">Понедельник</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="monday"></h6></div>
             <br />
 
             @foreach (var item in Model.News)
@@ -19,9 +19,9 @@
                 @if (item.DateStart.ToShortDateString() == (DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Monday)).ToShortDateString())
                 {
                     <div class="box">
-                        <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
-                        <h6 style="text-align:right; margin: 0px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
-                        <h4 class="title" style="margin:0px">Тема: @item.Title</h4>
+                        <div class="icon"><a href=""><i class="fa fa-forumbee"></i></a></div>
+                        <h6 style="text-align:right; margin: 10px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
+                        <h4 class="title">Тема: @item.Title</h4>
                         <p class="description" style="margin: 20px 0px 0px 0px">
                             <b>Исполнитель: @item.Name</b>
                             <br /> <br />
@@ -34,17 +34,17 @@
             }
         </div>
 
-        <div class="col-lg-2 col-md-4 col-sm-6">
-            <div class="post-date"> <h4 style="color:white; margin: 0px">Вт.</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="tuesday"></h6></div>
+        <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6">
+            <div class="post-date"> <h4 style="color:white; margin: 0px">Вторник</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="tuesday"></h6></div>
             <br />
             @foreach (var item in Model.News)
             {
                 @if (item.DateStart.ToShortDateString() == (DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Tuesday)).ToShortDateString())
                 {
                     <div class="box">
-                        <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
-                        <h6 style="text-align:right; margin: 0px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
-                        <h4 class="title" style="margin:0px">Тема:  @item.Title</h4>
+                        <div class="icon"><a href=""><i class="fa fa-slack"></i></a></div>
+                        <h6 style="text-align:right; margin: 10px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
+                        <h4 class="title">Тема:  @item.Title</h4>
                         <p class="description" style="margin: 20px 0px 0px 0px">
                             <b>Исполнитель: @item.Name</b>
                             <br /> <br />
@@ -57,17 +57,17 @@
             }
         </div>
 
-        <div class="col-lg-2 col-md-4 col-sm-6">
-            <div class="post-date"> <h4 style="color:white; margin: 0px">Ср.</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="wednesday"></h6></div>
+        <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6">
+            <div class="post-date"> <h4 style="color:white; margin: 0px">Среда</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="wednesday"></h6></div>
             <br />
             @foreach (var item in Model.News)
             {
                 @if (item.DateStart.ToShortDateString() == (DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Wednesday)).ToShortDateString())
                 {
                     <div class="box">
-                        <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
-                        <h6 style="text-align:right; margin: 0px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
-                        <h4 class="title" style="margin:0px">Тема:  @item.Title</h4>
+                        <div class="icon"><a href=""><i class="fa fa-yelp"></i></a></div>
+                        <h6 style="text-align:right; margin: 10px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
+                        <h4 class="title">Тема:  @item.Title</h4>
                         <p class="description" style="margin: 20px 0px 0px 0px">
                             <b>Исполнитель: @item.Name</b>
                             <br /> <br />
@@ -81,17 +81,17 @@
         </div>
 
 
-        <div class="col-lg-2 col-md-4 col-sm-6">
-            <div class="post-date"> <h4 style="color:white; margin: 0px">Чт.</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="thursday"></h6></div>
+        <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6">
+            <div class="post-date"> <h4 style="color:white; margin: 0px">Четверг</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="thursday"></h6></div>
             <br />
             @foreach (var item in Model.News)
             {
                 @if (item.DateStart.ToShortDateString() == (DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Thursday)).ToShortDateString() )
                 {
                     <div class="box">
-                        <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
-                        <h6 style="text-align:right; margin: 0px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
-                        <h4 class="title" style="margin:0px">Тема:  @item.Title</h4>
+                        <div class="icon"><a href=""><i class="fa fa-google-wallet"></i></a></div>
+                        <h6 style="text-align:right; margin: 10px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
+                        <h4 class="title">Тема:  @item.Title</h4>
                         <p class="description" style="margin: 20px 0px 0px 0px">
                             <b>Исполнитель: @item.Name</b>
                             <br /> <br />
@@ -104,8 +104,8 @@
             }
         </div>
 
-        <div class="col-lg-2 col-md-4 col-sm-6">
-            <div class="post-date"> <h4 style="color:white; margin: 0px">Пт.</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="friday"></h6></div>
+        <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6">
+            <div class="post-date"> <h4 style="color:white; margin: 0px">Пятница</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="friday"></h6></div>
             <br />
             @foreach (var item in Model.News)
             {
@@ -113,8 +113,8 @@
                 {
                     <div class="box">
                         <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
-                        <h6 style="text-align:right; margin: 0px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
-                        <h4 class="title" style="margin:0px">Тема:  @item.Title</h4>
+                        <h6 style="text-align:right; margin: 10px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
+                        <h4 class="title">Тема:  @item.Title</h4>
                         <p class="description" style="margin: 20px 0px 0px 0px">
                             <b>Исполнитель: @item.Name</b>
                             <br /> <br />
@@ -130,17 +130,24 @@
 
     <!-- Кнопка архива и график-->
     <div class="text-center" style="padding:20px">
-        <button type="button" data-toggle="collapse" data-target="#multiCollapseExample1" aria-expanded="false">Архив</button>
-        <button type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false">График проведения тематических дней информирования</button>
+        <button type="button" data-toggle="collapse" data-target="#multiCollapseExample1" aria-expanded="false" style="margin:5px;">Архив</button>
+        <button type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" style="margin:5px;">График проведения тематических дней информирования</button>
     </div>
     <!-- Архива-->
     <div class="collapse" id="multiCollapseExample1" style="padding:0">
         <div class="card card-body" style="border:0; padding:0;">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="section-title">Архив новостей</h3>
+                    <p class="section-description">Расписание проведения тематических дней информирования населения по актуальным вопросам жизнедеятельности населения г. Минска за прошедшую неделю</p>
+                </div>
+            </div>
+
             <!-- По дням недели -->
             <div class="row">
-                <div class="col-lg-1"></div>
-                <div class="col-lg-2 col-md-4 col-sm-6">
-                    <div class="post-date"> <h4 style="color:white; margin: 0px">Пн.</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="oldMonday"></h6></div>
+                <div class="col-xl-1"></div>
+                <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6">
+                    <div class="post-date"> <h4 style="color:white; margin: 0px">Понедельник</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="oldMonday"></h6></div>
                     <br />
 
                     @foreach (var item in Model.News)
@@ -149,8 +156,8 @@
                         {
                             <div class="box">
                                 <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
-                                <h6 style="text-align:right; margin: 0px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
-                                <h4 class="title" style="margin:0px">Тема:  @item.Title</h4>
+                                <h6 style="text-align:right; margin: 10px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
+                                <h4 class="title">Тема:  @item.Title</h4>
                                 <p class="description" style="margin: 20px 0px 0px 0px">
                                     <b>Исполнитель: @item.Name</b>
                                     <br /> <br />
@@ -163,8 +170,8 @@
                     }
                 </div>
 
-                <div class="col-lg-2 col-md-4 col-sm-6">
-                    <div class="post-date"> <h4 style="color:white; margin: 0px">Вт.</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="oldTuesday"></h6></div>
+                <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6">
+                    <div class="post-date"> <h4 style="color:white; margin: 0px">Вторник</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="oldTuesday"></h6></div>
                     <br />
                     @foreach (var item in Model.News)
                     {
@@ -172,8 +179,8 @@
                         {
                             <div class="box">
                                 <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
-                                <h6 style="text-align:right; margin: 0px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
-                                <h4 class="title" style="margin:0px">Тема:  @item.Title</h4>
+                                <h6 style="text-align:right; margin: 10px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
+                                <h4 class="title">Тема:  @item.Title</h4>
                                 <p class="description" style="margin: 20px 0px 0px 0px">
                                     <b>Исполнитель: @item.Name</b>
                                     <br /> <br />
@@ -186,8 +193,8 @@
                     }
                 </div>
 
-                <div class="col-lg-2 col-md-4 col-sm-6">
-                    <div class="post-date"> <h4 style="color:white; margin: 0px">Ср.</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="oldWednesday"></h6></div>
+                <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6">
+                    <div class="post-date"> <h4 style="color:white; margin: 0px">Среда</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="oldWednesday"></h6></div>
                     <br />
                     @foreach (var item in Model.News)
                     {
@@ -195,8 +202,8 @@
                         {
                             <div class="box">
                                 <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
-                                <h6 style="text-align:right; margin: 0px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
-                                <h4 class="title" style="margin:0px">Тема:  @item.Title</h4>
+                                <h6 style="text-align:right; margin: 10px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
+                                <h4 class="title">Тема:  @item.Title</h4>
                                 <p class="description" style="margin: 20px 0px 0px 0px">
                                     <b>Исполнитель: @item.Name</b>
                                     <br /> <br />
@@ -210,8 +217,8 @@
                 </div>
 
 
-                <div class="col-lg-2 col-md-4 col-sm-6">
-                    <div class="post-date"> <h4 style="color:white; margin: 0px">Чт.</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="oldThursday"></h6></div>
+                <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6">
+                    <div class="post-date"> <h4 style="color:white; margin: 0px">Четверг</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="oldThursday"></h6></div>
                     <br />
                     @foreach (var item in Model.News)
                     {
@@ -219,8 +226,8 @@
                         {
                             <div class="box">
                                 <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
-                                <h6 style="text-align:right; margin: 0px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
-                                <h4 class="title" style="margin:0px">Тема:  @item.Title</h4>
+                                <h6 style="text-align:right; margin: 10px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
+                                <h4 class="title">Тема:  @item.Title</h4>
                                 <p class="description" style="margin: 20px 0px 0px 0px">
                                     <b>Исполнитель: @item.Name</b>
                                     <br /> <br />
@@ -233,8 +240,8 @@
                     }
                 </div>
 
-                <div class="col-lg-2 col-md-4 col-sm-6">
-                    <div class="post-date"> <h4 style="color:white; margin: 0px">Пт.</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="oldFriday"></h6></div>
+                <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6">
+                    <div class="post-date"> <h4 style="color:white; margin: 0px">Пятница</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="oldFriday"></h6></div>
                     <br />
                     @foreach (var item in Model.News)
                     {
@@ -242,8 +249,8 @@
                         {
                             <div class="box">
                                 <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
-                                <h6 style="text-align:right; margin: 0px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
-                                <h4 class="title" style="margin:0px">Тема:  @item.Title</h4>
+                                <h6 style="text-align:right; margin: 10px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
+                                <h4 class="title">Тема:  @item.Title</h4>
                                 <p class="description" style="margin: 20px 0px 0px 0px">
                                     <b>Исполнитель: @item.Name</b>
                                     <br /> <br />

@@ -18,7 +18,7 @@
 
 .fullScreen-content {
     position: relative;
-    top: 10%;
+    top: 100px;
     width: 100%;
     text-align: center;
     margin-top: 30px;
@@ -40,6 +40,7 @@
     background-repeat: no-repeat;
     background-size: 0% 2px;
     transition: background-size .3s;
+    cursor: pointer;
 }
 
     .fullScreen a:hover, .fullScreen a:focus {
@@ -53,15 +54,19 @@
     font-size: 25px;
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 500px) {
     .fullScreen a {
-        font-size: 20px
+        font-size: 14px
     }
 
     .fullScreen .closebtn {
         font-size: 40px;
         top: 60px;
         right: 35px;
+    }
+
+    .fullScreen .fullScreen-content .container img {
+        width: 100%;
     }
 }
 
@@ -82,12 +87,22 @@
     color: #999;
 }
 
+@media (max-width: 500px) {
+    .section-header .section-title {
+        font-size: 20px;
+    }
+
+    .section-header .section-description {
+        font-size: 14px;
+        padding-bottom: 20px;
+    }
+}
 
 /* About Us Section
 --------------------------------*/
 #about {
     background: #fff;
-    padding: 80px 0;
+    padding: 80px 0 20px 0;
 }
 
     #about .about-container .background {
@@ -111,6 +126,11 @@
 @media (max-width: 768px) {
     #about .about-container .title {
         padding-top: 15px;
+    }
+}
+
+    #about .about-container .title {
+        padding-top: 10px;
     }
 }
 
@@ -178,6 +198,33 @@
         background: #51d8ad;
     }
 
+
+@media (max-width: 500px) {
+    #about .about-container .title {
+        font-size: 14px;
+    }
+
+    #about .about-container p {
+        font-size: 12px;
+    }
+
+    #about .about-container li {
+        font-size: 12px;
+    }
+
+    #about {
+        padding: 20px 0 20px 0;
+    }
+
+    #about .about-container .icon-box .title {
+        font-size: 14px;
+    }
+    #about .about-container .icon-box .description {
+        line-height: normal;
+        font-size: 12px;
+    }
+}
+
 /*------  Facts Section ------*/
 #facts {
     background: #f7f7f7;
@@ -197,250 +244,324 @@
         font-size: 14px;
     }
 
-/* -------- Area Section ---------*/
-#area {
-    background: #fff;
-    background-size: cover;
-    padding: 80px 0 60px 0;
+@media (max-width: 500px) {
+    #facts {
+       padding: 20px 0 20px 0;
+    }
 }
-
-    #area .box {
-        padding: 50px 20px;
-        margin-bottom: 50px;
-        text-align: center;
-        border: 1px solid #e6e6e6;
-        height: 200px;
-        position: relative;
-        background: #fafafa;
-    }
-
-    #area .icon {
-        position: absolute;
-        top: -36px;
-        left: calc(50% - 36px);
-        transition: 0.2s;
-        border-radius: 50%;
-        border: 6px solid #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-        width: 72px;
-        height: 72px;
-        background: #2dc997;
-    }
-
-        #area .icon a {
-            display: inline-block;
-        }
-
-        #area .icon i {
-            color: #fff;
-            font-size: 24px;
-        }
-
-    #area .box:hover .icon {
+    /* -------- Area Section ---------*/
+    #area {
         background: #fff;
-        border: 2px solid #2dc997;
+        background-size: cover;
+        padding: 80px 0 60px 0;
     }
 
-        #area .box:hover .icon i {
-            color: #2dc997;
+        #area .box {
+            padding: 50px 20px;
+            margin-bottom: 50px;
+            text-align: center;
+            border: 1px solid #e6e6e6;
+            height: 200px;
+            position: relative;
+            background: #fafafa;
         }
 
-        #area .box:hover .icon a {
-            color: #2dc997;
+        #area .icon {
+            position: absolute;
+            top: -36px;
+            left: calc(50% - 36px);
+            transition: 0.2s;
+            border-radius: 50%;
+            border: 6px solid #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            width: 72px;
+            height: 72px;
+            background: #2dc997;
         }
 
-    #area .title {
-        font-weight: 700;
-        font-size: 18px;
-        margin-bottom: 15px;
+            #area .icon a {
+                display: inline-block;
+            }
+
+            #area .icon i {
+                color: #fff;
+                font-size: 24px;
+            }
+
+        #area .box:hover .icon {
+            background: #fff;
+            border: 2px solid #2dc997;
+        }
+
+            #area .box:hover .icon i {
+                color: #2dc997;
+            }
+
+            #area .box:hover .icon a {
+                color: #2dc997;
+            }
+
+        #area .title {
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+            #area .title a {
+                color: #111;
+            }
+
+        #area .description {
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+
+@media (max-width: 500px) {
+    #area {
+        padding: 20px 0 20px 0;
+    }
+
+        #area .box {
+            height: 160px;
+        }
+}
+    /*------ Call To Action Section --------*/
+    #call-to-action {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/call-to-action-bg.jpg) fixed center center;
+        background-size: cover;
+        padding: 80px 0;
+    }
+
+        #call-to-action .cta-title {
+            color: #fff;
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        #call-to-action .cta-text {
+            color: #fff;
+        }
+
+    @media (min-width: 769px) {
+        #call-to-action .cta-btn-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+    }
+
+    #call-to-action .cta-btn {
+        font-family: "Poppins", sans-serif;
         text-transform: uppercase;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 8px 30px;
+        border-radius: 50px;
+        transition: 0.5s;
+        margin: 10px;
+        border: 2px solid #fff;
+        color: #fff;
     }
 
-        #area .title a {
-            color: #111;
+        #call-to-action .cta-btn:hover {
+            background: #2dc997;
+            border: 2px solid #2dc997;
         }
 
-    #area .description {
-        font-size: 14px;
-        line-height: 24px;
-    }
-
-/*------ Call To Action Section --------*/
-#call-to-action {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/call-to-action-bg.jpg) fixed center center;
-    background-size: cover;
-    padding: 80px 0;
-}
-
-    #call-to-action .cta-title {
-        color: #fff;
-        font-size: 28px;
-        font-weight: 700;
-    }
-
-    #call-to-action .cta-text {
-        color: #fff;
-    }
-
-@media (min-width: 769px) {
-    #call-to-action .cta-btn-container {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-    }
-}
-
-#call-to-action .cta-btn {
-    font-family: "Poppins", sans-serif;
+ #call-to-action .title {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
     text-transform: uppercase;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 8px 30px;
-    border-radius: 50px;
-    transition: 0.5s;
-    margin: 10px;
-    border: 2px solid #fff;
-    color: #fff;
 }
 
-    #call-to-action .cta-btn:hover {
-        background: #2dc997;
-        border: 2px solid #2dc997;
+@media (max-width: 500px) {
+    #call-to-action {
+        padding: 20px 0;
     }
 
-
-#myCollCenter  .icon-box {
-    background-size: cover;
-    padding: 0 0 30px 0;
-}
-
-    #myCollCenter  .icon-box .icon {
-        float: left;
-        width: 64px;
-        height: 64px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: left;
-        border-radius: 50%;
-        border: 2px solid #2dc997;
-    }
-
-        #myCollCenter  .icon-box .icon i {
-            color: #2dc997;
-            font-size: 24px;
+        #call-to-action .cta-title {
+            font-size: 20px;
         }
 
-        #myCollCenter  .icon-box a {
+        #call-to-action .cta-text {
+            font-size: 14px;
+        }
+
+        #call-to-action .cta-btn {
+            font-size: 14px;
+        }
+
+        #call-to-action .title {
+            font-size: 20px;
+        }
+}
+
+
+    #myCollCenter .icon-box {
+        background-size: cover;
+        padding: 0 0 30px 0;
+    }
+
+        #myCollCenter .icon-box .icon {
+            float: left;
+            width: 64px;
+            height: 64px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: left;
+            border-radius: 50%;
+            border: 2px solid #2dc997;
+        }
+
+            #myCollCenter .icon-box .icon i {
+                color: #2dc997;
+                font-size: 24px;
+            }
+
+        #myCollCenter .icon-box a {
             color: #111;
         }
 
-    #myCollCenter  .icon-box .description {
-        margin-left: 80px;
-        line-height: 24px;
+        #myCollCenter .icon-box .description {
+            margin-left: 80px;
+            line-height: 24px;
+            font-size: 14px;
+            text-align: left;
+        }
+
+@media (max-width: 500px) {
+
+    #call-to-action .fullScreen .fullScreen-content .container p {
         font-size: 14px;
-        text-align:left;
+        line-height: normal;
     }
 
-/*---------- News Section ----------*/
-#news {
-    background: #fff;
-    padding: 80px 15px 0px 15px;
+    #call-to-action .fullScreen .fullScreen-content .container ul {
+        font-size: 14px;
+        line-height: normal;
+    }
+
+    #call-to-action .fullScreen .fullScreen-content .container a {
+        font-size: 14px;
+    }
 }
 
-    #news .post-date {
-        padding: 15px;
-        background: rgba(52, 59, 64, 0.9);
-        cursor: pointer;
-    }
 
-    #news .box {
-        padding: 30px 20px 10px 20px;
-        margin-bottom: 50px;
-        border: 1px solid #e6e6e6;
-        position: relative;
-        background: #fafafa;
-    }
-
-    #news .icon {
-        position: absolute;
-        top: -36px;
-        left: calc(50% - 36px);
-        transition: 0.2s;
-        border-radius: 50%;
-        border: 6px solid #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-        width: 72px;
-        height: 72px;
-        background: #2dc997;
-    }
-
-        #news .icon a {
-            display: inline-block;
-        }
-
-        #news .icon i {
-            color: #fff;
-            font-size: 24px;
-        }
-
-    #news .box:hover .icon {
+    /*---------- News Section ----------*/
+    #news {
         background: #fff;
-        border: 2px solid #2dc997;
+        padding: 80px 15px 0px 15px;
     }
 
-        #news .box:hover .icon i {
-            color: #2dc997;
+        #news .post-date {
+            padding: 15px;
+            background: rgba(52, 59, 64, 0.9);
+            cursor: pointer;
         }
 
-#news .box:hover .icon a {
-    color: #2dc997;
+        #news .box {
+            padding: 30px 20px 10px 20px;
+            margin-bottom: 50px;
+            border: 1px solid #e6e6e6;
+            position: relative;
+            background: #fafafa;
+        }
+
+        #news .icon {
+            position: absolute;
+            top: -36px;
+            left: calc(50% - 36px);
+            transition: 0.2s;
+            border-radius: 50%;
+            border: 6px solid #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            width: 72px;
+            height: 72px;
+            background: #2dc997;
+        }
+
+            #news .icon a {
+                display: inline-block;
+            }
+
+            #news .icon i {
+                color: #fff;
+                font-size: 24px;
+            }
+
+        #news .box:hover .icon {
+            background: #fff;
+            border: 2px solid #2dc997;
+        }
+
+            #news .box:hover .icon i {
+                color: #2dc997;
+            }
+
+            #news .box:hover .icon a {
+                color: #2dc997;
+            }
+
+        #news .title {
+            font-weight: 100;
+            font-size: 14px;
+            margin: 0px;
+        }
+
+            #news .title a {
+                color: #111;
+            }
+
+        #news .description {
+            font-size: 14px;
+        }
+
+        #news button[type="button"] {
+            background: #2dc997;
+            border: 0;
+            padding: 10px 24px;
+            color: #fff;
+            transition: 0.4s;
+        }
+
+            #news button[type="button"]:hover {
+                background: #51d8ad;
+            }
+
+
+@media (max-width: 500px) {
+    #news {
+        padding: 20px 15px 20px 15px;
+    }
+
+        #news .container table thead{
+          font-size:10px;
+        }
+        #news .container table tbody {
+            font-size: 8px;
+        }
 }
-
-    #news .title {
-        font-weight: 700;
-        font-size: 14px;
-        margin-bottom: 15px;
-        text-transform: uppercase;
+    /*------ Trade union organization Section --------*/
+    #trade-union-organization {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://yandex.by/images/_crpd/jfKB64l26/66d0e6qhfl3c/j59C2O_Rir2dqH3-4RFed_bfo2mgvD2QzaCSTc8A_KYf10_6D5F_-rGL-7kudf74QRkingoEbQpOZ4a-8BoZ6I7u47iu1K6d2bkcTmFEm6Nz6kYg) fixed center center;
+        background-size: cover;
+        padding: 80px 0;
     }
-
-        #news .title a {
-            color: #111;
-        }
-
-    #news .description {
-        font-size: 14px;
-    }
-
-    #news button[type="button"] {
-        background: #2dc997;
-        border: 0;
-        padding: 10px 24px;
-        color: #fff;
-        transition: 0.4s;
-    }
-
-        #news  button[type="button"]:hover {
-            background: #51d8ad;
-        }
-
-/*------ Trade union organization Section --------*/
-#trade-union-organization {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://yandex.by/images/_crpd/jfKB64l26/66d0e6qhfl3c/j59C2O_Rir2dqH3-4RFed_bfo2mgvD2QzaCSTc8A_KYf10_6D5F_-rGL-7kudf74QRkingoEbQpOZ4a-8BoZ6I7u47iu1K6d2bkcTmFEm6Nz6kYg) fixed center center;
-    background-size: cover;
-    padding: 80px 0;
-}
 
     #trade-union-organization .cta-title {
         color: #fff;
@@ -453,7 +574,6 @@
     }
 
     #trade-union-organization .table {
-   
         margin-bottom: 1rem;
         color: #fff;
     }
@@ -483,7 +603,7 @@
         border: 1px solid #dee2e6;
     }
 
-        #trade-union-organization  .table-bordered th,
+        #trade-union-organization .table-bordered th,
         .table-bordered td {
             border: 1px solid #dee2e6;
         }
@@ -509,39 +629,72 @@
         background-color: rgba(0, 0, 0, 0.3);
     }
 
-@media (min-width: 769px) {
-    #trade-union-organization .cta-btn-container {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
+    @media (min-width: 769px) {
+        #trade-union-organization .cta-btn-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
     }
-}
 
-#trade-union-organization .cta-btn {
-    font-family: "Poppins", sans-serif;
+    #trade-union-organization .cta-btn {
+        font-family: "Poppins", sans-serif;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 8px 30px;
+        border-radius: 50px;
+        transition: 0.5s;
+        margin: 10px;
+        border: 2px solid #fff;
+        color: #fff;
+    }
+
+        #trade-union-organization .cta-btn:hover {
+            background: #2dc997;
+            border: 2px solid #2dc997;
+        }
+
+#myUnion .title {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
     text-transform: uppercase;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 8px 30px;
-    border-radius: 50px;
-    transition: 0.5s;
-    margin: 10px;
-    border: 2px solid #fff;
-    color: #fff;
 }
 
-    #trade-union-organization .cta-btn:hover {
-        background: #2dc997;
-        border: 2px solid #2dc997;
+@media (max-width: 500px) {
+    #trade-union-organization {
+        padding: 20px 0;
     }
 
-/*------ Contact Section --------*/
-#contact {
-    background: #f7f7f7;
-    padding: 80px 0 40px 0;
+        #trade-union-organization .cta-title {
+            font-size: 20px;
+        }
+
+        #trade-union-organization .cta-btn {
+            font-size: 14px;
+        }
+
+
+    #myUnion  .title {
+        font-size: 20px;
+    }
+
+    #myUnion p {
+        font-size: 14px;
+    }
+
+    #myUnion td {
+        font-size: 14px;
+    }
 }
+    /*------ Contact Section --------*/
+    #contact {
+        background: #f7f7f7;
+        padding: 80px 0 20px 0;
+    }
 
     #contact #google-map {
         height: 300px;
@@ -605,9 +758,9 @@
         margin-bottom: 15px;
     }
 
-        #contact .form #contact .form #errormessage.show, #contact .form .show {
-            display: block;
-        }
+    #contact .form #contact .form #errormessage.show, #contact .form .show {
+        display: block;
+    }
 
     #contact .form .validation {
         color: red;
@@ -623,7 +776,7 @@
         font-size: 14px;
     }
 
-    #contact  button[type="button"] {
+    #contact button {
         background: #2dc997;
         border: 0;
         padding: 10px 24px;
@@ -631,24 +784,36 @@
         transition: 0.4s;
     }
 
-        #contact  button[type="button"]:hover {
+        #contact button:hover {
             background: #51d8ad;
         }
 
-/* Services Section
---------------------------------*/
-#services {
-    background: #fff;
-    background-size: cover;
-    padding: 80px 0 60px 0;
+@media (max-width: 500px) {
+    #contact {
+        padding: 20px 0 20px 0;
+    }
 }
 
+
+    /* Services Section
+--------------------------------*/
+    #services {
+        background: #fff;
+        background-size: cover;
+        padding: 20px 0 80px 0;
+    }
+
+    @media (max-width: 500px) {
+        #services {
+            padding: 20px 0 0 0;
+        }
+    }
+
     #services .box {
-        padding: 50px 20px;
+        padding: 50px 20px 30px 20px;
         margin-bottom: 50px;
         text-align: center;
         border: 1px solid #e6e6e6;
-        height: 200px;
         position: relative;
         background: #fafafa;
     }
@@ -672,7 +837,7 @@
 
         #services .icon span {
             display: inline-block;
-            cursor:pointer;
+            cursor: pointer;
         }
 
 
@@ -710,7 +875,86 @@
         line-height: 24px;
     }
 
+    @media (max-width: 500px) {
+        #services .title {
+            font-size: 14px;
+        }
 
-/*--------------------------------------------------------------
+        #services a {
+            font-size: 20px;
+        }
+
+        #services table {
+            font-size: 8px;
+        }
+
+        #services p {
+            font-size: 12px;
+        }
+
+        #services p a{
+            font-size: 12px;
+        }
+
+        #services img {
+           width:100%
+        }
+    }
+
+
+
+    /*------ Partner Section --------*/
+    #partner {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/partner.jpg) fixed center center;
+        background-size: cover;
+        padding: 80px 0;
+    }
+
+        #partner .cta-title {
+            color: #fff;
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        #partner .cta-text {
+            color: #fff;
+        }
+
+    @media (min-width: 769px) {
+        #partner .cta-btn-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+    }
+
+    #partner .padding {
+        padding: 30px 0 0 0
+    }
+
+    #partner .wrapper {
+        height: 65px;
+    }
+
+    #partner .exmpl {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        #partner .exmpl img {
+            height: 100%;
+            width: auto;
+        }
+
+    #partner a {
+        border: none;
+    }
+
+        #partner a:hover a:focus {
+            border: none;
+        }
+    /*--------------------------------------------------------------
 # END Index View Sections
 --------------------------------------------------------------*/

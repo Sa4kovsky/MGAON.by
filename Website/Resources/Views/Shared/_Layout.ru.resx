@@ -131,7 +131,7 @@
     <value>Службы «одно окно»</value>
   </data>
   <data name="Enterprise" xml:space="preserve">
-    <value>Предприятие</value>
+    <value>О нас</value>
   </data>
   <data name="Facts" xml:space="preserve">
     <value>Факты</value>
@@ -143,7 +143,7 @@
     <value>Справочная информация</value>
   </data>
   <data name="Service" xml:space="preserve">
-    <value>Услуга</value>
+    <value>Наши услуги</value>
   </data>
   <data name="Union" xml:space="preserve">
     <value>Профсоюз</value>

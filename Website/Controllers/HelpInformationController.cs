@@ -20,5 +20,17 @@ namespace Website.Controllers
         {
             return View();
         }
+
+        [Route("admprocedure")]
+        public IActionResult AdmProcedure()
+        {
+            return View();
+        }
+
+        [Route("webcamers")]
+        public IActionResult WebCamers()
+        {
+            return View();
+        }
     }
 }

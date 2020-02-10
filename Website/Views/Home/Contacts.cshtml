@@ -1,6 +1,6 @@
 ﻿@model Website.Models.UsersSendEmail.Person
 
-<section id="contact" style="padding: 80px 0 20px 0">
+<section id="contact">
     <div class="container">
         <div class="section-header" style="padding: 0 0 20px 0">
             <h3 class="section-title">Контакты</h3>
@@ -9,7 +9,7 @@
     </div>
 
     <!-- Яндекс карта -->
-    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adf019a8b5489213833c8fd43d62922df57bf4d02380de8844d902a0699febcc3&amp;width=100%25&amp;height=546&amp;lang=ru_RU&amp;scroll=true"></script>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adf019a8b5489213833c8fd43d62922df57bf4d02380de8844d902a0699febcc3&amp;width=100%25&amp;height=350&amp;lang=ru_RU&amp;scroll=true"></script>
 
     <div class="container" style="padding: 40px;">
         <div class="row">
@@ -21,8 +21,14 @@
                         <i class="fa fa-map-marker"></i>
                         <p>
                             Республика Беларусь,<br>220004, г. Минск,<br />
-                            ул. М.Танка, 36, корп.1, пом. 1Н,
-                            (часть первого этажа) проезд до ст. метро Молодежная
+                            ул. М.Танка, 36, корп.1, пом. 1Н
+                            (часть изолированного помещения) проезд до ст. метро Молодежная
+                        </p>
+                    </div>
+                    <div>
+                        <i class="fa fa-medium"></i>
+                        <p>
+                            метро Молодежная
                         </p>
                     </div>
                     <div>
@@ -31,7 +37,7 @@
                     </div>
                     <div>
                         <i class="fa fa-phone"></i>
-                        <p>+375(17)364-66-34</p>
+                        <p>+375 (17) 364-66-34</p>
                     </div>
 
                 </div>
@@ -51,7 +57,7 @@
                             <input type="text" class="form-control" name="tel" id="tel" placeholder="Контактный телефон" />
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" name="message" id="message" placeholder="Сообщение*" maxlength="1000"></textarea>
+                            <textarea class="form-control" name="message" id="message" placeholder="Сообщение*" maxlength="1000" required></textarea>
                         </div>
                         <div class="text-center" style="padding:20px">
                             <button type="button" formnovalidate value="SendEmail" id="buttonSendEmail" >Отправить сообщение</button>
@@ -69,7 +75,7 @@
                             понедельник-четверг: с 8.45 до 18.00 <br />
                             пятница: с 8.45 до 16.45 <br />
                             обед: с 13.00 до 14.00 <br />
-                            суббота, воскресенье: выходные
+                            выходные: суббота, воскресенье.
                         </p>
                     </div>
                     <div>
@@ -127,6 +133,6 @@
 
     // Создание масок.
     $(function () {
-        $("#tel").mask("8(099) 99-99-999");
+        $("#tel").mask("+375 (99) 99-99-999");
     });
 </script>

@@ -1,15 +1,17 @@
-﻿<section id="about" style="padding:80px 0 20px 0">
+﻿@model IEnumerable<Website.Models.WebSiteBD.Procedures>
+<section id="about">
     <div class="container">
-        <div class="row about-container">
+        <div class="about-container">
             <div class="content order-lg-1 order-2">
                 <h2 class="title">О предприятии</h2>
                 <p>
-                    <b>Коммунальное унитарное предприятие «Минское городское агентство обслуживания населения»</b><br />
-                    создано 01.07.2013 г. в результате реорганизации путем выделения из состава коммунального унитарного предприятия «Центр информационных технологий Мингорисполкома» и зарегистрировано решением Мингорисполкома от 23.05.2013 г. № 1344. Форма собственности - государственная (коммунальная).
+                    <b>Коммунальное унитарное предприятие «Минское городское агентство обслуживания населения» (далее – МГАОН)</b><br />
+                    создано 01.07.2013 г. в результате реорганизации путем выделения из состава коммунального унитарного предприятия «Центр информационных технологий Мингорисполкома» и зарегистрировано решением Мингорисполкома от 23.05.2013 г. № 1344. Форма собственности - государственная (коммунальная).<br />
+                    <a sce="https://minsk.gov.by/ru/">Учредителем Предприятия является Минский городской исполнительный комитет.</a>
                 </p>
                 <p><b>Цели деятельности Предприятия:</b></p>
                 <div class="icon-box">
-                    <div class="icon"><i class="fa fa-question"></i></div>
+                    <div class="icon"><i class="fa  fa-handshake-o"></i></div>
                     <h4 class="title"><a href="">Оказание Услуг</a></h4>
                     <p class="description">оказание услуг по обеспечению деятельности организаций по принципу «одно окно» по административным процедурам, ведению электронных баз данных организаций и иных сопутствующих услуг</p>
                 </div>
@@ -34,12 +36,12 @@
 
                 <div class="icon-box">
                     <div class="icon"><i class="fa fa-usd"></i></div>
-                    <h4 class="title"><a href="">Прибыль</a></h4>
+                    <h4 class="title"><a href="">Извлечение прибыли</a></h4>
                     <p class="description">извлечение прибыли в процессе хозяйственной деятельности</p>
                 </div>
 
                 <div class="icon-box">
-                    <div class="icon"><i class="fa fa-bar-chart"></i></div>
+                    <div class="icon"><i class="fa fa-modx"></i></div>
                     <h4 class="title"><a href="">Другие услуги</a></h4>
                     <p class="description">оказание других услуг, направленных на повышение эффективности работы в сфере оказания услуг населению в соответствии с законодательством</p>
                 </div>
@@ -48,35 +50,32 @@
     </div>
 </section>
 
-<section id="services" style="padding: 20px 0 80px 0">
+<section id="services">
     <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-md-6">
+            <div class="col-xl-3 col-lg-6 col-md-6">
                 <div class="box">
-                    <div class="icon"><span onclick="openEnterpriseStructure()"><i class="fa fa-desktop"></i></span></div>
-                    <h4 class="title"><span onclick="openEnterpriseStructure()">Структура предприятия</span></h4>
-                    <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                    <div class="icon" onclick="openEnterpriseStructure()"><span onclick="openEnterpriseStructure()"><i class="fa fa-linode"></i></span></div>
+                    <h4 class="title"><span>Структура предприятия</span></h4>
+                    <!--<p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>-->
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <div class="col-xl-3 col-lg-6 col-md-6">
                 <div class="box">
-                    <div class="icon"><span onclick="openPhoneStructure()"><i class="fa fa-bar-chart"></i></span></div>
-                    <h4 class="title"><span>Тел. справочник</span></h4>
-                    <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+                    <div class="icon" onclick="openPhoneStructure()"><span onclick="openPhoneStructure()"><i class="fa fa-address-book"></i></span></div>
+                    <h4 class="title"><span>Телефонный справочник</span></h4>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <div class="col-xl-3 col-lg-6 col-md-6">
                 <div class="box">
-                    <div class="icon"><span onclick="openAdmProcess()"><i class="fa fa-paper-plane"></i></span></div>
-                    <h4 class="title"><span>Адм. процедуры</span></h4>
-                    <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                    <div class="icon" onclick="openAdmProcess()"><span onclick="openAdmProcess()"><i class="fa fa-tasks"></i></span></div>
+                    <h4 class="title"><span>Административные процедуры</span></h4>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <div class="col-xl-3 col-lg-6 col-md-6">
                 <div class="box">
-                    <div class="icon"><span onclick="openPersonalReception()"><i class="fa  fa-users"></i></span></div>
-                    <h4 class="title"><span>График работ</span></h4>
-                    <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                    <div class="icon" onclick="openPersonalReception()"><span onclick="openPersonalReception()"><i class="fa fa-clock-o"></i></span></div>
+                    <h4 class="title"><span>График<br /> личного приема</span></h4>
                 </div>
             </div>
         </div>
@@ -85,17 +84,18 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeEnterpriseStructure()"><span class="fa fa-close" style="color:rgb(52, 59, 64);"></span></a>
             <div class="fullScreen-content">
                 <div class="container">
-                    <h2 class="title">Структура предприятия</h2>
+                    <h2 class="title">Структура МГАОН</h2>
                     <img src="/img/СтруктураРус.jpg" />
                 </div>
             </div>
         </div>
 
+        <!-- Телефонный справочник -->
         <div id="myPhoneStructure" class="fullScreen">
             <a href="javascript:void(0)" class="closebtn" onclick="closePhoneStructure()"><span class="fa fa-close" style="color:rgb(52, 59, 64);"></span></a>
             <div class="fullScreen-content">
                 <div class="container">
-                    <h2 class="title">Телефонный справочник</h2>
+                    <h2 class="title">Телефонный справочник МГАОН</h2>
                     <table class="table table-hover" style="text-align:left">
                         <tbody>
                             <tr>
@@ -298,42 +298,130 @@
             </div>
         </div>
 
+        <!--  Перечень административных процедур -->
         <div id="myAdmProcess" class="fullScreen">
             <a href="javascript:void(0)" class="closebtn" onclick="closeAdmProcess()"><span class="fa fa-close" style="color:rgb(52, 59, 64);"></span></a>
             <div class="fullScreen-content">
                 <div class="container">
-                    <h2 class="title">Администаративные процедуры</h2>
+                    <h2 class="title">
+                        Перечень административных процедур
+                    </h2>
+                    <p class="description">
+                        выполняемых коммунальным унитарным предприятием «Минское городское агентство обслуживания населения» для граждан состоящих (состоявших) в трудовых отношениях в соответствии с Указом Президента Республики Беларусь от 26.04.2010 г. № 200 «Об административных процедурах, осуществляемых государственными органами и иными государственными организациями по заявлениям граждан»
+                    </p>
+                    <div style="text-align:left">
+                        <p>
+                            <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                ГЛАВА 2. ТРУД И СОЦИАЛЬНАЯ ЗАЩИТА
+                            </a>
+                        </p>
 
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="d-block w-100" src="~/img/AdmProc/page-1.jpg" alt="First slide">
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                                @foreach (var item in Model)
+                                {
+                                    @if (item.Chapter == 2)
+                                    {
+                                        <p>
+                                            <a data-toggle="collapse" href="#collapse_@item.Id" role="button" aria-expanded="false" aria-controls="collapse_@item.Id">
+                                                @item.Title
+                                            </a>
+                                        </p>
+                                        <div class="collapse" id="collapse_@item.Id">
+                                            <div class="card card-body">
+                                                <table class="table table-hover" style="text-align:left">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Ф.И.О., должность ответственного за осуществление приема, выдачу справок и других документов, телефон, кабинет</td>
+                                                            <td>@item.FIO</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Документы и(или) сведения, представляемые гражданином для осуществления административной процедуры</td>
+                                                            <td>@item.Documents</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Размер платы, взимаемой при осуществлении административной процедуры</td>
+                                                            <td>@item.Cost</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Максимальный срок осуществления административной процедуры</td>
+                                                            <td>@item.MaximumTerm</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Срок действия справки, другого документа (решения), выдаваемых при осуществлении административной процедуры</td>
+                                                            <td>@item.Term</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    }
+                                }
                             </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="~/img/AdmProc/page-2.jpg" alt="Second slide">
-                            </div>
-
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
+
+                        <p>
+                            <a data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
+                                ГЛАВА 18. ПОЛУЧЕННЫЕ ДОХОДЫ И УПЛАЧЕННЫЕ НАЛОГИ, СБОРЫ (ПОШЛИНЫ). ПОЛУЧЕНИЕ ИНФОРМАЦИИ ИЗ ЕДИНОГО ГОСУДАРСТВЕННОГО РЕГИСТРА ЮРИДИЧЕСКИХ ЛИЦ И ИНДИВИДУАЛЬНЫХ ПРЕДПРИНИМАТЕЛЕЙ. ПРОСТАВЛЕНИЕ АПОСТИЛЯ НА ДОКУМЕНТАХ ИЛИ ЛЕГАЛИЗАЦИЯ ДОКУМЕНТОВ
+                            </a>
+                        </p>
+
+                        <div class="collapse" id="collapseExample1">
+                            <div class="card card-body">
+                                @foreach (var item in Model)
+                                {
+                                    @if (item.Chapter == 18)
+                                    {
+                                        <p>
+                                            <a data-toggle="collapse" href="#collapse_@item.Id" role="button" aria-expanded="false" aria-controls="collapse_@item.Id">
+                                                @item.Title
+                                            </a>
+                                        </p>
+                                        <div class="collapse" id="collapse_@item.Id">
+                                            <div class="card card-body">
+                                                <table class="table table-hover" style="text-align:left">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Ф.И.О., должность ответственного за осуществление приема, выдачу справок и других документов, телефон, кабинет</td>
+                                                            <td>@item.FIO</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Документы и(или) сведения, представляемые гражданином для осуществления административной процедуры</td>
+                                                            <td>@item.Documents</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Размер платы, взимаемой при осуществлении административной процедуры</td>
+                                                            <td>@item.Cost</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Максимальный срок осуществления административной процедуры</td>
+                                                            <td>@item.MaximumTerm</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Срок действия справки, другого документа (решения), выдаваемых при осуществлении административной процедуры</td>
+                                                            <td>@item.Term</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    }
+                                }
+                            </div>
+                        </div>
                     </div>
 
                 </div>
             </div>
         </div>
 
+        <!--  График -->
         <div id="myPersonalReception" class="fullScreen">
             <a href="javascript:void(0)" class="closebtn" onclick="closePersonalReception()"><span class="fa fa-close" style="color:rgb(52, 59, 64);"></span></a>
             <div class="fullScreen-content">
                 <div class="container">
-                    <h2 class="title">График работы</h2>
-                    <p style="text-align:center">личного приема граждан, юридических лиц, индивидуальных предпринимателей в коммунальном унитарном предприятии «Минское городское агентство обслуживания населения»</p>
+                    <h2 class="title">График</h2>
+                    <p style="text-align:center">личного приема граждан, юридических лиц, индивидуальных предпринимателей руководством МГАОН</p>
                     <table class="table">
                         <tbody>
                             <tr>

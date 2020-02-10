@@ -1,1 +1,109 @@
-﻿
+﻿@model IEnumerable<Website.Models.OneWin.Registration>
+
+<section id="contact" style="padding: 160px 0 20px 0">
+    <div class="container">
+        <div class="section-header" style="padding: 0 0 20px 0">
+            <h3 class="section-title">СВЕДЕНИЯ О ПРОХОЖДЕНИИ ДОКУМЕНТОВ ЧЕРЕЗ СЛУЖБУ «одно окно»</h3>
+        </div>
+
+        <div class="row">
+        <!--Поиск рег.карты-->
+        <div class="col-lg-6 col-md-8">
+            <div class="form">
+                <form action="" method="post" role="form" >
+                    <div class="form-group">
+                        @Html.TextBox("docNo", "", new { @class = "form-control", @required = "required", @placeholder = "Регистрационный номер*"})
+                    </div>
+                    <div class="form-group">
+                        @Html.TextBox("lName", "", new { @class = "form-control", @required = "required", @placeholder = "Фамилия*" })
+                    </div>
+                    <div class="form-group">
+                        @Html.DropDownList("area", new SelectList(new string[] { "Заводской", "Ленинский", "Московский", "Октябрьский", "Партизанский", "Первомайский", "Советский", "Фрунзенcкий", "Центральный", "Мингорисполком" }), "Выберите район", new { @class = "form-control", @required = "required", @readonly = "readonly", @id = "exampleFormControlSelect1" })
+                    </div>
+                    <div class="text-center" style="padding:20px">
+                        <button type="submit" formnovalidate value="SendEmail" id="buttonSendEmail">Найти</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <!--Вывод данных рег.карты-->
+        <div class="col-lg-6 col-md-8">
+            @if (Model != null)
+            {
+                @if (Model.Count() > 0)
+                {
+                    @foreach (var item in Model)
+                    {
+                        <h5><b>Заявитель:</b> @Html.DisplayFor(modelItem => item.LName) @Html.DisplayFor(modelItem => item.FName) @Html.DisplayFor(modelItem => item.MName)</h5>
+                        <h5><b>Регистрационный номер:</b> @Html.DisplayFor(modelItem => item.DocNo)</h5>
+                        <h5><b>Дата приема документов:</b> @Html.DisplayFor(modelItem => item.GettingDate)</h5>
+                        <h5 style="text-align: left;">
+                            <b>Состояние:</b>
+                        </h5>
+                        @if (item.State == 1)
+                        {
+                            <h5>Ваше заявление принято.Идет сбор промежуточных документов.</h5>
+                        }
+                        else if (item.State == 2)
+                        {
+                            <h5>Ваши документы переданы в функциональное подразделение администрации района.</h5>
+                        }
+                        else if (item.State == 3)
+                        {
+                            if (item.DateOfSolution == null)
+                            {
+                                if (item.SolutionNamber != "")
+                                {
+                                    <h5 style="text-align: left;">Принято решение по Вашему заявлению. (@Html.DisplayFor(modelItem => item.MustBeReady) №@Html.DisplayFor(modelItem => item.SolutionNamber) @Html.DisplayFor(modelItem => item.Solution));</h5>
+                                    <h5 style="text-align: left;">Дата готовности документов к выдаче: @Html.DisplayFor(modelItem => item.ReturnInDeptDate);</h5>
+                                }
+                                else
+                                {
+                                    <h5 style="text-align: left;">Принято решение по Вашему заявлению. (@Html.DisplayFor(modelItem => item.MustBeReady) @Html.DisplayFor(modelItem => item.SolutionNamber) @Html.DisplayFor(modelItem => item.Solution));</h5>
+                                    <h5 style="text-align: left;">Дата готовности документов к выдаче: @Html.DisplayFor(modelItem => item.ReturnInDeptDate);</h5>
+                                }
+                            }
+                            else
+                            {
+                                if (item.SolutionNamber != "")
+                                {
+                                    <h5 style="text-align: left;">Принято решение по Вашему заявлению. (@Html.DisplayFor(modelItem => item.DateOfSolution)  №@Html.DisplayFor(modelItem => item.SolutionNamber) @Html.DisplayFor(modelItem => item.Solution));</h5>
+                                    <h5 style="text-align: left;">Дата готовности документов к выдаче: @Html.DisplayFor(modelItem => item.ReturnInDeptDate);</h5>
+                                }
+                                else
+                                {
+                                    <h5 style="text-align: left;">Принято решение по Вашему заявлению. (@Html.DisplayFor(modelItem => item.DateOfSolution) @Html.DisplayFor(modelItem => item.SolutionNamber) @Html.DisplayFor(modelItem => item.Solution));</h5>
+                                    <h5 style="text-align: left;">Дата готовности документов к выдаче: @Html.DisplayFor(modelItem => item.ReturnInDeptDate);</h5>
+                                }
+                            }
+                        }
+                        else if (item.State == 4)
+                        {
+                            <h5>Передано заявителю.</h5>
+                        }
+                        <br>
+                        <h5>
+                            <i>
+                                Информация на
+                                <script language="javascript" type="text/javascript">
+                                    var d = new Date();
+                                    var month = new Array("января", "февраля", "марта", "апреля", "мая", "июня",
+                                        "июля", "августа", "сентября", "октября", "ноября", "декабря");
+                                    document.write(d.getDate() + " " + month[d.getMonth()]
+                                        + " " + d.getFullYear() + " г.");
+                                </script>
+                            </i>
+                        </h5>
+                    }
+                }
+                else
+                {
+                    <h5>Информация не найдена. Проверьте данные!</h5>
+                }
+            }
+            else { }
+        </div>
+        </div>
+    </div>
+</section>

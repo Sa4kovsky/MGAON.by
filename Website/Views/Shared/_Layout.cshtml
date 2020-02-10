@@ -21,12 +21,14 @@
     <header id="header" class="header-fixed">
         <div class="container">
 
-            <!--Button Visually Impaired-->
-            <button id="specialButton" class="navbar-eye" href="#">
-                <span class="fa fa-low-vision"></span>
-            </button>
-
             <div class="row">
+                <!--Button Visually Impaired-->
+                <div>
+                    <button id="specialButton" class="navbar-eye" href="#">
+                        <span class="fa fa-low-vision"></span>
+                    </button>
+                </div>
+
                 <div id="logo">
                     <h1>
                         <a asp-controller="Home" asp-action="Index">МГАОН</a>
@@ -34,7 +36,7 @@
                 </div>
 
                 <!--Button Menu-->
-                <button class="navbar-togglers" onclick="openNav()"> <span class="fa fa-bars"></span> </button>
+                <button id="navbar-togglers" class="navbar-togglers" onclick="openNav()"> <span class="fa fa-bars"></span> </button>
 
                 <div class="SelectLanguage"> <span> @await Html.PartialAsync("_SelectLanguagePartial")</span> </div>
 
@@ -63,7 +65,7 @@
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span class="fa fa-bars"></span></a>
 
                 <div class="overlay-content row">
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 container text-center">
                         <br>
                         <h4 style="color: #f7f7f7;">@Localizer["Enterprise"]</h4>
                         <a asp-controller="Home" asp-action="Index" asp-fragment="about" onclick="closeNav()">@Localizer["About"]</a> <br />
@@ -75,20 +77,22 @@
                         <a asp-controller="Home" asp-action="Index" asp-fragment="contact" onclick="closeNav()">@Localizer["Сontact"]</a>
                     </div>
 
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 container text-center">
                         <br>
                         <h4 style="color: #f7f7f7;">@Localizer["Service"]</h4>
-                        <a asp-controller="Service" asp-action="Index" onclick="closeNav()">Обращения</a><br />
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfx5Ny-YbLxyEZvU3E4_dmmpFLWesSv_7_WORTUwGdtHd7uRA/viewform?c=0&w=1" onclick="closeNav()">Анкета оценки работы cлужбы</a><br />
-                        <a href="http://prereg.mgaon.by" onclick="closeNav()">Предварительная запись в службу</a><br />
-                        <a asp-controller="Service" asp-action="Information" onclick="closeNav()">Сведения о прохождении документов через службу</a>
+                        <a href="http://prereg.mgaon.by" onclick="closeNav()">Предварительная запись в службу «одно окно»</a><br />
+                        <a asp-controller="Service" asp-action="Information" onclick="closeNav()">Сведения о прохождении документов через службу «одно окно»</a>
+                        <a asp-controller="Service" asp-action="Index" onclick="closeNav()">Обращение к руководству предприятия</a><br />
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfx5Ny-YbLxyEZvU3E4_dmmpFLWesSv_7_WORTUwGdtHd7uRA/viewform?c=0&w=1" onclick="closeNav()">Анкета оценки работы cлужбы «одно окно»</a><br />
                     </div>
 
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 container text-center">
                         <br>
                         <h4 style="color: #f7f7f7;">@Localizer["ReferenceInformation"]</h4>
                         <a asp-controller="HelpInformation" asp-action="Index">Справочно-информационная система</a><br />
+                        <a asp-controller="HelpInformation" asp-action="AdmProcedure">Законодательство об административных процедурах</a><br />
                         <a asp-controller="HelpInformation" asp-action="UniqueId">Уникальный идентификатор / Электронная цифровая подпись</a>
+                        <a asp-controller="HelpInformation" asp-action="WebCamers">Веб-камеры в службах «одно окно»</a><br />
                         <br>
                     </div>
                 </div>
@@ -123,10 +127,12 @@
     <script>
         function openNav() {
             document.getElementById("myNav").style.width = "100%";
+            document.getElementById("navbar-togglers").style.display = "none";
         }
 
         function closeNav() {
             document.getElementById("myNav").style.width = "0%";
+            document.getElementById("navbar-togglers").style.display = "inline";
         }
     </script>
 

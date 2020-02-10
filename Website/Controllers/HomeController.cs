@@ -16,16 +16,22 @@ namespace Website.Controllers
     [Route("home")]
     public class HomeController : Controller
     {
-        private readonly IHostingEnvironment _appEnvironment;
-        private readonly ContextNews _dbNews;
-        private readonly IStringLocalizer<HomeController> _localizer; //для новостей на разных языках
+        private protected readonly IHostingEnvironment _appEnvironment;
+        private protected readonly IStringLocalizer<HomeController> _localizer; //для новостей на разных языках
 
-        public HomeController(ContextNews context, IHostingEnvironment appEnvironment, IStringLocalizer<HomeController> localizer)
+        /*public HomeController(ContextNews context, IHostingEnvironment appEnvironment, IStringLocalizer<HomeController> localizer)
         {
             _appEnvironment = appEnvironment;
             _dbNews = context;
             _localizer = localizer;
         }
+        */
+        public HomeController(IHostingEnvironment appEnvironment, IStringLocalizer<HomeController> localizer)
+        {
+            _appEnvironment = appEnvironment;
+            _localizer = localizer;
+        }
+
 
         /*Используем куки для установки культуры.
          Этот метод в качестве параметров принимает код устанавливаемой культуры и адрес, на который надо вернуться после установки культуры.*/
@@ -48,6 +54,7 @@ namespace Website.Controllers
         ///     News - новости, 
         ///     NewsTable - таблица новостей на месяц, 
         ///     SummaryOneWin - хранимая процедура для сектора Факты
+        ///     Procedures - перечень административных процедур, выполняемых комунальным унитарным предприятием
         ///     )
         /// </summary>
         /// <returns>Трех моделей в одной</returns>
@@ -56,18 +63,25 @@ namespace Website.Controllers
         [Route("~/")]
         public IActionResult Index()
         {
-            DateTime monday = DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Monday).AddDays(-7);
-            DateTime friday = DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Saturday);
+            using (ContextNews _dbNews = new ContextNews())
+            {
+                DateTime monday = DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Monday).AddDays(-7);
+                DateTime friday = DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Saturday);
 
-            IndexViewModels indexViewsModels = new IndexViewModels();
-            //запись данных News которые соответсвуют текущему языку на сайте в промежуток времени от monday до friday
-            indexViewsModels.News = _dbNews.News.Where(p => p.Language == _localizer["Language"].Value.ToString())
-                               .Where(p => p.DateStart >= monday && p.DateFinish <= friday)
-                               .OrderBy(p => p.DateStart).ToList();
-            indexViewsModels.NewsTable = _dbNews.NewsTable.Where(p => p.DateTime != null).Where(p => p.DateTime != "").ToList();
-            indexViewsModels.SummaryOneWin = _dbNews.ViewSummaryOneWin.ToList();
-            indexViewsModels.People = new Person();
-            return View(indexViewsModels);
+                IndexViewModels indexViewsModels = new IndexViewModels
+                {
+                    //запись данных News которые соответсвуют текущему языку на сайте в промежуток времени от monday до friday
+                    News = _dbNews.News.Where(p => p.Language == _localizer["Language"].Value.ToString())
+                                   .Where(p => p.DateStart >= monday && p.DateFinish <= friday)
+                                   .OrderBy(p => p.DateStart).ToList(),
+                    NewsTable = _dbNews.NewsTable.Where(p => p.DateTime != null).Where(p => p.DateTime != "").ToList(),
+                    SummaryOneWin = _dbNews.ViewSummaryOneWin.ToList(),
+                    Procedures = _dbNews.Procedures.ToList(),
+                    People = new Person()
+                };
+
+                return View(indexViewsModels);
+            }
         }
 
 
@@ -76,7 +90,7 @@ namespace Website.Controllers
         [Route("sendEmail")]
         public JsonResult Contacts(Person person)
         {
-         //   _sendEmail.SendEmailAsync(person, "Обратная связь");
+           _sendEmail.SendEmailAsync(person, "Обратная связь", null);
             return new JsonResult("Ваше сообщение было отправлено. Спасибо!");
         }
 

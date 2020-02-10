@@ -30,13 +30,12 @@ namespace Website
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
-            // получаем строку подключения из файла конфигурации
+          /*  // получаем строку подключения из файла конфигурации
             string connectionNews = Configuration.GetConnectionString("NewsConnection");
             // добавляем контекст MobileContext в качестве сервиса в приложение
             services.AddDbContext<ContextNews>(options =>
                 options.UseSqlServer(connectionNews));
-            services.AddMvc();
+            services.AddMvc();*/
 
             services.AddLocalization(options => options.ResourcesPath = "Resources");
             services.AddMvc()
