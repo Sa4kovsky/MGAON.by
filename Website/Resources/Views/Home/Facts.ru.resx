@@ -117,20 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Appeal" xml:space="preserve">
-    <value>Напісаць зварот дырэктару</value>
-    <comment>Название кнопки(ссылки)</comment>
+  <data name="All" xml:space="preserve">
+    <value>принято всего заявлений</value>
   </data>
-  <data name="HeroTitle" xml:space="preserve">
-    <value>Камунальнае унітарнае прадпрыемства</value>
-    <comment>&lt;h2&gt;&lt;/h2&gt;</comment>
+  <data name="Decisions" xml:space="preserve">
+    <value>выдано административных решений</value>
   </data>
-  <data name="HeroTitleCompany" xml:space="preserve">
-    <value>«Мінскае гарадское агенцтва абслугоўвання насельніцтва»</value>
-    <comment>&lt;h1&gt;&lt;/h1&gt;</comment>
+  <data name="FactsAbout" xml:space="preserve">
+    <value>о работе служб «одно окно» администраций районов г. Минска и Мингорисполкома &lt;br /&gt;    Данные приводятся с 01.01.2020</value>
   </data>
-  <data name="MakeAppointment" xml:space="preserve">
-    <value>Запісацца на прыём у службу «адно акно»</value>
-    <comment>Название кнопки(ссылки) </comment>
+  <data name="FactsTitle" xml:space="preserve">
+    <value>Факты</value>
+  </data>
+  <data name="Legal" xml:space="preserve">
+    <value>принято заявлений юридических лиц</value>
+  </data>
+  <data name="Physical" xml:space="preserve">
+    <value>принято заявлений физических лиц</value>
   </data>
 </root>

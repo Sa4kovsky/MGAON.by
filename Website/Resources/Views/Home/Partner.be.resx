@@ -117,20 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Appeal" xml:space="preserve">
-    <value>Напісаць зварот дырэктару</value>
-    <comment>Название кнопки(ссылки)</comment>
-  </data>
-  <data name="HeroTitle" xml:space="preserve">
-    <value>Камунальнае унітарнае прадпрыемства</value>
-    <comment>&lt;h2&gt;&lt;/h2&gt;</comment>
-  </data>
-  <data name="HeroTitleCompany" xml:space="preserve">
-    <value>«Мінскае гарадское агенцтва абслугоўвання насельніцтва»</value>
-    <comment>&lt;h1&gt;&lt;/h1&gt;</comment>
-  </data>
-  <data name="MakeAppointment" xml:space="preserve">
-    <value>Запісацца на прыём у службу «адно акно»</value>
-    <comment>Название кнопки(ссылки) </comment>
+  <data name="Partners" xml:space="preserve">
+    <value>Нашы партнёры</value>
   </data>
 </root>

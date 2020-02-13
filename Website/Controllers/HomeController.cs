@@ -90,7 +90,7 @@ namespace Website.Controllers
         [Route("sendEmail")]
         public JsonResult Contacts(Person person)
         {
-           _sendEmail.SendEmailAsync(person, "Обратная связь", null);
+           _sendEmail.SendEmailAsync(person, "Обратная связь");
             return new JsonResult("Ваше сообщение было отправлено. Спасибо!");
         }
 

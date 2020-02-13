@@ -117,20 +117,50 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Appeal" xml:space="preserve">
-    <value>Напісаць зварот дырэктару</value>
-    <comment>Название кнопки(ссылки)</comment>
+  <data name="About" xml:space="preserve">
+    <value>Первичная профсоюзная организация коммунального унитарного предприятия «Минское городское агентство обслуживания населения» образована в июле 2016 г.</value>
   </data>
-  <data name="HeroTitle" xml:space="preserve">
-    <value>Камунальнае унітарнае прадпрыемства</value>
-    <comment>&lt;h2&gt;&lt;/h2&gt;</comment>
+  <data name="Chairman" xml:space="preserve">
+    <value>&lt;td&gt;
+                                Председатель профкома
+                            &lt;/td&gt;
+                            &lt;td&gt;
+                                Черник Марина Александровна &lt;br /&gt;
+                                тел. 364 25 83
+                            &lt;/td&gt;</value>
   </data>
-  <data name="HeroTitleCompany" xml:space="preserve">
-    <value>«Мінскае гарадское агенцтва абслугоўвання насельніцтва»</value>
-    <comment>&lt;h1&gt;&lt;/h1&gt;</comment>
+  <data name="Deputy" xml:space="preserve">
+    <value>&lt;td&gt;
+                                Заместитель председателя
+                            &lt;/td&gt;
+                            &lt;td&gt;
+                                Ившина Марина Валерьевна
+                            &lt;/td&gt;</value>
   </data>
-  <data name="MakeAppointment" xml:space="preserve">
-    <value>Запісацца на прыём у службу «адно акно»</value>
-    <comment>Название кнопки(ссылки) </comment>
+  <data name="Detailed" xml:space="preserve">
+    <value>Подробнее</value>
+  </data>
+  <data name="Members" xml:space="preserve">
+    <value>&lt;td&gt;
+                                Члены профкома
+                            &lt;/td&gt;
+                            &lt;td&gt;
+                                Нечаева Ольга Владимировна, &lt;br /&gt;
+                                Пантелеенко Леонид Алексеевич
+                            &lt;/td&gt;</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Профсоюз работников местной промышленности коммунально-бытовых предприятий</value>
+  </data>
+  <data name="TradeUnionTitle" xml:space="preserve">
+    <value>«Профсоюз работников местной промышленностии коммунально-бытовых предприятий»</value>
+  </data>
+  <data name="Treasurer" xml:space="preserve">
+    <value>&lt;td&gt;
+                                Казначей
+                            &lt;/td&gt;
+                            &lt;td&gt;
+                                Сергиенко Татьяна Александровна
+                            &lt;/td&gt;</value>
   </data>
 </root>

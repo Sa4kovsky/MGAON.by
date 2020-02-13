@@ -117,8 +117,84 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="About" xml:space="preserve">
+    <value>Аб Прадпрыемстве</value>
+    <comment>Ссылка  в меню</comment>
+  </data>
+  <data name="Appeal" xml:space="preserve">
+    <value>Зварот да кіраўніцтву прадпрыемства</value>
+    <comment>Ссылка  в меню</comment>
+  </data>
+  <data name="CallCenter" xml:space="preserve">
+    <value>Кантакт-цэнтр 142</value>
+    <comment>Ссылка  в меню</comment>
+  </data>
   <data name="Contact" xml:space="preserve">
     <value>Кантакты</value>
-    <comment>Название СЕКЦИИ</comment>
+    <comment>Ссылка  в меню</comment>
+  </data>
+  <data name="Department" xml:space="preserve">
+    <value>Службы «адно акно»</value>
+    <comment>Ссылка  в меню</comment>
+  </data>
+  <data name="ElectroniDigitalSignature" xml:space="preserve">
+    <value>Унікальны ідэнтыфікатар / Электронны лiчбавы подпiс</value>
+    <comment>Ссылка  в меню</comment>
+  </data>
+  <data name="Enterprise" xml:space="preserve">
+    <value>Пра нас</value>
+    <comment>Название секции в меню</comment>
+  </data>
+  <data name="Facts" xml:space="preserve">
+    <value>Факты</value>
+    <comment>Ссылка  в меню</comment>
+  </data>
+  <data name="InformationAboutPassingDocuments" xml:space="preserve">
+    <value>Звесткі аб праходжанні дакументаў праз службу «адно акно»</value>
+    <comment>Ссылка  в меню</comment>
+  </data>
+  <data name="Legislation" xml:space="preserve">
+    <value>Заканадаўства аб адміністрацыйных працэдурах</value>
+    <comment>Ссылка  в меню</comment>
+  </data>
+  <data name="News" xml:space="preserve">
+    <value>Навіны</value>
+    <comment>Ссылка  в меню</comment>
+  </data>
+  <data name="PreliminaryRecord" xml:space="preserve">
+    <value>Папярэдні запіс у службу«адно акно»</value>
+    <comment>Ссылка  в меню</comment>
+  </data>
+  <data name="Questionnaire" xml:space="preserve">
+    <value>Анкета ацэнкі работы службы «адно акно»</value>
+    <comment>Ссылка  в меню</comment>
+  </data>
+  <data name="ReferenceInformation" xml:space="preserve">
+    <value>Даведачная інфармацыя</value>
+    <comment>Название секции в меню</comment>
+  </data>
+  <data name="ReferenceInformationSystem" xml:space="preserve">
+    <value>Даведачна-інфармацыйная сістэма</value>
+    <comment>Ссылка  в меню</comment>
+  </data>
+  <data name="Service" xml:space="preserve">
+    <value>Нашы паслугі</value>
+    <comment>Название секции в меню</comment>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>МГААН</value>
+    <comment>В heder название </comment>
+  </data>
+  <data name="Union" xml:space="preserve">
+    <value>Прафсаюз</value>
+    <comment>Ссылка  в меню</comment>
+  </data>
+  <data name="WebCamers" xml:space="preserve">
+    <value>Вэб-камеры у службах «адно акно»</value>
+    <comment>Ссылка  в меню</comment>
+  </data>
+  <data name="Сontact" xml:space="preserve">
+    <value>Кантакты</value>
+    <comment>Ссылка  в меню</comment>
   </data>
 </root>

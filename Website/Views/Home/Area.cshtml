@@ -1,10 +1,12 @@
-﻿<section id="area" name="area">
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+<section id="area" name="area">
     <div class="container">
         <div class="section-header">
-            <h3 class="section-title">СЛУЖБА «ОДНО ОКНО»</h3>
+            <h3 class="section-title">@Localizer["AreaTitle"]</h3>
             <p class="section-description">
-                является формой организации деятельности местных исполнительных и распорядительных органов и осуществляет свою деятельность в соответствии с Указом Президента Республики Беларусь от 24 мая 2018 г. № 202 «О службе «одно окно».<br />
-                Основной целью службы «одно окно» является обеспечение в одном месте приема заявлений заинтересованных лиц об осуществлении административных процедур и выдачи административных решений по ним в соответствии с перечнями, утвержденными актами законодательства.
+                @Localizer["AreaAbout"]
             </p>
         </div>
 
@@ -12,72 +14,72 @@
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="box">
                     <a href="https://minsk.gov.by/ru/org/5171/"><div class="icon"><i>1</i></div></a>
-                    <h4 class="title"><a href="https://minsk.gov.by/ru/org/5171/">Заводского</a></h4>
-                    <p class="description">Служба «одно окно» администрации Заводского района г. Минска</p>
+                    <h4 class="title"><a href="https://minsk.gov.by/ru/org/5171/">@Localizer["Title1"]</a></h4>
+                    <p class="description">@Localizer["About1"]</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="box">
                     <a href="https://minsk.gov.by/ru/org/5184/"><div class="icon"><i>2</i></div></a>
-                    <h4 class="title"><a href="https://minsk.gov.by/ru/org/5184/">Ленинскго</a></h4>
-                    <p class="description">Служба «одно окно» администрации Ленинского района г. Минска</p>
+                    <h4 class="title"><a href="https://minsk.gov.by/ru/org/5184/">@Localizer["Title2"]</a></h4>
+                    <p class="description">@Localizer["About2"]</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="box">
                     <a href="https://minsk.gov.by/ru/org/5170/"><div class="icon"><i>3</i></div></a>
-                    <h4 class="title"><a href="https://minsk.gov.by/ru/org/5170/">Московского</a></h4>
-                    <p class="description">Служба «одно окно» администрации Московского района г. Минска</p>
+                    <h4 class="title"><a href="https://minsk.gov.by/ru/org/5170/">@Localizer["Title3"]</a></h4>
+                    <p class="description">@Localizer["About3"]</p>
                 </div>
             </div>
 
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="box">
                     <a href="https://minsk.gov.by/ru/org/5189/"><div class="icon"><i>4</i></div></a>
-                    <h4 class="title"><a href="https://minsk.gov.by/ru/org/5189/">Октябрьского</a></h4>
-                    <p class="description">Служба «одно окно» администрации Октябрьского района г. Минска</p>
+                    <h4 class="title"><a href="https://minsk.gov.by/ru/org/5189/">@Localizer["Title4"]</a></h4>
+                    <p class="description">@Localizer["About4"]</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="box">
                     <a href="https://minsk.gov.by/ru/org/5161/"><div class="icon"><i>5</i></div></a>
-                    <h4 class="title"><a href="https://minsk.gov.by/ru/org/5161/">Партизанского</a></h4>
-                    <p class="description">Служба «одно окно» администрации Партизанского района г. Минска</p>
+                    <h4 class="title"><a href="https://minsk.gov.by/ru/org/5161/">@Localizer["Title5"]</a></h4>
+                    <p class="description">@Localizer["About5"]</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="box">
                     <a href="https://minsk.gov.by/ru/org/5141/"><div class="icon"><i>6</i></div></a>
-                    <h4 class="title"><a href="https://minsk.gov.by/ru/org/5141/">Первомайского</a></h4>
-                    <p class="description">Служба «одно окно» администрации Первомайского района г. Минска</p>
+                    <h4 class="title"><a href="https://minsk.gov.by/ru/org/5141/">@Localizer["Title6"]</a></h4>
+                    <p class="description">@Localizer["About6"]</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="box">
                     <a href="https://minsk.gov.by/ru/org/5109/"><div class="icon"><i>7</i></div></a>
-                    <h4 class="title"><a href="https://minsk.gov.by/ru/org/5109/">Советского</a></h4>
-                    <p class="description">Служба «одно окно» администрации Советского района г. Минска</p>
+                    <h4 class="title"><a href="https://minsk.gov.by/ru/org/5109/">@Localizer["Title7"]</a></h4>
+                    <p class="description">@Localizer["About7"]</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="box">
                     <a href="https://minsk.gov.by/ru/org/5088/"><div class="icon"><i>8</i></div></a>
-                    <h4 class="title"><a href="https://minsk.gov.by/ru/org/5088/">Фрунзенского</a></h4>
-                    <p class="description">Служба «одно окно» администрации Фрунзенского района г. Минска</p>
+                    <h4 class="title"><a href="https://minsk.gov.by/ru/org/5088/">@Localizer["Title8"]</a></h4>
+                    <p class="description">@Localizer["About8"]</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="box">
                     <a href="https://minsk.gov.by/ru/org/5147/"><div class="icon"><i>9</i></div></a>
-                    <h4 class="title"><a href="https://minsk.gov.by/ru/org/5147/">Центрального</a></h4>
-                    <p class="description">Служба «одно окно» администрации Центрального района г. Минска</p>
+                    <h4 class="title"><a href="https://minsk.gov.by/ru/org/5147/">@Localizer["Title9"]</a></h4>
+                    <p class="description">@Localizer["About9"]</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 offset-lg-6 offset-md-4 col-sm-6">
                 <div class="box">
                     <a href="https://minsk.gov.by/ru/org/5194/"><div class="icon"><i>10</i></div></a>
-                    <h4 class="title"><a href="https://minsk.gov.by/ru/org/5194/">МГИК</a></h4>
-                    <p class="description">Служба «одно окно» Мингорисполкома</p>
+                    <h4 class="title"><a href="https://minsk.gov.by/ru/org/5194/">@Localizer["Title10"]</a></h4>
+                    <p class="description">@Localizer["About10"]</p>
                 </div>
             </div>
         </div>

@@ -1,49 +1,48 @@
 ﻿@model IEnumerable<Website.Models.WebSiteBD.Procedures>
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
 <section id="about">
     <div class="container">
         <div class="about-container">
             <div class="content order-lg-1 order-2">
-                <h2 class="title">О предприятии</h2>
-                <p>
-                    <b>Коммунальное унитарное предприятие «Минское городское агентство обслуживания населения» (далее – МГАОН)</b><br />
-                    создано 01.07.2013 г. в результате реорганизации путем выделения из состава коммунального унитарного предприятия «Центр информационных технологий Мингорисполкома» и зарегистрировано решением Мингорисполкома от 23.05.2013 г. № 1344. Форма собственности - государственная (коммунальная).<br />
-                    <a sce="https://minsk.gov.by/ru/">Учредителем Предприятия является Минский городской исполнительный комитет.</a>
-                </p>
-                <p><b>Цели деятельности Предприятия:</b></p>
+                <h2 class="title">@Localizer["TitleAbout"]</h2>
+                <p>@Localizer["About"]</p>
+                <p><b>@Localizer["ObjectivesCompany"]</b></p>
                 <div class="icon-box">
                     <div class="icon"><i class="fa  fa-handshake-o"></i></div>
-                    <h4 class="title"><a href="">Оказание Услуг</a></h4>
-                    <p class="description">оказание услуг по обеспечению деятельности организаций по принципу «одно окно» по административным процедурам, ведению электронных баз данных организаций и иных сопутствующих услуг</p>
+                    <h4 class="title"><a href="">@Localizer["RenderingServices"]</a></h4>
+                    <p class="description">@Localizer["Services"]</p>
                 </div>
 
                 <div class="icon-box">
                     <div class="icon"><i class="fa fa-users"></i></div>
-                    <h4 class="title"><a href="">Консультирование Граждан</a></h4>
-                    <p class="description">консультирование граждан или юридических лиц по перечням документов, представляемых для осуществления административных процедур</p>
+                    <h4 class="title"><a href="">@Localizer["ConsultationCitizens"]</a></h4>
+                    <p class="description">@Localizer["Consultation"]</p>
                 </div>
 
                 <div class="icon-box">
                     <div class="icon"><i class="fa fa-file-text"></i></div>
-                    <h4 class="title"><a href="">Сбор Документов</a></h4>
-                    <p class="description">обеспечение сбора документов и (или) сведений, необходимых для осуществления административных процедур, не включенных в перечни документов и (или) сведений, представляемых заинтересованными лицами, посредством направления запросов удаленного доступа к государственным регистрам, реестрам, кадастрам, спискам, каталогам, базам и банкам данных и другими способами</p>
+                    <h4 class="title"><a href="">@Localizer["CollectionDocuments"]</a></h4>
+                    <p class="description">@Localizer["ProvidingCollection"]</p>
                 </div>
 
                 <div class="icon-box">
                     <div class="icon"><i class="fa fa-bullhorn"></i></div>
-                    <h4 class="title"><a href="">Информирование Граждан</a></h4>
-                    <p class="description">информирование граждан и (или) юридических лиц: о режиме работы организаций, времени приема граждан и порядке записи на прием к должностным лицам организаций; об административных процедурах, осуществляемых организациями, рассмотрении обращений граждан и юридических лиц; по иным вопросам</p>
+                    <h4 class="title"><a href="">@Localizer["InformingCitizens"]</a></h4>
+                    <p class="description">@Localizer["Informing"]</p>
                 </div>
 
                 <div class="icon-box">
                     <div class="icon"><i class="fa fa-usd"></i></div>
-                    <h4 class="title"><a href="">Извлечение прибыли</a></h4>
-                    <p class="description">извлечение прибыли в процессе хозяйственной деятельности</p>
+                    <h4 class="title"><a href="">@Localizer["MakingProfit"]</a></h4>
+                    <p class="description">@Localizer["Profit"]</p>
                 </div>
 
                 <div class="icon-box">
                     <div class="icon"><i class="fa fa-modx"></i></div>
-                    <h4 class="title"><a href="">Другие услуги</a></h4>
-                    <p class="description">оказание других услуг, направленных на повышение эффективности работы в сфере оказания услуг населению в соответствии с законодательством</p>
+                    <h4 class="title"><a href="">@Localizer["OtherFacilities"]</a></h4>
+                    <p class="description">@Localizer["Other"]</p>
                 </div>
             </div>
         </div>
@@ -56,35 +55,36 @@
             <div class="col-xl-3 col-lg-6 col-md-6">
                 <div class="box">
                     <div class="icon" onclick="openEnterpriseStructure()"><span onclick="openEnterpriseStructure()"><i class="fa fa-linode"></i></span></div>
-                    <h4 class="title"><span>Структура предприятия</span></h4>
+                    <h4 class="title"><span>@Localizer["EnterprisStructure"]</span></h4>
                     <!--<p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>-->
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6 col-md-6">
                 <div class="box">
                     <div class="icon" onclick="openPhoneStructure()"><span onclick="openPhoneStructure()"><i class="fa fa-address-book"></i></span></div>
-                    <h4 class="title"><span>Телефонный справочник</span></h4>
+                    <h4 class="title"><span>@Localizer["TelephoneDirectory"]</span></h4>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6 col-md-6">
                 <div class="box">
                     <div class="icon" onclick="openAdmProcess()"><span onclick="openAdmProcess()"><i class="fa fa-tasks"></i></span></div>
-                    <h4 class="title"><span>Административные процедуры</span></h4>
+                    <h4 class="title"><span>@Localizer["AdministrativeProcedure"]</span></h4>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6 col-md-6">
                 <div class="box">
                     <div class="icon" onclick="openPersonalReception()"><span onclick="openPersonalReception()"><i class="fa fa-clock-o"></i></span></div>
-                    <h4 class="title"><span>График<br /> личного приема</span></h4>
+                    <h4 class="title"><span>@Localizer["ReceptionSchedule"]</span></h4>
                 </div>
             </div>
         </div>
 
+        <!-- Структура МГАОН -->
         <div id="myEnterpriseStructure" class="fullScreen">
             <a href="javascript:void(0)" class="closebtn" onclick="closeEnterpriseStructure()"><span class="fa fa-close" style="color:rgb(52, 59, 64);"></span></a>
             <div class="fullScreen-content">
                 <div class="container">
-                    <h2 class="title">Структура МГАОН</h2>
+                    <h2 class="title">@Localizer["EnterprisStructureTitle"]</h2>
                     <img src="/img/СтруктураРус.jpg" />
                 </div>
             </div>
@@ -95,200 +95,77 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closePhoneStructure()"><span class="fa fa-close" style="color:rgb(52, 59, 64);"></span></a>
             <div class="fullScreen-content">
                 <div class="container">
-                    <h2 class="title">Телефонный справочник МГАОН</h2>
+                    <h2 class="title">@Localizer["TelephoneDirectoryTitle"]</h2>
                     <table class="table table-hover" style="text-align:left">
                         <tbody>
                             <tr>
                                 <td>
-                                    <b>Директор</b> <br />
-                                    Ефимов Александр Станиславович <br />
-                                    <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 394 49 24 <br />
-                                    <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул.М.Танка, д.36, корп.1, каб.3
+                                    @Localizer["Efimov"]
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <b>Заместитель директора</b> <br />
-                                    Трушкевич Павел Анатольевич <br />
-                                    <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 364 19 13 <br />
-                                    <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул.М.Танка, д.36, корп.1, каб.1
+                                    @Localizer["Trushkevich"]
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <b>Заместитель директор – начальник общего отдела</b> <br />
-                                    Данько Елена Георгиевна <br />
-                                    <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 364 26 12 <br />
-                                    <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул.М.Танка, д.36, корп.1, каб.1
+                                    @Localizer["Danko"]
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <b>Сектор бухгалтерского учета и отчетности</b> <br />
-                                    главный бухгалтер Шипова Людмила Викторовна <br />
-                                    <i class="fa fa-phone" style="color: #2dc997;"></i> тел 364 25 78 <br />
-                                    <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул.М.Танка, д.36, корп.1, каб.6
+                                    @Localizer["Shipova"]
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <b>Планово-экономический сектор</b> <br />
-                                    начальник сектора Ступчик Оксана Васильевна <br />
-                                    <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 393 16 47 <br />
-                                    <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул.М.Танка, д.36, корп.1, каб.4
+                                    @Localizer["Stupchik"]
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <b>Общий отдел</b>  <br />
-                                    заведующий хозяйством Пантелеенко Леонид Алексеевич <br />
-                                    <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 347 16 27 <br />
-                                    <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул.М.Танка, д.36, корп.1, каб.7 <br />
-                                    <br />
-                                    ведущий юрисконсульт Трацевский Александр Викторович <br />
-                                    <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 364 26 02 <br />
-                                    <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул.М.Танка, д.36, корп.1, каб.1 <br />
-                                    <br />
-                                    ведущий специалист по кадрам Лебедева Ирина Владимировна <br />
-                                    <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 364 65 92 <br />
-                                    <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул.М.Танка, д.36, корп.1, каб.1 <br />
+                                    @Localizer["GeneralDepartment"]
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <b>Управление сопровождения электронных баз данных «Одно окно»</b>  <br />
-                                    начальник управления Пожиток Нелли Константиновна  <br />
-                                    <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 316 26 03  <br />
-                                    <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул.М.Танка, д.36, корп.1, каб.5  <br />
-                                    <br />
-                                    заместитель начальника управления Нечаева Ольга Владимировна  <br />
-                                    <i class="fa fa-phone" style="color: #2dc997;"></i> тел.243 08 59  <br />
-                                    <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул.М.Танка, д.36, корп.1, каб.5  <br />
-                                    <br />
+                                    @Localizer["DB"]
                                     <div style="padding-left:40px">
-                                        <b>Отдел № 1 Заводского района</b> <br />
-                                        начальник отдела Бойправ Наталья Александровна <br />
-                                        <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 389 26 82 <br />
-                                        <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул. Жилуновича, д.17 – служба «одно окно» <br />
-                                        <br />
-                                        <b>Отдел № 2 Ленинского района</b> <br />
-                                        начальник отдела Губоревич Анна Владимировна <br />
-                                        <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 223 00 27 <br />
-                                        <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул.Маяковского, д.83 – служба «одно окно» <br />
-                                        <br />
-                                        <b>Отдел № 3 Московского района</b> <br />
-                                        начальник отдела Ившина Марина Валерьевна <br />
-                                        <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 200 62 45 <br />
-                                        <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: просп. Дзержинского, д.10, каб.439 – служба «одно окно» <br />
-                                        <br />
+                                        @Localizer["1"]
+                                        @Localizer["2"]
+                                        @Localizer["3"]
                                         <div style="padding-left:40px">
-                                            <b>Сектор № 1</b> <br />
-                                            начальник сектора Саливончик Алла Михайловна  <br />
-                                            <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 200 66 26  <br />
-                                            <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: просп. Дзержинского, д.10, каб.103  <br />
-                                            <br />
-                                            <b>Сектор № 2</b> <br />
-                                            начальник сектора Ширяева Татьяна Алексеевна  <br />
-                                            <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 376 84 70 <br />
-                                            <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: просп. газеты Правда, д.29, каб.4  <br />
-                                            <br />
+                                            @Localizer["3_1"]
+                                            @Localizer["3_2"]
                                         </div>
-                                        <b>Отдел № 4 Октябрьского района</b> <br />
-                                        начальник отдела Бычковская Светлана Викторовна <br />
-                                        <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 222 13 95 <br />
-                                        <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул. Чкалова, д.6, каб.108 – служба «одно окно» <br />
-                                        <br />
-                                        <b>Отдел № 5 Партизанского района</b> <br />
-                                        начальник отдела Бакумова Марина Антоновна <br />
-                                        <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 294 18 52 <br />
-                                        <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул.Захарова, д.53 – служба «одно окно» <br />
-                                        <br />
+                                        @Localizer["4"]
+                                        @Localizer["5"]
                                         <div style="padding-left:40px">
-                                            <b>Сектор № 1</b> <br />
-                                            начальник сектора Прудцева Светлана Ивановна  <br />
-                                            <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 369 25 65  <br />
-                                            <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул.О.Кошевого, д.27а – отдел ЗАГС  <br />
-                                            <br />
+                                            @Localizer["5_1"]
                                         </div>
-                                        <b>Отдел № 6 Первомайского района</b> <br />
-                                        начальник отдела Черник Ирина Жоржевна <br />
-                                        <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 280 75 89 <br />
-                                        <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: пер. К.Чорного, д.5 – служба «одно окно» <br />
-                                        <br />
+                                        @Localizer["6"]
                                         <div style="padding-left:40px">
-                                            <b>Сектор № 1</b> <br />
-                                            начальник сектора Биченкова Наталья Александровна <br />
-                                            <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 215 27 20 <br />
-                                            <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: пер. К.Чорного, д.5, каб. 220 <br />
-                                            <br />
+                                            @Localizer["6_1"]
                                         </div>
-                                        <b>Отдел № 7 Советского района</b> <br />
-                                        начальник отдела Белаш Алла Викторовна <br />
-                                        <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 292 24 22 <br />
-                                        <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул.Дорошевича, д.8 – служба «одно окно» <br />
-                                        <br />
+                                        @Localizer["7"]
                                         <div style="padding-left:40px">
-                                            <b>Сектор № 1</b> <br />
-                                            начальник сектора Гришина Светлана Владимировна <br />
-                                            <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 354 05 94 <br />
-                                            <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул. Веры Хоружей. д.24, корп. 1, каб. 10 <br />
-                                            <br />
+                                            @Localizer["7_1"]
                                         </div>
-                                        <b>Отдел № 8 Фрунзенского района</b> <br />
-                                        начальник отдела Антонова Ольга Анатольевна <br />
-                                        <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 204 01 61 <br />
-                                        <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул. Кальварийская, д.39 – служба «одно окно» <br />
-                                        <br />
+                                        @Localizer["8"]
                                         <div style="padding-left:40px">
-                                            <b>Сектор № 1</b> <br />
-                                            начальник сектора Воронцова Люция Михайловна <br />
-                                            <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 254 92 63 <br />
-                                            <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул. Нёманская, д.22 – служба «одно окно» <br />
-                                            <br />
-                                            <b>Сектор № 2</b> <br />
-                                            начальник сектора Волчок Мария Александровна <br />
-                                            <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 204 78 06 <br />
-                                            <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул. Кальварийская, д.39 – служба «одно окно» <br />
-                                            <br />
-                                            <b>Сектор № 3</b> <br />
-                                            начальник сектора Новак Инга Валерьевна <br />
-                                            <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 358 09 40 <br />
-                                            <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: просп. Пушкина, д.55 – служба «одно окно» <br />
-                                            <br />
+                                            @Localizer["8_1"]
+                                            @Localizer["8_2"]
+                                            @Localizer["8_3"]
                                         </div>
-                                        <b>Отдел № 9 Центрального района</b> <br />
-                                        начальник отдела Рогачева Татьяна Николаевна <br />
-                                        <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 306 40 03 <br />
-                                        <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул.Мельникайте, д.6 – служба «одно окно» <br />
-                                        <br />
-                                        <b>Отдел информационного обслуживания службы «Одно окно» Мингорисполкома</b> <br />
-                                        начальник отдела Матеша Ирина Николаевна <br />
-                                        <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 218 00 74 <br />
-                                        <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: просп. Независимости, д.8 – служба «одно окно» <br />
-                                        <br />
-                                        <b>Отдел ведения баз данных в Главном управлении юстиции Мингорисполкома</b> <br />
-                                        начальник отдела Миронюк Татьяна Викторовна <br />
-                                        <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 308 23 83 <br />
-                                        <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: просп.Пушкина, д.42, каб. 104 <br />
-                                        <br />
-                                        <b>Сектор приема заявлений в отделе ЗАГС главного управления юстиции Мингорисполкома</b> <br />
-                                        начальник сектора Матиевская Анна Ивановна <br />
-                                        <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 204 11 15 <br />
-                                        <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул.Ольшевского, д.12 – отдел ЗАГС <br />
-                                        <br />
+                                        @Localizer["9"]
+                                        @Localizer["10"]
                                     </div>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <b>Отдел «Контакт-центр»</b>
-                                    начальник отдела Черник Марина Александровна <br />
-                                    <i class="fa fa-phone" style="color: #2dc997;"></i> тел. 364 25 83 <br />
-                                    <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул.М.Танка, д.36, корп.1, каб.7 <br />
-                                    <br />
-                                    заместитель начальника отдела Ганбарова Татьяна Григорьевна <br />
-                                    <i class="fa fa-phone" style="color: #2dc997;"></i> тел.366 12 57 <br />
-                                    <i class="fa fa-map-marker" style="color: #2dc997;"></i> адрес: ул.М.Танка, д.36, корп.1, каб.8
+                                    @Localizer["ContactCenter"]
                                 </td>
                             </tr>
                         </tbody>
@@ -304,10 +181,10 @@
             <div class="fullScreen-content">
                 <div class="container">
                     <h2 class="title">
-                        Перечень административных процедур
+                        @Localizer["AdministrativeProcedureTitle"] 
                     </h2>
                     <p class="description">
-                        выполняемых коммунальным унитарным предприятием «Минское городское агентство обслуживания населения» для граждан состоящих (состоявших) в трудовых отношениях в соответствии с Указом Президента Республики Беларусь от 26.04.2010 г. № 200 «Об административных процедурах, осуществляемых государственными органами и иными государственными организациями по заявлениям граждан»
+                        @Localizer["Procedure"] 
                     </p>
                     <div style="text-align:left">
                         <p>
@@ -420,31 +297,20 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closePersonalReception()"><span class="fa fa-close" style="color:rgb(52, 59, 64);"></span></a>
             <div class="fullScreen-content">
                 <div class="container">
-                    <h2 class="title">График</h2>
-                    <p style="text-align:center">личного приема граждан, юридических лиц, индивидуальных предпринимателей руководством МГАОН</p>
+                    <h2 class="title">@Localizer["ReceptionScheduleTitle"]</h2>
+                    <p style="text-align:center">@Localizer["Schedule"]</p>
                     <table class="table">
                         <tbody>
                             <tr>
-                                <td>Директор</td>
-                                <td>Ефимов Александр Станиславович</td>
-                                <td>
-                                    Вторая среда месяца с 08.00 до 13.00 </br>
-                                    Кабинет № 3
-                                </td>
+                                @Localizer["ReceptionScheduleEfimov"]
                             </tr>
                             <tr>
-                                <td>Заместитель директора</td>
-                                <td>Трушкевич Павел Анатольевич</td>
-                                <td>
-                                    Четвертая среда месяца с 08.00 до 13.00 <br />
-                                    Кабинет № 1
-                                </td>
+                                @Localizer["ReceptionScheduleTrushkevich"]
                             </tr>
                         </tbody>
                     </table>
                     <p>
-                        <b>Обращаем Ваше внимание</b>, что <b>предварительная запись на личный прием</b> осуществляется по телефону
-                        364-66-34 либо в кабинете № 4 ведущим специалистом по делопроизводству при непосредственном обращении гражданина или представителя юридического лица <em>с предъявлением документа, удостоверяющего личность, и документа, подтверждающего служебные полномочия.</em>
+                        @Localizer["ReceptionScheduleAttention"]
                     </p>
                 </div>
             </div>

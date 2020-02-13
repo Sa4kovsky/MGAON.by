@@ -1,17 +1,18 @@
 ﻿@model Website.Models.ModelsView.IndexViewModels
-
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
 <section id="news">
     <div class="container">
         <div class="section-header">
-            <h3 class="section-title">Новости</h3>
-            <p class="section-description">Расписание проведения тематических дней информирования населения по актуальным вопросам жизнедеятельности населения г. Минска на текущую неделю</p>
+            <h3 class="section-title"> @Localizer["NewsTitle"]</h3>
+            <p class="section-description"> @Localizer["NewsTitleAbout"]</p>
         </div>
     </div>
 
     <div class="row">
         <div class="col-xl-1"></div>
         <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6">
-            <div class="post-date"> <h4 style="color:white; margin: 0px">Понедельник</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="monday"></h6></div>
+            <div class="post-date"> <h4 style="color:white; margin: 0px"> @Localizer["Monday"]</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="monday"></h6></div>
             <br />
 
             @foreach (var item in Model.News)
@@ -21,11 +22,11 @@
                     <div class="box">
                         <div class="icon"><a href=""><i class="fa fa-forumbee"></i></a></div>
                         <h6 style="text-align:right; margin: 10px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
-                        <h4 class="title">Тема: @item.Title</h4>
+                        <h4 class="title"> @Localizer["Topic"]: @item.Title</h4>
                         <p class="description" style="margin: 20px 0px 0px 0px">
-                            <b>Исполнитель: @item.Name</b>
+                            <b> @Localizer["Executor"]: @item.Name</b>
                             <br /> <br />
-                            <b>Представитель исполнителя - @item.Organization</b>
+                            <b> @Localizer["Representative"] - @item.Organization</b>
                             <br />
                             @item.Position
                         </p>
@@ -35,20 +36,20 @@
         </div>
 
         <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6">
-            <div class="post-date"> <h4 style="color:white; margin: 0px">Вторник</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="tuesday"></h6></div>
+            <div class="post-date"> <h4 style="color:white; margin: 0px"> @Localizer["Tuesday"]</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="tuesday"></h6></div>
             <br />
             @foreach (var item in Model.News)
             {
                 @if (item.DateStart.ToShortDateString() == (DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Tuesday)).ToShortDateString())
                 {
                     <div class="box">
-                        <div class="icon"><a href=""><i class="fa fa-slack"></i></a></div>
+                        <div class="icon"><a href=""><i class="fa fa-forumbee"></i></a></div>
                         <h6 style="text-align:right; margin: 10px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
-                        <h4 class="title">Тема:  @item.Title</h4>
+                        <h4 class="title"> @Localizer["Topic"]: @item.Title</h4>
                         <p class="description" style="margin: 20px 0px 0px 0px">
-                            <b>Исполнитель: @item.Name</b>
+                            <b> @Localizer["Executor"]: @item.Name</b>
                             <br /> <br />
-                            <b>Представитель исполнителя - @item.Organization</b>
+                            <b> @Localizer["Representative"] - @item.Organization</b>
                             <br />
                             @item.Position
                         </p>
@@ -58,20 +59,20 @@
         </div>
 
         <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6">
-            <div class="post-date"> <h4 style="color:white; margin: 0px">Среда</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="wednesday"></h6></div>
+            <div class="post-date"> <h4 style="color:white; margin: 0px"> @Localizer["Wednesday"]</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="wednesday"></h6></div>
             <br />
             @foreach (var item in Model.News)
             {
                 @if (item.DateStart.ToShortDateString() == (DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Wednesday)).ToShortDateString())
                 {
                     <div class="box">
-                        <div class="icon"><a href=""><i class="fa fa-yelp"></i></a></div>
+                        <div class="icon"><a href=""><i class="fa fa-forumbee"></i></a></div>
                         <h6 style="text-align:right; margin: 10px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
-                        <h4 class="title">Тема:  @item.Title</h4>
+                        <h4 class="title"> @Localizer["Topic"]: @item.Title</h4>
                         <p class="description" style="margin: 20px 0px 0px 0px">
-                            <b>Исполнитель: @item.Name</b>
+                            <b> @Localizer["Executor"]: @item.Name</b>
                             <br /> <br />
-                            <b>Представитель исполнителя - @item.Organization</b>
+                            <b> @Localizer["Representative"] - @item.Organization</b>
                             <br />
                             @item.Position
                         </p>
@@ -82,20 +83,20 @@
 
 
         <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6">
-            <div class="post-date"> <h4 style="color:white; margin: 0px">Четверг</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="thursday"></h6></div>
+            <div class="post-date"> <h4 style="color:white; margin: 0px"> @Localizer["Thursday"]</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="thursday"></h6></div>
             <br />
             @foreach (var item in Model.News)
             {
-                @if (item.DateStart.ToShortDateString() == (DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Thursday)).ToShortDateString() )
+                @if (item.DateStart.ToShortDateString() == (DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Thursday)).ToShortDateString())
                 {
                     <div class="box">
-                        <div class="icon"><a href=""><i class="fa fa-google-wallet"></i></a></div>
+                        <div class="icon"><a href=""><i class="fa fa-forumbee"></i></a></div>
                         <h6 style="text-align:right; margin: 10px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
-                        <h4 class="title">Тема:  @item.Title</h4>
+                        <h4 class="title"> @Localizer["Topic"]: @item.Title</h4>
                         <p class="description" style="margin: 20px 0px 0px 0px">
-                            <b>Исполнитель: @item.Name</b>
+                            <b> @Localizer["Executor"]: @item.Name</b>
                             <br /> <br />
-                            <b>Представитель исполнителя - @item.Organization</b>
+                            <b> @Localizer["Representative"] - @item.Organization</b>
                             <br />
                             @item.Position
                         </p>
@@ -105,20 +106,20 @@
         </div>
 
         <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6">
-            <div class="post-date"> <h4 style="color:white; margin: 0px">Пятница</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="friday"></h6></div>
+            <div class="post-date"> <h4 style="color:white; margin: 0px"> @Localizer["Friday"]</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="friday"></h6></div>
             <br />
             @foreach (var item in Model.News)
             {
                 @if (item.DateStart.ToShortDateString() == (DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Friday)).ToShortDateString())
                 {
                     <div class="box">
-                        <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
+                        <div class="icon"><a href=""><i class="fa fa-forumbee"></i></a></div>
                         <h6 style="text-align:right; margin: 10px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
-                        <h4 class="title">Тема:  @item.Title</h4>
+                        <h4 class="title"> @Localizer["Topic"]: @item.Title</h4>
                         <p class="description" style="margin: 20px 0px 0px 0px">
-                            <b>Исполнитель: @item.Name</b>
+                            <b> @Localizer["Executor"]: @item.Name</b>
                             <br /> <br />
-                            <b>Представитель исполнителя - @item.Organization</b>
+                            <b> @Localizer["Representative"] - @item.Organization</b>
                             <br />
                             @item.Position
                         </p>
@@ -130,16 +131,16 @@
 
     <!-- Кнопка архива и график-->
     <div class="text-center" style="padding:20px">
-        <button type="button" data-toggle="collapse" data-target="#multiCollapseExample1" aria-expanded="false" style="margin:5px;">Архив</button>
-        <button type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" style="margin:5px;">График проведения тематических дней информирования</button>
+        <button type="button" data-toggle="collapse" data-target="#multiCollapseExample1" aria-expanded="false" style="margin:5px;">@Localizer["ArchiveButton"]</button>
+        <button type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" style="margin:5px;">@Localizer["ChartButton"]</button>
     </div>
     <!-- Архива-->
     <div class="collapse" id="multiCollapseExample1" style="padding:0">
         <div class="card card-body" style="border:0; padding:0;">
             <div class="container">
                 <div class="section-header">
-                    <h3 class="section-title">Архив новостей</h3>
-                    <p class="section-description">Расписание проведения тематических дней информирования населения по актуальным вопросам жизнедеятельности населения г. Минска за прошедшую неделю</p>
+                    <h3 class="section-title">@Localizer["ArchiveNewsTitle"]</h3>
+                    <p class="section-description">@Localizer["ArchiveNewsTitleAbout"]</p>
                 </div>
             </div>
 
@@ -147,7 +148,7 @@
             <div class="row">
                 <div class="col-xl-1"></div>
                 <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6">
-                    <div class="post-date"> <h4 style="color:white; margin: 0px">Понедельник</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="oldMonday"></h6></div>
+                    <div class="post-date"> <h4 style="color:white; margin: 0px">@Localizer["Monday"]</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="oldMonday"></h6></div>
                     <br />
 
                     @foreach (var item in Model.News)
@@ -155,13 +156,13 @@
                         @if (item.DateStart.ToShortDateString() == (DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Monday)).AddDays(-7).ToShortDateString())
                         {
                             <div class="box">
-                                <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
+                                <div class="icon"><a href=""><i class="fa fa-forumbee"></i></a></div>
                                 <h6 style="text-align:right; margin: 10px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
-                                <h4 class="title">Тема:  @item.Title</h4>
+                                <h4 class="title"> @Localizer["Topic"]: @item.Title</h4>
                                 <p class="description" style="margin: 20px 0px 0px 0px">
-                                    <b>Исполнитель: @item.Name</b>
+                                    <b> @Localizer["Executor"]: @item.Name</b>
                                     <br /> <br />
-                                    <b>Представитель исполнителя - @item.Organization</b>
+                                    <b> @Localizer["Representative"] - @item.Organization</b>
                                     <br />
                                     @item.Position
                                 </p>
@@ -171,20 +172,20 @@
                 </div>
 
                 <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6">
-                    <div class="post-date"> <h4 style="color:white; margin: 0px">Вторник</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="oldTuesday"></h6></div>
+                    <div class="post-date"> <h4 style="color:white; margin: 0px">@Localizer["Tuesday"]</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="oldTuesday"></h6></div>
                     <br />
                     @foreach (var item in Model.News)
                     {
                         @if (item.DateStart.ToShortDateString() == (DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Monday)).AddDays(-6).ToShortDateString())
                         {
                             <div class="box">
-                                <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
+                                <div class="icon"><a href=""><i class="fa fa-forumbee"></i></a></div>
                                 <h6 style="text-align:right; margin: 10px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
-                                <h4 class="title">Тема:  @item.Title</h4>
+                                <h4 class="title"> @Localizer["Topic"]: @item.Title</h4>
                                 <p class="description" style="margin: 20px 0px 0px 0px">
-                                    <b>Исполнитель: @item.Name</b>
+                                    <b> @Localizer["Executor"]: @item.Name</b>
                                     <br /> <br />
-                                    <b>Представитель исполнителя - @item.Organization</b>
+                                    <b> @Localizer["Representative"] - @item.Organization</b>
                                     <br />
                                     @item.Position
                                 </p>
@@ -194,20 +195,20 @@
                 </div>
 
                 <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6">
-                    <div class="post-date"> <h4 style="color:white; margin: 0px">Среда</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="oldWednesday"></h6></div>
+                    <div class="post-date"> <h4 style="color:white; margin: 0px">@Localizer["Wednesday"]</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="oldWednesday"></h6></div>
                     <br />
                     @foreach (var item in Model.News)
                     {
                         @if (item.DateStart.ToShortDateString() == (DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Monday)).AddDays(-5).ToShortDateString())
                         {
                             <div class="box">
-                                <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
+                                <div class="icon"><a href=""><i class="fa fa-forumbee"></i></a></div>
                                 <h6 style="text-align:right; margin: 10px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
-                                <h4 class="title">Тема:  @item.Title</h4>
+                                <h4 class="title"> @Localizer["Topic"]: @item.Title</h4>
                                 <p class="description" style="margin: 20px 0px 0px 0px">
-                                    <b>Исполнитель: @item.Name</b>
+                                    <b> @Localizer["Executor"]: @item.Name</b>
                                     <br /> <br />
-                                    <b>Представитель исполнителя - @item.Organization</b>
+                                    <b> @Localizer["Representative"] - @item.Organization</b>
                                     <br />
                                     @item.Position
                                 </p>
@@ -218,20 +219,20 @@
 
 
                 <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6">
-                    <div class="post-date"> <h4 style="color:white; margin: 0px">Четверг</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="oldThursday"></h6></div>
+                    <div class="post-date"> <h4 style="color:white; margin: 0px">@Localizer["Thursday"]</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="oldThursday"></h6></div>
                     <br />
                     @foreach (var item in Model.News)
                     {
                         @if (item.DateStart.ToShortDateString() == (DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Monday)).AddDays(-4).ToShortDateString())
                         {
                             <div class="box">
-                                <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
+                                <div class="icon"><a href=""><i class="fa fa-forumbee"></i></a></div>
                                 <h6 style="text-align:right; margin: 10px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
-                                <h4 class="title">Тема:  @item.Title</h4>
+                                <h4 class="title"> @Localizer["Topic"]: @item.Title</h4>
                                 <p class="description" style="margin: 20px 0px 0px 0px">
-                                    <b>Исполнитель: @item.Name</b>
+                                    <b> @Localizer["Executor"]: @item.Name</b>
                                     <br /> <br />
-                                    <b>Представитель исполнителя - @item.Organization</b>
+                                    <b> @Localizer["Representative"] - @item.Organization</b>
                                     <br />
                                     @item.Position
                                 </p>
@@ -241,20 +242,20 @@
                 </div>
 
                 <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6">
-                    <div class="post-date"> <h4 style="color:white; margin: 0px">Пятница</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="oldFriday"></h6></div>
+                    <div class="post-date"> <h4 style="color:white; margin: 0px">@Localizer["Friday"]</h4>  <h6 style="text-align:right; color:white; margin: 0px" id="oldFriday"></h6></div>
                     <br />
                     @foreach (var item in Model.News)
                     {
                         @if (item.DateStart.ToShortDateString() == (DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Monday)).AddDays(-3).ToShortDateString())
                         {
                             <div class="box">
-                                <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
+                                <div class="icon"><a href=""><i class="fa fa-forumbee"></i></a></div>
                                 <h6 style="text-align:right; margin: 10px">@item.DateStart.ToShortTimeString() - @item.DateFinish.ToShortTimeString()  </h6>
-                                <h4 class="title">Тема:  @item.Title</h4>
+                                <h4 class="title"> @Localizer["Topic"]: @item.Title</h4>
                                 <p class="description" style="margin: 20px 0px 0px 0px">
-                                    <b>Исполнитель: @item.Name</b>
+                                    <b> @Localizer["Executor"]: @item.Name</b>
                                     <br /> <br />
-                                    <b>Представитель исполнителя - @item.Organization</b>
+                                    <b> @Localizer["Representative"] - @item.Organization</b>
                                     <br />
                                     @item.Position
                                 </p>
@@ -273,134 +274,127 @@
 </section><!-- #news -->
 
 <script>
-function startAndEndOfWeek(date) {
-    var now = date? new Date(date) : new Date();
-    now.setHours(0, 0, 0, 0);
-    //Понедельник
-    var monday = new Date(now);
-    var dd = (monday.getDate() - monday.getDay() + 1);
-    var mm = monday.getMonth() + 1;
-    if (dd < 10)
-    {
-        dd = '0' + dd
-    };
-    if (mm < 10)
-    {
-        mm = '0' + mm
-    };
-    monday = dd + "-" + mm + "-" + monday.getFullYear();
-    //Вторник
-    var tuesday = new Date(now);
-    var dd = (tuesday.getDate() - tuesday.getDay() + 2);
-    var mm = tuesday.getMonth() + 1;
-    if (dd < 10)
-    {
-        dd = '0' + dd
-    };
-    if (mm < 10)
-    {
-        mm = '0' + mm
-    };
-    tuesday = dd + "-" + mm + "-" + tuesday.getFullYear();
-    //Среда
-    var wednesday = new Date(now);
-    var dd = (wednesday.getDate() - wednesday.getDay() + 3);
-    var mm = wednesday.getMonth() + 1;
-    if (dd < 10)
-    {
-        dd = '0' + dd
-    };
-    if (mm < 10)
-    {
-        mm = '0' + mm
-    };
-    wednesday = dd + "-" + mm + "-" + wednesday.getFullYear();
-    //Четверг
-    var thursday = new Date(now);
-    var dd = (thursday.getDate() - thursday.getDay() + 4);
-    var mm = thursday.getMonth() + 1;
-    if (dd < 10)
-    {
-        dd = '0' + dd
-    };
-    if (mm < 10)
-    {
-        mm = '0' + mm
-    };
-    thursday = dd + "-" + mm + "-" + thursday.getFullYear();
-    //Пятница
-    var friday = new Date(now);
-    var dd = (friday.getDate() - friday.getDay() + 5);
-    var mm = friday.getMonth() + 1;
-    if (dd < 10) {
-        dd = '0' + dd
-    };
-    if (mm < 10) {
-        mm = '0' + mm
-    };
-    friday = dd + "-" + mm + "-" + friday.getFullYear();
+    function startAndEndOfWeek(date) {
+        var now = date ? new Date(date) : new Date();
+        now.setHours(0, 0, 0, 0);
+        //расчет даты дней недели недели
+        //Понедельник
+        var monday = new Date(now);
+        var dd = (monday.getDate() - monday.getDay() + 1);
+        var mm = monday.getMonth() + 1;
+        if (dd < 10) {
+            dd = '0' + dd
+        };
+        if (mm < 10) {
+            mm = '0' + mm
+        };
+        monday = dd + "-" + mm + "-" + monday.getFullYear();
+        //Вторник
+        var tuesday = new Date(now);
+        var dd = (tuesday.getDate() - tuesday.getDay() + 2);
+        var mm = tuesday.getMonth() + 1;
+        if (dd < 10) {
+            dd = '0' + dd
+        };
+        if (mm < 10) {
+            mm = '0' + mm
+        };
+        tuesday = dd + "-" + mm + "-" + tuesday.getFullYear();
+        //Среда
+        var wednesday = new Date(now);
+        var dd = (wednesday.getDate() - wednesday.getDay() + 3);
+        var mm = wednesday.getMonth() + 1;
+        if (dd < 10) {
+            dd = '0' + dd
+        };
+        if (mm < 10) {
+            mm = '0' + mm
+        };
+        wednesday = dd + "-" + mm + "-" + wednesday.getFullYear();
+        //Четверг
+        var thursday = new Date(now);
+        var dd = (thursday.getDate() - thursday.getDay() + 4);
+        var mm = thursday.getMonth() + 1;
+        if (dd < 10) {
+            dd = '0' + dd
+        };
+        if (mm < 10) {
+            mm = '0' + mm
+        };
+        thursday = dd + "-" + mm + "-" + thursday.getFullYear();
+        //Пятница
+        var friday = new Date(now);
+        var dd = (friday.getDate() - friday.getDay() + 5);
+        var mm = friday.getMonth() + 1;
+        if (dd < 10) {
+            dd = '0' + dd
+        };
+        if (mm < 10) {
+            mm = '0' + mm
+        };
+        friday = dd + "-" + mm + "-" + friday.getFullYear();
 
-    //Прошлая неделя
+        //Прошлая неделя
 
-    //Понедельник
-    var oldMonday = new Date(now);
-    var dd = (oldMonday.getDate() - oldMonday.getDay() - 6);
-    var mm = oldMonday.getMonth() + 1;
-    if (dd < 10) {
-        dd = '0' + dd
-    };
-    if (mm < 10) {
-        mm = '0' + mm
-    };
-    oldMonday = dd + "-" + mm + "-" + oldMonday.getFullYear();
+        //Понедельник
+        var oldMonday = new Date(now);
+        var dd = (oldMonday.getDate() - oldMonday.getDay() - 6);
+        var mm = oldMonday.getMonth() + 1;
+        if (dd < 10) {
+            dd = '0' + dd
+        };
+        if (mm < 10) {
+            mm = '0' + mm
+        };
+        oldMonday = dd + "-" + mm + "-" + oldMonday.getFullYear();
 
-    //Вторник
-    var oldTuesday = new Date(now);
-    var dd = (oldTuesday.getDate() - oldTuesday.getDay() - 5);
-    var mm = oldTuesday.getMonth() + 1;
-    if (dd < 10) {
-        dd = '0' + dd
-    };
-    if (mm < 10) {
-        mm = '0' + mm
-    };
-    oldTuesday = dd + "-" + mm + "-" + oldTuesday.getFullYear();
-    //Среда
-    var oldWednesday = new Date(now);
-    var dd = (oldWednesday.getDate() - oldWednesday.getDay() - 4);
-    var mm = oldWednesday.getMonth() + 1;
-    if (dd < 10) {
-        dd = '0' + dd
-    };
-    if (mm < 10) {
-        mm = '0' + mm
-    };
-    oldWednesday = dd + "-" + mm + "-" + oldWednesday.getFullYear();
-    //Четверг
-    var oldThursday = new Date(now);
-    var dd = (oldThursday.getDate() - oldThursday.getDay() - 3);
-    var mm = oldThursday.getMonth() + 1;
-    if (dd < 10) {
-        dd = '0' + dd
-    };
-    if (mm < 10) {
-        mm = '0' + mm
-    };
-    oldThursday = dd + "-" + mm + "-" + oldThursday.getFullYear();
-    //Пятница
-    var oldFriday = new Date(now);
-    var dd = (oldFriday.getDate() - oldFriday.getDay() - 2);
-    var mm = oldFriday.getMonth() + 1;
-    if (dd < 10) {
-        dd = '0' + dd
-    };
-    if (mm < 10) {
-        mm = '0' + mm
-    };
-    oldFriday = dd + "-" + mm + "-" + oldFriday.getFullYear();
+        //Вторник
+        var oldTuesday = new Date(now);
+        var dd = (oldTuesday.getDate() - oldTuesday.getDay() - 5);
+        var mm = oldTuesday.getMonth() + 1;
+        if (dd < 10) {
+            dd = '0' + dd
+        };
+        if (mm < 10) {
+            mm = '0' + mm
+        };
+        oldTuesday = dd + "-" + mm + "-" + oldTuesday.getFullYear();
+        //Среда
+        var oldWednesday = new Date(now);
+        var dd = (oldWednesday.getDate() - oldWednesday.getDay() - 4);
+        var mm = oldWednesday.getMonth() + 1;
+        if (dd < 10) {
+            dd = '0' + dd
+        };
+        if (mm < 10) {
+            mm = '0' + mm
+        };
+        oldWednesday = dd + "-" + mm + "-" + oldWednesday.getFullYear();
+        //Четверг
+        var oldThursday = new Date(now);
+        var dd = (oldThursday.getDate() - oldThursday.getDay() - 3);
+        var mm = oldThursday.getMonth() + 1;
+        if (dd < 10) {
+            dd = '0' + dd
+        };
+        if (mm < 10) {
+            mm = '0' + mm
+        };
+        oldThursday = dd + "-" + mm + "-" + oldThursday.getFullYear();
+        //Пятница
+        var oldFriday = new Date(now);
+        var dd = (oldFriday.getDate() - oldFriday.getDay() - 2);
+        var mm = oldFriday.getMonth() + 1;
+        if (dd < 10) {
+            dd = '0' + dd
+        };
+        if (mm < 10) {
+            mm = '0' + mm
+        };
+        oldFriday = dd + "-" + mm + "-" + oldFriday.getFullYear();
 
-    return [monday, tuesday, wednesday, thursday, friday, oldMonday, oldTuesday, oldWednesday, oldThursday, oldFriday,];
-}
+        return [monday, tuesday, wednesday, thursday, friday, oldMonday, oldTuesday, oldWednesday, oldThursday, oldFriday,];
+    }
 
     document.getElementById("monday").innerHTML = startAndEndOfWeek()[0];
     document.getElementById("tuesday").innerHTML = startAndEndOfWeek()[1];

@@ -5,30 +5,30 @@
 <section id="facts">
     <div class="container">
         <div class="section-header">
-            <h3 class="section-title">Факты</h3>
-            <p class="section-description">о работе служб «одно окно» администраций районов г. Минска и Мингорисполкома <br />    Данные приводятся с 01.01.2020</p>
+            <h3 class="section-title">@Localizer["FactsTitle"]</h3>
+            <p class="section-description">@Localizer["FactsAbout"]</p>
         </div>
         <div class="row counters">
             @foreach (var item in Model)
             {
                 <div class="col-lg-3 col-md-6 col-sm-6 text-center">
                     <span>@item.SummClients</span>
-                    <p>принято всего заявлений</p>
+                    <p>@Localizer["All"]</p>
                 </div>
 
                 <div class="col-lg-3 col-md-6 col-sm-6 text-center">
                     <span>@item.SummLegalPerson</span>
-                    <p>принято заявлений юридических лиц</p>
+                    <p>@Localizer["Legal"]</p>
                 </div>
 
                 <div class="col-lg-3 col-md-6 col-sm-6 text-center">
                     <span>@item.SummPhysicalPerson</span>
-                    <p>принято заявлений физических лиц</p>
+                    <p>@Localizer["Physical"]</p>
                 </div>
 
                 <div class="col-lg-3 col-md-6 col-sm-6 text-center">
                     <span>@item.SummAdm</span>
-                    <p>выдано административных решений</p>
+                    <p>@Localizer["Decisions"]</p>
                 </div>
             }
         </div>

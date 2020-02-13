@@ -1,9 +1,11 @@
-﻿@model Website.Models.UsersSendEmail.Person
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@model Website.Models.UsersSendEmail.Person
 
 <section id="contact">
     <div class="container">
         <div class="section-header" style="padding: 0 0 20px 0">
-            <h3 class="section-title">Контакты</h3>
+            <h3 class="section-title">@Localizer["Title"]</h3>
             <!--<p class="section-description"></p>-->
         </div>
     </div>
@@ -20,15 +22,13 @@
                     <div>
                         <i class="fa fa-map-marker"></i>
                         <p>
-                            Республика Беларусь,<br>220004, г. Минск,<br />
-                            ул. М.Танка, 36, корп.1, пом. 1Н
-                            (часть изолированного помещения) проезд до ст. метро Молодежная
+                            @Localizer["Address"]
                         </p>
                     </div>
                     <div>
                         <i class="fa fa-medium"></i>
                         <p>
-                            метро Молодежная
+                            @Localizer["Metro"]
                         </p>
                     </div>
                     <div>
@@ -48,19 +48,19 @@
                 <div class="form">
                     <form action="" method="post" role="form" class="contactForm">
                         <div class="form-group">
-                            <input type="text" class="form-control" name="fullName" id="fullName" placeholder="ФИО*" required />
+                            <input type="text" class="form-control" name="fullName" id="fullName" placeholder="@Localizer["FCS"]*" required />
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Электронная почта" />
+                            <input type="email" class="form-control" name="email" id="email" placeholder="@Localizer["Email"]" />
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" name="tel" id="tel" placeholder="Контактный телефон" />
+                            <input type="text" class="form-control" name="tel" id="tel" placeholder="@Localizer["Phone"]" />
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" name="message" id="message" placeholder="Сообщение*" maxlength="1000" required></textarea>
+                            <textarea class="form-control" name="message" id="message" placeholder="@Localizer["Mail"]*" maxlength="1000" required></textarea>
                         </div>
                         <div class="text-center" style="padding:20px">
-                            <button type="button" formnovalidate value="SendEmail" id="buttonSendEmail" >Отправить сообщение</button>
+                            <button type="button" formnovalidate value="SendEmail" id="buttonSendEmail">@Localizer["SendEmail"]</button>
                         </div>
                     </form>
                 </div>
@@ -72,17 +72,13 @@
                     <div>
                         <i class="fa fa-calendar"></i>
                         <p>
-                            понедельник-четверг: с 8.45 до 18.00 <br />
-                            пятница: с 8.45 до 16.45 <br />
-                            обед: с 13.00 до 14.00 <br />
-                            выходные: суббота, воскресенье.
+                            @Localizer["Chart"]
                         </p>
                     </div>
                     <div>
                         <i class="fa  fa-university"></i>
                         <p>
-                            Вышестоящая организация <br \>
-                            <a href="https://minsk.gov.by/ru/">Минский городской исполнительный комитет</a>
+                            @Localizer["Organization"]
                         </p>
                     </div>
                 </div>
@@ -108,7 +104,7 @@
 </div>
 
 <script type="text/javascript">
-    //ajax сробатывает при отправе сообщения, чтобы частично обновлять представление
+    //ajax сробатывает при отправе сообщения(проверяет на валидность и отправляет на сервер данные "Обраная связь"), чтобы частично обновлять представление
     $(document).ready(function () {
         $('#buttonSendEmail').click(function () {
             ValidName();
@@ -122,10 +118,10 @@
                     traditional: true,
                     data: { Name: $('#fullName').val(), Email: $('#email').val(), Phone: $('#tel').val(), Message: $('#message').val() },
                     success: function (result) {
-                    $('#resultSendEmail').html(result);
+                        $('#resultSendEmail').html(result);
                     }
                 });
-               
+
                 $('#exampleModalCenter').modal('show')
             }
         });

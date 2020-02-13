@@ -22,7 +22,7 @@ namespace Website.Controllers
         }
 
         SendEmail _sendEmail = new SendEmail();
-        Models.UsersSendEmail.FileMode file;
+
         
         /// <summary>
         /// Функция получает от Ajax метода данные для отправки по почте не обнавляя View
@@ -34,16 +34,13 @@ namespace Website.Controllers
         {
             if (person.File != null)
             {
-                // путь к папке Files
-                string path = person.File.FileName;
                 // сохраняем файл в папку Files в каталоге wwwroot
                 using (var fileStream = new FileStream("/app/wwwroot/share-pictures/" + person.File.FileName, System.IO.FileMode.Create))
                 {
-                    person.File.CopyToAsync(fileStream);
+                    person.File.CopyTo(fileStream);
                 }
-                file = new Models.UsersSendEmail.FileMode { Name = person.File.FileName, Path = person.File.FileName };
             }
-            _sendEmail.SendEmailAsync(person, "Электронное обращение", file);
+            _sendEmail.SendEmailAsync(person, "Электронное обращение");
             return new JsonResult("Ваше сообщение было отправлено. Спасибо!");
         }
 

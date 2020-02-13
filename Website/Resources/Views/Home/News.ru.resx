@@ -117,20 +117,46 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Appeal" xml:space="preserve">
-    <value>Напісаць зварот дырэктару</value>
-    <comment>Название кнопки(ссылки)</comment>
+  <data name="ArchiveButton" xml:space="preserve">
+    <value>Архив</value>
   </data>
-  <data name="HeroTitle" xml:space="preserve">
-    <value>Камунальнае унітарнае прадпрыемства</value>
-    <comment>&lt;h2&gt;&lt;/h2&gt;</comment>
+  <data name="ArchiveNewsTitle" xml:space="preserve">
+    <value>Архив новостей</value>
   </data>
-  <data name="HeroTitleCompany" xml:space="preserve">
-    <value>«Мінскае гарадское агенцтва абслугоўвання насельніцтва»</value>
-    <comment>&lt;h1&gt;&lt;/h1&gt;</comment>
+  <data name="ArchiveNewsTitleAbout" xml:space="preserve">
+    <value>Расписание проведения тематических дней информирования населения по актуальным вопросам жизнедеятельности населения г. Минска за прошедшую неделю</value>
   </data>
-  <data name="MakeAppointment" xml:space="preserve">
-    <value>Запісацца на прыём у службу «адно акно»</value>
-    <comment>Название кнопки(ссылки) </comment>
+  <data name="ChartButton" xml:space="preserve">
+    <value>График проведения тематических дней информирования</value>
+  </data>
+  <data name="Executor" xml:space="preserve">
+    <value>Исполнитель</value>
+  </data>
+  <data name="Friday" xml:space="preserve">
+    <value>Пятница</value>
+  </data>
+  <data name="Monday" xml:space="preserve">
+    <value>Понедельник</value>
+  </data>
+  <data name="NewsTitle" xml:space="preserve">
+    <value>Новости</value>
+  </data>
+  <data name="NewsTitleAbout" xml:space="preserve">
+    <value>Расписание проведения тематических дней информирования населения по актуальным вопросам жизнедеятельности населения г. Минска на текущую неделю</value>
+  </data>
+  <data name="Representative" xml:space="preserve">
+    <value>Представитель исполнителя</value>
+  </data>
+  <data name="Thursday" xml:space="preserve">
+    <value>Четверг</value>
+  </data>
+  <data name="Topic" xml:space="preserve">
+    <value>Тема</value>
+  </data>
+  <data name="Tuesday" xml:space="preserve">
+    <value>Вторник</value>
+  </data>
+  <data name="Wednesday" xml:space="preserve">
+    <value>Среда</value>
   </data>
 </root>

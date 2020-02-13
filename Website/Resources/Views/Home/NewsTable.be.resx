@@ -117,20 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Appeal" xml:space="preserve">
-    <value>Напісаць зварот дырэктару</value>
-    <comment>Название кнопки(ссылки)</comment>
+  <data name="Data" xml:space="preserve">
+    <value>Дата, час правядзення</value>
   </data>
-  <data name="HeroTitle" xml:space="preserve">
-    <value>Камунальнае унітарнае прадпрыемства</value>
-    <comment>&lt;h2&gt;&lt;/h2&gt;</comment>
+  <data name="NewsTitle" xml:space="preserve">
+    <value>Графік правядзення тэматычных дзён інфармавання насельніцтва</value>
   </data>
-  <data name="HeroTitleCompany" xml:space="preserve">
-    <value>«Мінскае гарадское агенцтва абслугоўвання насельніцтва»</value>
-    <comment>&lt;h1&gt;&lt;/h1&gt;</comment>
+  <data name="NewsTitlуAbout" xml:space="preserve">
+    <value>у cправочно-інфармацыйнай службе «Кантакт-цэнтр» Мінгарвыканкама (тэл. 142)</value>
   </data>
-  <data name="MakeAppointment" xml:space="preserve">
-    <value>Запісацца на прыём у службу «адно акно»</value>
-    <comment>Название кнопки(ссылки) </comment>
+  <data name="Responsible" xml:space="preserve">
+    <value>Aдказны выканаўца</value>
+  </data>
+  <data name="Topic" xml:space="preserve">
+    <value>Тэма дня інфармавання</value>
   </data>
 </root>

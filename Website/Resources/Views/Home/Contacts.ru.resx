@@ -117,20 +117,40 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Appeal" xml:space="preserve">
-    <value>Напісаць зварот дырэктару</value>
-    <comment>Название кнопки(ссылки)</comment>
+  <data name="Address" xml:space="preserve">
+    <value>Республика Беларусь,&lt;br&gt;220004, г. Минск,&lt;br /&gt;
+                            ул. М.Танка, 36, корп.1, пом. 1Н
+                            (часть изолированного помещения)</value>
   </data>
-  <data name="HeroTitle" xml:space="preserve">
-    <value>Камунальнае унітарнае прадпрыемства</value>
-    <comment>&lt;h2&gt;&lt;/h2&gt;</comment>
+  <data name="Chart" xml:space="preserve">
+    <value>понедельник-четверг: с 8.45 до 18.00 &lt;br /&gt;
+                            пятница: с 8.45 до 16.45 &lt;br /&gt;
+                            обед: с 13.00 до 14.00 &lt;br /&gt;
+                            выходные: суббота, воскресенье.</value>
   </data>
-  <data name="HeroTitleCompany" xml:space="preserve">
-    <value>«Мінскае гарадское агенцтва абслугоўвання насельніцтва»</value>
-    <comment>&lt;h1&gt;&lt;/h1&gt;</comment>
+  <data name="Email" xml:space="preserve">
+    <value>Электронная почта</value>
   </data>
-  <data name="MakeAppointment" xml:space="preserve">
-    <value>Запісацца на прыём у службу «адно акно»</value>
-    <comment>Название кнопки(ссылки) </comment>
+  <data name="FCS" xml:space="preserve">
+    <value>ФИО</value>
+  </data>
+  <data name="Mail" xml:space="preserve">
+    <value>Сообщение</value>
+  </data>
+  <data name="Metro" xml:space="preserve">
+    <value>метро Молодежная</value>
+  </data>
+  <data name="Organization" xml:space="preserve">
+    <value>Вышестоящая организация &lt;br \&gt;
+                            &lt;a href="https://minsk.gov.by/ru/"&gt;Минский городской исполнительный комитет&lt;/a&gt;</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Контактный телефон</value>
+  </data>
+  <data name="SendEmail" xml:space="preserve">
+    <value>Отправить сообщение</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Контакты</value>
   </data>
 </root>

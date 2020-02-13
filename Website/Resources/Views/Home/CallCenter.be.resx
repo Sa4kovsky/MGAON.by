@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="142" xml:space="preserve">
+    <value>Даведачная інфармацыя па тэлефоне 142 прадастаўляецца &lt;b&gt;бясплатна&lt;/b&gt;.</value>
+  </data>
+  <data name="About" xml:space="preserve">
+    <value>Аддзел «Кантакт-цэнтр» з'яўляецца структурным падраздзяленнем КУП «Мінскае гарадское агенцтва абслугоўвання насельніцтва», забяспечваючым аказанне паслуг даведачна-інфармацыйнага характару на бязвыплатнай аснове па тэлефонным нумары 142 і работу «гарачай лініі» старшыні Мінгарвыканкама.
+                    &lt;br /&gt;
+&lt;b&gt;Аддзел выконвае таксама іншыя задачы:&lt;/b&gt;</value>
+  </data>
+  <data name="Analysis" xml:space="preserve">
+    <value>колькасны і тэматычны аналіз званкоў і іншых запытаў, якія паступілі ў даведачна-інфармацыйную службу «Кантакт-цэнтр» і на «гарачую лінію» старшыні Мінгарвыканкама</value>
+  </data>
+  <data name="Detailed" xml:space="preserve">
+    <value>Падрабязна</value>
+  </data>
+  <data name="Hotline" xml:space="preserve">
+    <value>«Гарачая лінія» старшыні Мінгарвыканкама</value>
+  </data>
+  <data name="HotlineWork" xml:space="preserve">
+    <value>Работа «гарачай лініі» старшыні Мінгарвыканкама ажыццяўляецца ў адпаведнасці з &lt;a src="http://www.pravo.by/document/?guid=3871&amp;p0=C21200667"&gt; пастановай Савета Міністраў Рэспублікі Беларусь ад 23 ліпеня 2012 г. № 667 «О некоторых вопросах работы с обращениями граждан и юридических лиц». (оставляем гиперссылку на нпа)&lt;/a&gt;</value>
+  </data>
+  <data name="Inform" xml:space="preserve">
+    <value>арганізацыя і правядзенне тэматычных дзён інфармавання насельніцтва па розных актуальных пытаннях, якія ўваходзяць у кампетэнцыю Мінгарвыканкама, яго структурных падраздзяленняў, адміністрацый раёнаў, арганізацый камунальнай уласнасці г.Мінска, з удзелам гарадскіх і рэспубліканскіх СМІ</value>
+  </data>
+  <data name="Organization" xml:space="preserve">
+    <value>арганізацыя ў сродках масавай інфармацыі тэматычных рубрык, сюжэтаў, публікацый, размяшчэння на афіцыйным Інтэрнэт-партале Мінгарвыканкама інфармацыі аб рабоце з насельніцтвам даведачна-інфармацыйнай службы «Кантакт-цэнтр» і «гарачай лініі» старшыні Мінгарвыканкама</value>
+  </data>
+  <data name="ReferenceInformationServiceAbout" xml:space="preserve">
+    <value>Па кароткім тэлефонным нумары 142 даецца насельніцтву інфармацыя:</value>
+  </data>
+  <data name="ReferenceInformationServiceEnum" xml:space="preserve">
+    <value>&lt;li&gt;аб адміністрацыйных працэдурах, прыём і выдача дакументаў па якіх ажыццяўляецца праз службу «адно акно» Мінгарвыканкама і адміністрацый раёнаў г. Мінска;&lt;/li&gt;
+&lt;li&gt;пошук і выдача аператыўнай інфармацыі па дакументах, накіраваных у Мінгарвыканкам грамадзянамі і юрыдычнымі асобамі, органамі дзяржаўнага кіравання, пры дапамозе аўтаматызаванай сістэмы кіравання дакументаабаротам Мінгарвыканкама;&lt;/li&gt;
+&lt;li&gt;аб пісьмовых і электронных зваротах грамадзян і юрыдычных асоб, якія паступілі ў Мінгарвыканкам;&lt;/li&gt;
+&lt;li&gt;аб графіку прыёму і парадку запісу на асабісты прыём да кіраўніцтва Мінгарвыканкама і яго структурных падраздзяленняў;&lt;/li&gt;
+&lt;li&gt;інфармаванне аб парадку рашэння праблем грамадзян па пытаннях, якія ўваходзяць у кампетэнцыю Мінгарвыканкама, яго структурных падраздзяленняў, адміністрацый раёнаў, арганізацый камунальнай уласнасці г.Мінска;&lt;/li&gt;
+&lt;li&gt;аб адрасах, нумарах тэлефонаў, рэжыме работы Мінгарвыканкама, яго структурных падраздзяленняў, гарадскіх службаў, адміністрацый раёнаў г.Мінска;&lt;/li&gt;
+ &lt;li&gt;інфармаванне па іншых пытаннях у адпаведнасці з дагаворнымі абавязацельствамі Прадпрыемства.&lt;/li&gt;</value>
+  </data>
+  <data name="ReferenceInformationServiceTitle" xml:space="preserve">
+    <value>Даведачна-інфармацыйная служба «Кантакт-цэнтр» Мінгарвыканкама</value>
+  </data>
+  <data name="Rendering" xml:space="preserve">
+    <value>інфармаванне Мінгарвыканкама аб выяўленых пры аказанні паслуг памылках і недакладнасцях у кантактнай інфармацыі, якая размяшчаецца на Інтэрнэт-старонках і сайтах структурных падраздзяленняў Мінгарвыканкама, адміністрацый раёнаў, арганізацый камунальнай уласнасці г.Мінска</value>
+  </data>
+  <data name="Tariffs" xml:space="preserve">
+    <value>Званок са стацыянарнага тэлефона – па тарыфах РУП «Белтэлекам», з мабільнага тэлефона (&lt;em&gt;life&lt;/em&gt;, &lt;em&gt;velcom/А1&lt;/em&gt;, MTC) – па тарыфах аператараў сувязі.</value>
+  </data>
+  <data name="Treatments" xml:space="preserve">
+    <value>Грамадзяне і юрыдычныя асобы звяртаюцца па тэлефоне на «гарачую лінію» старшыні Мінгарвыканкама па пытаннях даведачна-кансультацыйнага характару, звязаных з дзейнасцю Мінгарвыканкама і яго структурных падраздзяленняў &lt;br&gt;
+                    &lt;b&gt;Звароты, якія паступілі на «гарачую лінію» старшыні Мінгарвыканкама, не падлягаюць рэгістрацыі.&lt;/b&gt;&lt;br&gt;
+                   «Гарачая лінія» старшыні Мінгарвыканкама адказвае на званкі ў будныя дні&lt;b&gt;з 9.00 да 13.00&lt;/b&gt; па тэлефоне &lt;b&gt;328-55-66&lt;/b&gt;.</value>
+  </data>
+  <data name="СollCentrAbout" xml:space="preserve">
+    <value>Мы ўдзяляем асаблівую ўвагу якасці працы супрацоўнікаў Кантакт-цэнтра. Будзьце ўпэўненыя ў іх уважлівасці, ветлівасці, кампетэнтнасці.</value>
+  </data>
+  <data name="СollCentrTitle" xml:space="preserve">
+    <value>Кантакт-цэнтр 142</value>
+  </data>
+  <data name="СollCentrTitleAbout" xml:space="preserve">
+    <value>Пра аддзел «Кантакт-цэнтр»</value>
+  </data>
+</root>

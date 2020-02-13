@@ -117,20 +117,71 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Appeal" xml:space="preserve">
-    <value>Напісаць зварот дырэктару</value>
-    <comment>Название кнопки(ссылки)</comment>
+  <data name="About1" xml:space="preserve">
+    <value>Служба «адно акно» адміністрацыі Заводскага раёна г. Мінска</value>
   </data>
-  <data name="HeroTitle" xml:space="preserve">
-    <value>Камунальнае унітарнае прадпрыемства</value>
-    <comment>&lt;h2&gt;&lt;/h2&gt;</comment>
+  <data name="About10" xml:space="preserve">
+    <value>Служба «адно акно» Мінгарвыканкама</value>
   </data>
-  <data name="HeroTitleCompany" xml:space="preserve">
-    <value>«Мінскае гарадское агенцтва абслугоўвання насельніцтва»</value>
-    <comment>&lt;h1&gt;&lt;/h1&gt;</comment>
+  <data name="About2" xml:space="preserve">
+    <value>Служба «адно акно» адміністрацыі Ленінскага раёна г. Мінска</value>
   </data>
-  <data name="MakeAppointment" xml:space="preserve">
-    <value>Запісацца на прыём у службу «адно акно»</value>
-    <comment>Название кнопки(ссылки) </comment>
+  <data name="About3" xml:space="preserve">
+    <value>Служба «адно акно» адміністрацыі Маскоўскага раёна г. Мінска</value>
+  </data>
+  <data name="About4" xml:space="preserve">
+    <value>Служба «адно акно» адміністрацыі Кастрычніцкага раёна г. Мінска</value>
+  </data>
+  <data name="About5" xml:space="preserve">
+    <value>Служба «адно акно» адміністрацыі Партызанскага раёна г. Мінска</value>
+  </data>
+  <data name="About6" xml:space="preserve">
+    <value>Служба «адно акно» адміністрацыі Першамайскага раёна г. Мінска</value>
+  </data>
+  <data name="About7" xml:space="preserve">
+    <value>Служба «адно акно» адміністрацыі Савецкага раёна г. Мінска</value>
+  </data>
+  <data name="About8" xml:space="preserve">
+    <value>Служба «адно акно» адміністрацыі Фрунзенскага раёна г. Мінска</value>
+  </data>
+  <data name="About9" xml:space="preserve">
+    <value>Служба «адно акно» адміністрацыі Цэнтральнага раёна г. Мінска</value>
+  </data>
+  <data name="AreaAbout" xml:space="preserve">
+    <value>з'яўляецца формай арганізацыі дзейнасці мясцовых выканаўчых і распарадчых органаў і ажыццяўляе сваю дзейнасць у адпаведнасці з Указам Прэзідэнта Рэспублікі Беларусь ад 24 мая 2018 г. № 202 "Аб службе« адно акно ». &lt;br /&gt;
+                Асноўнай мэтай службы «адно акно» з'яўляецца забеспячэнне ў адным месцы прыёму заяў зацікаўленых асоб аб ажыццяўленні адміністрацыйных працэдур і выдачы адміністрацыйных рашэнняў па іх у адпаведнасці з пералікамі, зацверджанымі актамі заканадаўства.</value>
+  </data>
+  <data name="AreaTitle" xml:space="preserve">
+    <value>СЛУЖБА «АДНО АКНО»</value>
+  </data>
+  <data name="Title1" xml:space="preserve">
+    <value>Заводскага</value>
+  </data>
+  <data name="Title10" xml:space="preserve">
+    <value>МГIК</value>
+  </data>
+  <data name="Title2" xml:space="preserve">
+    <value>Ленінскага</value>
+  </data>
+  <data name="Title3" xml:space="preserve">
+    <value>Маскоўскага</value>
+  </data>
+  <data name="Title4" xml:space="preserve">
+    <value>Кастрычніцкага</value>
+  </data>
+  <data name="Title5" xml:space="preserve">
+    <value>Партызанскага</value>
+  </data>
+  <data name="Title6" xml:space="preserve">
+    <value>Першамайскага</value>
+  </data>
+  <data name="Title7" xml:space="preserve">
+    <value>Савецкага</value>
+  </data>
+  <data name="Title8" xml:space="preserve">
+    <value>Фрунзенскага</value>
+  </data>
+  <data name="Title9" xml:space="preserve">
+    <value>Цэнтральнага</value>
   </data>
 </root>

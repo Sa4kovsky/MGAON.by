@@ -5,6 +5,8 @@
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <UserSecretsId>a76c4bd9-39ab-4557-9e2d-1a7ca5055f34</UserSecretsId>
     <LangVersion>7.2</LangVersion>
+    <Company>Website</Company>
+    <Authors>Website</Authors>
   </PropertyGroup>
 
   <ItemGroup>

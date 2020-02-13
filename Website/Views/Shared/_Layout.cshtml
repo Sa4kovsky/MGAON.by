@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Mgaon.by</title>
+    <title>Mgaon.by</title>
     <link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.css" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
@@ -31,7 +31,7 @@
 
                 <div id="logo">
                     <h1>
-                        <a asp-controller="Home" asp-action="Index">МГАОН</a>
+                        <a asp-controller="Home" asp-action="Index">@Localizer["Title"]</a>
                     </h1>
                 </div>
 
@@ -80,19 +80,19 @@
                     <div class="col-sm-4 container text-center">
                         <br>
                         <h4 style="color: #f7f7f7;">@Localizer["Service"]</h4>
-                        <a href="http://prereg.mgaon.by" onclick="closeNav()">Предварительная запись в службу «одно окно»</a><br />
-                        <a asp-controller="Service" asp-action="Information" onclick="closeNav()">Сведения о прохождении документов через службу «одно окно»</a>
-                        <a asp-controller="Service" asp-action="Index" onclick="closeNav()">Обращение к руководству предприятия</a><br />
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfx5Ny-YbLxyEZvU3E4_dmmpFLWesSv_7_WORTUwGdtHd7uRA/viewform?c=0&w=1" onclick="closeNav()">Анкета оценки работы cлужбы «одно окно»</a><br />
+                        <a href="http://prereg.mgaon.by" onclick="closeNav()">@Localizer["PreliminaryRecord"]</a><br />
+                        <a asp-controller="Service" asp-action="Information" onclick="closeNav()">@Localizer["InformationAboutPassingDocuments"]</a>
+                        <a asp-controller="Service" asp-action="Index" onclick="closeNav()">@Localizer["Appeal"]</a><br />
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfx5Ny-YbLxyEZvU3E4_dmmpFLWesSv_7_WORTUwGdtHd7uRA/viewform?c=0&w=1" onclick="closeNav()">@Localizer["Questionnaire"]</a><br />
                     </div>
 
                     <div class="col-sm-4 container text-center">
                         <br>
                         <h4 style="color: #f7f7f7;">@Localizer["ReferenceInformation"]</h4>
-                        <a asp-controller="HelpInformation" asp-action="Index">Справочно-информационная система</a><br />
-                        <a asp-controller="HelpInformation" asp-action="AdmProcedure">Законодательство об административных процедурах</a><br />
-                        <a asp-controller="HelpInformation" asp-action="UniqueId">Уникальный идентификатор / Электронная цифровая подпись</a>
-                        <a asp-controller="HelpInformation" asp-action="WebCamers">Веб-камеры в службах «одно окно»</a><br />
+                        <a asp-controller="HelpInformation" asp-action="Index">@Localizer["ReferenceInformationSystem"]</a><br />
+                        <a asp-controller="HelpInformation" asp-action="AdmProcedure">@Localizer["Legislation"]</a><br />
+                        <a asp-controller="HelpInformation" asp-action="UniqueId">@Localizer["ElectroniDigitalSignature"]</a>
+                        <a asp-controller="HelpInformation" asp-action="WebCamers">@Localizer["WebCamers"]</a><br />
                         <br>
                     </div>
                 </div>

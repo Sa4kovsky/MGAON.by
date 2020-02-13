@@ -117,20 +117,71 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Appeal" xml:space="preserve">
-    <value>Напісаць зварот дырэктару</value>
-    <comment>Название кнопки(ссылки)</comment>
+  <data name="About1" xml:space="preserve">
+    <value>Служба «одно окно» администрации Заводского района г. Минска</value>
   </data>
-  <data name="HeroTitle" xml:space="preserve">
-    <value>Камунальнае унітарнае прадпрыемства</value>
-    <comment>&lt;h2&gt;&lt;/h2&gt;</comment>
+  <data name="About10" xml:space="preserve">
+    <value>Служба «одно окно» Мингорисполкома</value>
   </data>
-  <data name="HeroTitleCompany" xml:space="preserve">
-    <value>«Мінскае гарадское агенцтва абслугоўвання насельніцтва»</value>
-    <comment>&lt;h1&gt;&lt;/h1&gt;</comment>
+  <data name="About2" xml:space="preserve">
+    <value>Служба «одно окно» администрации Ленинского района г. Минска</value>
   </data>
-  <data name="MakeAppointment" xml:space="preserve">
-    <value>Запісацца на прыём у службу «адно акно»</value>
-    <comment>Название кнопки(ссылки) </comment>
+  <data name="About3" xml:space="preserve">
+    <value>Служба «одно окно» администрации Московского района г. Минска</value>
+  </data>
+  <data name="About4" xml:space="preserve">
+    <value>Служба «одно окно» администрации Октябрьского района г. Минска</value>
+  </data>
+  <data name="About5" xml:space="preserve">
+    <value>Служба «одно окно» администрации Партизанского района г. Минска</value>
+  </data>
+  <data name="About6" xml:space="preserve">
+    <value>Служба «одно окно» администрации Первомайского района г. Минска</value>
+  </data>
+  <data name="About7" xml:space="preserve">
+    <value>Служба «одно окно» администрации Советского района г. Минска</value>
+  </data>
+  <data name="About8" xml:space="preserve">
+    <value>Служба «одно окно» администрации Фрунзенского района г. Минска</value>
+  </data>
+  <data name="About9" xml:space="preserve">
+    <value>Служба «одно окно» администрации Центрального района г. Минска</value>
+  </data>
+  <data name="AreaAbout" xml:space="preserve">
+    <value>является формой организации деятельности местных исполнительных и распорядительных органов и осуществляет свою деятельность в соответствии с Указом Президента Республики Беларусь от 24 мая 2018 г. № 202 «О службе «одно окно».&lt;br /&gt;
+                Основной целью службы «одно окно» является обеспечение в одном месте приема заявлений заинтересованных лиц об осуществлении административных процедур и выдачи административных решений по ним в соответствии с перечнями, утвержденными актами законодательства.</value>
+  </data>
+  <data name="AreaTitle" xml:space="preserve">
+    <value>СЛУЖБА «ОДНО ОКНО»</value>
+  </data>
+  <data name="Title1" xml:space="preserve">
+    <value>Заводского</value>
+  </data>
+  <data name="Title10" xml:space="preserve">
+    <value>МГИК</value>
+  </data>
+  <data name="Title2" xml:space="preserve">
+    <value>Ленинскго</value>
+  </data>
+  <data name="Title3" xml:space="preserve">
+    <value>Московского</value>
+  </data>
+  <data name="Title4" xml:space="preserve">
+    <value>Октябрьского</value>
+  </data>
+  <data name="Title5" xml:space="preserve">
+    <value>Партизанского</value>
+  </data>
+  <data name="Title6" xml:space="preserve">
+    <value>Первомайского</value>
+  </data>
+  <data name="Title7" xml:space="preserve">
+    <value>Советского</value>
+  </data>
+  <data name="Title8" xml:space="preserve">
+    <value>Фрунзенского</value>
+  </data>
+  <data name="Title9" xml:space="preserve">
+    <value>Центрального</value>
   </data>
 </root>

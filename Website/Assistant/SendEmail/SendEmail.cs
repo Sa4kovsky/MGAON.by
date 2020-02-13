@@ -18,7 +18,7 @@ namespace Website.Assistant.SendEmail
         /// </summary>
         /// <param name="person">Объект LegalPerson</param>
         /// <param name="messaga">Тема письма</param>
-        public async void SendEmailAsync(Person person, string messaga, Models.UsersSendEmail.FileMode file)
+        public async void SendEmailAsync(Person person, string messaga)
         {
             // отправитель
             MailAddress _from = new MailAddress("info@mgaon.by", person.Name);
@@ -40,9 +40,9 @@ namespace Website.Assistant.SendEmail
                           <br>Сообщение - " + person.Message + @" </body></html>";
             // письмо представляет код html
             _message.IsBodyHtml = true;
-           if (file != null)
+           if (person.File != null)
             {
-                _message.Attachments.Add(new Attachment("/app/wwwroot/share-pictures/" + file.Path));
+                _message.Attachments.Add(new Attachment("/app/wwwroot/share-pictures/" + person.File.FileName));
             }
             // адрес smtp-сервера и порт, с которого будем отправлять письмо
             SmtpClient _smtp = new SmtpClient("smtp.yandex.ru", 587);

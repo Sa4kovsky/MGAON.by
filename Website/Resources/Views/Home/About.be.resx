@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="1" xml:space="preserve">
+    <value>&lt;b&gt;Аддзел № 1 Заводскага раёна&lt;/b&gt; &lt;br /&gt;
+                                        начальнік аддзела Бойправ Наталля Аляксандраўна &lt;br /&gt;
+                                        &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тэл. 389 26 82 &lt;br /&gt;
+                                        &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: вул. Жылуновіча, д.17 - служба «адно акно» &lt;br /&gt;
+                                        &lt;br /&gt;</value>
+    <comment>Телефонный справочник МГАОН</comment>
+  </data>
+  <data name="10" xml:space="preserve">
+    <value>&lt;b&gt;Аддзел інфармацыйнага абслугоўвання службы «Адно акно» Мінгарвыканкама&lt;/b&gt; &lt;br /&gt;
+                                        начальнік аддзела Матеша Ірына Мікалаеўна&lt;br /&gt;
+                                        &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt;  тэл. 218 00 74 &lt;br /&gt;
+                                        &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: прасп. Незалежнасці, д.8 - служба «адно акно» &lt;br /&gt;
+                                        &lt;br /&gt;
+                                        &lt;b&gt;Аддзел вядзення баз дадзеных у Галоўным упраўленні юстыцыі Мінгарвыканкама &lt;/b&gt; &lt;br /&gt;
+                                         начальнік аддзела Міранюк Таццяна Віктараўна &lt;br /&gt;
+                                        &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тэл. 308 23 83 &lt;br /&gt;
+                                        &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: просп.Пушкина, д.42, каб. 104&lt;br /&gt;
+                                        &lt;br /&gt;
+                                        &lt;b&gt;Сектар прыёму заяў у аддзеле ЗАГС галоўнага ўпраўлення юстыцыі Мінгарвыканкама&lt;/b&gt; &lt;br /&gt;
+                                        начальнік сектара Маціеўская Ганна Іванаўна &lt;br /&gt;
+                                        &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тэл. 204 11 15 &lt;br /&gt;
+                                        &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt;  адрас: вул.Альшэўскага, д.12 - аддзел ЗАГС &lt;br /&gt;
+                                        &lt;br /&gt;</value>
+  </data>
+  <data name="2" xml:space="preserve">
+    <value>&lt;b&gt;Аддзел № 2 Ленінскага раёна&lt;/b&gt; &lt;br /&gt;
+                                        начальнік аддзела Губарэвіч Ганна Уладзіміраўна &lt;br /&gt;
+                                        &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тэл. 223 00 27&lt;br /&gt;
+                                        &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: вул.Маякоўскага, д.83 - служба «адно акно»&lt;br /&gt;
+                                        &lt;br /&gt;</value>
+    <comment>Телефонный справочник МГАОН</comment>
+  </data>
+  <data name="3" xml:space="preserve">
+    <value>&lt;b&gt;Аддзел № 3 Маскоўскага раёна&lt;/b&gt; &lt;br /&gt;
+                                       начальнік аддзела Іўшына Марына Валер'еўна &lt;br /&gt;
+                                        &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тэл. 200 62 45 &lt;br /&gt;
+                                        &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: праспект Дзяржынскага, д.10, каб.439 – служба «адно акно» &lt;br /&gt;
+                                        &lt;br /&gt;</value>
+    <comment>Телефонный справочник МГАОН</comment>
+  </data>
+  <data name="3_1" xml:space="preserve">
+    <value>&lt;b&gt;Сектар № 1&lt;/b&gt; &lt;br /&gt;
+                                            начальнік сектара Салівончык Ала Міхайлаўна  &lt;br /&gt;
+                                            &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тэл. 200 66 26  &lt;br /&gt;
+                                            &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: праспект Дзяржынскага, д.10, каб.103 &lt;br /&gt;
+                                            &lt;br /&gt;</value>
+    <comment>Телефонный справочник МГАОН</comment>
+  </data>
+  <data name="3_2" xml:space="preserve">
+    <value>&lt;b&gt;Сектар № 2&lt;/b&gt; &lt;br /&gt;
+                                           начальнік сектара Шыраева Таццяна Аляксееўна&lt;br /&gt;
+                                            &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt;тэл. 376 84 70&lt;br /&gt;
+                                            &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: праспект газеты Праўда, д.29, каб.4  &lt;br /&gt;
+                                            &lt;br /&gt;</value>
+    <comment>Телефонный справочник МГАОН</comment>
+  </data>
+  <data name="4" xml:space="preserve">
+    <value>&lt;b&gt;Аддзел № 4 Кастрычніцкага раёна&lt;/b&gt; &lt;br /&gt;
+                                        начальнік аддзела Бычкоўская Святлана Віктараўна &lt;br /&gt;
+                                        &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt;тэл. 222 13 95 &lt;br /&gt;
+                                        &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: вул.Чкалава, д.6, каб.108 &lt;br /&gt;
+                                        &lt;br /&gt;</value>
+    <comment>Телефонный справочник МГАОН</comment>
+  </data>
+  <data name="5" xml:space="preserve">
+    <value>&lt;b&gt;Аддзел № 5 Партызанскага раёна&lt;/b&gt; &lt;br /&gt;
+                                        начальнік аддзела Бакумава Марына Антонаўна &lt;br /&gt;
+                                        &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тэл. 294 18 52 &lt;br /&gt;
+                                        &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: вул.Захарава, д.53 – служба «адно акно» &lt;br /&gt;
+                                        &lt;br /&gt;</value>
+    <comment>Телефонный справочник МГАОН</comment>
+  </data>
+  <data name="5_1" xml:space="preserve">
+    <value>&lt;b&gt;Сектар № 1&lt;/b&gt; &lt;br /&gt;
+                                           начальнік сектара Прудцава Святлана Іванаўна&lt;br /&gt;
+                                            &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt;тэл. 369 25 65 &lt;br /&gt;
+                                            &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt;адрас: вул.А.Кашавога, д.27а – аддзел ЗАГС &lt;br /&gt;
+                                            &lt;br /&gt;</value>
+  </data>
+  <data name="6" xml:space="preserve">
+    <value>&lt;b&gt;Аддзел № 6 Першамайскага раёна&lt;/b&gt; &lt;br /&gt;
+                                       начальнік аддзела Чэрнік Ірына Жоржаўна &lt;br /&gt;
+                                        &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt;тэл. 280 75 89 &lt;br /&gt;
+                                        &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt;адрас: зав.К.Чорнага, д.5 - служба «адно акно» &lt;br /&gt;
+                                        &lt;br /&gt;</value>
+    <comment>Телефонный справочник МГАОН</comment>
+  </data>
+  <data name="6_1" xml:space="preserve">
+    <value>&lt;b&gt; Сектар № 1&lt;/b&gt; &lt;br /&gt;
+                                            начальнік сектара Бічанкова Наталля Аляксандраўна&lt;br /&gt;
+                                            &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt;тэл. 215 27 20&lt;br /&gt;
+                                            &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: зав.К.Чорнага, д.5, каб. 220 &lt;br /&gt;
+                                            &lt;br /&gt;</value>
+  </data>
+  <data name="7" xml:space="preserve">
+    <value>&lt;b&gt;Аддзел № 7 Савецкага раёна&lt;/b&gt; &lt;br /&gt;
+                                       начальнік аддзела Белаш Ала Віктараўна &lt;br /&gt;
+                                        &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тэл. 292 24 22 &lt;br /&gt;
+                                        &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: вул.Дарашэвіча, д.8 – служба «адно акно»&lt;br /&gt;
+                                        &lt;br /&gt;</value>
+  </data>
+  <data name="7_1" xml:space="preserve">
+    <value>&lt;b&gt; Сектар № 1&lt;/b&gt; &lt;br /&gt;
+                                           начальнік сектара Грышына Святлана Уладзіміраўна &lt;br /&gt;
+                                            &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тэл. 354 05 94&lt;br /&gt;
+                                            &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: вул.В.Харужай, д.24, корп.1, каб.10&lt;br /&gt;
+                                            &lt;br /&gt;</value>
+  </data>
+  <data name="8" xml:space="preserve">
+    <value>&lt;b&gt;Аддзел № 8 Фрунзенскага раёна&lt;/b&gt; &lt;br /&gt;
+                                       начальнік аддзела Антонава Вольга Анатольеўна &lt;br /&gt;
+                                        &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тэл. 204 01 61 &lt;br /&gt;
+                                        &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: вул.Кальварыйская, д.39 – служба «адно акно» &lt;br /&gt;
+                                        &lt;br /&gt;</value>
+  </data>
+  <data name="8_1" xml:space="preserve">
+    <value>&lt;b&gt;Сектар №1&lt;/b&gt; &lt;br /&gt;
+                                           начальнік сектара Варанцова Люцыя Міхайлаўна&lt;br /&gt;
+                                            &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt;тэл. 254 92 63&lt;br /&gt;
+                                            &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: вул.Неманская, д.22 – служба «адно акно» &lt;br /&gt;
+                                            &lt;br /&gt;</value>
+  </data>
+  <data name="8_2" xml:space="preserve">
+    <value>&lt;b&gt;Сектар № 2&lt;/b&gt; &lt;br /&gt;
+                                          начальнік сектара Ваўчок Марыя Аляксандраўна &lt;br /&gt;
+                                            &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тэл. 204 78 06&lt;br /&gt;
+                                            &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: вул.Кальварыйская, д.39 – служба «адно акно»&lt;br /&gt;
+                                            &lt;br /&gt;</value>
+  </data>
+  <data name="8_3" xml:space="preserve">
+    <value>&lt;b&gt;Сектар № 3&lt;/b&gt; &lt;br /&gt;
+                                            начальнік сектара Новак Інга Валер’еўна&lt;br /&gt;
+                                            &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тэл. 358 09 40&lt;br /&gt;
+                                            &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: праспект Пушкіна, д.55 – служба «адно акно» &lt;br /&gt;
+                                            &lt;br /&gt;</value>
+  </data>
+  <data name="9" xml:space="preserve">
+    <value>&lt;b&gt;Аддзел № 9 Цэнтральнага раёна&lt;/b&gt; &lt;br /&gt;
+                                       начальнік аддзела Рагачова Таццяна Мікалаеўна&lt;br /&gt;
+                                        &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тэл. 306 40 03&lt;br /&gt;
+                                        &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: вул.Мельнікайтэ, д.6 – служба «адно акно» &lt;br /&gt;
+                                        &lt;br /&gt;</value>
+  </data>
+  <data name="About" xml:space="preserve">
+    <value>&lt;b&gt;Камунальнае ўнітарнае прадпрыемства «Мінскае гарадское агенцтва абслугоўвання насельніцтва» (далей – МГААН)&lt;/b&gt;&lt;br /&gt;
+                               створана 1 ліпеня 2013 г. у выніку рэарганізацыі шляхам вылучэння са складу камунальнага ўнітарнага прадпрыемства «Цэнтр інфармацыйных тэхналогій Мінгарвыканкама» і зарэгістравана рашэннем Мінгарвыканкама ад 23.05.2013 г. № 1344. Форма ўласнасці - дзяржаўная (камунальная).&lt;br /&gt;
+                             Заснавальнікам Прадпрыемства з'яўляецца  &lt;a href="https://minsk.gov.by/ru/"&gt;Мінскі гарадскі выканаўчы камітэт.&lt;/a&gt;</value>
+    <comment>Первый абзац</comment>
+  </data>
+  <data name="AdministrativeProcedure" xml:space="preserve">
+    <value>Адміністрацыйныя працэдуры</value>
+    <comment>section services</comment>
+  </data>
+  <data name="CollectionDocuments" xml:space="preserve">
+    <value>Збор Дакументаў</value>
+    <comment>Шапка возле icon</comment>
+  </data>
+  <data name="Consultation" xml:space="preserve">
+    <value>кансультаванне грамадзян або юрыдычных асоб па пераліках дакументаў, што прадстаўляюцца для ажыццяўлення адміністрацыйных працэдур</value>
+  </data>
+  <data name="ConsultationCitizens" xml:space="preserve">
+    <value>Кансультаванне Грамадзян</value>
+    <comment>Шапка возле icon</comment>
+  </data>
+  <data name="ContactCenter" xml:space="preserve">
+    <value>&lt;b&gt;Аддзел «Кантакт-цэнтр»&lt;/b&gt;
+                                    начальнік аддзела Чэрнік Марына Аляксандраўна&lt;br /&gt;
+                                    &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тэл. 364 25 83&lt;br /&gt;
+                                    &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: вул.М.Танка, д.36, корп.1, каб.7 &lt;br /&gt;
+                                    &lt;br /&gt;
+                                    намеснік начальніка аддзела Ганбарава Таццяна Рыгораўна&lt;br /&gt;
+                                    &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тэл.366 12 57 &lt;br /&gt;
+                                    &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: вул.М.Танка, д.36, корп.1, каб.8</value>
+  </data>
+  <data name="Danko" xml:space="preserve">
+    <value>&lt;b&gt;Намеснік дырэктара – начальнік агульнага аддзела&lt;/b&gt; &lt;br /&gt;
+                                   Данько Алена Георгіеўна &lt;br /&gt;
+                                    &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тэл. 364 26 12&lt;br /&gt;
+                                    &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: вул.М.Танка, д.36, корп.1, каб.1</value>
+    <comment>Телефонный справочник МГАОН</comment>
+  </data>
+  <data name="DB" xml:space="preserve">
+    <value>&lt;b&gt;Упраўленне суправаджэння электронных баз даных «Адно акно»&lt;/b&gt;  &lt;br /&gt;
+                                    начальнік упраўлення Пажыток Нэлі Канстанцінаўна&lt;br /&gt;
+                                    &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тэл. 316 26 03 &lt;br /&gt;
+                                    &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: вул.М.Танка, д.36, корп.1, каб.5 &lt;br /&gt;
+                                    &lt;br /&gt;
+                                    намеснік начальніка ўпраўлення Нечаева Вольга Уладзіміраўна  &lt;br /&gt;
+                                    &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тэл. 243 08 59&lt;br /&gt;
+                                    &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: вул.М.Танка, д.36, корп.1, каб.5&lt;br /&gt;
+                                    &lt;br /&gt;</value>
+    <comment>Телефонный справочник МГАОН</comment>
+  </data>
+  <data name="Efimov" xml:space="preserve">
+    <value>&lt;b&gt;Дырэктар&lt;/b&gt; &lt;br /&gt;
+                                   Яфімаў Аляксандр Станіслававіч&lt;br /&gt;
+                                    &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt;тэл. 394 49 24 &lt;br /&gt;
+                                    &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: вул.М.Танка, д.36, корп.1, каб.3</value>
+    <comment>Телефонный справочник МГАОН</comment>
+  </data>
+  <data name="EnterprisStructure" xml:space="preserve">
+    <value>Структура прадпрыемства</value>
+    <comment>section services</comment>
+  </data>
+  <data name="EnterprisStructureTitle" xml:space="preserve">
+    <value>Структура МГААН</value>
+    <comment>Появляющийся div id="myEnterpriseStructure" </comment>
+  </data>
+  <data name="GeneralDepartment" xml:space="preserve">
+    <value>&lt;b&gt;Агульны аддзел&lt;/b&gt;  &lt;br /&gt;
+                                   загадчык гаспадаркай Панцелеенка Леанід Аляксеевіч &lt;br /&gt;
+                                    &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt;тэл. 347 16 27&lt;br /&gt;
+                                    &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: вул.М.Танка, д.36, корп.1, каб.7 &lt;br /&gt;
+                                    &lt;br /&gt;
+                                    вядучы юрысконсульт Трацэўскі Аляксандр Віктаравіч&lt;br /&gt;
+                                    &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt;тэл. 364 26 02&lt;br /&gt;
+                                    &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: вул.М.Танка, д.36, корп.1, каб.1&lt;br /&gt;
+                                    &lt;br /&gt;
+                                    вядучы спецыяліст па кадрах Лебедзева Ірына Уладзіміраўна&lt;br /&gt;
+                                    &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тэл. 364 65 92 &lt;br /&gt;
+                                    &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; аадрас: вул.М.Танка, д.36, корп.1, каб.1 &lt;br /&gt;</value>
+    <comment>Телефонный справочник МГАОН</comment>
+  </data>
+  <data name="Informing" xml:space="preserve">
+    <value>інфармаванне грамадзян і (або) юрыдычных асоб: аб рэжыме работы арганізацый, часу прыёму грамадзян і парадку запісу на прыём да службовых асоб арганізацый; аб адміністрацыйных працэдурах, якія ажыццяўляюцца арганізацыямі, разглядзе зваротаў грамадзян і юрыдычных асоб; па іншых пытаннях</value>
+  </data>
+  <data name="InformingCitizens" xml:space="preserve">
+    <value>Iнфармаванне Грамадзян</value>
+    <comment>Шапка возле icon</comment>
+  </data>
+  <data name="MakingProfit" xml:space="preserve">
+    <value>Атрыманне прыбытку</value>
+    <comment>Шапка возле icon</comment>
+  </data>
+  <data name="ObjectivesCompany" xml:space="preserve">
+    <value>Мэты дзейнасці Прадпрыемствы:</value>
+    <comment>Цели деятельности Предприятия:</comment>
+  </data>
+  <data name="Other" xml:space="preserve">
+    <value>аказанне другіх паслуг, накіраваных на павышэнне эфектыўнасці работы ў сферы абслугоўвання насельніцтва ў адпаведнасці з заканадаўствам</value>
+  </data>
+  <data name="OtherFacilities" xml:space="preserve">
+    <value>Другія Паслугi</value>
+    <comment>Шапка возле icon</comment>
+  </data>
+  <data name="Profit" xml:space="preserve">
+    <value>атрыманне прыбытку ў працэсе гаспадарчай дзейнасці</value>
+  </data>
+  <data name="ProvidingCollection" xml:space="preserve">
+    <value>забеспячэнне збору дакументаў і (або) звестак, неабходных для ажыццяўлення адміністрацыйных працэдур, не ўключаных у пералікі дакументаў і (або) звестак, якія прадстаўляюцца зацікаўленымі асобамі, пры дапамозе напраўлення запытаў аддаленага доступу да дзяржаўных рэгістраў, рэестраў, кадастраў, спісаў, каталогаў, баз і банкаў даных і другімі спосабамі</value>
+  </data>
+  <data name="ReceptionSchedule" xml:space="preserve">
+    <value>Графік асабістага прыёму</value>
+    <comment>section services</comment>
+  </data>
+  <data name="RenderingServices" xml:space="preserve">
+    <value>Аказанне Паслуг</value>
+    <comment>Шапка возле icon</comment>
+  </data>
+  <data name="Services" xml:space="preserve">
+    <value>аказанне паслуг па забеспячэнні дзейнасці арганізацый па прынцыпе «адно акно» па адміністрацыйных працэдурах, вядзенню электронных баз дадзеных арганізацый і іншых спадарожных паслуг</value>
+  </data>
+  <data name="Shipova" xml:space="preserve">
+    <value>&lt;b&gt;Сектар бухгалтарскага ўліку і справаздачнасці&lt;/b&gt; &lt;br /&gt;
+                                    галоўны бухгалтар Шыпава Людміла Віктараўна &lt;br /&gt;
+                                    &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тэл. 364 25 78 &lt;br /&gt;
+                                    &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: вул.М.Танка, д.36, корп.1, каб.6</value>
+    <comment>Телефонный справочник МГАОН</comment>
+  </data>
+  <data name="Stupchik" xml:space="preserve">
+    <value>&lt;b&gt;Планава-эканамічны сектар&lt;/b&gt; &lt;br /&gt;
+                                    начальнік сектара Ступчык Аксана Васільеўна &lt;br /&gt;
+                                    &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тэл. 393 16 47 &lt;br /&gt;
+                                    &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: вул.М.Танка, д.36, корп.1, каб.4</value>
+    <comment>Телефонный справочник МГАОН</comment>
+  </data>
+  <data name="TelephoneDirectory" xml:space="preserve">
+    <value>Тэлефонны даведнік</value>
+    <comment>section services</comment>
+  </data>
+  <data name="TelephoneDirectoryTitle" xml:space="preserve">
+    <value>Тэлефонны даведнік МГААН</value>
+    <comment>Появляющийся div id="myPhoneStructure"</comment>
+  </data>
+  <data name="TitleAbout" xml:space="preserve">
+    <value>Аб прадпрыемстве</value>
+  </data>
+  <data name="Trushkevich" xml:space="preserve">
+    <value>&lt;b&gt;Намеснік дырэктара &lt;/b&gt; &lt;br /&gt;
+                                    Трушкевiч Павел Анатольевіч  &lt;br /&gt;
+                                    &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тэл. 364 19 13&lt;br /&gt;
+                                    &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: ул.М.Танка, д.36, корп.1, каб.1</value>
+    <comment>Телефонный справочник МГАОН</comment>
+  </data>
+  <data name="AdministrativeProcedureTitle" xml:space="preserve">
+    <value>Пералік адміністрацыйных працэдур</value>
+    <comment>Появляющийся div id="myAdmProcess"</comment>
+  </data>
+  <data name="Procedure" xml:space="preserve">
+    <value>выконваемых камунальным унітарным прадпрыемствам «Мінскае гарадское агенцтва абслугоўвання насельніцтва» для грамадзян стаяць (якія складаліся) у працоўных адносінах у адпаведнасці з Указам Прэзідэнта Рэспублікі Беларусь ад 26.04.2010 г. № 200 "Аб адміністрацыйных працэдурах, што ажыццяўляюцца дзяржаўнымі органамі і іншымі дзяржаўнымі арганізацыямі па заявах грамадзян »</value>
+  </data>
+  <data name="ReceptionScheduleAttention" xml:space="preserve">
+    <value>&lt;b&gt;Звяртаем Вашу ўвагу&lt;/b&gt;, што&lt;b&gt; папярэдні запіс на асабісты прыём&lt;/b&gt; ажыццяўляецца па тэлефоне  364-66-34 альбо ў кабінеце № 4 вядучым спецыялістам па справаводству пры непасрэдным звароце грамадзяніна або прадстаўніка юрыдычнай асобы &lt;em&gt;з прад'яўленнем дакумента, які сведчыць асобу, і дакумента, які пацвярджае службовыя паўнамоцтвы.&lt;/em&gt;</value>
+  </data>
+  <data name="ReceptionScheduleEfimov" xml:space="preserve">
+    <value>&lt;td&gt;Дырэктар &lt;/td&gt;
+                                &lt;td&gt;Яфімаў Аляксандр Станіслававіч &lt;/td&gt;
+                                &lt;td&gt;
+                                    Другая серада месяца з 08.00 да 13.00 &lt;/br&gt;
+                                    Кабінет № 3
+                                &lt;/td&gt;</value>
+  </data>
+  <data name="ReceptionScheduleTitle" xml:space="preserve">
+    <value>Графiк</value>
+    <comment>Появляющийся div id="myPersonalReception"</comment>
+  </data>
+  <data name="ReceptionScheduleTrushkevich" xml:space="preserve">
+    <value>&lt;td&gt;Намеснік дырэктара &lt;/td&gt;
+                                &lt;td&gt;Трушкевич Павел Анатольевіч &lt;/td&gt;
+                                &lt;td&gt;
+                                    Чацвёртая серада месяца з 08.00 да 13.00&lt;br /&gt;
+                                    Кабінет № 1
+                                &lt;/td&gt;</value>
+  </data>
+  <data name="Schedule" xml:space="preserve">
+    <value>асабістага прыёму грамадзян, юрыдычных асоб, індывідуальных прадпрымальнікаў кіраўніцтвам МГААН</value>
+  </data>
+</root>

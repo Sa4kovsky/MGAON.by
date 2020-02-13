@@ -117,20 +117,41 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Appeal" xml:space="preserve">
-    <value>Напісаць зварот дырэктару</value>
-    <comment>Название кнопки(ссылки)</comment>
+  <data name="About" xml:space="preserve">
+    <value>Першасная прафсаюзная арганізацыя камунальнага ўнітарнага прадпрыемства «Мінскае гарадское агенцтва абслугоўвання насельніцтва» ўтворана ў ліпені 2016 г.</value>
   </data>
-  <data name="HeroTitle" xml:space="preserve">
-    <value>Камунальнае унітарнае прадпрыемства</value>
-    <comment>&lt;h2&gt;&lt;/h2&gt;</comment>
+  <data name="Chairman" xml:space="preserve">
+    <value>&lt;td&gt;Cтаршыня прафкама&lt;/td&gt;
+&lt;td&gt;Чэрнік Марына Аляксандраўна &lt;br /&gt;тэл. 364 25 83&lt;/td&gt;</value>
   </data>
-  <data name="HeroTitleCompany" xml:space="preserve">
-    <value>«Мінскае гарадское агенцтва абслугоўвання насельніцтва»</value>
-    <comment>&lt;h1&gt;&lt;/h1&gt;</comment>
+  <data name="Deputy" xml:space="preserve">
+    <value>&lt;td&gt;Намеснік старшыні&lt;/td&gt;                            
+&lt;td&gt;Iвшина Марына Валер'еўна&lt;/td&gt;</value>
   </data>
-  <data name="MakeAppointment" xml:space="preserve">
-    <value>Запісацца на прыём у службу «адно акно»</value>
-    <comment>Название кнопки(ссылки) </comment>
+  <data name="Detailed" xml:space="preserve">
+    <value>Падрабязна</value>
+  </data>
+  <data name="Members" xml:space="preserve">
+    <value>&lt;td&gt;
+                                Члены прафкама
+                            &lt;/td&gt;
+                            &lt;td&gt;
+                                Нячаева Вольга Уладзіміраўна, &lt;br /&gt;
+                                Пантелеенко Леанід Аляксеевіч
+                            &lt;/td&gt;</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Прафсаюз работнікаў мясцовай прамысловасці камунальна-бытавых прадпрыемстваў</value>
+  </data>
+  <data name="TradeUnionTitle" xml:space="preserve">
+    <value>«Прафсаюз работнікаў мясцовай прамысловасці камунальна-бытавых прадпрыемстваў»</value>
+  </data>
+  <data name="Treasurer" xml:space="preserve">
+    <value>&lt;td&gt;
+                                Казначэй
+                            &lt;/td&gt;
+                            &lt;td&gt;
+                                Сергіенка Таццяна Аляксандраўна
+                            &lt;/td&gt;</value>
   </data>
 </root>
