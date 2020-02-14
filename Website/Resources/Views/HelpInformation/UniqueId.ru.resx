@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>&lt;p&gt;
+                        Постановлением Совета Министров Республики Беларусь от 14 июля 2017 г. № 529
+                        «&lt;a href="http://pravo.by/document/?guid=3961&amp;p0=C21700529" name="pravo.by"&gt;Об административных процедурах, подлежащих осуществлению в электронной форме&lt;/a&gt;»
+                        утверждены перечень административных процедур, подлежащих осуществлению в электронной форме через единый портал электронных услуг в отношении граждан, и перечень – в отношении юридических лиц и индивидуальных предпринимателей.
+                    &lt;/p&gt;
+                    &lt;p&gt;
+                        Для осуществления административных процедур, указанных в перечнях, необходимо авторизоваться на
+                        &lt;a href="https://portal.gov.by/PortalGovBy/faces/wcnav_defaultSelection?_adf.ctrl-state=7s4rkuei8_4&amp;_afrLoop=76790071381026&amp;_afrWindowMode=0&amp;_afrWindowId=null#%40%3F_afrWindowId%3Dnull%26_afrLoop%3D76790071381026%26_afrWindowMode%3D0%26_adf.ctrl-state%3D12n9q33ivw_4" name="portal.gov.by"&gt;Едином портале электронных услуг&lt;/a&gt;
+                        : осуществить вход в личный кабинет.
+                    &lt;/p&gt;
+                    &lt;p&gt;Авторизация осуществляется согласно способу регистрации с использованием уникального идентификатора (УИ) либо с использованием средств электронной цифровой подписи (ЭЦП).&lt;/p&gt;</value>
+  </data>
+  <data name="AboutCollapse" xml:space="preserve">
+    <value>&lt;p&gt;В соответствии с &lt;a href="http://pravo.by/document/?guid=3871&amp;p0=C21700637"&gt; Положением о порядке получения уникального идентификатора &lt;/a&gt;, утвержденного постановлением Совета Министров Республики Беларусь от 22 августа 2017 г. № 637 «О мерах по реализации Закона Республики Беларусь «О внесении дополнений и изменений в Закон Республики Беларусь «Об основах административных процедур»,&lt;/p&gt;
+                        &lt;p&gt;&lt;b&gt;УНИКАЛЬНЫЙ ИДЕНТИФИКАТОР&lt;/b&gt; (далее – &lt;b&gt;УИ&lt;/b&gt;) – это средство идентификации гражданина при осуществлении административных процедур в электронной форме через личный электронный кабинет, в отношении которых законодательством об административных процедурах установлена такая форма их осуществления.&lt;p&gt;
+                        &lt;p&gt;&lt;b&gt;УИ необходим для:&lt;/b&gt;&lt;/p&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt;обеспечения доступа к Единому порталу электронных услуг через личный электронный кабинет; &lt;/li&gt;
+                            &lt;li&gt;подачи (отзыва) заявлений об осуществлении административных процедур; &lt;/li&gt;
+                            &lt;li&gt;получения административных решений (уведомлений о принятых административных решениях); &lt;/li&gt;
+                            &lt;li&gt;подачи (отзыва) административных жалоб в электронной форме. &lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;p&gt;&lt;b&gt;Для получения УИ&lt;/b&gt; можно обратиться в: &lt;/p&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt;В службу «одно окно» местного исполнительного и распорядительного органа (адреса и режим работы служб «одно окно», расположенных в г. Минске, вы можете найти на нашем сайте в рубрике Службы «одно окно») &lt;br /&gt;&lt;/li&gt;
+
+                            &lt;li&gt;РУП «Национальный центр электронных услуг» по адресу:&lt;/li&gt;
+                        &lt;/ul&gt;
+                        г. Минск, пр. Машерова, 25, пом. 200, отдел продаж и обслуживания клиентов.
+                        &lt;br /&gt;
+                        Режим работы: &lt;br /&gt;
+                        понедельник-пятница 8.00-19.00 &lt;br /&gt;
+                        Телефон: +375 17 229 30 00 доб. 707  &lt;br /&gt;
+                        &lt;br /&gt;
+                        &lt;p&gt;&lt;b&gt;ВНИМАНИЕ!&lt;/b&gt; Получить УИ можно &lt;b&gt;только лично для себя.&lt;/b&gt;&lt;/p&gt;
+                        &lt;p&gt;При обращении за выдачей УИ необходимо &lt;b&gt;предъявить паспорт&lt;/b&gt; или иной документ, удостоверяющий личность, и &lt;b&gt;заполнить заявление&lt;/b&gt; согласно утвержденной форме.&lt;/p&gt;
+                        &lt;p&gt;Также необходимо &lt;b&gt;иметь электронную почту&lt;/b&gt;, адрес которой указывается в заявлении и в последующем будет использован для передачи информации.&lt;/p&gt;
+                        &lt;p&gt;На основании заявления формируется личный электронный кабинет и выдается уникальный идентификатор: логин и пароль.&lt;/p&gt;
+                        &lt;p&gt;Процедура выдачи уникального идентификатора &lt;b&gt;бесплатная.&lt;/b&gt;&lt;/p&gt;
+                        &lt;p&gt;&lt;em&gt;Подробная информация по получению уникального идентификатора по  &lt;a href="https://nces.by/nces-ptistupil-k-vydache-unikalnogo-identifikatora/"&gt; ссылке &lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+                        &lt;p&gt;О присвоении логина и формировании первичного пароля выдается извещение, оформленное согласно утвержденной форме.&lt;/p&gt;
+                        &lt;p&gt;Отметка о получении извещения должна быть удостоверена &lt;b&gt;личной подписью&lt;/b&gt; обратившегося за выдачей уникального идентификатора.&lt;/p&gt;
+                        &lt;p&gt;&lt;b&gt;В выдаче уникального идентификатора отказывается в случаях:&lt;/b&gt;&lt;/p&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt;непредставления документа, удостоверяющего личность, и (или) несогласия на проведение сверки сведений, указанных гражданином при подаче заявления о выдаче уникального идентификатора;&lt;/li&gt;
+                            &lt;li&gt;предоставления недействительного документа, удостоверяющего личность;&lt;/li&gt;
+                            &lt;li&gt;наличия уникального идентификатора;&lt;/li&gt;
+                            &lt;li&gt;выявления факта несоответствия сведений о гражданине и документе, удостоверяющем личность, при проведении сверки данных.&lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;p&gt;&lt;b&gt;Самостоятельно отказаться от использования уникального идентификатора&lt;/b&gt; можно посредством подачи соответствующего письменного заявления в службу выдачи и предъявления документа, удостоверяющего личность. &lt;/p&gt;</value>
+  </data>
+  <data name="AboutCollapse2" xml:space="preserve">
+    <value>&lt;p&gt;В соответствии со статьей 1 Закона Республики Беларусь от 28 декабря 2009 г. № 113-З «Об электронном документе и электронной цифровой подписи»&lt;/p&gt;
+                        &lt;p&gt;&lt;b&gt;ЭЛЕКТРОННАЯ ЦИФРОВАЯ ПОДПИСЬ&lt;/b&gt; (далее – &lt;b&gt;ЭЦП&lt;/b&gt;) – последовательность символов, являющаяся реквизитом электронного документа и предназначенная для подтверждения его целостности и подлинности, а также для иных целей, предусмотренных настоящим Законом и иными законодательными актами Республики Беларусь.&lt;/p&gt;
+                        &lt;p&gt;
+                            &lt;b&gt;Услуга платная&lt;/b&gt; согласно прейскуранту тарифов.
+                        &lt;/p&gt;
+                        &lt;p&gt;
+                            &lt;b&gt;Для получения ЭЦП&lt;/b&gt; необходимо &lt;b&gt;лично&lt;/b&gt; обратиться в республиканский удостоверяющий центр ГосСУОК и представить:
+                        &lt;/p&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt;паспорт или иной документ, удостоверяющий личность;&lt;/li&gt;
+                            &lt;li&gt;копию документа, подтверждающего оплату услуги регистрации;&lt;/li&gt;
+                            &lt;li&gt;перечень сведений о Потребителе для физических лиц (заявление по форме).&lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;p&gt;Обращаем внимание, что необходимо &lt;b&gt;иметь электронную почту&lt;/b&gt;, адрес которой указывается в заявлении.&lt;/p&gt;
+                        &lt;p&gt;В результате оказания услуги удостоверяющим центром выпускается и передается обратившемуся сертификат открытого ключа проверки электронной цифровой подписи (сертификат). &lt;/p&gt;
+                        &lt;p&gt;Подробная информация по получению ЭЦП по  &lt;a href="https://nces.by/pki/"&gt; ссылке &lt;/a&gt;.&lt;/p&gt;</value>
+  </data>
+  <data name="ButtonTitleCollapse" xml:space="preserve">
+    <value>УНИКАЛЬНЫЙ ИДЕНТИФИКАТОР</value>
+  </data>
+  <data name="ButtonTitleCollapse2" xml:space="preserve">
+    <value>ЭЛЕКТРОННАЯ ЦИФРОВАЯ ПОДПИСЬ</value>
+  </data>
+  <data name="Economy" xml:space="preserve">
+    <value>&lt;p&gt;&lt;b&gt;КАК УЗНАТЬ, ОТНЕСЕН ЛИ ГРАЖДАНИН К НЕ ЗАНЯТЫМ В ЭКОНОМИКЕ&lt;/b&gt;&lt;/p&gt;
+                &lt;p&gt;После входа в личный кабинет гражданину нужно выбрать услугу 3.33.03 «Предоставление сведений об отнесении гражданина к не занятым в экономике» и получить ответ.&lt;/p&gt;
+                &lt;p&gt;&lt;b&gt;Дополнительно информируем&lt;/b&gt;&lt;/p&gt;
+                &lt;p&gt;
+                    Также для получения информации о том, содержатся ли сведения о гражданине в базе данных, можно обратиться в постоянно действующую комиссию по координации
+                    работы по содействию занятости населения &lt;b&gt;по месту регистрации гражданина&lt;/b&gt; посредством телефонного звонка или письменного обращения, в том числе на адрес электронной почты комиссии.
+                &lt;/p&gt;
+                &lt;p&gt;При этом для идентификации гражданину необходимо сообщить его идентификационный номер, а также иную информацию, содержащуюся в документе, удостоверяющем его личность.&lt;/p&gt;
+                &lt;p&gt;Комиссии создаются на базе местных исполнительных и распорядительных органов.&lt;/p&gt;</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Уникальный идентификатор / Электронная цифровая подпись</value>
+  </data>
+</root>
