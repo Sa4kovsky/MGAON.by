@@ -141,11 +141,12 @@
                                         &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тэл. 204 11 15 &lt;br /&gt;
                                         &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt;  адрас: вул.Альшэўскага, д.12 - аддзел ЗАГС &lt;br /&gt;
                                         &lt;br /&gt;</value>
+    <comment>Телефонный справочник МГАОН</comment>
   </data>
   <data name="2" xml:space="preserve">
     <value>&lt;b&gt;Аддзел № 2 Ленінскага раёна&lt;/b&gt; &lt;br /&gt;
                                         начальнік аддзела Губарэвіч Ганна Уладзіміраўна &lt;br /&gt;
-                                        &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тэл. 223 00 27&lt;br /&gt;
+                                        &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тэл. 235 00 69 &lt;br /&gt;
                                         &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: вул.Маякоўскага, д.83 - служба «адно акно»&lt;br /&gt;
                                         &lt;br /&gt;</value>
     <comment>Телефонный справочник МГАОН</comment>
@@ -177,7 +178,7 @@
   <data name="4" xml:space="preserve">
     <value>&lt;b&gt;Аддзел № 4 Кастрычніцкага раёна&lt;/b&gt; &lt;br /&gt;
                                         начальнік аддзела Бычкоўская Святлана Віктараўна &lt;br /&gt;
-                                        &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt;тэл. 222 13 95 &lt;br /&gt;
+                                        &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt;тэл. 394 13 95 &lt;br /&gt;
                                         &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: вул.Чкалава, д.6, каб.108 &lt;br /&gt;
                                         &lt;br /&gt;</value>
     <comment>Телефонный справочник МГАОН</comment>
@@ -185,7 +186,7 @@
   <data name="5" xml:space="preserve">
     <value>&lt;b&gt;Аддзел № 5 Партызанскага раёна&lt;/b&gt; &lt;br /&gt;
                                         начальнік аддзела Бакумава Марына Антонаўна &lt;br /&gt;
-                                        &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тэл. 294 18 52 &lt;br /&gt;
+                                        &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тэл. 353 18 52 &lt;br /&gt;
                                         &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: вул.Захарава, д.53 – служба «адно акно» &lt;br /&gt;
                                         &lt;br /&gt;</value>
     <comment>Телефонный справочник МГАОН</comment>
@@ -196,11 +197,12 @@
                                             &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt;тэл. 369 25 65 &lt;br /&gt;
                                             &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt;адрас: вул.А.Кашавога, д.27а – аддзел ЗАГС &lt;br /&gt;
                                             &lt;br /&gt;</value>
+    <comment>Телефонный справочник МГАОН</comment>
   </data>
   <data name="6" xml:space="preserve">
     <value>&lt;b&gt;Аддзел № 6 Першамайскага раёна&lt;/b&gt; &lt;br /&gt;
                                        начальнік аддзела Чэрнік Ірына Жоржаўна &lt;br /&gt;
-                                        &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt;тэл. 280 75 89 &lt;br /&gt;
+                                        &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt;тэл. 215 25 89 &lt;br /&gt;
                                         &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt;адрас: зав.К.Чорнага, д.5 - служба «адно акно» &lt;br /&gt;
                                         &lt;br /&gt;</value>
     <comment>Телефонный справочник МГАОН</comment>
@@ -211,6 +213,7 @@
                                             &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt;тэл. 215 27 20&lt;br /&gt;
                                             &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: зав.К.Чорнага, д.5, каб. 220 &lt;br /&gt;
                                             &lt;br /&gt;</value>
+    <comment>Телефонный справочник МГАОН</comment>
   </data>
   <data name="7" xml:space="preserve">
     <value>&lt;b&gt;Аддзел № 7 Савецкага раёна&lt;/b&gt; &lt;br /&gt;
@@ -218,6 +221,7 @@
                                         &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тэл. 292 24 22 &lt;br /&gt;
                                         &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: вул.Дарашэвіча, д.8 – служба «адно акно»&lt;br /&gt;
                                         &lt;br /&gt;</value>
+    <comment>Телефонный справочник МГАОН</comment>
   </data>
   <data name="7_1" xml:space="preserve">
     <value>&lt;b&gt; Сектар № 1&lt;/b&gt; &lt;br /&gt;
@@ -225,6 +229,7 @@
                                             &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тэл. 354 05 94&lt;br /&gt;
                                             &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: вул.В.Харужай, д.24, корп.1, каб.10&lt;br /&gt;
                                             &lt;br /&gt;</value>
+    <comment>Телефонный справочник МГАОН</comment>
   </data>
   <data name="8" xml:space="preserve">
     <value>&lt;b&gt;Аддзел № 8 Фрунзенскага раёна&lt;/b&gt; &lt;br /&gt;
@@ -232,6 +237,7 @@
                                         &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тэл. 204 01 61 &lt;br /&gt;
                                         &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: вул.Кальварыйская, д.39 – служба «адно акно» &lt;br /&gt;
                                         &lt;br /&gt;</value>
+    <comment>Телефонный справочник МГАОН</comment>
   </data>
   <data name="8_1" xml:space="preserve">
     <value>&lt;b&gt;Сектар №1&lt;/b&gt; &lt;br /&gt;
@@ -239,6 +245,7 @@
                                             &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt;тэл. 254 92 63&lt;br /&gt;
                                             &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: вул.Неманская, д.22 – служба «адно акно» &lt;br /&gt;
                                             &lt;br /&gt;</value>
+    <comment>Телефонный справочник МГАОН</comment>
   </data>
   <data name="8_2" xml:space="preserve">
     <value>&lt;b&gt;Сектар № 2&lt;/b&gt; &lt;br /&gt;
@@ -246,6 +253,7 @@
                                             &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тэл. 204 78 06&lt;br /&gt;
                                             &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: вул.Кальварыйская, д.39 – служба «адно акно»&lt;br /&gt;
                                             &lt;br /&gt;</value>
+    <comment>Телефонный справочник МГАОН</comment>
   </data>
   <data name="8_3" xml:space="preserve">
     <value>&lt;b&gt;Сектар № 3&lt;/b&gt; &lt;br /&gt;
@@ -253,6 +261,7 @@
                                             &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тэл. 358 09 40&lt;br /&gt;
                                             &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: праспект Пушкіна, д.55 – служба «адно акно» &lt;br /&gt;
                                             &lt;br /&gt;</value>
+    <comment>Телефонный справочник МГАОН</comment>
   </data>
   <data name="9" xml:space="preserve">
     <value>&lt;b&gt;Аддзел № 9 Цэнтральнага раёна&lt;/b&gt; &lt;br /&gt;
@@ -260,6 +269,7 @@
                                         &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тэл. 306 40 03&lt;br /&gt;
                                         &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: вул.Мельнікайтэ, д.6 – служба «адно акно» &lt;br /&gt;
                                         &lt;br /&gt;</value>
+    <comment>Телефонный справочник МГАОН</comment>
   </data>
   <data name="About" xml:space="preserve">
     <value>&lt;b&gt;Камунальнае ўнітарнае прадпрыемства «Мінскае гарадское агенцтва абслугоўвання насельніцтва» (далей – МГААН)&lt;/b&gt;&lt;br /&gt;
@@ -417,7 +427,7 @@
     <comment>Появляющийся div id="myAdmProcess"</comment>
   </data>
   <data name="Procedure" xml:space="preserve">
-    <value>выконваемых камунальным унітарным прадпрыемствам «Мінскае гарадское агенцтва абслугоўвання насельніцтва» для грамадзян стаяць (якія складаліся) у працоўных адносінах у адпаведнасці з Указам Прэзідэнта Рэспублікі Беларусь ад 26.04.2010 г. № 200 "Аб адміністрацыйных працэдурах, што ажыццяўляюцца дзяржаўнымі органамі і іншымі дзяржаўнымі арганізацыямі па заявах грамадзян »</value>
+    <value>выконваемых камунальным унітарным прадпрыемствам «Мінскае гарадское агенцтва абслугоўвання насельніцтва» для грамадзян, стаяць (якія складаліся) у працоўных адносінах, у адпаведнасці з Указам Прэзідэнта Рэспублікі Беларусь ад 26 красавiка 2010 г. № 200 «Об административных процедурах, осуществляемых государственными органами и иными государственными организациями по заявлениям граждан»</value>
   </data>
   <data name="ReceptionScheduleAttention" xml:space="preserve">
     <value>&lt;b&gt;Звяртаем Вашу ўвагу&lt;/b&gt;, што&lt;b&gt; папярэдні запіс на асабісты прыём&lt;/b&gt; ажыццяўляецца па тэлефоне  364-66-34 альбо ў кабінеце № 4 вядучым спецыялістам па справаводству пры непасрэдным звароце грамадзяніна або прадстаўніка юрыдычнай асобы &lt;em&gt;з прад'яўленнем дакумента, які сведчыць асобу, і дакумента, які пацвярджае службовыя паўнамоцтвы.&lt;/em&gt;</value>

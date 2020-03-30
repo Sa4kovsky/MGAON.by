@@ -145,10 +145,6 @@
     <value>Пра нас</value>
     <comment>Название секции в меню</comment>
   </data>
-  <data name="Facts" xml:space="preserve">
-    <value>Факты</value>
-    <comment>Ссылка  в меню</comment>
-  </data>
   <data name="InformationAboutPassingDocuments" xml:space="preserve">
     <value>Звесткі аб праходжанні дакументаў праз службу «адно акно»</value>
     <comment>Ссылка  в меню</comment>

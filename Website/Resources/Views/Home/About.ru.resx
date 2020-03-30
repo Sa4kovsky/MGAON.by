@@ -141,11 +141,12 @@
                                         &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 204 11 15 &lt;br /&gt;
                                         &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул.Ольшевского, д.12 – отдел ЗАГС &lt;br /&gt;
                                         &lt;br /&gt;</value>
+    <comment>Телефонный справочник МГАОН</comment>
   </data>
   <data name="2" xml:space="preserve">
     <value>&lt;b&gt;Отдел № 2 Ленинского района&lt;/b&gt; &lt;br /&gt;
                                         начальник отдела Губоревич Анна Владимировна &lt;br /&gt;
-                                        &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 223 00 27 &lt;br /&gt;
+                                        &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 235 00 69 &lt;br /&gt;
                                         &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул.Маяковского, д.83 – служба «одно окно» &lt;br /&gt;
                                         &lt;br /&gt;</value>
     <comment>Телефонный справочник МГАОН</comment>
@@ -177,7 +178,7 @@
   <data name="4" xml:space="preserve">
     <value>&lt;b&gt;Отдел № 4 Октябрьского района&lt;/b&gt; &lt;br /&gt;
                                         начальник отдела Бычковская Светлана Викторовна &lt;br /&gt;
-                                        &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 222 13 95 &lt;br /&gt;
+                                        &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 394 13 95 &lt;br /&gt;
                                         &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул. Чкалова, д.6, каб.108 – служба «одно окно» &lt;br /&gt;
                                         &lt;br /&gt;</value>
     <comment>Телефонный справочник МГАОН</comment>
@@ -185,7 +186,7 @@
   <data name="5" xml:space="preserve">
     <value>&lt;b&gt;Отдел № 5 Партизанского района&lt;/b&gt; &lt;br /&gt;
                                         начальник отдела Бакумова Марина Антоновна &lt;br /&gt;
-                                        &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 294 18 52 &lt;br /&gt;
+                                        &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 353 18 52 &lt;br /&gt;
                                         &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул.Захарова, д.53 – служба «одно окно» &lt;br /&gt;
                                         &lt;br /&gt;</value>
     <comment>Телефонный справочник МГАОН</comment>
@@ -196,11 +197,12 @@
                                             &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 369 25 65  &lt;br /&gt;
                                             &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул.О.Кошевого, д.27а – отдел ЗАГС  &lt;br /&gt;
                                             &lt;br /&gt;</value>
+    <comment>Телефонный справочник МГАОН</comment>
   </data>
   <data name="6" xml:space="preserve">
     <value>&lt;b&gt;Отдел № 6 Первомайского района&lt;/b&gt; &lt;br /&gt;
                                         начальник отдела Черник Ирина Жоржевна &lt;br /&gt;
-                                        &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 280 75 89 &lt;br /&gt;
+                                        &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 215 25 89 &lt;br /&gt;
                                         &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: пер. К.Чорного, д.5 – служба «одно окно» &lt;br /&gt;
                                         &lt;br /&gt;</value>
     <comment>Телефонный справочник МГАОН</comment>
@@ -211,6 +213,7 @@
                                             &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 215 27 20 &lt;br /&gt;
                                             &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: пер. К.Чорного, д.5, каб. 220 &lt;br /&gt;
                                             &lt;br /&gt;</value>
+    <comment>Телефонный справочник МГАОН</comment>
   </data>
   <data name="7" xml:space="preserve">
     <value>&lt;b&gt;Отдел № 7 Советского района&lt;/b&gt; &lt;br /&gt;
@@ -218,6 +221,7 @@
                                         &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 292 24 22 &lt;br /&gt;
                                         &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул.Дорошевича, д.8 – служба «одно окно» &lt;br /&gt;
                                         &lt;br /&gt;</value>
+    <comment>Телефонный справочник МГАОН</comment>
   </data>
   <data name="7_1" xml:space="preserve">
     <value>&lt;b&gt;Сектор № 1&lt;/b&gt; &lt;br /&gt;
@@ -225,6 +229,7 @@
                                             &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 354 05 94 &lt;br /&gt;
                                             &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул. Веры Хоружей. д.24, корп. 1, каб. 10 &lt;br /&gt;
                                             &lt;br /&gt;</value>
+    <comment>Телефонный справочник МГАОН</comment>
   </data>
   <data name="8" xml:space="preserve">
     <value>&lt;b&gt;Отдел № 8 Фрунзенского района&lt;/b&gt; &lt;br /&gt;
@@ -232,6 +237,7 @@
                                         &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 204 01 61 &lt;br /&gt;
                                         &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул. Кальварийская, д.39 – служба «одно окно» &lt;br /&gt;
                                         &lt;br /&gt;</value>
+    <comment>Телефонный справочник МГАОН</comment>
   </data>
   <data name="8_1" xml:space="preserve">
     <value>&lt;b&gt;Сектор № 1&lt;/b&gt; &lt;br /&gt;
@@ -239,6 +245,7 @@
                                             &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 254 92 63 &lt;br /&gt;
                                             &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул. Нёманская, д.22 – служба «одно окно» &lt;br /&gt;
                                             &lt;br /&gt;</value>
+    <comment>Телефонный справочник МГАОН</comment>
   </data>
   <data name="8_2" xml:space="preserve">
     <value>&lt;b&gt;Сектор № 2&lt;/b&gt; &lt;br /&gt;
@@ -246,6 +253,7 @@
                                             &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 204 78 06 &lt;br /&gt;
                                             &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул. Кальварийская, д.39 – служба «одно окно» &lt;br /&gt;
                                             &lt;br /&gt;</value>
+    <comment>Телефонный справочник МГАОН</comment>
   </data>
   <data name="8_3" xml:space="preserve">
     <value>&lt;b&gt;Сектор № 3&lt;/b&gt; &lt;br /&gt;
@@ -253,6 +261,7 @@
                                             &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 358 09 40 &lt;br /&gt;
                                             &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: просп. Пушкина, д.55 – служба «одно окно» &lt;br /&gt;
                                             &lt;br /&gt;</value>
+    <comment>Телефонный справочник МГАОН</comment>
   </data>
   <data name="9" xml:space="preserve">
     <value>&lt;b&gt;Отдел № 9 Центрального района&lt;/b&gt; &lt;br /&gt;
@@ -260,6 +269,7 @@
                                         &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 306 40 03 &lt;br /&gt;
                                         &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул.Мельникайте, д.6 – служба «одно окно» &lt;br /&gt;
                                         &lt;br /&gt;</value>
+    <comment>Телефонный справочник МГАОН</comment>
   </data>
   <data name="About" xml:space="preserve">
     <value>&lt;b&gt;Коммунальное унитарное предприятие «Минское городское агентство обслуживания населения» (далее – МГАОН)&lt;/b&gt;&lt;br /&gt;
@@ -417,7 +427,7 @@
     <comment>Появляющийся div id="myAdmProcess"</comment>
   </data>
   <data name="Procedure" xml:space="preserve">
-    <value>выполняемых коммунальным унитарным предприятием «Минское городское агентство обслуживания населения» для граждан состоящих (состоявших) в трудовых отношениях в соответствии с Указом Президента Республики Беларусь от 26.04.2010 г. № 200 «Об административных процедурах, осуществляемых государственными органами и иными государственными организациями по заявлениям граждан»</value>
+    <value>выполняемых КУП «Минское городское агентство обслуживания населения» для граждан, состоящих (состоявших) в трудовых отношениях, в соответствии с Указом Президента Республики Беларусь от 26 апреля 2010 г. № 200 «Об административных процедурах, осуществляемых государственными органами и иными государственными организациями по заявлениям граждан»</value>
   </data>
   <data name="ReceptionScheduleAttention" xml:space="preserve">
     <value>&lt;b&gt;Обращаем Ваше внимание&lt;/b&gt;, что &lt;b&gt;предварительная запись на личный прием&lt;/b&gt; осуществляется по телефону

@@ -73,8 +73,7 @@
 /* Sections Header
 --------------------------------*/
 .section-header .section-title {
-    font-size: 32px;
-    color: #111;
+     color: #111;
     text-transform: uppercase;
     text-align: center;
     font-weight: 700;
@@ -518,7 +517,6 @@
             }
 
         #news .title {
-            font-weight: 100;
             font-size: 14px;
             margin: 0px;
         }
