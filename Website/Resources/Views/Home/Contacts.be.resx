@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Address" xml:space="preserve">
-    <value>Рэспубліка Беларусь,&lt;br&gt;220004, г. Минск,&lt;br /&gt; вул. М.Танка, 36, корп.1, пам.1Н (частка ізаляванага памяшкання)</value>
+    <value>Рэспубліка Беларусь,&lt;br&gt;220004, г. Мiнск,&lt;br /&gt; вул. М.Танка, 36, корп.1, пам.1Н (частка ізаляванага памяшкання)</value>
   </data>
   <data name="Chart" xml:space="preserve">
     <value>панядзелак-чацвер: &lt;br/&gt;з 8.45 да 18.00 &lt;br /&gt; пятніца: з 8.45 да 16.45 &lt;br /&gt; абед: з 13.00 да 14.00 &lt;br /&gt; выходныя: субота, нядзеля.</value>
@@ -136,7 +136,7 @@
     <value>метро Маладзёжная</value>
   </data>
   <data name="Organization" xml:space="preserve">
-    <value>Вышэйстаячая арганізацыя &lt;br \&gt; &lt;a href="https://minsk.gov.by/ru/"&gt; Мінскі гарадскі выканаўчы камітэт &lt;/a&gt;</value>
+    <value>Вышэйстаячая арганізацыя &lt;br \&gt; &lt;a href="https://minsk.gov.by/ru/"  target="_blank" &gt; Мінскі гарадскі выканаўчы камітэт &lt;/a&gt;</value>
   </data>
   <data name="Phone" xml:space="preserve">
     <value>Кантактны тэлефон</value>

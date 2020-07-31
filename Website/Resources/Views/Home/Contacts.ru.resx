@@ -142,7 +142,7 @@
   </data>
   <data name="Organization" xml:space="preserve">
     <value>Вышестоящая организация &lt;br \&gt;
-                            &lt;a href="https://minsk.gov.by/ru/"&gt;Минский городской исполнительный комитет&lt;/a&gt;</value>
+                            &lt;a href="https://minsk.gov.by/ru/"  target="_blank" &gt;Минский городской исполнительный комитет&lt;/a&gt;</value>
   </data>
   <data name="Phone" xml:space="preserve">
     <value>Контактный телефон</value>

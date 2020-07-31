@@ -119,7 +119,7 @@
   </resheader>
   <data name="1" xml:space="preserve">
     <value>&lt;b&gt;Отдел № 1 Заводского района&lt;/b&gt; &lt;br /&gt;
-                                        начальник отдела Бойправ Наталья Александровна &lt;br /&gt;
+                                        начальник отдела Губоревич Анна Владимировна &lt;br /&gt;
                                         &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 389 26 82 &lt;br /&gt;
                                         &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул. Жилуновича, д.17 – служба «одно окно» &lt;br /&gt;
                                         &lt;br /&gt;</value>
@@ -145,7 +145,7 @@
   </data>
   <data name="2" xml:space="preserve">
     <value>&lt;b&gt;Отдел № 2 Ленинского района&lt;/b&gt; &lt;br /&gt;
-                                        начальник отдела Губоревич Анна Владимировна &lt;br /&gt;
+                                        начальник отдела Боричевская Надежда Сергеевна &lt;br /&gt;
                                         &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 235 00 69 &lt;br /&gt;
                                         &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул.Маяковского, д.83 – служба «одно окно» &lt;br /&gt;
                                         &lt;br /&gt;</value>
@@ -273,8 +273,8 @@
   </data>
   <data name="About" xml:space="preserve">
     <value>&lt;b&gt;Коммунальное унитарное предприятие «Минское городское агентство обслуживания населения» (далее – МГАОН)&lt;/b&gt;&lt;br /&gt;
-                                создано 01.07.2013 г. в результате реорганизации путем выделения из состава коммунального унитарного предприятия «Центр информационных технологий Мингорисполкома» и зарегистрировано решением Мингорисполкома от 23.05.2013 г. № 1344. Форма собственности - государственная (коммунальная).&lt;br /&gt;
-                             Учредителем Предприятия является &lt;a href="https://minsk.gov.by/ru/"&gt;Минский городской исполнительный комитет.&lt;/a&gt;</value>
+                                создано 01.07.2013 г. в результате реорганизации путем выделения из состава коммунального унитарного предприятия «Центр информационных технологий Мингорисполкома» и зарегистрировано решением Мингорисполкома от 23.05.2013 г. № 1344. &lt;br/&gt;Форма собственности - государственная (коммунальная).&lt;br /&gt;
+                             Учредителем МГАОН является &lt;a href="https://minsk.gov.by/ru/"  target="_blank" &gt;Минский городской исполнительный комитет.&lt;/a&gt;</value>
     <comment>Первый абзац</comment>
   </data>
   <data name="AdministrativeProcedure" xml:space="preserve">
@@ -303,7 +303,7 @@
                                     &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул.М.Танка, д.36, корп.1, каб.8</value>
   </data>
   <data name="Danko" xml:space="preserve">
-    <value>&lt;b&gt;Заместитель директор – начальник общего отдела&lt;/b&gt; &lt;br /&gt;
+    <value>&lt;b&gt;Заместитель директора – начальник общего отдела&lt;/b&gt; &lt;br /&gt;
                                     Данько Елена Георгиевна &lt;br /&gt;
                                     &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 364 26 12 &lt;br /&gt;
                                     &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул.М.Танка, д.36, корп.1, каб.1</value>
@@ -313,10 +313,6 @@
     <value>&lt;b&gt;Управление сопровождения электронных баз данных «Одно окно»&lt;/b&gt;  &lt;br /&gt;
                                     начальник управления Пожиток Нелли Константиновна  &lt;br /&gt;
                                     &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 316 26 03  &lt;br /&gt;
-                                    &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул.М.Танка, д.36, корп.1, каб.5  &lt;br /&gt;
-                                    &lt;br /&gt;
-                                    заместитель начальника управления Нечаева Ольга Владимировна  &lt;br /&gt;
-                                    &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел.243 08 59  &lt;br /&gt;
                                     &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул.М.Танка, д.36, корп.1, каб.5  &lt;br /&gt;
                                     &lt;br /&gt;</value>
     <comment>Телефонный справочник МГАОН</comment>
@@ -358,12 +354,8 @@
     <value>Информирование Граждан</value>
     <comment>Шапка возле icon</comment>
   </data>
-  <data name="MakingProfit" xml:space="preserve">
-    <value>Извлечение прибыли</value>
-    <comment>Шапка возле icon</comment>
-  </data>
   <data name="ObjectivesCompany" xml:space="preserve">
-    <value>Цели деятельности Предприятия:</value>
+    <value>Цели деятельности МГАОН:</value>
     <comment>Цели деятельности Предприятия:</comment>
   </data>
   <data name="Other" xml:space="preserve">
@@ -372,9 +364,6 @@
   <data name="OtherFacilities" xml:space="preserve">
     <value>Другие услуги</value>
     <comment>Шапка возле icon</comment>
-  </data>
-  <data name="Profit" xml:space="preserve">
-    <value>извлечение прибыли в процессе хозяйственной деятельности</value>
   </data>
   <data name="ProvidingCollection" xml:space="preserve">
     <value>обеспечение сбора документов и (или) сведений, необходимых для осуществления административных процедур, не включенных в перечни документов и (или) сведений, представляемых заинтересованными лицами, посредством направления запросов удаленного доступа к государственным регистрам, реестрам, кадастрам, спискам, каталогам, базам и банкам данных и другими способами</value>
@@ -393,7 +382,7 @@
   <data name="Shipova" xml:space="preserve">
     <value>&lt;b&gt;Сектор бухгалтерского учета и отчетности&lt;/b&gt; &lt;br /&gt;
                                     главный бухгалтер Шипова Людмила Викторовна &lt;br /&gt;
-                                    &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел 364 25 78 &lt;br /&gt;
+                                    &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тел. 364 25 78 &lt;br /&gt;
                                     &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрес: ул.М.Танка, д.36, корп.1, каб.6</value>
     <comment>Телефонный справочник МГАОН</comment>
   </data>
@@ -455,5 +444,8 @@
   </data>
   <data name="Schedule" xml:space="preserve">
     <value>личного приема граждан, юридических лиц, индивидуальных предпринимателей руководством МГАОН</value>
+  </data>
+  <data name="EnterprisStructureIMG" xml:space="preserve">
+    <value>СтруктураРус.jpg</value>
   </data>
 </root>

@@ -46,6 +46,11 @@ namespace Website.Controllers
             return LocalRedirect(returnUrl);
         }
 
+
+        DateTime monday = DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Monday).AddDays(-7);
+        DateTime friday = DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Saturday);
+        int week = DateTime.Now.Month;
+
         /// <summary>
         /// monday - переменная определяет понедельник прошлой недели
         /// friday - переменная определяет текущее воскресенье
@@ -63,18 +68,15 @@ namespace Website.Controllers
         [Route("~/")]
         public IActionResult Index()
         {
-            using (ContextNews _dbNews = new ContextNews())
+            using (Context _dbNews = new Context())
             {
-                DateTime monday = DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Monday).AddDays(-7);
-                DateTime friday = DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Saturday);
-
                 IndexViewModels indexViewsModels = new IndexViewModels
                 {
-                    //запись данных News которые соответсвуют текущему языку на сайте в промежуток времени от monday до friday
                     News = _dbNews.News.Where(p => p.Language == _localizer["Language"].Value.ToString())
                                    .Where(p => p.DateStart >= monday && p.DateFinish <= friday)
                                    .OrderBy(p => p.DateStart).ToList(),
-                    NewsTable = _dbNews.NewsTable.Where(p => p.DateTime != null).Where(p => p.DateTime != "").ToList(),
+                    NewsTable = _dbNews.NewsTable.Where(p => Convert.ToDateTime(p.DateTime.Substring(0,9)).Month == week).OrderBy(o => o.DateTime).ToList(),
+                   // NewsTable = _dbNews.NewsTable.OrderBy(o => o.DateTime).ToList(),
                     SummaryOneWin = _dbNews.ViewSummaryOneWin.ToList(),
                     Procedures = _dbNews.Procedures.ToList(),
                     People = new Person()

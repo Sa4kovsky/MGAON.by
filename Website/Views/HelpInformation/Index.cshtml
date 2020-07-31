@@ -1,1 +1,385 @@
-﻿
+﻿@model IList<Website.Models.OneWin.ProceduresList>
+
+    <section id="news" style="padding: 140px 15px 40px 15px;">
+        <div class="section-header">
+            <h3 class="section-title">СПРАВОЧНО-ИНФОРМАЦИОННАЯ СИСТЕМА</h3>
+            <p class="section-description">система включает в себя всю информацию о порядке осуществления местными исполнительными и распорядительными органами административных процедур на территории г. Минска</p>
+        </div>
+        @using (Html.BeginForm("index", "HelpInformation", FormMethod.Post))
+        {
+            <div class="container" style="padding:20px">
+                    <div class="col-lx-4 col-lg-5 col-sm-6" style="margin: 10px auto; text-align:center">
+                        @Html.DropDownList("area", new SelectList(new string[] { "Мингорисполком", "Заводской район", "Ленинский район", "Московский район", "Октябрьский район", "Партизанский район", "Первомайский район", "Советский район", "Фрунзенcкий район", "Центральный район"}), new { @id = "selectArea", @class = "form-control", @required = "required", @readonly = "readonly" })
+                    </div>
+                    <div class="col-lx-4 col-lg-5 col-sm-6" style="margin: 10px auto; text-align:center">
+                        <p style="margin-left: 5px">
+                            <input type="radio" value="0" checked name="check" />Физ. лица
+                            <input type="radio" value="1" name="check" />Юр. лица
+                            <input class="btn btn-primary" type="submit" value="Найти" onclick="" />
+                        </p>
+                    </div>
+            </div>
+            <br/>
+            @if (Model != null)
+            {
+                @if (Model.Count() > 0)
+                {
+                    var procedures = Model.GroupBy(i => new { i.NameList })
+                                           .OrderBy(g => g.Key.NameList)
+                                           .Select(g => g.First())
+                                           .ToArray();
+
+                    var heads = Model.GroupBy(i => new { i.HeadsNumber, i.HeadsName, i.NameList })
+                                           .OrderBy(g => g.Key.NameList)
+                                           .Select(g => g.First())
+                                           .ToArray();
+
+                    <div>
+                        @for (int proceduresCount = 0; proceduresCount < procedures.Length; proceduresCount++)
+                        {
+                            @if (procedures[proceduresCount].NameList == null || procedures[proceduresCount].NameList == "") { }
+                            else
+                            {
+                                bool resultNameList = false;
+                                if (procedures[proceduresCount].IdNameList == 3 || procedures[proceduresCount].IdNameList == 4) { resultNameList = true; }
+                                <div class="text-center">
+                                    <button type="button" data-toggle="collapse" data-target="#multiCollapseExample_@proceduresCount" aria-expanded="false" style="margin:5px;width:100%;">
+                                        <p style="overflow: hidden;">@Html.DisplayFor(modelItem => procedures[proceduresCount].NameList)</p>
+                                    </button>
+                                </div>
+
+                                @for (int headsCount = 0; headsCount < heads.Length; headsCount++)
+                                {
+                                    @if (heads[headsCount].NameList == procedures[proceduresCount].NameList)
+                                    {
+                                        <div class="collapse multi-collapse" id="multiCollapseExample_@proceduresCount" style="padding:0">
+                                            <div class="card card-body" style="border:0; padding:0;">
+                                                <div class="text-center">
+                                                    @if (resultNameList)
+                                                    {
+                                                        <button type="button" data-toggle="collapse" data-target="#multiCollapseExample_@proceduresCount@headsCount" aria-expanded="false" style="margin:5px;width:100%;background:#dee2e6">
+                                                            <p style="overflow: hidden; margin:0px; color:black;">@Html.DisplayFor(modelItem => heads[headsCount].HeadsName)</p>
+                                                        </button>
+                                                    }
+                                                    else
+                                                    {
+                                                        <button type="button" data-toggle="collapse" data-target="#multiCollapseExample_@proceduresCount@headsCount" aria-expanded="false" style="margin:5px;width:100%;background:#dee2e6">
+                                                            <p style="overflow: hidden; margin:0px; color:black;">@Html.DisplayFor(modelItem => heads[headsCount].HeadsNumber) @Html.DisplayFor(modelItem => heads[headsCount].HeadsName)</p>
+                                                        </button>
+                                                    }
+                                                </div>
+                                            </div>
+
+
+                                            @foreach (var docRegistry in Model.Where(g => g.NameList == procedures[proceduresCount].NameList).Where(c => c.HeadsName == heads[headsCount].HeadsName).ToList())
+                                            {
+                                                bool result = int.TryParse(docRegistry.SectionsName, out int number);
+                                                <div class="collapse" id="multiCollapseExample_@proceduresCount@headsCount" style="padding: 0px;">
+                                                    <div class="card card-body" style="border:0; padding:0;">
+                                                        <div class="overlayInfo" style="padding:2px 40px 6px 40px; text-align:left">
+                                                            <a style="color:black;" name="docRegistry" href="" onclick="return false;"  id="@Html.DisplayFor(modelItem => docRegistry.DocRegistryRegId)">
+                                                                @if (heads[headsCount].SectionsName == "ИНЫЕ ВОПРОСЫ" || result == true)
+                                                                {
+                                                                    @Html.DisplayFor(modelItem => docRegistry.DocRegistryNumber) <text>&nbsp</text> @Html.DisplayFor(modelItem => docRegistry.DocRegistryRegName)
+                                                                }
+                                                                else
+                                                                {
+                                                                    @if (docRegistry.DocRegistryNumber != "")
+                                                                    {
+                                                                        @Html.DisplayFor(modelItem => docRegistry.DocRegistryNumber) <text>&nbsp</text> @Html.DisplayFor(modelItem => docRegistry.SectionsName) <text>&nbsp</text> @Html.DisplayFor(modelItem => docRegistry.DocRegistryRegName)
+                                                                    }
+                                                                    else
+                                                                    {
+                                                                        @Html.DisplayFor(modelItem => docRegistry.SectionsName) <text>&nbsp</text> @Html.DisplayFor(modelItem => docRegistry.DocRegistryRegName)
+                                                                    }
+                                                                }
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            }
+                                        </div>
+                                    }
+                                }
+                            }
+                        }
+                    </div>
+                }
+            }
+        }
+    </section>
+
+
+<!-- Модальное окно -->
+<div class="modal fade bd-example-modal-xl" style="width:95%" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h6 class="modal-title" id="modal-title"></h6>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-3"><b>Государственный орган (иная организация), в который гражданин должен обратиться</b></div>
+                    <div class="col-md-9">
+                        <div id="onewin"></div>
+                        <div class="row" id="performers"></div>
+                    </div>
+                </div>
+
+                <hr />
+                <div class="row">
+                    <div class="col-md-3">
+                        <b>Документы и (или) сведения, представляемые гражданином для осуществления административной процедуры</b>
+                        <div id="titleDocs" class="text-center">
+                       
+                        </div>
+                    </div>
+                    <div class="col-md-9" id="docs"></div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-md-3"><b>Документы для запросов</b></div>
+                    <div class="col-md-9" id="requestdocs"></div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-md-3"><b>Размер платы, взимаемой при осуществлении административной процедуры</b></div>
+                    <div class="col-md-9">
+                        <h6 id="cost"></h6>
+                        <div id="payment"></div>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-md-3"><b>Максимальный срок осуществления административной процедуры</b></div>
+                    <div class="col-md-9">
+                        <h6 id="maxInssue"></h6>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-md-3"><b>Срок действия справки, другого документа (решения), выдаваемых (принимаемого) при осуществлении административной процедуры</b></div>
+                    <div class="col-md-9">
+                        <h6 id="maxValidaty"></h6>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-md-3"><b>Нормативные документы</b></div>
+                    <div class="col-md-9" id="normativeDoc"></div>
+                </div>
+            </div>
+            <div class="modal-footer">                                                                  
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+    //ajax сробатывает
+    $(document).ready(function () {
+        $("a").click(function () {
+            var id = $(this).attr("id");
+            var title = $(this).text();
+            var area = document.getElementById("selectArea").value;
+            $.ajax({
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                type: 'GET',
+                url: '/information/docregistry',
+                traditional: true,
+                data: { id: id, area: area },
+                success: function (result) {
+                    //очистка
+                    $('#normativeDoc').empty();
+                    $('#docs').empty();
+                    $('#onewin').empty();
+                    $('#requestdocs').empty();
+                    $('#performers').empty();
+                    $('#payment').empty();
+                    $('#commentDepartaments').empty();
+                    $('#titleDocs').empty();
+
+                    document.getElementById('modal-title').innerHTML = title;
+                    document.getElementById('cost').innerHTML = result.registries[0].cost;
+                    document.getElementById('maxInssue').innerHTML = result.registries[0].inssue;
+                    document.getElementById('maxValidaty').innerHTML = result.registries[0].validaty;
+
+                    OutputLinkStatements(result.registries[0].url, area);
+
+                    OutputNormativeDocument(result.normativeDocs);
+
+                    OutputNormativeDocument(result.normativeDocs);
+
+                    OutputDocumentsProvided(result.documents);
+
+                    OutputRequestedDocuments(result.requestedDocuments);
+
+                    /*  departamentsAccept - информация о принемающем документы органе; 
+                        documentAccept - орган который отвечает за принятие документов; 
+                        commentDepartaments - коментарии и примечание к процедуре и органу;*/
+                    OutputDocumentsAcceptance(result.departamentsAccept, result.documentAccept, result.commentDepartaments);
+
+                    OutputDepartments(result.departaments, result.commentDepartaments, result.executor, result.performers);
+
+                    OutputPayments( result.paymentAccaount);
+                 
+                    $('#myModal').modal('show');
+                }
+            });
+        });
+
+        function OutputLinkStatements(result, area) {
+            if (result != null) {
+                var titleDoc = document.getElementById("titleDocs");
+                var a = document.createElement("a");
+                a.href = "/information?path=" + result + "&area=" + area;
+                a.text = "Скачать заявление";
+                titleDoc.appendChild(a);
+            }
+        }
+
+        function OutputNormativeDocument(arrNormDoc) {
+            //массив нормативных документов
+            arrNormDoc.forEach(function (item, i, arrNormDoc) {
+                var normativeDoc = document.getElementById("normativeDoc");
+                var a = document.createElement("a");
+                a.text = item.name;
+                a.href = item.url;
+                a.target = "_blank";
+                normativeDoc.appendChild(a);
+                normativeDoc.appendChild(document.createElement("br"));
+                normativeDoc.appendChild(document.createElement("br"));
+            });
+        }
+
+        function OutputDocumentsProvided(arrDocs) {
+            //массив документов гражданина
+            arrDocs.forEach(function (item, i, arrDocs) {
+                var documentsProvided = document.getElementById("docs");
+                var p = document.createElement("p");
+                p.innerHTML = item.name;
+                documentsProvided.appendChild(p);
+            });
+        }
+
+        function OutputRequestedDocuments(arrRequestDocs) {
+            //массив запрашиваемых документов
+            arrRequestDocs.forEach(function (item, i, arrRequestDocs) {
+                var requestDocs = document.getElementById("requestdocs");
+                var p = document.createElement("p");
+                p.innerHTML = item.name.replace(/^[0-9]{1,3}\./, "");
+                requestDocs.appendChild(p);
+            });
+        }
+
+        function OutputDocumentsAcceptance(arrDepartmentsAccept, arrDocumentAccept, arrCommentDepartaments) {
+            arrDepartmentsAccept.forEach(function (itemDepartmentsAccept, i, arrDepartmentsAccept) {
+                var onewin = document.getElementById("onewin");
+                var h = document.createElement("h6");
+                h.innerHTML = "<b>Прием документов: </b>" + itemDepartmentsAccept.name;
+
+                arrDocumentAccept.forEach(function (itemDocumentAccept, i, arrDocumentAccept) {
+                    if (itemDocumentAccept.chekPerNotes === true && itemDocumentAccept.name === itemDepartmentsAccept.name) {
+                        h.innerHTML += "<br/>" + itemDocumentAccept.notes;
+                    }
+                });
+                arrCommentDepartaments.forEach(function (item, i, arrCommentDepartaments) {
+                    if (item.idDepartament === itemDepartmentsAccept.id) {
+                        if (item.link.length > 0) {
+                            h.innerHTML = "<b>Прием документов: </b> <a target = \"_blank\" href=\'" + item.link + "\'>" + itemDepartmentsAccept.name + "</a>";
+                        }
+                        if (item.comment.length > 0) {
+                            h.innerHTML += "<br/><b>Примечания: </b>" + item.comment;
+                        }
+                    }
+                });
+                onewin.appendChild(h);
+            });
+            onewin.appendChild(document.createElement("hr"));
+        }
+
+        function OutputDepartments(arrDepartments, arrCommentDepartaments, arrExecutor, arrPerformers) {
+            arrDepartments.forEach(function (item, i, arrDepartments) {
+                var divDepartments = document.getElementById("performers");
+                var divPerformersRow = document.createElement("div");
+                divPerformersRow.classList.add('row');
+                divPerformersRow.classList.add('col-md-12');
+                divDepartments.appendChild(divPerformersRow);
+
+                //создание <div> уполномоченый орган
+                var divCompetentBody = document.createElement("div");
+                divCompetentBody.id = item.name;
+                divCompetentBody.classList.add('col-md-5');
+
+                divCompetentBody.innerHTML = "<b>Уполномоченный орган:</b> <br>" + item.name;
+
+                arrCommentDepartaments.forEach(function (itemCommentDepartaments, i, arrCommentDepartaments) {
+                    if (item.id === itemCommentDepartaments.idDepartament) {
+                        if (itemCommentDepartaments.link.length > 0) {
+                            divCompetentBody.innerHTML = "<b>Уполномоченный орган:</b> <br> <a target = \"_blank\" href=\'" + itemCommentDepartaments.link + "\'>" + item.name + "</a>";
+                        }
+                        if (itemCommentDepartaments.comment.length > 0) {
+                            divCompetentBody.innerHTML += "<br/><b>Примечания: </b>" + itemCommentDepartaments.comment;
+                        }
+                    }
+                });
+
+                divPerformersRow.appendChild(divCompetentBody);
+
+                var div = document.createElement("div");
+                div.id = item.name;
+                div.classList.add('col-md-7');
+                divPerformersRow.appendChild(div);
+                               
+                OutputEmploee(div, item.name, "<b>Ответственное лицо:</b>" , arrExecutor);    
+
+                OutputEmploee(div, item.name, "<b>Исполнитель:</b>", arrPerformers);      
+            });
+        }
+
+        function OutputEmploee(div,name, title, arrEmploee) {
+            var divEmploee = document.createElement("div");
+            divEmploee.id = name;
+            divEmploee.classList.add('col-md-12');
+            divEmploee.innerHTML = title;
+            div.appendChild(divEmploee);
+
+            arrEmploee.forEach(function (item, i, arrEmploee) {
+                if (divEmploee.id == item.name) {
+                    //создание <h6>
+                    var h = document.createElement("h6");
+                    h.innerHTML = item.title;
+                    if (item.checkPerName == true && item.fio != null && item.fio != "") { h.innerHTML = h.innerHTML + " " + item.fio };
+                    if (item.checkPerAddress == true && item.address != null && item.address != "") { h.innerHTML = h.innerHTML + "<br> <b>адрес: </b>" + item.address };
+                    if (item.checkPerCabinet == true && item.cabinet != null && item.cabinet != "") { h.innerHTML = h.innerHTML + "<br> <b>кабинет</b> №" + item.cabinet };
+                    if (item.checkPerPhone == true && item.phone != null && item.phone != "") { h.innerHTML = h.innerHTML + "<br> <b>телефон: </b>" + item.phone };
+                    if (item.checkPermail == true && item.mail != null && item.mail != "") { h.innerHTML = h.innerHTML + "<br> <b>e-mail: </b>" + item.mail };
+                    if (item.chekPerNotes == true && item.notes != null && item.notes != "") { h.innerHTML = h.innerHTML + "<br> <b>примечания: </b>" + item.notes };
+                    divEmploee.appendChild(h);
+                }
+            });
+        }
+
+        function OutputPayments(arrPayments) {
+            //массив расчетных считов для оплаты
+            if (arrPayments.length != 0) {
+                var payments = document.getElementById("payment");
+                var divPayments = document.createElement("div");
+                divPayments.innerHTML = "<b>Расчетный счет:</b>";
+                payments.appendChild(divPayments);
+                arrPayments.forEach(function (item, i, arrPayments) {
+                    var pPayments = document.createElement("p");
+                    pPayments.innerHTML = item.name;
+                    divPayments.appendChild(pPayments)
+                });
+            }
+        }
+    });
+</script>

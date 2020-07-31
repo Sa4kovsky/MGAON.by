@@ -56,7 +56,7 @@ namespace Website.Controllers
         public IActionResult Information(string lName, int docNo, string area)
         {
             Area(area);
-            using (ContextNews contextDB = new ContextNews())
+            using (Context contextDB = new Context())
             {
                 List<Registration> registrations = contextDB.Registration.FromSql("EXECUTE dbo.Registration @nameDB = {0}, @lName = {1}, @docNo = {2}", stringConnect.ToString(), lName, docNo).ToList();
                 return View(registrations);

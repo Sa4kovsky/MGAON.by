@@ -1,0 +1,121 @@
+﻿@model Website.Models.WebSiteBD.News
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<section id="news" style="padding: 80px 15px 80px 15px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h4>Новости</h4>
+                <hr />
+                <form asp-action="Edit">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="Title" class="control-label">Тема</label>
+                        @Html.TextAreaFor(x => x.Title, new { @id="title", @class = "form-control", @required = "required", @style = "min-width: 100%; width: 100%; max-width: 100%; min-height: 60px" })
+                        <span asp-validation-for="Title" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Name" class="control-label">Исполнитель</label>
+                        @Html.TextAreaFor(x => x.Name, new { @id="nameOrg", @class = "form-control", @required = "required", @style = "min-width: 100%; width: 100%; max-width: 100%; min-height: 60px" })
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="DateStart" class="control-label">Дата начало</label>
+                        <input asp-for="DateStart" class="form-control" id="date" />
+                        <span asp-validation-for="DateStart" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="DateFinish" class="control-label">Дата конец</label>
+                        <input asp-for="DateFinish" class="form-control" id="date2" />
+                        <span asp-validation-for="DateFinish" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Position" class="control-label">Должность представителя</label>
+                        @Html.TextAreaFor(x => x.Position, new { @id="position", @class = "form-control", @required = "required", @style = "min-width: 100%; width: 100%; max-width: 100%; min-height: 60px" })
+                        <span asp-validation-for="Position" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Organization" class="control-label">Представитель исполнителя</label>
+                        @Html.TextAreaFor(x => x.Organization, new {  @id="organization", @class = "form-control", @required = "required", @style = "min-width: 100%; width: 100%; max-width: 100%; min-height: 60px" })
+                        <span asp-validation-for="Organization" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Language" class="control-label">Язык новостей</label>
+                        @Html.DropDownListFor(x => x.Language, new SelectList(new string[] { "ru", "be" }), new { @class = "form-control" })
+                        <span asp-validation-for="Language" class="text-danger"></span>
+                    </div>
+                    <div class="panel-footer">
+                        <input type="submit" value="Сохранить" class="btn btn-primary" />
+                        @Html.ActionLink("Отменить изменения и вернуться к списку", "Index", null, new { @class = "btn btn-default" })
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-4">
+                <div class="post-date"> <h4 style="color:white; margin: 0px">Понедельник</h4>  <h6 style="text-align:right; color:white; margin: 0px"> 01/03/2020</h6></div>
+                <br />
+                <div class="box">
+                    <div class="icon"><a href=""><i class="fa fa-forumbee"></i></a></div>
+                    <h6 style="text-align:right; margin: 10px">9:00 - 12:00</h6>
+                    <h4 class="title" > <b>Тема:</b> <text id="resultTitle">Порядок изменения целевого назначения земельных участков</text> </h4>
+                    <p class="description" style="margin: 20px 0px 0px 0px">
+                        Исполнитель:  <text id="resultName">Комитет землеустройства Мингорисполкома</text>
+                        <br /> <br />
+                        <b> Представитель исполнителя - </b>  <text id="resultPosition">Заместитель начальника управления организации земельных отношений комитета землеустройства Минского городского исполнительного комитета</text>
+                        <br />
+                        <b id="resultOrganization">Иберзова Екатерина Владимировна</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    if ($('#date').val() == $('#date2').val()) {
+        $('#date').val(moment().format("YYYY-MM-DDT09:00"));
+        $('#date2').val(moment().format("YYYY-MM-DDT12:00"));
+    } else { }
+
+  function showCount() {
+      resultTitle.innerHTML = title.value;
+      resultName.innerHTML = nameOrg.value;
+      resultPosition.innerHTML = position.value;
+      resultOrganization.innerHTML = organization.value;
+  }
+
+  title.onkeyup = title.oninput = showCount;
+  title.onpropertychange = function() {
+    if (event.propertyName == "value") showCount();
+  }
+  title.oncut = function() {
+    setTimeout(showCount, 0); // на момент oncut значение ещё старое
+  };
+ 
+  nameOrg.onkeyup = nameOrg.oninput = showCount;
+  nameOrg.onpropertychange = function() {
+    if (event.propertyName == "value") showCount();
+  }
+  nameOrg.oncut = function() {
+    setTimeout(showCount, 0); // на момент oncut значение ещё старое
+    }; 
+
+  position.onkeyup = position.oninput = showCount;
+  position.onpropertychange = function() {
+    if (event.propertyName == "value") showCount();
+  }
+  position.oncut = function() {
+    setTimeout(showCount, 0); // на момент oncut значение ещё старое
+    }; 
+
+  organization.onkeyup = organization.oninput = showCount;
+  organization.onpropertychange = function() {
+    if (event.propertyName == "value") showCount();
+  }
+  organization.oncut = function() {
+    setTimeout(showCount, 0); // на момент oncut значение ещё старое
+  };
+
+</script>

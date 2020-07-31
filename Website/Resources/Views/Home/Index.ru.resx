@@ -129,6 +129,9 @@
     <value>«Минское городское агентство обслуживания населения»</value>
     <comment>&lt;h1&gt;&lt;/h1&gt;</comment>
   </data>
+  <data name="Img" xml:space="preserve">
+    <value>Безымянный.png</value>
+  </data>
   <data name="MakeAppointment" xml:space="preserve">
     <value>Записаться на прием в службу «одно окно»</value>
     <comment>Название кнопки(ссылки) </comment>

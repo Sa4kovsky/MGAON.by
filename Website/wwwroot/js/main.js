@@ -11,11 +11,12 @@ $('.anchor').on('click', function (e) {
     }, 1200);
 });
 
+//------------------------------------------ Сообщения ----------------------------------------------
+
 // Создание масок.
 function maskTel() {
     $("#tel").mask("+375 (99) 99-99-999");
 };
-
 
 //Проверки на валидность
 var _validName, _validMessage, _validDesignation, _validAddress, _validEmail, _validNameLegal;
@@ -38,7 +39,7 @@ function ValidName() {
 }
 
 function ValidMessage() {
-    var regular = /^[А-яёіў][А-яёіў0-9,. -!?""'']*$/;
+    var regular = /[А-яёіў0-9,. -!?""'']*$/;
     var message = document.getElementById('message').value;
     _validMessage = regular.test(message);
     if (_validMessage) {
@@ -57,7 +58,7 @@ function ValidMessage() {
 } 
 
 function ValidDesignation() {
-    var regular = /^[А-яёіў][А-яёіў0-9,. -!?""'']*$/;
+    var regular = /[А-яёіў0-9,. -!?""'']*$/;
     var designation = document.getElementById('designation').value;
     _validDesignation = regular.test(designation);
     if (_validDesignation) {
@@ -75,7 +76,7 @@ function ValidDesignation() {
 } 
 
 function ValidAddress() {
-    var regular = /^[А-яёіў][А-яёіў0-9,. -!?""'']*$/;
+    var regular = /[А-яёіў0-9,. -!?""'']*$/;
     var address = document.getElementById('address').value;
     _validAddress = regular.test(address);
     if (_validAddress) {
@@ -111,7 +112,7 @@ function ValidEmail() {
 } 
 
 function ValidNameLegal() {
-    var regular = /^[А-яёіў][А-яёіў0-9,. -!?""'']*$/;
+    var regular = /[А-яёіў0-9,. -!?""'']*$/;
     var nameLegal = document.getElementById('nameLegal').value;
     _validNameLegal = regular.test(nameLegal);
     if (_validNameLegal) {
@@ -223,7 +224,7 @@ function addInputNaturalPersonBE() {
     if (x < 1) {
         delInput();
         div.id = 'input' + ++x;
-        div.innerHTML = '<div class="form-group"><input type="text" class="form-control" name="designation" id="designation" placeholder="Назву і (або) адрас арганізацыі альбо пасаду асобы*" required /></div> <div class="form-group"><input type="text" class="form-control" name="fullName" id="fullName" placeholder="Прозвішча, імя*" required /></div> <div class="form-group"><input type="text" class="form-control" name="address" id="address" placeholder="Адрас месца жыхарства (месца знаходжання)*" /></div> <div class="form-group"><input type="email" class="form-control" name="email" id="email" placeholder="Электронная пошта*" /></div>  <div class="form-group"><input type="text" class="form-control" name="tel" id="tel" placeholder="Кантактны тэлефон" /></div> <div class="form-group"><textarea class="form-control" name="message" id="message" placeholder="Зварот*" maxlength="2000"></textarea></div> <div><p>Дапушчальнымі фарматамі дакументаў і (або) звестак, якія прымацоўваюцца ў электронным відзе, з\'яўляюцца <em>Portable Document Format/A</em> (<em>PDF/A</em>), <em>Office Open XML</em> (<em>DOCX</em>), двайны фармат з разметкай (<em>DOC</em>), Rich Text Format (<em>RTF</em>), тэкставы файл (<em>TXT</em>), <em>Open Document Format</em> (<em>ODT</em>), фармат архівацыі і скарачэння даных (<em>ZIP, RAR</em>), <em>Portable Network Graphics</em> (<em>PNG</em>), <em>Tagged Image File Format</em> (<em>TIFF</em>), <em>Joint Photograph Experts Group</em> (<em>JPEG</em>), <em>Joint Photograph Group</em> (<em>JPG</em>).</p></div> <div class="form-group"><input type="file" name="upload" id="uploadFile" /></div> <div class="text-center" style="padding:20px"><button type="button" formnovalidate value="SendEmail" id="buttonSendEmail">Адправіць зварот</button></div>';
+        div.innerHTML = '<div class="form-group"><input type="text" class="form-control" name="designation" id="designation" placeholder="Назва і (або) адрас арганізацыі альбо пасада службовай асобы*" required /></div> <div class="form-group"><input type="text" class="form-control" name="fullName" id="fullName" placeholder="Прозвішча, імя*" required /></div> <div class="form-group"><input type="text" class="form-control" name="address" id="address" placeholder="Адрас месца жыхарства (месца знаходжання)*" /></div> <div class="form-group"><input type="email" class="form-control" name="email" id="email" placeholder="Электронная пошта*" /></div>  <div class="form-group"><input type="text" class="form-control" name="tel" id="tel" placeholder="Кантактны тэлефон" /></div> <div class="form-group"><textarea class="form-control" name="message" id="message" placeholder="Зварот*" maxlength="2000"></textarea></div> <div><p>Дапушчальнымі фарматамі дакументаў і (або) звестак, якія прымацоўваюцца ў электронным відзе, з\'яўляюцца <em>Portable Document Format/A</em> (<em>PDF/A</em>), <em>Office Open XML</em> (<em>DOCX</em>), двайны фармат з разметкай (<em>DOC</em>), Rich Text Format (<em>RTF</em>), тэкставы файл (<em>TXT</em>), <em>Open Document Format</em> (<em>ODT</em>), фармат архівацыі і скарачэння даных (<em>ZIP, RAR</em>), <em>Portable Network Graphics</em> (<em>PNG</em>), <em>Tagged Image File Format</em> (<em>TIFF</em>), <em>Joint Photograph Experts Group</em> (<em>JPEG</em>), <em>Joint Photograph Group</em> (<em>JPG</em>).</p></div> <div class="form-group"><input type="file" name="upload" id="uploadFile" /></div> <div class="text-center" style="padding:20px"><button type="button" formnovalidate value="SendEmail" id="buttonSendEmail">Адправіць зварот</button></div>';
         profile.appendChild(div);
         maskTel();
         //ajax сробатывает при отправе сообщения, чтобы частично обновлять представление
@@ -265,7 +266,7 @@ function addInputLegalPersonBE() {
     if (x < 1) {
         delInput();
         div.id = 'input' + ++x;
-        div.innerHTML = '<div class="form-group"><input type="text" class="form-control" name="designation" id="designation" placeholder="Назву і (або) адрас арганізацыі альбо пасаду асобы*" required /></div> <div class="form-group"><input type="text" class="form-control" name="nameLegal" id="nameLegal" placeholder="Поўнае найменне юрыдычнай асобы*" required /></div> <div class="form-group"><input type="text" class="form-control" name="fullName" id="fullName" placeholder="Прозвішча, імя або ініцыялы кіраўніка або асобы, упаўнаважанай ва ўстаноўленым парадку падпісваць звароты*" required /></div> <div class="form-group"><input type="text" class="form-control" name="address" id="address" placeholder="Месцазнаходжанне юрыдычнай асобы*" /></div> <div class="form-group"><input type="email" class="form-control" name="email" id="email" placeholder="Электронная пошта*" /></div>  <div class="form-group"><input type="text" class="form-control" name="tel" id="tel" placeholder="Кантактны тэлефон" /></div> <div class="form-group"><textarea class="form-control" name="message" id="message" placeholder="Зварот*" maxlength="2000"></textarea></div> <div><p>Дапушчальнымі фарматамі дакументаў і (або) звестак, якія прымацоўваюцца ў электронным відзе, з\'яўляюцца <em>Portable Document Format/A</em> (<em>PDF/A</em>), <em>Office Open XML</em> (<em>DOCX</em>), двайны фармат з разметкай (<em>DOC</em>), Rich Text Format (<em>RTF</em>), тэкставы файл (<em>TXT</em>), <em>Open Document Format</em> (<em>ODT</em>), фармат архівацыі і скарачэння даных (<em>ZIP, RAR</em>), <em>Portable Network Graphics</em> (<em>PNG</em>), <em>Tagged Image File Format</em> (<em>TIFF</em>), <em>Joint Photograph Experts Group</em> (<em>JPEG</em>), <em>Joint Photograph Group</em> (<em>JPG</em>).</p></div> <div class="form-group"><input type="file" name="upload" id="uploadFile" /></div> <div class="text-center" style="padding:20px"><button type="button" formnovalidate value="SendEmail" id="buttonSendEmail">Адправіць зварот</button></div>';
+        div.innerHTML = '<div class="form-group"><input type="text" class="form-control" name="designation" id="designation" placeholder="Назва і (або) адрас арганізацыі альбо пасада службовай асобы*" required /></div> <div class="form-group"><input type="text" class="form-control" name="nameLegal" id="nameLegal" placeholder="Поўнае найменне юрыдычнай асобы*" required /></div> <div class="form-group"><input type="text" class="form-control" name="fullName" id="fullName" placeholder="Прозвішча, імя або ініцыялы кіраўніка або асобы, упаўнаважанай ва ўстаноўленым парадку падпісваць звароты*" required /></div> <div class="form-group"><input type="text" class="form-control" name="address" id="address" placeholder="Месцазнаходжанне юрыдычнай асобы*" /></div> <div class="form-group"><input type="email" class="form-control" name="email" id="email" placeholder="Электронная пошта*" /></div>  <div class="form-group"><input type="text" class="form-control" name="tel" id="tel" placeholder="Кантактны тэлефон" /></div> <div class="form-group"><textarea class="form-control" name="message" id="message" placeholder="Зварот*" maxlength="2000"></textarea></div> <div><p>Дапушчальнымі фарматамі дакументаў і (або) звестак, якія прымацоўваюцца ў электронным відзе, з\'яўляюцца <em>Portable Document Format/A</em> (<em>PDF/A</em>), <em>Office Open XML</em> (<em>DOCX</em>), двайны фармат з разметкай (<em>DOC</em>), Rich Text Format (<em>RTF</em>), тэкставы файл (<em>TXT</em>), <em>Open Document Format</em> (<em>ODT</em>), фармат архівацыі і скарачэння даных (<em>ZIP, RAR</em>), <em>Portable Network Graphics</em> (<em>PNG</em>), <em>Tagged Image File Format</em> (<em>TIFF</em>), <em>Joint Photograph Experts Group</em> (<em>JPEG</em>), <em>Joint Photograph Group</em> (<em>JPG</em>).</p></div> <div class="form-group"><input type="file" name="upload" id="uploadFile" /></div> <div class="text-center" style="padding:20px"><button type="button" formnovalidate value="SendEmail" id="buttonSendEmail">Адправіць зварот</button></div>';
         profile.appendChild(div);
         maskTel();
         //ajax сробатывает при отправе сообщения, чтобы частично обновлять представление
@@ -311,3 +312,68 @@ function delInput() {
     --x;
 }
 
+
+
+//------------------------------------------------ Новости ----------------------------------------
+
+//определения даты дней недели для новостей
+function startAndEndOfWeek(date) {
+    var now = date ? new Date(date) : new Date();
+    now.setHours(0, 0, 0, 0);
+    //расчет даты дней недели недели
+
+    //Понедельник
+    var monday = new Date(now);
+    monday = moment().endOf('week').subtract(5, 'days').format('DD.MM.YYYY');
+
+    //Вторник
+    var tuesday = new Date(now);
+    tuesday = moment().endOf('week').subtract(4, 'days').format('DD.MM.YYYY');
+
+    //Среда
+    var wednesday = new Date(now);
+    wednesday = moment().endOf('week').subtract(3, 'days').format('DD.MM.YYYY');
+
+    //Четверг
+    var thursday = new Date(now);
+    thursday = moment().endOf('week').subtract(2, 'days').format('DD.MM.YYYY');
+
+    //Пятница
+    var friday = new Date(now);
+    friday = moment().endOf('week').subtract(1, 'days').format('DD.MM.YYYY');
+
+    //Прошлая неделя
+
+    //Понедельник
+    var oldMonday = new Date(now);
+    oldMonday = moment().endOf('week').subtract(12, 'days').format('DD.MM.YYYY');
+
+    //Вторник
+    var oldTuesday = new Date(now);
+    oldTuesday = moment().endOf('week').subtract(11, 'days').format('DD.MM.YYYY');
+
+    //Среда
+    var oldWednesday = new Date(now);
+    oldWednesday = moment().endOf('week').subtract(10, 'days').format('DD.MM.YYYY');
+
+    //Четверг
+    var oldThursday = new Date(now);
+    oldThursday = moment().endOf('week').subtract(9, 'days').format('DD.MM.YYYY');
+
+    //Пятница
+    var oldFriday = new Date(now);
+    oldFriday = moment().endOf('week').subtract(8, 'days').format('DD.MM.YYYY');
+
+    return [monday, tuesday, wednesday, thursday, friday, oldMonday, oldTuesday, oldWednesday, oldThursday, oldFriday,];
+}
+//передача дат
+document.getElementById("monday").innerHTML = startAndEndOfWeek()[0];
+document.getElementById("tuesday").innerHTML = startAndEndOfWeek()[1];
+document.getElementById("wednesday").innerHTML = startAndEndOfWeek()[2];
+document.getElementById("thursday").innerHTML = startAndEndOfWeek()[3];
+document.getElementById("friday").innerHTML = startAndEndOfWeek()[4];
+document.getElementById("oldMonday").innerHTML = startAndEndOfWeek()[5];
+document.getElementById("oldTuesday").innerHTML = startAndEndOfWeek()[6];
+document.getElementById("oldWednesday").innerHTML = startAndEndOfWeek()[7];
+document.getElementById("oldThursday").innerHTML = startAndEndOfWeek()[8];
+document.getElementById("oldFriday").innerHTML = startAndEndOfWeek()[9];

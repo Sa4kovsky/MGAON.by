@@ -122,7 +122,7 @@
     <comment>Ссылка  в меню</comment>
   </data>
   <data name="Appeal" xml:space="preserve">
-    <value>Зварот да кіраўніцтву прадпрыемства</value>
+    <value>Звароты грамадзян і юрыдычных асоб</value>
     <comment>Ссылка  в меню</comment>
   </data>
   <data name="CallCenter" xml:space="preserve">
@@ -134,7 +134,7 @@
     <comment>Ссылка  в меню</comment>
   </data>
   <data name="Department" xml:space="preserve">
-    <value>Службы «адно акно»</value>
+    <value>Служба «адно акно»</value>
     <comment>Ссылка  в меню</comment>
   </data>
   <data name="ElectroniDigitalSignature" xml:space="preserve">
@@ -166,11 +166,11 @@
     <comment>Ссылка  в меню</comment>
   </data>
   <data name="ReferenceInformation" xml:space="preserve">
-    <value>Даведачная інфармацыя</value>
+    <value>Даведкавая інфармацыя</value>
     <comment>Название секции в меню</comment>
   </data>
   <data name="ReferenceInformationSystem" xml:space="preserve">
-    <value>Даведачна-інфармацыйная сістэма</value>
+    <value>Даведкава-інфармацыйная сістэма</value>
     <comment>Ссылка  в меню</comment>
   </data>
   <data name="Service" xml:space="preserve">

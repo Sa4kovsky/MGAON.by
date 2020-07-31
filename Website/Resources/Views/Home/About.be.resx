@@ -119,7 +119,7 @@
   </resheader>
   <data name="1" xml:space="preserve">
     <value>&lt;b&gt;Аддзел № 1 Заводскага раёна&lt;/b&gt; &lt;br /&gt;
-                                        начальнік аддзела Бойправ Наталля Аляксандраўна &lt;br /&gt;
+                                        начальнік аддзела Губарэвіч Ганна Уладзіміраўна &lt;br /&gt;
                                         &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тэл. 389 26 82 &lt;br /&gt;
                                         &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: вул. Жылуновіча, д.17 - служба «адно акно» &lt;br /&gt;
                                         &lt;br /&gt;</value>
@@ -131,10 +131,10 @@
                                         &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt;  тэл. 218 00 74 &lt;br /&gt;
                                         &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: прасп. Незалежнасці, д.8 - служба «адно акно» &lt;br /&gt;
                                         &lt;br /&gt;
-                                        &lt;b&gt;Аддзел вядзення баз дадзеных у Галоўным упраўленні юстыцыі Мінгарвыканкама &lt;/b&gt; &lt;br /&gt;
+                                        &lt;b&gt;Аддзел вядзення баз даных у Галоўным упраўленні юстыцыі Мінгарвыканкама &lt;/b&gt; &lt;br /&gt;
                                          начальнік аддзела Міранюк Таццяна Віктараўна &lt;br /&gt;
                                         &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тэл. 308 23 83 &lt;br /&gt;
-                                        &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: просп.Пушкина, д.42, каб. 104&lt;br /&gt;
+                                        &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: прасп.Пушкiна, д.42, каб. 104&lt;br /&gt;
                                         &lt;br /&gt;
                                         &lt;b&gt;Сектар прыёму заяў у аддзеле ЗАГС галоўнага ўпраўлення юстыцыі Мінгарвыканкама&lt;/b&gt; &lt;br /&gt;
                                         начальнік сектара Маціеўская Ганна Іванаўна &lt;br /&gt;
@@ -145,7 +145,7 @@
   </data>
   <data name="2" xml:space="preserve">
     <value>&lt;b&gt;Аддзел № 2 Ленінскага раёна&lt;/b&gt; &lt;br /&gt;
-                                        начальнік аддзела Губарэвіч Ганна Уладзіміраўна &lt;br /&gt;
+                                        начальнік аддзела  Борiчеуская Надзежда Сергееуна&lt;br /&gt;
                                         &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тэл. 235 00 69 &lt;br /&gt;
                                         &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: вул.Маякоўскага, д.83 - служба «адно акно»&lt;br /&gt;
                                         &lt;br /&gt;</value>
@@ -273,8 +273,8 @@
   </data>
   <data name="About" xml:space="preserve">
     <value>&lt;b&gt;Камунальнае ўнітарнае прадпрыемства «Мінскае гарадское агенцтва абслугоўвання насельніцтва» (далей – МГААН)&lt;/b&gt;&lt;br /&gt;
-                               створана 1 ліпеня 2013 г. у выніку рэарганізацыі шляхам вылучэння са складу камунальнага ўнітарнага прадпрыемства «Цэнтр інфармацыйных тэхналогій Мінгарвыканкама» і зарэгістравана рашэннем Мінгарвыканкама ад 23.05.2013 г. № 1344. Форма ўласнасці - дзяржаўная (камунальная).&lt;br /&gt;
-                             Заснавальнікам Прадпрыемства з'яўляецца  &lt;a href="https://minsk.gov.by/ru/"&gt;Мінскі гарадскі выканаўчы камітэт.&lt;/a&gt;</value>
+                               створана 1 ліпеня 2013 г. у выніку рэарганізацыі шляхам вылучэння са складу камунальнага ўнітарнага прадпрыемства «Цэнтр інфармацыйных тэхналогій Мінгарвыканкама» і зарэгістравана рашэннем Мінгарвыканкама ад 23.05.2013 г. № 1344. &lt;br/&gt; Форма ўласнасці - дзяржаўная (камунальная).&lt;br /&gt;
+                             Заснавальнікам прадпрыемства з'яўляецца  &lt;a href="https://minsk.gov.by/ru/"  target="_blank" &gt;Мінскі гарадскі выканаўчы камітэт.&lt;/a&gt;</value>
     <comment>Первый абзац</comment>
   </data>
   <data name="AdministrativeProcedure" xml:space="preserve">
@@ -314,10 +314,6 @@
                                     начальнік упраўлення Пажыток Нэлі Канстанцінаўна&lt;br /&gt;
                                     &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тэл. 316 26 03 &lt;br /&gt;
                                     &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: вул.М.Танка, д.36, корп.1, каб.5 &lt;br /&gt;
-                                    &lt;br /&gt;
-                                    намеснік начальніка ўпраўлення Нечаева Вольга Уладзіміраўна  &lt;br /&gt;
-                                    &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тэл. 243 08 59&lt;br /&gt;
-                                    &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: вул.М.Танка, д.36, корп.1, каб.5&lt;br /&gt;
                                     &lt;br /&gt;</value>
     <comment>Телефонный справочник МГАОН</comment>
   </data>
@@ -348,7 +344,7 @@
                                     &lt;br /&gt;
                                     вядучы спецыяліст па кадрах Лебедзева Ірына Уладзіміраўна&lt;br /&gt;
                                     &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тэл. 364 65 92 &lt;br /&gt;
-                                    &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; аадрас: вул.М.Танка, д.36, корп.1, каб.1 &lt;br /&gt;</value>
+                                    &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: вул.М.Танка, д.36, корп.1, каб.1 &lt;br /&gt;</value>
     <comment>Телефонный справочник МГАОН</comment>
   </data>
   <data name="Informing" xml:space="preserve">
@@ -356,10 +352,6 @@
   </data>
   <data name="InformingCitizens" xml:space="preserve">
     <value>Iнфармаванне Грамадзян</value>
-    <comment>Шапка возле icon</comment>
-  </data>
-  <data name="MakingProfit" xml:space="preserve">
-    <value>Атрыманне прыбытку</value>
     <comment>Шапка возле icon</comment>
   </data>
   <data name="ObjectivesCompany" xml:space="preserve">
@@ -372,9 +364,6 @@
   <data name="OtherFacilities" xml:space="preserve">
     <value>Другія Паслугi</value>
     <comment>Шапка возле icon</comment>
-  </data>
-  <data name="Profit" xml:space="preserve">
-    <value>атрыманне прыбытку ў працэсе гаспадарчай дзейнасці</value>
   </data>
   <data name="ProvidingCollection" xml:space="preserve">
     <value>забеспячэнне збору дакументаў і (або) звестак, неабходных для ажыццяўлення адміністрацыйных працэдур, не ўключаных у пералікі дакументаў і (або) звестак, якія прадстаўляюцца зацікаўленымі асобамі, пры дапамозе напраўлення запытаў аддаленага доступу да дзяржаўных рэгістраў, рэестраў, кадастраў, спісаў, каталогаў, баз і банкаў даных і другімі спосабамі</value>
@@ -419,7 +408,7 @@
     <value>&lt;b&gt;Намеснік дырэктара &lt;/b&gt; &lt;br /&gt;
                                     Трушкевiч Павел Анатольевіч  &lt;br /&gt;
                                     &lt;i class="fa fa-phone" style="color: #2dc997;"&gt;&lt;/i&gt; тэл. 364 19 13&lt;br /&gt;
-                                    &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: ул.М.Танка, д.36, корп.1, каб.1</value>
+                                    &lt;i class="fa fa-map-marker" style="color: #2dc997;"&gt;&lt;/i&gt; адрас: вул.М.Танка, д.36, корп.1, каб.1</value>
     <comment>Телефонный справочник МГАОН</comment>
   </data>
   <data name="AdministrativeProcedureTitle" xml:space="preserve">
@@ -427,7 +416,7 @@
     <comment>Появляющийся div id="myAdmProcess"</comment>
   </data>
   <data name="Procedure" xml:space="preserve">
-    <value>выконваемых камунальным унітарным прадпрыемствам «Мінскае гарадское агенцтва абслугоўвання насельніцтва» для грамадзян, стаяць (якія складаліся) у працоўных адносінах, у адпаведнасці з Указам Прэзідэнта Рэспублікі Беларусь ад 26 красавiка 2010 г. № 200 «Об административных процедурах, осуществляемых государственными органами и иными государственными организациями по заявлениям граждан»</value>
+    <value>выконваемых камунальным унітарным прадпрыемствам «Мінскае гарадское агенцтва абслугоўвання насельніцтва» для грамадзян, якія знаходзяцца ў працоўных адносінах, у адпаведнасці з Указам Прэзідэнта Рэспублікі Беларусь ад 26 красавiка 2010 г. № 200 «Об административных процедурах, осуществляемых государственными органами и иными государственными организациями по заявлениям граждан» (вытрымкi)</value>
   </data>
   <data name="ReceptionScheduleAttention" xml:space="preserve">
     <value>&lt;b&gt;Звяртаем Вашу ўвагу&lt;/b&gt;, што&lt;b&gt; папярэдні запіс на асабісты прыём&lt;/b&gt; ажыццяўляецца па тэлефоне  364-66-34 альбо ў кабінеце № 4 вядучым спецыялістам па справаводству пры непасрэдным звароце грамадзяніна або прадстаўніка юрыдычнай асобы &lt;em&gt;з прад'яўленнем дакумента, які сведчыць асобу, і дакумента, які пацвярджае службовыя паўнамоцтвы.&lt;/em&gt;</value>
@@ -446,7 +435,7 @@
   </data>
   <data name="ReceptionScheduleTrushkevich" xml:space="preserve">
     <value>&lt;td&gt;Намеснік дырэктара &lt;/td&gt;
-                                &lt;td&gt;Трушкевич Павел Анатольевіч &lt;/td&gt;
+                                &lt;td&gt;Трушкевiч Павел Анатольевіч &lt;/td&gt;
                                 &lt;td&gt;
                                     Чацвёртая серада месяца з 08.00 да 13.00&lt;br /&gt;
                                     Кабінет № 1
@@ -454,5 +443,8 @@
   </data>
   <data name="Schedule" xml:space="preserve">
     <value>асабістага прыёму грамадзян, юрыдычных асоб, індывідуальных прадпрымальнікаў кіраўніцтвам МГААН</value>
+  </data>
+  <data name="EnterprisStructureIMG" xml:space="preserve">
+    <value>СтруктураБел.jpg</value>
   </data>
 </root>

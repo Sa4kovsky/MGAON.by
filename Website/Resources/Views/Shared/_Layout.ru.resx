@@ -122,7 +122,7 @@
     <comment>Ссылка  в меню</comment>
   </data>
   <data name="Appeal" xml:space="preserve">
-    <value>Обращение к руководству предприятия</value>
+    <value>Обращения граждан и юридических лиц</value>
     <comment>Ссылка  в меню</comment>
   </data>
   <data name="CallCenter" xml:space="preserve">
@@ -134,7 +134,7 @@
     <comment>Ссылка  в меню</comment>
   </data>
   <data name="Department" xml:space="preserve">
-    <value>Службы «одно окно»</value>
+    <value>Служба «одно окно»</value>
     <comment>Ссылка  в меню</comment>
   </data>
   <data name="ElectroniDigitalSignature" xml:space="preserve">

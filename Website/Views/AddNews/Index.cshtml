@@ -1,0 +1,65 @@
+﻿@model IEnumerable<Website.Models.WebSiteBD.News>
+
+@{
+     ViewData["Title"] = "Index";
+}
+    <div class="text-center" style="        padding: 80px 15px 80px 15px;">
+        <h1 class="display-4">Новости</h1>
+        <a asp-controller="AddNews" asp-action="NewsTable">График проведения тематических дней информирования</a>
+        <br /><br />
+
+        <p>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">Список новостей за месяц</button>
+        </p>
+        @TempData["message"]
+        <div class="row">
+            <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapseExample1">
+                    <div class="card card-body">
+                        <table id="tablePreview" class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Тема</th>
+                                    <th>Исполнитель</th>
+                                    <th>Дата начало</th>
+                                    <th>Дата конец</th>
+                                    <th>Должность представителя</th>
+                                    <th>Представитель исполнителя</th>
+                                    <th>Язык новостей</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var news in Model)
+                                {
+                                    <tr>
+                                        <td>@Html.ActionLink(news.Title, "Edit", new { news.Id })</td>
+                                        <td>@news.Name</td>
+                                        <td>@news.DateStart</td>
+                                        <td>@news.DateFinish</td>
+                                        <td>@news.Position</td>
+                                        <td>@news.Organization</td>
+                                        <td>@news.Language</td>
+                                        <td>
+                                            @using (Html.BeginForm("Delete", "AddNews"))
+                                            {
+                                                @Html.Hidden("Id", news.Id)
+                                                <input type="submit"
+                                                       class="btn btn-danger btn-xs"
+                                                       value="Удалить" />
+                                            }
+                                        </td>
+                                    </tr>
+                                }
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-footer">
+            @Html.ActionLink("Добавить новость", "Create", null,
+                new { @class = "btn btn-default" })
+        </div>
+    </div>

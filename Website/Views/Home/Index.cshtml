@@ -2,68 +2,69 @@
 @inject IViewLocalizer Localizer
 @model Website.Models.ModelsView.IndexViewModels
 
-<main id="main">
+    <main id="main">
 
-    <!--Hero Section-->
-    <section id="hero">
-        <div class="hero_video-box">
-            <video class="hero_video" autoplay="" muted="" loop="">
-                <source src="../Minsk.mp4" type="video/mp4">
-            </video>
-            <div class="hero_img" >
-               
+        <!--Hero Section-->
+        <section id="hero">
+            <div class="hero_video-box">
+                <video class="hero_video" autoplay="" muted="" loop="">
+                    <source src="../Minsk.mp4" type="video/mp4">
+                </video>
+                <div class="hero_img">
+
+                </div>
             </div>
-        </div>
 
-        <div class="hero_video_before">
-            <div class="hero-container">
-                <h2>@Localizer["HeroTitle"]</h2>
-                <h1>@Localizer["HeroTitleCompany"]</h1>
+            <div class="hero_video_before">
+            <div class="hero_video_before">
+                <div class="hero-container">
+                    <h2>@Localizer["HeroTitle"]</h2>
+                    <h1>@Localizer["HeroTitleCompany"]</h1>
 
-                <a href="http://prereg.mgaon.by" class="btn-get-started">@Localizer["MakeAppointment"]</a>
-                <a asp-controller="Service" asp-action="Index" class="btn-get-started">@Localizer["Appeal"]</a>
+                    <a href="http://prereg.mgaon.by" class="btn-get-started">@Localizer["MakeAppointment"]</a>
+                    <a asp-controller="Service" asp-action="Index" class="btn-get-started">@Localizer["Appeal"]</a>
+                </div>
             </div>
-        </div>
-    </section>
-    <!--End Hero Section-->
-    <!--Marketing Section-->
-    <marquee behavior="alternate" scrollamount="5" style="background-color:#f7f7f7">
-        <div class="row">
-            <div class="wrapper">
-                <a href="" class="exmpl"><img src="~/img/Реклама/Безымянный.png" /></a>
+        </section>
+        <!--End Hero Section-->
+        <!--Marketing Section-->
+        <marquee behavior="alternate" scrollamount="5" style="background-color:#f7f7f7">
+            <div class="row">
+                <div class="wrapper">
+                    <a href="" class="exmpl"><img src="~/img/Реклама/@Localizer["Img"]" /></a>
+                </div>
             </div>
-            <div class="wrapper">
-                <a href="" class="exmpl"><img src="~/img/Реклама/Безымянный1.png" /> </a>
-            </div>
-        </div>
-    </marquee>
-    <!--End Marketing Section-->
+        </marquee>
+        <!--End Marketing Section-->
 
-    <!--About Us Section-->
-    @{Html.RenderPartial("About", Model.Procedures);}
+        <!--CORONAVIRUS Section-->
+        @{Html.RenderPartial("Covid19");}
 
-    <!--Facts Section-->
-    @{Html.RenderPartial("Facts", Model.SummaryOneWin);}
+        <!--About Us Section-->
+        @{Html.RenderPartial("About", Model.Procedures);}
 
-    <!--Area Section-->
-    @{Html.RenderPartial("Area");}
+        <!--Facts Section-->
+        @{Html.RenderPartial("Facts", Model.SummaryOneWin);}
 
-    <!--Call-Center Section-->
-    @{Html.RenderPartial("CallCenter");}
+        <!--Area Section-->
+        @{Html.RenderPartial("Area");}
 
-    <!--News Section-->
-    @{Html.RenderPartial("News", Model);}
+        <!--Call-Center Section-->
+        @{Html.RenderPartial("CallCenter");}
 
-    <!--Trade union organization Section-->
-    @{Html.RenderPartial("TradeUnionOrganization");}
+        <!--News Section-->
+        @{Html.RenderPartial("News", Model);}
 
-    <!--Contact Section-->
-    @{Html.RenderPartial("Contacts", Model.People);}
+        <!--Trade union organization Section-->
+        @{Html.RenderPartial("TradeUnionOrganization");}
 
-    <!--Partner Section-->
-    @{Html.RenderPartial("Partner");}
+        <!--Contact Section-->
+        @{Html.RenderPartial("Contacts", Model.People);}
 
-    <!--Button "BACK_TO_TOP"-->
-    <a href="#hero" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-</main>
+        <!--Partner Section-->
+        @{Html.RenderPartial("Partner");}
+
+        <!--Button "BACK_TO_TOP"-->
+        <a href="#hero" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    </main>
 
